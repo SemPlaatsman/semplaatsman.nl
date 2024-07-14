@@ -1,0 +1,74 @@
+@import "variables";
+@import "mixins";
+@import "typography";
+
+:root {
+  @include dark-theme;
+  color-scheme: light dark;
+  background-color: var(--background);
+  color: var(--text);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+a {
+  color: var(--primary);
+
+  &:hover {
+    color: var(--secondary);
+  }
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--button-bg);
+  color: var(--text);
+  cursor: pointer;
+  transition:
+    border-color $transition-duration,
+    background-color $transition-duration,
+    color $transition-duration;
+
+  &:hover {
+    border-color: var(--primary);
+    background-color: var(--primary);
+    color: var(--background);
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+}
+
+:root.light-theme {
+  @include light-theme;
+}
+
+:root.dark-theme {
+  @include dark-theme;
+}

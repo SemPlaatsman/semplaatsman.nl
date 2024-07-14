@@ -1,0 +1,21 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.themeSwitcher {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  font-size: 1.5em;
+  background: var(--button-bg);
+  color: var(--text);
+  border: 1px solid var(--text);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+    background-color: var(--primary);
+    color: var(--background);
+  }
+}

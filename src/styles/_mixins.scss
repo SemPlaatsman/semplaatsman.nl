@@ -1,0 +1,15 @@
+@mixin light-theme {
+  --background: #{$light-background};
+  --text: #{$light-text};
+  --primary: #{$light-primary};
+  --secondary: #{$light-secondary};
+  --button-bg: #{$light-button-bg};
+}
+
+@mixin dark-theme {
+  --background: #{$dark-background};
+  --text: #{$dark-text};
+  --primary: #{$dark-primary};
+  --secondary: #{$dark-secondary};
+  --button-bg: #{$dark-button-bg};
+}

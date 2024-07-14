@@ -20,6 +20,7 @@
     "react-helmet": "^6.1.0",
     "react-hot-toast": "^2.4.1",
     "react-i18next": "^14.1.2",
+    "react-ionicons": "^4.2.1",
     "react-loading-skeleton": "^3.4.0",
     "react-router-dom": "^6.24.1",
     "sass": "^1.77.8"
