@@ -2,9 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+    branches: [main] # Only trigger on pushes to main (including merged PRs)
 
 jobs:
   build-and-deploy:
@@ -29,4 +27,4 @@ jobs:
         if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GH_PAGES_DEPLOY }}
-          publish_dir: ./dist
+          publish_dir: ./dist # Vite's default build output directory
