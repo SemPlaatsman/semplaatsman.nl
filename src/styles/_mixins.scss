@@ -1,15 +1,15 @@
-@mixin light-theme {
-  --background: #{$light-background};
-  --text: #{$light-text};
-  --primary: #{$light-primary};
-  --secondary: #{$light-secondary};
-  --button-bg: #{$light-button-bg};
+@use "variables";
+
+@mixin themify() {
+  @each $theme, $map in variables.$themes {
+    .#{$theme}-theme & {
+      $theme-map: $map !global;
+      @content;
+      $theme-map: null !global;
+    }
+  }
 }
 
-@mixin dark-theme {
-  --background: #{$dark-background};
-  --text: #{$dark-text};
-  --primary: #{$dark-primary};
-  --secondary: #{$dark-secondary};
-  --button-bg: #{$dark-button-bg};
+@function theme($key) {
+  @return map-get($theme-map, $key);
 }

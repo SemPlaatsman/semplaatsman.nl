@@ -1,11 +1,13 @@
-@import "../../styles/variables";
-@import "../../styles/mixins";
+@use "../../styles/variables";
+@use "../../styles/mixins";
 
 .layout {
   min-height: 100vh;
-  background-color: var(--background);
-  color: var(--text);
   transition:
-    background-color $transition-duration,
-    color $transition-duration;
+    background-color variables.$transition-slow,
+    color variables.$transition-slow;
+
+  @include mixins.themify() {
+    background-color: mixins.theme("bg-primary");
+  }
 }

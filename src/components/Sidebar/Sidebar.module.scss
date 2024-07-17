@@ -1,0 +1,77 @@
+@use "../../styles/variables";
+@use "../../styles/mixins";
+
+.sidebar {
+  border-radius: 20px;
+  padding: 15px;
+  transition: max-height variables.$transition-slow;
+  overflow: hidden;
+
+  @include mixins.themify() {
+    background-color: mixins.theme("bg-secondary");
+    border: 1px solid mixins.theme("border-color");
+    box-shadow: mixins.theme("shadow-sm");
+  }
+
+  &.active {
+    max-height: 405px;
+  }
+}
+
+.sidebarInfo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.avatar {
+  border-radius: 20px;
+
+  @include mixins.themify() {
+    background-image: mixins.theme("gradient-primary");
+  }
+}
+
+.infoContent {
+  .name {
+    font-size: variables.$font-size-lg;
+    font-weight: variables.$font-weight-medium;
+    margin-bottom: 10px;
+
+    @include mixins.themify() {
+      color: mixins.theme("text-primary");
+    }
+  }
+
+  .title {
+    font-size: variables.$font-size-xs;
+    font-weight: variables.$font-weight-light;
+    padding: 3px 12px;
+    border-radius: 8px;
+
+    @include mixins.themify() {
+      color: mixins.theme("text-secondary");
+      background-color: mixins.theme("bg-tertiary");
+    }
+  }
+}
+
+.infoMoreBtn {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  border-radius: 0 15px;
+  font-size: variables.$font-size-sm;
+  padding: 10px;
+  cursor: pointer;
+  transition: opacity variables.$transition-fast;
+
+  @include mixins.themify() {
+    color: mixins.theme("accent-primary");
+    background-image: mixins.theme("gradient-secondary");
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

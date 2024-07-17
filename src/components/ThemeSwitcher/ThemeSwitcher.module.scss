@@ -1,21 +1,24 @@
-@import "../../styles/variables";
-@import "../../styles/mixins";
+@use "../../styles/variables";
+@use "../../styles/mixins";
 
 .themeSwitcher {
-  position: fixed;
-  top: 20px;
-  right: 20px;
   padding: 10px;
-  font-size: 1.5em;
-  background: var(--button-bg);
-  color: var(--text);
-  border: 1px solid var(--text);
+  border-radius: 50%;
   cursor: pointer;
-  transition: transform 0.3s ease;
+  transition:
+    background-color variables.$transition-fast,
+    color variables.$transition-fast;
+
+  @include mixins.themify() {
+    background-color: mixins.theme("bg-secondary");
+    color: mixins.theme("text-primary");
+    border: 1px solid mixins.theme("border-color");
+  }
 
   &:hover {
-    transform: scale(1.1);
-    background-color: var(--primary);
-    color: var(--background);
+    @include mixins.themify() {
+      background-color: mixins.theme("accent-primary");
+      color: mixins.theme("bg-primary");
+    }
   }
 }

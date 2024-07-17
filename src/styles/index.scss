@@ -1,74 +1,50 @@
-@import "variables";
-@import "mixins";
-@import "typography";
+@use "mixins";
+@use "typography";
+@use "variables";
 
-:root {
-  @include dark-theme;
-  color-scheme: light dark;
-  background-color: var(--background);
-  color: var(--text);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-body {
+*,
+*::before,
+*::after {
   margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 a {
-  color: var(--primary);
+  text-decoration: none;
+}
 
-  &:hover {
-    color: var(--secondary);
-  }
+li {
+  list-style: none;
+}
+
+img,
+ion-icon,
+a,
+button,
+time,
+span {
+  display: block;
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: var(--button-bg);
-  color: var(--text);
+  font: inherit;
+  background: none;
+  border: none;
+  text-align: left;
   cursor: pointer;
-  transition:
-    border-color $transition-duration,
-    background-color $transition-duration,
-    color $transition-duration;
-
-  &:hover {
-    border-color: var(--primary);
-    background-color: var(--primary);
-    color: var(--background);
-  }
-
-  &:focus,
-  &:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color;
-  }
 }
 
-:root.light-theme {
-  @include light-theme;
+input,
+textarea {
+  display: block;
+  width: 100%;
+  background: none;
+  font: inherit;
 }
 
-:root.dark-theme {
-  @include dark-theme;
+body {
+  @include mixins.themify() {
+    background-color: mixins.theme("bg-primary");
+  }
 }

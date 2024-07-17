@@ -1,16 +1,27 @@
 {
-    "app": {
-        "title": "John Doe - Full Stack Developer",
-        "description": "Portfolio of John Doe, a full stack developer specializing in React and Node.js",
-        "keywords": {
-            "1": "full stack developer",
-            "2": "React",
-            "3": "Node.js",
-            "4": "TypeScript",
-            "5": "web development"
-        }
-    },
-    "home": {
-        "welcome": "Welcome to my portfolio"
+  "app": {
+    "title": "John Doe - Full Stack Developer",
+    "description": "Portfolio of John Doe, a full stack developer specializing in React and Node.js",
+    "keywords": {
+      "1": "full stack developer",
+      "2": "React",
+      "3": "Node.js",
+      "4": "TypeScript",
+      "5": "web development"
     }
+  },
+  "home": {
+    "welcome": "Welcome to my portfolio"
+  },
+  "about": {
+    "title": "About me",
+    "description": "Learn more about John Doe, a full stack developer specializing in React and Node.js"
+  },
+  "sidebar": {
+    "avatar_alt": "John Doe",
+    "name": "John Doe",
+    "title": "Full Stack Developer",
+    "hide_contacts": "Hide contacts",
+    "show_contacts": "Show contacts"
+  }
 }
