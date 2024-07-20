@@ -1,6 +1,9 @@
+@use "variables";
+@use "functions";
 @use "mixins";
 @use "typography";
-@use "variables";
+
+@include mixins.themify;
 
 *,
 *::before,
@@ -44,7 +47,5 @@ textarea {
 }
 
 body {
-  @include mixins.themify() {
-    background-color: mixins.theme("bg-primary");
-  }
+  background-color: functions.theme("bg-primary");
 }

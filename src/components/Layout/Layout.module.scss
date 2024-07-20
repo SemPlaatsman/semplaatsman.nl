@@ -1,5 +1,5 @@
 @use "../../styles/variables";
-@use "../../styles/mixins";
+@use "../../styles/functions";
 
 .layout {
   min-height: 100vh;
@@ -7,7 +7,5 @@
     background-color variables.$transition-slow,
     color variables.$transition-slow;
 
-  @include mixins.themify() {
-    background-color: mixins.theme("bg-primary");
-  }
+  background-color: functions.theme("bg-primary");
 }

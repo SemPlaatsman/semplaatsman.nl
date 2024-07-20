@@ -1,14 +1,11 @@
 @use "variables";
-@use "mixins";
+@use "functions";
 
 body {
   font-family: variables.$font-family-primary;
   font-size: variables.$font-size-md;
   line-height: 1.5;
-
-  @include mixins.themify() {
-    color: mixins.theme("text-primary");
-  }
+  color: functions.theme("text-primary");
 }
 
 h1,
@@ -34,14 +31,9 @@ h3 {
 a {
   text-decoration: none;
   transition: color variables.$transition-fast;
-
-  @include mixins.themify() {
-    color: mixins.theme("accent-primary");
-  }
+  color: functions.theme("accent-primary");
 
   &:hover {
-    @include mixins.themify() {
-      color: mixins.theme("accent-secondary");
-    }
+    color: functions.theme("accent-secondary");
   }
 }

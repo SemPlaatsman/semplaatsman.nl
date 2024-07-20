@@ -1,3 +1,5 @@
+@use "sass:map";
+
 // Missing variables from template design:
 // --eerie-black-2:           hsl(240, 2%, 12%);      Replaced with --eerie-black-1
 // --white-2:                 hsl(0, 0%, 98%);        Replaced with --white-1
@@ -87,6 +89,17 @@ $themes: (
     shadow-xl: 0 24px 80px hsla(0, 0%, 0%, 0.25),
   ),
 );
+
+// Generate CSS variables for each theme
+:root {
+  @each $theme, $map in $themes {
+    .#{$theme}-theme {
+      @each $key, $value in $map {
+        --#{$key}: #{$value};
+      }
+    }
+  }
+}
 
 // --ff-poppins
 $font-family-primary: "Poppins", sans-serif;

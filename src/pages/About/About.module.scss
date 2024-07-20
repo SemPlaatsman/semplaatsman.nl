@@ -1,5 +1,5 @@
 @use "../../styles/variables";
-@use "../../styles/mixins";
+@use "../../styles/functions";
 
 .about {
   padding: 20px;
@@ -8,18 +8,14 @@
 .title {
   margin-bottom: 20px;
 
-  @include mixins.themify() {
-    color: mixins.theme("text-primary");
-  }
+  color: functions.theme("text-primary");
 }
 
 .content {
   font-size: variables.$font-size-md;
   line-height: 1.6;
 
-  @include mixins.themify() {
-    color: mixins.theme("text-secondary");
-  }
+  color: functions.theme("text-secondary");
 
   p {
     margin-bottom: 15px;

@@ -1,5 +1,5 @@
 @use "../../styles/variables";
-@use "../../styles/mixins";
+@use "../../styles/functions";
 
 .themeSwitcher {
   padding: 10px;
@@ -9,16 +9,12 @@
     background-color variables.$transition-fast,
     color variables.$transition-fast;
 
-  @include mixins.themify() {
-    background-color: mixins.theme("bg-secondary");
-    color: mixins.theme("text-primary");
-    border: 1px solid mixins.theme("border-color");
-  }
+  background-color: functions.theme("bg-secondary");
+  color: functions.theme("text-primary");
+  border: 1px solid functions.theme("border-color");
 
   &:hover {
-    @include mixins.themify() {
-      background-color: mixins.theme("accent-primary");
-      color: mixins.theme("bg-primary");
-    }
+    background-color: functions.theme("accent-primary");
+    color: functions.theme("bg-primary");
   }
 }

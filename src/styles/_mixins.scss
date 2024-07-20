@@ -1,15 +1,12 @@
+@use "sass:map";
 @use "variables";
 
-@mixin themify() {
+@mixin themify {
   @each $theme, $map in variables.$themes {
-    .#{$theme}-theme & {
-      $theme-map: $map !global;
-      @content;
-      $theme-map: null !global;
+    .#{$theme}-theme {
+      @each $key, $value in $map {
+        --#{$key}: #{$value};
+      }
     }
   }
-}
-
-@function theme($key) {
-  @return map-get($theme-map, $key);
 }

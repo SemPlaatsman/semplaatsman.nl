@@ -1,0 +1,6 @@
+@use "sass:map";
+@use "variables";
+
+@function theme($key) {
+  @return var(--#{$key});
+}
