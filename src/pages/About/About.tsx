@@ -11,7 +11,11 @@ const About: React.FC = () => {
         <h2 className={styles.title}>{t('about.title')}</h2>
       </header>
       <section className={styles.content}>
-        <p>{t('about.description')}</p>
+        {(t('about.description', { returnObjects: true }) as string[]).map((paragraph, index) => (
+          <p key={index} className={styles.paragraph}>
+            {paragraph}
+          </p>
+        ))}
       </section>
     </article>
   );
