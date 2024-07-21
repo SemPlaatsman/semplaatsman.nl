@@ -3,9 +3,5 @@
 
 .layout {
   min-height: 100vh;
-  transition:
-    background-color variables.$transition-slow,
-    color variables.$transition-slow;
-
   background-color: functions.theme("bg-primary");
 }

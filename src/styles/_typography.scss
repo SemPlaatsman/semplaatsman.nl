@@ -30,7 +30,6 @@ h3 {
 
 a {
   text-decoration: none;
-  transition: color variables.$transition-fast;
   color: functions.theme("accent-primary");
 
   &:hover {
