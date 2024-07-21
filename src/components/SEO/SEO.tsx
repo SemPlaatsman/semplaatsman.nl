@@ -1,43 +1,27 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet';
 
-interface SEOProps {
-  title: string;
-  description: string;
-  keywords?: string[];
-  canonicalUrl?: string;
-  structuredData?: object;
-}
+const SEO: React.FC = () => {
+  // Possibly add a different canonical URL too
+  const siteUrl = 'https://semplaatsman.nl';
+  const { t } = useTranslation('seo');
 
-const SEO: React.FC<SEOProps> = ({ 
-  title, 
-  description, 
-  keywords = [], 
-  canonicalUrl,
-  structuredData
-}) => {
-  const siteUrl = 'https://semplaatsman.nl'; // Replace with your actual URL
-  const fullUrl = canonicalUrl ? `${siteUrl}${canonicalUrl}` : siteUrl;
-  
   return (
     <Helmet>
-      <title>{title}</title>
-      <meta name="description" content={description} />
-      <meta name="keywords" content={keywords.join(', ')} />
-      <link rel="canonical" href={fullUrl} />
-      
+      <title>{t('title')}</title>
+      <meta name="description" content={t('description')} />
+      <meta
+        name="keywords"
+        content={Object.values(t('keywords', { returnObjects: true })).join(', ')}
+      />
+      <link rel="canonical" href={siteUrl} />
+
       {/* Basic OpenGraph tags */}
       <meta property="og:type" content="website" />
-      <meta property="og:url" content={fullUrl} />
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
-      
-      {/* Structured Data */}
-      {structuredData && (
-        <script type="application/ld+json">
-          {JSON.stringify(structuredData)}
-        </script>
-      )}
+      <meta property="og:url" content={siteUrl} />
+      <meta property="og:title" content={t('title')} />
+      <meta property="og:description" content={t('description')} />
     </Helmet>
   );
 };

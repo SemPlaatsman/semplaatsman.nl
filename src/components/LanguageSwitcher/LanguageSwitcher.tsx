@@ -10,8 +10,12 @@ const LanguageSwitcher: React.FC = () => {
 
   return (
     <div>
-      <button onClick={() => changeLanguage('en')}>EN</button>
-      <button onClick={() => changeLanguage('nl')}>NL</button>
+      <button onClick={() => changeLanguage('en')} disabled={i18n.language === 'en'}>
+        EN
+      </button>
+      <button onClick={() => changeLanguage('nl')} disabled={i18n.language === 'nl'}>
+        NL
+      </button>
     </div>
   );
 };

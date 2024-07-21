@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
-import { useTranslation } from 'react-i18next';
 import reactLogo from '../../assets/react.svg';
 import viteLogo from '/vite.svg';
 import styles from './Home.module.scss';
 
 const Home: React.FC = () => {
   const [count, setCount] = useState(0);
-  const { t } = useTranslation();
 
   return (
     <div className={styles.root}>
@@ -26,7 +24,6 @@ const Home: React.FC = () => {
         </p>
       </div>
       <p className={styles.readTheDocs}>Click on the Vite and React logos to learn more</p>
-      <p>{t('home.welcome')}</p>
     </div>
   );
 };

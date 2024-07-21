@@ -1,0 +1,9 @@
+{
+  "sidebar": {
+    "avatar_alt": "John Doe",
+    "name": "John Doe",
+    "title": "Full Stack Ontwikkelaar",
+    "hide_contacts": "Verberg contacten",
+    "show_contacts": "Toon contacten"
+  }
+}

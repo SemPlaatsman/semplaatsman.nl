@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import styles from './Sidebar.module.scss';
 
 const Sidebar: React.FC = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation('layout');
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
