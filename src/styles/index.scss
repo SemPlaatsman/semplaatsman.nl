@@ -49,3 +49,7 @@ textarea {
 body {
   background-color: functions.theme("bg-primary");
 }
+
+button:disabled {
+  cursor: default;
+}
