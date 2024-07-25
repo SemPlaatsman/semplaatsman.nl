@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Resume: React.FC = () => {
-  return <div>Resume</div>;
+  return <article>Resume</article>;
 };
 
 export default Resume;

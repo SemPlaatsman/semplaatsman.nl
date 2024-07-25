@@ -8,7 +8,7 @@ const Sidebar: React.FC = () => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <aside className={`${styles.sidebar} ${isExpanded ? styles.active : ''}`}>
+    <aside className={`sidebar ${styles.sidebar} ${isExpanded ? styles.active : ''}`}>
       <div className={styles.sidebarInfo}>
         <figure className={styles.avatar}>
           <img
