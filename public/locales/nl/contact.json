@@ -1,1 +1,21 @@
-{}
+{
+  "title": "Contact",
+  "form": {
+    "title": "Contact Formulier",
+    "fields": {
+      "name": {
+        "title": "Volledige Naam",
+        "placeholder": "Jan Jansen"
+      },
+      "email": {
+        "title": "Emailadres",
+        "placeholder": "jan@jansen.nl"
+      },
+      "message": {
+        "title": "Uw Bericht",
+        "placeholder": "Hallo, ik wil graag met u in contact komen."
+      }
+    },
+    "submit": "Verstuur Bericht"
+  }
+}

@@ -1,1 +1,21 @@
-{}
+{
+  "title": "Contact",
+  "form": {
+    "title": "Contact Form",
+    "fields": {
+      "name": {
+        "title": "Full Name",
+        "placeholder": "John Doe"
+      },
+      "email": {
+        "title": "Email Address",
+        "placeholder": "john@doe.com"
+      },
+      "message": {
+        "title": "Your Message",
+        "placeholder": "Hey, I would like to get in touch with you."
+      }
+    },
+    "submit": "Send Message"
+  }
+}

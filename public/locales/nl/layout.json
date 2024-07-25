@@ -5,5 +5,11 @@
     "title": "Full Stack Ontwikkelaar",
     "hide_contacts": "Verberg contacten",
     "show_contacts": "Toon contacten"
+  },
+  "navbar": {
+    "about": "Over Mij",
+    "resume": "CV",
+    "projects": "Projecten",
+    "contact": "Contact"
   }
 }

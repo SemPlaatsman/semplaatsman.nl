@@ -1,1 +1,55 @@
-{}
+{
+  "title": "Resume",
+  "education": [
+    {
+      "institution": "University School Of The Arts",
+      "period": "2007 — 2008",
+      "description": "Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et quas molestias exceptur."
+    },
+    {
+      "institution": "New York Academy Of Art",
+      "period": "2006 — 2007",
+      "description": "Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est omnis."
+    },
+    {
+      "institution": "High School Of Art And Design",
+      "period": "2002 — 2004",
+      "description": "Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur magni dolores eos."
+    }
+  ],
+  "experience": [
+    {
+      "institution": "Creative Director",
+      "period": "2015 — Present",
+      "description": "Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas molestias exceptur."
+    },
+    {
+      "institution": "Art Director",
+      "period": "2013 — 2015",
+      "description": "Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas molestias exceptur."
+    },
+    {
+      "institution": "Web Designer",
+      "period": "2010 — 2013",
+      "description": "Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas molestias exceptur."
+    }
+  ],
+  "skills": [
+    {
+      "skill": "Web Design",
+      "percentage": "80"
+    },
+    {
+      "skill": "Graphic Design",
+      "percentage": "70"
+    },
+    {
+      "skill": "Branding",
+      "percentage": "90"
+    },
+    {
+      "skill": "WordPress",
+      "percentage": "50"
+    }
+  ]
+}
