@@ -46,6 +46,15 @@ textarea {
   font: inherit;
 }
 
+::selection {
+  background: functions.theme("accent-primary");
+  color: functions.theme("bg-primary");
+}
+
+:focus {
+  outline-color: functions.theme("accent-primary");
+}
+
 body {
   background-color: functions.theme("bg-primary");
 }

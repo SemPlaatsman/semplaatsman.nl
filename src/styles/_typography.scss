@@ -1,7 +1,7 @@
 @use "variables";
 @use "functions";
 
-body {
+html {
   font-family: variables.$font-family-primary;
   font-size: variables.$font-size-md;
   line-height: 1.5;
