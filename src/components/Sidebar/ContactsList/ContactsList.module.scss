@@ -1,10 +1,15 @@
 @use "../../../styles/variables";
 @use "../../../styles/functions";
+@use "../../../styles/mixins";
 
 .contactsList {
   display: grid;
   grid-template-columns: 1fr;
   gap: 16px;
+
+  @include mixins.mobile {
+    gap: 20px;
+  }
 }
 
 .contactItem {
@@ -21,6 +26,11 @@
     color: functions.theme("text-primary");
     font-size: variables.$font-size-xs;
     font-style: normal;
+  }
+
+  @include mixins.mobile {
+    max-width: calc(100% - 64px);
+    width: calc(100% - 64px);
   }
 }
 

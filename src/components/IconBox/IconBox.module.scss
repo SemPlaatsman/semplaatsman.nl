@@ -33,6 +33,6 @@
   z-index: -1;
 }
 
-.iconBox ion-icon {
-  --ionicon-stroke-width: 35px;
+.iconBox > span > svg {
+  stroke-width: 35px;
 }

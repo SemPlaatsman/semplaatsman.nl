@@ -1,5 +1,6 @@
 @use "../../styles/variables";
 @use "../../styles/functions";
+@use "../../styles/mixins";
 
 .navBar {
   position: fixed;
@@ -12,6 +13,10 @@
   border-radius: 12px 12px 0 0;
   box-shadow: functions.theme("shadow-sm");
   z-index: 5;
+
+  @include mixins.mobile {
+    border-radius: 20px 20px 0 0;
+  }
 }
 
 .navBarList {
@@ -20,6 +25,10 @@
   justify-content: center;
   align-items: center;
   padding: 0 10px;
+
+  @include mixins.mobile {
+    gap: 20px;
+  }
 }
 
 .navBarLink {
@@ -27,6 +36,10 @@
   font-size: variables.$font-size-xxs;
   padding: 20px 7px;
   transition: color variables.$transition-fast;
+
+  @include mixins.mobile {
+    font-size: variables.$font-size-sm;
+  }
 }
 
 .navbarLink:hover,

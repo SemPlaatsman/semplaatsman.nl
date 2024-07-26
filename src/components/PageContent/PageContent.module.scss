@@ -4,12 +4,6 @@
 
 .pageContent {
   display: block;
-  background: functions.theme("bg-secondary");
-  border: 1px solid functions.theme("border-color");
-  border-radius: 20px;
-  padding: 15px;
-  box-shadow: functions.theme("shadow");
-  z-index: 1;
   animation: fade 0.5s ease backwards;
 }
 

@@ -31,8 +31,10 @@ const SidebarInfo: React.FC<SidebarInfoProps> = ({ onExpandToggle }) => {
         <p className={styles.title}>{t('sidebar.title')}</p>
       </div>
       <button className={styles.infoMoreBtn} onClick={handleExpandToggle}>
-        <span>{isExpanded ? t('sidebar.hide_contacts') : t('sidebar.show_contacts')}</span>
-        <ChevronDown />
+        <span className={styles.infoMoreText}>
+          {isExpanded ? t('sidebar.hide_contacts') : t('sidebar.show_contacts')}
+        </span>
+        <ChevronDown cssClasses={`${styles.infoMoreIcon}`} />
       </button>
     </div>
   );

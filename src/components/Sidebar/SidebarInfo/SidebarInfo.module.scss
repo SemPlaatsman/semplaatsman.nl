@@ -1,5 +1,6 @@
 @use "../../../styles/variables";
 @use "../../../styles/functions";
+@use "../../../styles/mixins";
 
 .sidebarInfo {
   position: relative;
@@ -7,11 +8,23 @@
   align-items: center;
   justify-content: flex-start;
   gap: 15px;
+
+  @include mixins.mobile {
+    gap: 25px;
+  }
 }
 
 .avatarBox {
   border-radius: 20px;
   background-image: functions.theme("bg-gradient-primary");
+
+  @include mixins.mobile {
+    border-radius: 30px;
+
+    img {
+      width: 120px;
+    }
+  }
 }
 
 .infoContent {
@@ -21,6 +34,10 @@
     letter-spacing: -0.25px;
     margin-bottom: 10px;
     color: functions.theme("text-primary");
+
+    @include mixins.mobile {
+      margin-bottom: 15px;
+    }
   }
 
   .title {
@@ -31,6 +48,10 @@
     border-radius: 8px;
     color: functions.theme("text-secondary");
     background-color: functions.theme("bg-tertiary");
+
+    @include mixins.mobile {
+      padding: 5px 18px;
+    }
   }
 }
 
@@ -67,7 +88,23 @@
     }
   }
 
-  span {
+  .infoMoreText {
     display: none;
+
+    @include mixins.mobile {
+      display: block;
+      font-size: variables.$font-size-xxs;
+    }
+  }
+
+  @include mixins.mobile {
+    top: -30px;
+    right: -30px;
+    padding: 10px 15px;
+
+    .infoMoreIcon,
+    span:has(.infoMoreIcon) {
+      display: none;
+    }
   }
 }

@@ -1,21 +1,24 @@
 @use "../../styles/variables";
 @use "../../styles/functions";
+@use "../../styles/mixins";
 
 .sidebar {
-  border-radius: 20px;
-  padding: 15px;
   margin-bottom: 15px;
   max-height: 112px;
-  // transition: max-height variables.$transition-slow;
   overflow: hidden;
-  background-color: functions.theme("bg-secondary");
-  border: 1px solid functions.theme("border-color");
-  box-shadow: functions.theme("shadow");
   transition: variables.$transition-slow;
-  z-index: 1;
 
   &.active {
     max-height: 405px;
+
+    @include mixins.mobile {
+      max-height: 584px;
+    }
+  }
+
+  @include mixins.mobile {
+    max-height: 180px;
+    margin-bottom: 30px;
   }
 }
 

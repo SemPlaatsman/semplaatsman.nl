@@ -13,7 +13,7 @@ const Sidebar: React.FC = () => {
   };
 
   return (
-    <aside className={`${styles.sidebar} ${isExpanded ? styles.active : ''}`}>
+    <aside className={`container ${styles.sidebar} ${isExpanded ? styles.active : ''}`}>
       <SidebarInfo onExpandToggle={handleExpandToggle} />
       <div className={styles.sidebarInfoMore}>
         <Separator />

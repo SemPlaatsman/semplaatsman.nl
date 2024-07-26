@@ -17,6 +17,11 @@
   margin: 15px 12px;
   margin-bottom: 75px;
   min-width: 259px;
+
+  @include mixins.mobile {
+    margin-top: 60px;
+    margin-bottom: 100px;
+  }
 }
 
 a {
@@ -67,6 +72,34 @@ body {
 
 button:disabled {
   cursor: default;
+}
+
+.container {
+  background: functions.theme("bg-secondary");
+  border: 1px solid functions.theme("border-color");
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: functions.theme("shadow");
+  z-index: 1;
+
+  @include mixins.mobile {
+    width: 520px;
+    margin-inline: auto;
+    padding: 30px;
+  }
+
+  @include mixins.tablet {
+    width: 700px;
+  }
+
+  @include mixins.desktop {
+    width: 950px;
+    box-shadow: functions.theme("shadow-xl");
+  }
+
+  @include mixins.desktop-large {
+    width: auto;
+  }
 }
 
 .has-scrollbar::-webkit-scrollbar {
