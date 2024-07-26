@@ -3,36 +3,64 @@
 
 html {
   font-family: variables.$font-family-primary;
-  font-size: variables.$font-size-md;
-  line-height: 1.5;
+}
+
+.h2,
+.h3,
+.h4,
+.h5 {
   color: functions.theme("text-primary");
+  text-transform: capitalize;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-bottom: 0.5em;
-  line-height: 1.2;
-}
-
-h1 {
+.h2 {
   font-size: variables.$font-size-xxl;
 }
-h2 {
+
+.h3 {
   font-size: variables.$font-size-xl;
 }
-h3 {
-  font-size: variables.$font-size-md;
+
+.h4 {
+  font-size: variables.$font-size-rg;
 }
 
-a {
-  text-decoration: none;
-  color: functions.theme("accent-primary");
-
-  &:hover {
-    color: functions.theme("accent-secondary");
-  }
+.h5 {
+  font-size: variables.$font-size-xs;
+  font-weight: variables.$font-weight-medium;
 }
+
+// html {
+//   font-size: variables.$font-size-md;
+//   line-height: 1.5;
+//   color: functions.theme("text-primary");
+// }
+
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   margin-bottom: 0.5em;
+//   line-height: 1.2;
+// }
+
+// h1 {
+//   font-size: variables.$font-size-xxl;
+// }
+// h2 {
+//   font-size: variables.$font-size-xl;
+// }
+// h3 {
+//   font-size: variables.$font-size-md;
+// }
+
+// a {
+//   text-decoration: none;
+//   color: functions.theme("accent-primary");
+
+//   &:hover {
+//     color: functions.theme("accent-secondary");
+//   }
+// }

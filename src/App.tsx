@@ -1,8 +1,8 @@
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
-import Layout from './components/Layout/Layout';
-import SEO from './components/SEO/SEO';
-import { routes } from './routes/routes';
+import Layout from './components/Layout';
+import SEO from './components/SEO';
+import routes from './routes';
 
 const App: React.FC = () => {
   return (

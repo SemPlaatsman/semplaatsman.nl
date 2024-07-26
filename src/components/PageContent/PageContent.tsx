@@ -1,16 +1,23 @@
 import React from 'react';
+import styles from './PageContent.module.scss';
 
 interface PageContentProps {
   title: string;
   className?: string;
+  titleClassName?: string;
   children?: React.ReactNode;
 }
 
-const PageContent: React.FC<PageContentProps> = ({ title, className, children }) => {
+const PageContent: React.FC<PageContentProps> = ({
+  title,
+  className,
+  titleClassName,
+  children,
+}) => {
   return (
-    <article className={`article-content ${className ?? ''}`}>
+    <article className={`page-content ${styles.pageContent} ${className ?? ''}`}>
       <header>
-        <h2 className="h2 article-title">{title}</h2>
+        <h2 className={`h2 ${styles.pageTitle} ${titleClassName ?? ''}`}>{title}</h2>
       </header>
       {children}
     </article>

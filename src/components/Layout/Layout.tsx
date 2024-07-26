@@ -1,7 +1,7 @@
 import React from 'react';
 // import styles from './Layout.module.scss';
-import Sidebar from '../Sidebar/Sidebar';
-import MainContent from '../MainContent/MainContent';
+import Sidebar from '../Sidebar';
+import MainContent from '../MainContent';
 
 interface LayoutProps {
   children: React.ReactNode;

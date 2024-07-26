@@ -2,4 +2,38 @@
 @use "../../styles/functions";
 
 .navBar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: hsla(240, 1%, 17%, 0.75);
+  backdrop-filter: blur(10px);
+  border: 1px solid functions.theme("border-color");
+  border-radius: 12px 12px 0 0;
+  box-shadow: functions.theme("shadow-sm");
+  z-index: 5;
+}
+
+.navBarList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.navBarLink {
+  color: functions.theme("text-secondary");
+  font-size: variables.$font-size-xxs;
+  padding: 20px 7px;
+  transition: color variables.$transition-fast;
+}
+
+.navbarLink:hover,
+.navbarLink:focus {
+  color: functions.theme("text-tertiary");
+}
+
+.navbarLink.active {
+  color: functions.theme("accent-primary");
 }

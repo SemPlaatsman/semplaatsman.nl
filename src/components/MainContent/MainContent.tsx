@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './MainContent.module.scss';
-import NavBar from '../NavBar/NavBar';
+import NavBar from '../NavBar';
 
 interface MainContentProps {
   children: React.ReactNode;

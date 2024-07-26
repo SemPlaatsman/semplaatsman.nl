@@ -1,0 +1,25 @@
+@use "../../../styles/variables";
+@use "../../../styles/functions";
+@use "../../../styles/mixins";
+
+.socialList {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 4px;
+  padding-left: 7px;
+
+  @include mixins.desktop-large {
+    justify-content: center;
+  }
+}
+
+.socialItem .socialLink {
+  color: functions.theme("text-tertiary");
+  font-size: 18px;
+}
+
+.socialItem .socialLink:hover {
+  color: functions.theme("text-secondary");
+}
