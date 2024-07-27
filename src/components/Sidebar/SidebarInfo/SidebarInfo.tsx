@@ -22,7 +22,7 @@ const SidebarInfo: React.FC<SidebarInfoProps> = ({ onExpandToggle }) => {
       <figure className={styles.avatarBox}>
         <img
           src="https://media.licdn.com/dms/image/D4E03AQHI676LBbaIsw/profile-displayphoto-shrink_800_800/0/1686847959710?e=1727308800&v=beta&t=5Rcz1z05BWc-nwZXnd55pzV3MyDWJyGYv8aeQFwKzE8"
-          alt={t('sidebar.avatar_alt')}
+          alt={t('sidebar.avatarAlt')}
           width="80"
         />
       </figure>
@@ -32,7 +32,7 @@ const SidebarInfo: React.FC<SidebarInfoProps> = ({ onExpandToggle }) => {
       </div>
       <button className={styles.infoMoreBtn} onClick={handleExpandToggle}>
         <span className={styles.infoMoreText}>
-          {isExpanded ? t('sidebar.hide_contacts') : t('sidebar.show_contacts')}
+          {isExpanded ? t('sidebar.hideContacts') : t('sidebar.showContacts')}
         </span>
         <ChevronDown cssClasses={`${styles.infoMoreIcon}`} />
       </button>

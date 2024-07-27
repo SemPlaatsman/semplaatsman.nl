@@ -1,10 +1,10 @@
 {
   "sidebar": {
-    "avatar_alt": "John Doe",
+    "avatarAlt": "John Doe",
     "name": "John Doe",
     "title": "Full Stack Ontwikkelaar",
-    "hide_contacts": "Verberg contacten",
-    "show_contacts": "Toon contacten",
+    "hideContacts": "Verberg contacten",
+    "showContacts": "Toon contacten",
     "contacts": {
       "github": {
         "title": "GitHub",
@@ -31,7 +31,7 @@
       "npm": {
         "link": "https://www.npmjs.com/~sempl"
       },
-      "stack_overflow": {
+      "stackOverflow": {
         "link": "https://stackoverflow.com/users/18598382/sem"
       }
     }

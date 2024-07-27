@@ -5,7 +5,7 @@ import { LogoNpm, LogoStackoverflow } from 'react-ionicons';
 
 const iconMap = {
   npm: LogoNpm,
-  stack_overflow: LogoStackoverflow,
+  stackOverflow: LogoStackoverflow,
 };
 
 const SocialList: React.FC = () => {

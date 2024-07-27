@@ -1,10 +1,10 @@
 {
   "sidebar": {
-    "avatar_alt": "Picture of Sem Plaatsman",
+    "avatarAlt": "Picture of Sem Plaatsman",
     "name": "Sem Plaatsman",
     "title": "Full Stack Developer",
-    "hide_contacts": "Hide contacts",
-    "show_contacts": "Show contacts",
+    "hideContacts": "Hide contacts",
+    "showContacts": "Show contacts",
     "contacts": {
       "github": {
         "title": "GitHub",
@@ -31,7 +31,7 @@
       "npm": {
         "link": "https://www.npmjs.com/~sempl"
       },
-      "stack_overflow": {
+      "stackOverflow": {
         "link": "https://stackoverflow.com/users/18598382/sem"
       }
     }
