@@ -1,5 +1,17 @@
 @use "../../styles/variables";
 @use "../../styles/functions";
+@use "../../styles/mixins";
 
 .mainContent {
+  @include mixins.desktop {
+    position: relative;
+    width: max-content;
+    margin: auto;
+  }
+
+  @include mixins.desktop-large {
+    min-width: 75%;
+    width: 75%;
+    margin: 0;
+  }
 }

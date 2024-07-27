@@ -17,6 +17,18 @@
   @include mixins.mobile {
     border-radius: 20px 20px 0 0;
   }
+
+  @include mixins.desktop {
+    position: absolute;
+    bottom: auto;
+    top: 0;
+    left: auto;
+    right: 0;
+    width: max-content;
+    border-radius: 0 20px;
+    padding: 0 20px;
+    box-shadow: none;
+  }
 }
 
 .navBarList {
@@ -28,6 +40,11 @@
 
   @include mixins.mobile {
     gap: 20px;
+  }
+
+  @include mixins.desktop {
+    gap: 30px;
+    padding: 0 20px;
   }
 }
 
@@ -43,6 +60,10 @@
 
   @include mixins.mobile {
     font-size: variables.$font-size-md;
+  }
+
+  @include mixins.desktop {
+    font-weight: variables.$font-weight-medium;
   }
 }
 
