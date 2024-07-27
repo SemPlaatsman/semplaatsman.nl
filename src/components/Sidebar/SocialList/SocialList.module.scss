@@ -16,10 +16,15 @@
 }
 
 .socialItem .socialLink {
-  color: functions.theme("text-tertiary");
   font-size: 18px;
+
+  > span > svg {
+    fill: functions.theme("text-tertiary");
+    color: functions.theme("text-tertiary");
+  }
 }
 
-.socialItem .socialLink:hover {
+.socialItem .socialLink:hover > span > svg {
+  fill: functions.theme("text-secondary");
   color: functions.theme("text-secondary");
 }
