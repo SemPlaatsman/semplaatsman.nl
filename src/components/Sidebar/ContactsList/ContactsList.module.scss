@@ -10,6 +10,11 @@
   @include mixins.mobile {
     gap: 20px;
   }
+
+  @include mixins.tablet {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 15px;
+  }
 }
 
 .contactItem {

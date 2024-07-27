@@ -40,6 +40,10 @@
   @include mixins.mobile {
     font-size: variables.$font-size-sm;
   }
+
+  @include mixins.mobile {
+    font-size: variables.$font-size-md;
+  }
 }
 
 .navbarLink:hover,

@@ -119,4 +119,8 @@ button:disabled {
 
 .has-scrollbar::-webkit-scrollbar-button {
   width: 20px;
+
+  @include mixins.tablet {
+    width: 100px;
+  }
 }
