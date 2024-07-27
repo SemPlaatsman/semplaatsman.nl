@@ -15,6 +15,10 @@
     grid-template-columns: 1fr 1fr;
     gap: 30px 15px;
   }
+
+  @include mixins.desktop-large {
+    grid-template-columns: 1fr;
+  }
 }
 
 .contactItem {
@@ -31,6 +35,14 @@
     color: functions.theme("text-primary");
     font-size: variables.$font-size-xs;
     font-style: normal;
+
+    @include mixins.desktop-large {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: variables.$font-size-sm;
+      font-weight: variables.$font-weight-light;
+    }
   }
 
   @include mixins.mobile {

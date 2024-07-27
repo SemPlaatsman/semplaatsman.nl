@@ -12,6 +12,10 @@
   @include mixins.mobile {
     gap: 25px;
   }
+
+  @include mixins.desktop-large {
+    flex-direction: column;
+  }
 }
 
 .avatarBox {
@@ -23,6 +27,12 @@
 
     img {
       width: 120px;
+    }
+  }
+
+  @include mixins.desktop-large {
+    img {
+      width: 150px;
     }
   }
 }
@@ -38,6 +48,11 @@
     @include mixins.mobile {
       margin-bottom: 15px;
     }
+
+    @include mixins.desktop-large {
+      white-space: nowrap;
+      text-align: center;
+    }
   }
 
   .title {
@@ -51,6 +66,10 @@
 
     @include mixins.mobile {
       padding: 5px 18px;
+    }
+
+    @include mixins.desktop-large {
+      margin: auto;
     }
   }
 }
@@ -106,5 +125,9 @@
     span:has(.infoMoreIcon) {
       display: none;
     }
+  }
+
+  @include mixins.desktop-large {
+    display: none;
   }
 }

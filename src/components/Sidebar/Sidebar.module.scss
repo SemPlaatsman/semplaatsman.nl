@@ -20,12 +20,27 @@
     max-height: 180px;
     margin-bottom: 30px;
   }
+
+  @include mixins.desktop-large {
+    position: sticky;
+    top: 60px;
+    max-height: max-content;
+    height: 100%;
+    margin-bottom: 0;
+    padding-top: 60px;
+    z-index: 1;
+  }
 }
 
 .sidebarInfoMore {
   opacity: 0;
   visibility: hidden;
   transition: variables.$transition-slow;
+
+  @include mixins.desktop-large {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 .sidebar.active .sidebarInfoMore {

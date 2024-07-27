@@ -26,6 +26,15 @@
   @include mixins.tablet {
     margin-bottom: 60px;
   }
+
+  @include mixins.desktop-large {
+    max-width: 1200px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+  }
 }
 
 a {
@@ -72,6 +81,33 @@ textarea {
 
 body {
   background-color: functions.theme("bg-primary");
+
+  @include mixins.desktop-large {
+    &::-webkit-scrollbar {
+      width: 20px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: functions.theme("bg-primary");
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border: 5px solid functions.theme("bg-primary");
+      background: hsla(0, 0%, 100%, 0.1);
+      border-radius: 20px;
+      box-shadow:
+        inset 1px 1px 0 hsla(0, 0%, 100%, 0.11),
+        inset -1px -1px 0 hsla(0, 0%, 100%, 0.11);
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background: hsla(0, 0%, 100%, 0.15);
+    }
+
+    &::-webkit-scrollbar-button {
+      height: 60px;
+    }
+  }
 }
 
 button:disabled {

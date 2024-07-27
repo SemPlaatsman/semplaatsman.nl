@@ -5,6 +5,10 @@
 .pageContent {
   display: block;
   animation: fade 0.5s ease backwards;
+
+  @include mixins.desktop-large {
+    min-height: 100%;
+  }
 }
 
 @keyframes fade {
