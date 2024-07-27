@@ -58,7 +58,7 @@
     font-size: variables.$font-size-sm;
   }
 
-  @include mixins.mobile {
+  @include mixins.tablet {
     font-size: variables.$font-size-md;
   }
 
