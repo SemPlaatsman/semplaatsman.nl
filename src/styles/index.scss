@@ -98,15 +98,15 @@ body {
 
     &::-webkit-scrollbar-thumb {
       border: 5px solid functions.theme("bg-primary");
-      background: hsla(0, 0%, 100%, 0.1);
+      background: color-mix(in srgb, functions.theme("text-primary") 10%, transparent);
       border-radius: 20px;
       box-shadow:
-        inset 1px 1px 0 hsla(0, 0%, 100%, 0.11),
-        inset -1px -1px 0 hsla(0, 0%, 100%, 0.11);
+        inset 1px 1px 0 color-mix(in srgb, functions.theme("text-primary") 11%, transparent),
+        inset -1px -1px 0 color-mix(in srgb, functions.theme("text-primary") 11%, transparent);
     }
 
     &::-webkit-scrollbar-thumb:hover {
-      background: hsla(0, 0%, 100%, 0.15);
+      background: color-mix(in srgb, functions.theme("text-primary") 15%, transparent);
     }
 
     &::-webkit-scrollbar-button {
