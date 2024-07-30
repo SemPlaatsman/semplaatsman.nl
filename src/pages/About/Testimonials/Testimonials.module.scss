@@ -6,22 +6,13 @@
   margin-bottom: 30px;
 }
 
-.testimonialsTitle {
-  margin-bottom: 20px;
-
-  @include mixins.mobile {
-    margin-bottom: 25px;
-  }
-}
-
 .testimonialsList {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   gap: 15px;
   margin: 0 -15px;
-  padding: 25px 15px;
-  padding-bottom: 35px;
+  padding: 45px 15px 35px;
   overflow-x: auto;
   scroll-behavior: smooth;
   overscroll-behavior-inline: contain;
@@ -30,7 +21,6 @@
   @include mixins.mobile {
     gap: 30px;
     margin: 0 -30px;
-    padding: 30px;
-    padding-bottom: 35px;
+    padding: 55px 30px 35px;
   }
 }

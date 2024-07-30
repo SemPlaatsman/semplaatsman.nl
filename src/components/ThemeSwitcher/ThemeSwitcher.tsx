@@ -1,14 +1,15 @@
 import React from 'react';
-import { useTheme } from '../../hooks/useTheme';
 import styles from './ThemeSwitcher.module.scss';
+import { useTheme } from '../../hooks/useTheme';
+import { Sunny, Moon } from 'react-ionicons';
 
 const ThemeSwitcher: React.FC = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <button onClick={toggleTheme} className={styles.themeSwitcher}>
-      {theme === 'light' ? '🌙' : '☀️'}
-    </button>
+    <div className={styles.themeSwitcher} onClick={toggleTheme}>
+      {theme === 'light' ? <Moon /> : <Sunny />}
+    </div>
   );
 };
 

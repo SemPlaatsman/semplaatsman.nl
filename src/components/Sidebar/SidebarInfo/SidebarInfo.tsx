@@ -27,7 +27,7 @@ const SidebarInfo: React.FC<SidebarInfoProps> = ({ onExpandToggle }) => {
         />
       </figure>
       <div className={styles.infoContent}>
-        <h1 className={styles.name}>{t('sidebar.name')}</h1>
+        <h1 className={`h1 ${styles.name}`}>{t('sidebar.name')}</h1>
         <p className={styles.title}>{t('sidebar.title')}</p>
       </div>
       <button className={styles.infoMoreBtn} onClick={handleExpandToggle}>

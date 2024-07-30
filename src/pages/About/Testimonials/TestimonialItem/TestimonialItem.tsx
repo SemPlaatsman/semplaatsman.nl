@@ -35,7 +35,7 @@ const TestimonialItem: React.FC<TestimonialItemProps> = ({ data, imgSrc }) => {
         </div>
         <div className={styles.testimonialsModalContent}>
           <div className={styles.testimonialsModalTextContent}>
-            <h4 className={`h3 ${styles.testimonialsModalTitle}`}>{data.name}</h4>
+            <h3 className={`h3 ${styles.testimonialsModalTitle}`}>{data.name}</h3>
             <time dateTime={data.dateISO}>{data.date}</time>
             <div>
               <p>{data.text}</p>
