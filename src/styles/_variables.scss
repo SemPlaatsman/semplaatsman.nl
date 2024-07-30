@@ -76,8 +76,10 @@ $themes: (
     accent-tertiary: hsl(0, 43%, 40%),
     border-color: hsl(0, 0%, 80%),
     bg-gradient-primary: linear-gradient(to bottom right, hsl(0, 0%, 95%) 3%, hsl(0, 0%, 90%) 97%),
-    bg-gradient-secondary:
+    bg-gradient-secondary: (
       linear-gradient(to bottom right, hsla(0, 0%, 90%, 0.251) 0%, hsla(0, 0%, 95%, 0) 100%),
+      hsl(240, 2%, 13%),
+    ),
     bg-gradient-accent-primary:
       linear-gradient(to bottom right, hsl(45, 100%, 60%) 0%, hsla(36, 100%, 50%, 0) 50%),
     bg-gradient-accent-secondary: (
