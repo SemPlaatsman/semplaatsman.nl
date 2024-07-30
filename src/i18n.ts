@@ -2,7 +2,12 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import HttpBackend from 'i18next-http-backend';
 
-const supportedLngs = ['en', 'nl'];
+export const languages = {
+  en: { code: 'en', label: 'English' },
+  nl: { code: 'nl', label: 'Nederlands' },
+};
+
+const supportedLngs = Object.keys(languages);
 
 // Gets the initial language from local storage or the browser language, and uses 'en' if neither is available
 const getInitialLanguage = (): string => {
