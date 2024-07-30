@@ -13,7 +13,7 @@ const Modal: React.FC<ModalProps> = ({ className, isOpen, onClose, children }) =
   return (
     <div className={`${styles.modalContainer} ${isOpen ? styles.active : ''}`}>
       <div className={`${styles.overlay} ${isOpen ? styles.active : ''}`} onClick={onClose}></div>
-      <section className={className || ''}>
+      <section className={`${styles.modal} ${className || ''}`}>
         <button className={styles.modalCloseBtn} onClick={onClose}>
           <CloseOutline />
         </button>

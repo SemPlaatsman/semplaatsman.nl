@@ -27,13 +27,13 @@ const TestimonialItem: React.FC<TestimonialItemProps> = ({ data, imgSrc }) => {
         </div>
       </div>
       <Modal isOpen={isModalOpen} onClose={closeModal} className={styles.testimonialsModal}>
+        <div className={styles.testimonialsModalImgWrapper}>
+          <figure className={styles.testimonialsModalAvatarBox}>
+            <img src={imgSrc} alt={data.avatarAlt} width="80" />
+          </figure>
+          <img src={QuoteIcon} alt="quote icon" />
+        </div>
         <div className={styles.testimonialsModalContent}>
-          <div className={styles.testimonialsModalImgWrapper}>
-            <figure className={styles.testimonialsModalAvatarBox}>
-              <img src={imgSrc} alt={data.avatarAlt} width="80" />
-            </figure>
-            <img src={QuoteIcon} alt="quote icon" />
-          </div>
           <div className={styles.testimonialsModalTextContent}>
             <h4 className={`h3 ${styles.testimonialsModalTitle}`}>{data.name}</h4>
             <time dateTime={data.dateISO}>{data.date}</time>
