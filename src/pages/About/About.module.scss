@@ -1,3 +1,26 @@
 @use "../../styles/variables";
 @use "../../styles/functions";
 @use "../../styles/mixins";
+
+.about .aboutTitle {
+  margin-bottom: 15px;
+
+  @include mixins.mobile {
+    margin-bottom: 20px;
+  }
+}
+
+.aboutText {
+  color: functions.theme("text-secondary");
+  font-size: variables.$font-size-sm;
+  font-weight: variables.$font-weight-light;
+  line-height: 1.6;
+
+  p {
+    margin-bottom: 15px;
+  }
+
+  @include mixins.mobile {
+    margin-bottom: 40px;
+  }
+}
