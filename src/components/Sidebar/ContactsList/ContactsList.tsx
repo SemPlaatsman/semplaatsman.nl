@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { LogoGithub, LogoLinkedin, MailOutline, LocationOutline } from 'react-ionicons';
 import styles from './ContactsList.module.scss';
-import IconBox from '../../IconBox/IconBox';
+import IconBox from '../../IconBox';
 
 const iconMap = {
   github: LogoGithub,

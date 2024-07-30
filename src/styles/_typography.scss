@@ -3,6 +3,8 @@
 
 html {
   font-family: variables.$font-family-primary;
+  // TODO: Keep as fallback?
+  // color: functions.theme("text-primary");
 }
 
 .h2,

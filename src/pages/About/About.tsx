@@ -2,19 +2,21 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import styles from './About.module.scss';
 import PageContent from '../../components/PageContent';
+import Interests from './Interests';
+import Testimonials from './Testimonials';
 
 const About: React.FC = () => {
   const { t } = useTranslation('about');
 
   return (
     <PageContent title={t('title')} className={styles.about}>
-      <section className={styles.content}>
+      <section className={styles.aboutText}>
         {(t('description', { returnObjects: true }) as string[]).map((paragraph, index) => (
-          <p key={index} className={styles.paragraph}>
-            {paragraph}
-          </p>
+          <p key={index}>{paragraph}</p>
         ))}
       </section>
+      <Interests />
+      <Testimonials />
     </PageContent>
   );
 };

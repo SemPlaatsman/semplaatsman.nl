@@ -6,52 +6,64 @@
   ],
   "whatImDoing": {
     "title": "What I'm Doing",
-    "interests": [
-      {
+    "interests": {
+      "webDesign": {
         "title": "Web Design",
-        "description": "The most modern and high-quality design made at a professional level."
+        "description": "The most modern and high-quality design made at a professional level.",
+        "iconAlt": "Web Design icon"
       },
-      {
+      "webDevelopment": {
         "title": "Web Development",
-        "description": "High-quality development of sites at the professional level."
+        "description": "High-quality development of sites at the professional level.",
+        "iconAlt": "Web Development icon"
       },
-      {
+      "mobileApps": {
         "title": "Mobile Apps",
-        "description": "Professional development of applications for iOS and Android."
+        "description": "Professional development of applications for iOS and Android.",
+        "iconAlt": "Mobile Apps icon"
       },
-      {
+      "photography": {
         "title": "Photography",
-        "description": "I make high-quality photos of any category at a professional level."
+        "description": "I make high-quality photos of any category at a professional level.",
+        "iconAlt": "Photography icon"
       }
-    ]
+    }
   },
   "testimonials": {
     "title": "Testimonials",
-    "testimonials": [
-      {
+    "testimonials": {
+      "danielLewis": {
         "name": "Daniel Lewis",
         "position": "CEO of Company",
         "date": "14 June, 2021",
-        "text": "Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia."
+        "dateISO": "2021-06-14",
+        "text": "Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.",
+        "avatarAlt": "Daniel Lewis avatar"
       },
-      {
+      "jessicaMiller": {
         "name": "Jessica Miller",
         "position": "CEO of Company",
         "date": "14 June, 2021",
-        "text": "Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia."
+        "dateISO": "2021-06-14",
+        "text": "Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.",
+        "avatarAlt": "Jessica Miller avatar"
       },
-      {
+      "emilyEvans": {
         "name": "Emily Evans",
         "position": "CEO of Company",
         "date": "14 June, 2021",
-        "text": "Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia."
+        "dateISO": "2021-06-14",
+        "text": "Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.",
+        "avatarAlt": "Emily Evans avatar"
       },
-      {
+      "henryWilliam": {
         "name": "Henry William",
         "position": "CEO of Company",
         "date": "14 June, 2021",
-        "text": "Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia."
+        "dateISO": "2021-06-14",
+        "text": "Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.",
+        "avatarAlt": "Henry William avatar"
       }
-    ]
+    }
   }
 }

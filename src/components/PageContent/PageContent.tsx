@@ -15,9 +15,9 @@ const PageContent: React.FC<PageContentProps> = ({
   children,
 }) => {
   return (
-    <article className={`container page-content ${styles.pageContent} ${className ?? ''}`}>
+    <article className={`container page-content ${styles.pageContent} ${className || ''}`}>
       <header>
-        <h2 className={`h2 ${styles.pageTitle} ${titleClassName ?? ''}`}>{title}</h2>
+        <h2 className={`h2 ${styles.pageTitle} ${titleClassName || ''}`}>{title}</h2>
       </header>
       {children}
     </article>
