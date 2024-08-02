@@ -52,6 +52,7 @@
   color: functions.theme("text-secondary");
   transition: color variables.$transition-fast;
 
+  &:focus span,
   &:hover span {
     color: functions.theme("text-primary");
   }
@@ -85,11 +86,9 @@
   padding: 20px 7px;
 }
 
-.navbarLink:hover,
-.navbarLink:focus {
-  color: functions.theme("text-tertiary");
-}
-
-.navbarLink.active {
-  color: functions.theme("accent-primary");
+.navBarLink.active {
+  color: functions.theme("text-primary");
+  text-decoration: underline solid functions.theme("accent-primary") 2px;
+  text-decoration-skip-ink: none;
+  text-underline-offset: 8px;
 }

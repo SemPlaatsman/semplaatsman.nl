@@ -17,7 +17,7 @@ const NavBar: React.FC = () => {
             <NavLink
               to={path}
               className={({ isActive }) =>
-                isActive ? `${styles.navBarLink} ${styles.navBarLinkActive}` : styles.navBarLink
+                isActive ? `${styles.navBarLink} ${styles.active}` : styles.navBarLink
               }
             >
               <span>{t(labelKey)}</span>
