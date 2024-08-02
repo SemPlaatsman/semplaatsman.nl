@@ -46,5 +46,5 @@ jobs:
           user_email: 'github-actions[bot]@users.noreply.github.com'
           commit_message: ${{ github.event.head_commit.message }}
           force_orphan: true # Only keeps the last deployment, discarding all previous ones
-          tag_name: ${{ github.ref }}
+          tag_name: deploy-${{ github.sha }}
           tag_message: 'Deployment ${{ github.sha }}'
