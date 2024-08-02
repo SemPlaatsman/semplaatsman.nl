@@ -1,0 +1,69 @@
+{
+  "title": "Over mij",
+  "description": [
+    "Ik ben Creative Director en UI/UX Designer uit Sydney, Australië, werkzaam in webontwikkeling en printmedia. Ik geniet ervan om complexe problemen om te zetten in eenvoudige, mooie en intuïtieve ontwerpen.",
+    "Mijn taak is om uw website zo te bouwen dat deze functioneel en gebruiksvriendelijk is, maar tegelijkertijd aantrekkelijk. Bovendien voeg ik een persoonlijke touch toe aan uw product en zorg ik ervoor dat het opvalt en gemakkelijk te gebruiken is. Mijn doel is om uw boodschap en identiteit op de meest creatieve manier over te brengen. Ik heb webdesigns gemaakt voor vele bekende merkbedrijven."
+  ],
+  "whatImDoing": {
+    "title": "Wat ik doe",
+    "interests": {
+      "webDesign": {
+        "title": "Webdesign",
+        "description": "Het meest moderne en hoogwaardige ontwerp gemaakt op professioneel niveau.",
+        "iconAlt": "Webdesign icoon"
+      },
+      "webDevelopment": {
+        "title": "Webontwikkeling",
+        "description": "Hoogwaardige ontwikkeling van websites op professioneel niveau.",
+        "iconAlt": "Webontwikkeling icoon"
+      },
+      "mobileApps": {
+        "title": "Mobiele apps",
+        "description": "Professionele ontwikkeling van applicaties voor iOS en Android.",
+        "iconAlt": "Mobiele apps icoon"
+      },
+      "photography": {
+        "title": "Fotografie",
+        "description": "Ik maak hoogwaardige foto's van elke categorie op professioneel niveau.",
+        "iconAlt": "Fotografie icoon"
+      }
+    }
+  },
+  "testimonials": {
+    "title": "Referenties",
+    "testimonials": {
+      "danielLewis": {
+        "name": "Daniel Lewis",
+        "position": "CEO van Bedrijf",
+        "date": "14 juni 2021",
+        "dateISO": "2021-06-14",
+        "text": "Richard werd ingehuurd om een bedrijfsidentiteit te creëren. We waren erg tevreden met het geleverde werk. Ze heeft veel ervaring en is erg begaan met de behoeften van de klant. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.",
+        "avatarAlt": "Daniel Lewis avatar"
+      },
+      "jessicaMiller": {
+        "name": "Jessica Miller",
+        "position": "CEO van Bedrijf",
+        "date": "14 juni 2021",
+        "dateISO": "2021-06-14",
+        "text": "Richard werd ingehuurd om een bedrijfsidentiteit te creëren. We waren erg tevreden met het geleverde werk. Ze heeft veel ervaring en is erg begaan met de behoeften van de klant. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.",
+        "avatarAlt": "Jessica Miller avatar"
+      },
+      "emilyEvans": {
+        "name": "Emily Evans",
+        "position": "CEO van Bedrijf",
+        "date": "14 juni 2021",
+        "dateISO": "2021-06-14",
+        "text": "Richard werd ingehuurd om een bedrijfsidentiteit te creëren. We waren erg tevreden met het geleverde werk. Ze heeft veel ervaring en is erg begaan met de behoeften van de klant. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.",
+        "avatarAlt": "Emily Evans avatar"
+      },
+      "henryWilliam": {
+        "name": "Henry William",
+        "position": "CEO van Bedrijf",
+        "date": "14 juni 2021",
+        "dateISO": "2021-06-14",
+        "text": "Richard werd ingehuurd om een bedrijfsidentiteit te creëren. We waren erg tevreden met het geleverde werk. Ze heeft veel ervaring en is erg begaan met de behoeften van de klant. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.",
+        "avatarAlt": "Henry William avatar"
+      }
+    }
+  }
+}
