@@ -92,3 +92,15 @@
   text-decoration-skip-ink: none;
   text-underline-offset: 8px;
 }
+
+.navBarDivider {
+  width: 2px;
+  height: 20px;
+  background-color: functions.theme("text-primary");
+  opacity: 0.4;
+  display: none;
+
+  @include mixins.mobile {
+    display: block;
+  }
+}

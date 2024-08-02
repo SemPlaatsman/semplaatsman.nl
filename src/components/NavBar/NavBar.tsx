@@ -24,6 +24,7 @@ const NavBar: React.FC = () => {
             </NavLink>
           </li>
         ))}
+        <li className={styles.navBarDivider}></li>
         <li className={styles.navBarItem}>
           <LanguageSwitcher />
         </li>
