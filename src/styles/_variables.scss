@@ -68,8 +68,8 @@ $themes: (
     bg-primary: hsl(0, 0%, 100%),
     bg-secondary: hsl(0, 0%, 95%),
     bg-tertiary: hsl(0, 0%, 90%),
-    text-primary: hsl(0, 0%, 7%),
-    text-secondary: hsl(0, 0%, 20%),
+    text-primary: hsl(0, 0%, 0%),
+    text-secondary: hsl(0, 0%, 16%),
     text-tertiary: hsla(0, 0%, 20%, 0.7),
     accent-primary: hsl(45, 100%, 50%),
     accent-secondary: hsl(45, 54%, 40%),
@@ -137,6 +137,8 @@ $font-weight-regular: 400;
 $font-weight-medium: 500;
 // --fw-600
 $font-weight-semibold: 600;
+// --fw-700
+$font-weight-bold: 700;
 
 // --transition-1
 $transition-fast: 0.25s ease;

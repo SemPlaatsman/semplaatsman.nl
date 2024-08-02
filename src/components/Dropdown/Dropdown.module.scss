@@ -1,3 +1,7 @@
+@use "../../styles/variables";
+@use "../../styles/functions";
+@use "../../styles/mixins";
+
 .dropdown {
   position: relative;
   display: inline-block;
@@ -5,13 +9,27 @@
 
 .dropdownContent {
   position: absolute;
-  top: 100%;
-  right: 0;
+  left: 0;
   background-color: white;
   border: 1px solid #ccc;
   border-radius: 4px;
   padding: 0.5rem 0;
-  margin-top: 0.5rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   z-index: 1000;
+  min-width: 120px;
+
+  &.bottom {
+    top: 100%;
+    margin-top: 0.5rem;
+  }
+
+  &.top {
+    bottom: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  @include mixins.mobile-small {
+    right: 0;
+    left: auto;
+  }
 }

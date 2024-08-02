@@ -14,14 +14,14 @@ const LanguageSwitcher: React.FC = () => {
 
   const trigger = (
     <button className={styles.languageButton}>
-      <Language color={'#00000'} height="20px" width="20px" />
+      <Language cssClasses={styles.languageIcon} />
       <span className={styles.languageCode}>{i18n.language.toUpperCase()}</span>
-      <ChevronDown color={'#00000'} height="15px" width="15px" />
+      <ChevronDown cssClasses={styles.languageIcon} />
     </button>
   );
 
   return (
-    <Dropdown trigger={trigger}>
+    <Dropdown trigger={trigger} className={styles.languageDropdown}>
       <ul className={styles.languageList}>
         {Object.values(languages).map((lang) => (
           <li key={lang.code}>

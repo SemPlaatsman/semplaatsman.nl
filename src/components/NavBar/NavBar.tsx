@@ -20,7 +20,7 @@ const NavBar: React.FC = () => {
                 isActive ? `${styles.navBarLink} ${styles.navBarLinkActive}` : styles.navBarLink
               }
             >
-              {t(labelKey)}
+              <span>{t(labelKey)}</span>
             </NavLink>
           </li>
         ))}
