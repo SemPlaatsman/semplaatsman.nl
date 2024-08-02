@@ -8,7 +8,11 @@ const ThemeSwitcher: React.FC = () => {
 
   return (
     <div className={styles.themeSwitcher} onClick={toggleTheme}>
-      {theme === 'light' ? <Moon /> : <Sunny />}
+      {theme === 'light' ? (
+        <Moon cssClasses={styles.themeIcon} />
+      ) : (
+        <Sunny cssClasses={styles.themeIcon} />
+      )}
     </div>
   );
 };

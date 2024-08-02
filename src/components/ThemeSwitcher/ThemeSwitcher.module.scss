@@ -10,8 +10,16 @@
   transition: opacity 0.3s ease;
   background: none;
   border: none;
+}
 
-  &:hover {
-    opacity: 0.7;
-  }
+.themeIcon {
+  min-width: 15px !important;
+  min-height: 15px !important;
+  width: 1.8em !important;
+  height: 1.8em !important;
+  transition:
+    width 0.3s ease,
+    height 0.3s ease;
+  fill: currentColor !important;
+  color: currentColor !important;
 }
