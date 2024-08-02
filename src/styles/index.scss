@@ -1,0 +1,171 @@
+@use "variables";
+@use "functions";
+@use "mixins";
+@use "typography";
+
+@include mixins.themify;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  margin: 15px 12px;
+  margin-bottom: 75px;
+  min-width: 259px;
+
+  @include mixins.mobile {
+    margin-top: 60px;
+    margin-bottom: 100px;
+  }
+
+  @include mixins.tablet {
+    margin-bottom: 60px;
+  }
+
+  @include mixins.desktop-large {
+    max-width: 1200px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img,
+ion-icon,
+a,
+button,
+time,
+span,
+svg {
+  display: block;
+}
+
+figure {
+  overflow: hidden;
+}
+
+button {
+  font: inherit;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  background: none;
+  font: inherit;
+}
+
+::selection {
+  background: functions.theme("accent-primary");
+  color: functions.theme("bg-primary");
+}
+
+:focus {
+  outline-color: functions.theme("accent-primary");
+}
+
+body {
+  background-color: functions.theme("bg-primary");
+
+  @include mixins.desktop-large {
+    &::-webkit-scrollbar {
+      width: 20px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: functions.theme("bg-primary");
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border: 5px solid functions.theme("bg-primary");
+      background: color-mix(in srgb, functions.theme("text-primary") 10%, transparent);
+      border-radius: 20px;
+      box-shadow:
+        inset 1px 1px 0 color-mix(in srgb, functions.theme("text-primary") 11%, transparent),
+        inset -1px -1px 0 color-mix(in srgb, functions.theme("text-primary") 11%, transparent);
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background: color-mix(in srgb, functions.theme("text-primary") 15%, transparent);
+    }
+
+    &::-webkit-scrollbar-button {
+      height: 60px;
+    }
+  }
+}
+
+button:disabled {
+  cursor: default;
+}
+
+.container {
+  background: functions.theme("bg-secondary");
+  border: 1px solid functions.theme("border-color");
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: functions.theme("shadow");
+  z-index: 1;
+
+  @include mixins.mobile {
+    width: 520px;
+    margin-inline: auto;
+    padding: 30px;
+  }
+
+  @include mixins.tablet {
+    width: 700px;
+  }
+
+  @include mixins.desktop {
+    width: 950px;
+    box-shadow: functions.theme("shadow-xl");
+  }
+
+  @include mixins.desktop-large {
+    width: auto;
+  }
+}
+
+.has-scrollbar::-webkit-scrollbar {
+  width: 5px; /* for vertical scrollbar */
+  height: 5px; /* for horizontal scrollbar */
+}
+
+.has-scrollbar::-webkit-scrollbar-track {
+  background: functions.theme("bg-tertiary");
+  border-radius: 5px;
+}
+
+.has-scrollbar::-webkit-scrollbar-thumb {
+  background: functions.theme("accent-primary");
+  border-radius: 5px;
+}
+
+.has-scrollbar::-webkit-scrollbar-button {
+  width: 20px;
+
+  @include mixins.tablet {
+    width: 100px;
+  }
+}

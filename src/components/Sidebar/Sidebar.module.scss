@@ -1,0 +1,49 @@
+@use "../../styles/variables";
+@use "../../styles/functions";
+@use "../../styles/mixins";
+
+.sidebar {
+  margin-bottom: 15px;
+  max-height: 112px;
+  overflow: hidden;
+  transition: variables.$transition-slow;
+
+  &.active {
+    max-height: 405px;
+
+    @include mixins.mobile {
+      max-height: 584px;
+    }
+  }
+
+  @include mixins.mobile {
+    max-height: 180px;
+    margin-bottom: 30px;
+  }
+
+  @include mixins.desktop-large {
+    position: sticky;
+    top: 60px;
+    max-height: max-content;
+    height: 100%;
+    margin-bottom: 0;
+    padding-top: 60px;
+    z-index: 1;
+  }
+}
+
+.sidebarInfoMore {
+  opacity: 0;
+  visibility: hidden;
+  transition: variables.$transition-slow;
+
+  @include mixins.desktop-large {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.sidebar.active .sidebarInfoMore {
+  opacity: 1;
+  visibility: visible;
+}

@@ -1,0 +1,80 @@
+@use "../../../styles/variables";
+@use "../../../styles/functions";
+@use "../../../styles/mixins";
+
+.interests {
+  margin-bottom: 35px;
+}
+
+.interestsTitle {
+  margin-bottom: 20px;
+}
+
+.interestsList {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+
+  @include mixins.desktop {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 25px;
+  }
+}
+
+.interestsItem {
+  position: relative;
+  background: functions.theme("border-gradient-primary");
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: functions.theme("shadow-sm");
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    background: functions.theme("bg-gradient-secondary");
+    border-radius: inherit;
+    z-index: -1;
+  }
+
+  @include mixins.mobile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 30px;
+  }
+}
+
+.interestsIconBox {
+  margin-bottom: 10px;
+
+  img {
+    margin: auto;
+  }
+
+  @include mixins.mobile {
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
+}
+
+.interestsContentBox {
+  text-align: center;
+
+  @include mixins.mobile {
+    text-align: left;
+  }
+}
+
+.interestsItemTitle {
+  margin-bottom: 7px;
+}
+
+.interestsItemText {
+  color: functions.theme("text-secondary");
+  font-size: variables.$font-size-sm;
+  font-weight: variables.$font-size-lg;
+  line-height: 1.6;
+}

@@ -1,0 +1,47 @@
+@use "../../styles/variables";
+@use "../../styles/functions";
+@use "../../styles/mixins";
+
+.pageContent {
+  display: block;
+  animation: fade 0.5s ease backwards;
+
+  @include mixins.desktop-large {
+    min-height: 100%;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.pageTitle {
+  position: relative;
+  padding-bottom: 7px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30px;
+    height: 3px;
+    background: functions.theme("text-gradient-primary");
+    border-radius: 3px;
+  }
+
+  @include mixins.mobile {
+    font-weight: variables.$font-weight-semibold;
+    padding-bottom: 15px;
+
+    &::after {
+      width: 40px;
+      height: 5px;
+    }
+  }
+}

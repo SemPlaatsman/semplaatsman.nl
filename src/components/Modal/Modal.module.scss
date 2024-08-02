@@ -1,0 +1,82 @@
+@use "../../styles/variables";
+@use "../../styles/functions";
+@use "../../styles/mixins";
+
+.modalContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  z-index: 20;
+  pointer-events: none;
+  visibility: hidden;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &.active {
+    pointer-events: all;
+    visibility: visible;
+  }
+
+  @include mixins.mobile {
+    padding: 20px;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: hsl(0, 0%, 10%);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 1;
+  transition: variables.$transition-fast;
+
+  &.active {
+    opacity: 0.8;
+    visibility: visible;
+    pointer-events: all;
+  }
+}
+
+.modalContainer.active .modal {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.modalCloseBtn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: functions.theme("bg-tertiary");
+  border-radius: 8px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  opacity: 0.7;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+
+  span > svg {
+    stroke-width: 50px;
+    color: functions.theme("text-primary");
+  }
+}

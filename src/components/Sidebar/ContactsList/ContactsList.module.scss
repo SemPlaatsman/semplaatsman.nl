@@ -1,0 +1,63 @@
+@use "../../../styles/variables";
+@use "../../../styles/functions";
+@use "../../../styles/mixins";
+
+.contactsList {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+
+  @include mixins.mobile {
+    gap: 20px;
+  }
+
+  @include mixins.tablet {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 15px;
+  }
+
+  @include mixins.desktop-large {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contactItem {
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.contactInfo {
+  max-width: calc(100% - 46px);
+  width: calc(100% - 46px);
+  .contactLink {
+    color: functions.theme("text-primary");
+    font-size: variables.$font-size-xs;
+    font-style: normal;
+
+    &:hover {
+      color: functions.theme("accent-primary");
+    }
+
+    @include mixins.desktop-large {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: variables.$font-size-sm;
+      font-weight: variables.$font-weight-light;
+    }
+  }
+
+  @include mixins.mobile {
+    max-width: calc(100% - 64px);
+    width: calc(100% - 64px);
+  }
+}
+
+.contactTitle {
+  color: functions.theme("text-tertiary");
+  font-size: variables.$font-size-xxs;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}

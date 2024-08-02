@@ -1,0 +1,82 @@
+@use "../../styles/variables";
+@use "../../styles/functions";
+@use "../../styles/mixins";
+
+.languageButton {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 7px;
+  transition: opacity 0.3s ease;
+  color: inherit;
+
+  > * + * {
+    margin-left: 0.5rem;
+  }
+}
+
+// High usage of !important selectors due to react-ionicons having a higher specificity, which cannot be changed
+.languageIcon {
+  min-width: 15px !important;
+  min-height: 15px !important;
+  width: 1.5em !important;
+  height: 1.5em !important;
+  transition:
+    width 0.3s ease,
+    height 0.3s ease;
+  fill: currentColor !important;
+  color: currentColor !important;
+}
+
+.languageCode {
+  margin-left: 0.5rem;
+  font-weight: bold;
+  display: none;
+
+  + span:has(> .languageIcon) {
+    display: none;
+  }
+
+  @include mixins.mobile {
+    display: block;
+    + span:has(> .languageIcon) {
+      display: block;
+    }
+  }
+}
+
+.languageDropdown {
+  background-color: functions.theme("bg-secondary");
+}
+
+.languageList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  min-width: 120px;
+
+  li {
+    padding: 0.25rem 0;
+  }
+
+  button {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: inherit;
+
+    &:hover {
+      background-color: functions.theme("bg-tertiary");
+    }
+
+    &.active {
+      font-weight: variables.$font-weight-bold;
+    }
+  }
+}
