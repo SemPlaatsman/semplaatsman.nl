@@ -3,8 +3,6 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main] # Only trigger on pushes to main (including merged PRs)
-  pull_request:
-    branches: [main] # Also trigger on pull requests to main, but these are not deployed
 
 jobs:
   build-and-deploy:
@@ -23,16 +21,10 @@ jobs:
 
       - name: Build
         run: npm run build
-        env:
-          NODE_ENV: production
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        if: github.ref == 'refs/heads/main'
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GH_PAGES_DEPLOY }}
           publish_dir: ./dist # Vite's default build output directory
-          cname: semplaatsman.nl
-          # enable_jekyll: false # Already set to false by default
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
