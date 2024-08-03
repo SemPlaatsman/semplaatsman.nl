@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-// Since this is a small project, lazy loading is overkill. This might be added in the future, when it is needed/
+// Since this is a small project, lazy loading is out of the scope. This might be added in the future, when it is needed
 import About from '../pages/About';
 import Resume from '../pages/Resume';
 import Projects from '../pages/Projects';
