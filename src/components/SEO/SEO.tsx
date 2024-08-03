@@ -33,9 +33,12 @@ const SEO: React.FC = () => {
       {/* Basic OpenGraph tags */}
       <meta property="og:type" content="website" />
       <meta property="og:url" content={currUrl} />
-      <meta property="og:title" content={t('title')} />
-      <meta property="og:description" content={t('description')} />
-      <meta property="og:image" content={img.src} />
+      <meta property="og:title" content={t('title') || 'Sem Plaatsman Portfolio'} />
+      <meta
+        property="og:description"
+        content={t('description') || "Sem Plaatsman's Portfolio Website"}
+      />
+      <meta property="og:image" content={`${import.meta.env.BASE_URL}${img.src}`} />
       <meta property="og:image:width" content={img.width.toString()} />
       <meta property="og:image:height" content={img.height.toString()} />
 
