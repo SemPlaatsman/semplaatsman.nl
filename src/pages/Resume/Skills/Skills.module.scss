@@ -1,0 +1,45 @@
+@use "../../../styles/variables";
+@use "../../../styles/functions";
+@use "../../../styles/mixins";
+
+.skillsTitle {
+  margin-bottom: 20px;
+}
+
+.skillsList {
+  padding: 20px;
+}
+
+.skillItem:not(:last-child) {
+  margin-bottom: 15px;
+
+  @include mixins.mobile {
+    margin-bottom: 25px;
+  }
+}
+
+.skills .titleWrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 8px;
+
+  data {
+    color: functions.theme("text-secondary");
+    font-size: variables.$font-size-xs;
+    font-weight: variables.$font-weight-light;
+  }
+}
+
+.skillProgressBg {
+  background: functions.theme("border-color");
+  width: 100%;
+  height: 8px;
+  border-radius: 10px;
+}
+
+.skillProgressFill {
+  background: functions.theme("text-gradient-primary");
+  height: 100%;
+  border-radius: inherit;
+}
