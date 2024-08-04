@@ -23,7 +23,7 @@ const SEO: React.FC = () => {
       <html lang={i18n.language} />
       <title>{t('title')}</title>
       <meta name="author" content={t('author')} />
-      <meta name="description" content={t('description')} />
+      <meta name="description" content={t('siteDescription')} />
       <meta
         name="keywords"
         content={Object.values(t('keywords', { returnObjects: true })).join(', ')}
@@ -34,8 +34,9 @@ const SEO: React.FC = () => {
       <meta property="og:type" content="website" />
       <meta property="og:url" content={currUrl} />
       <meta property="og:title" content={t('title')} />
-      <meta property="og:description" content={t('description')} />
+      <meta property="og:description" content={t('siteDescription')} />
       <meta property="og:image" content={img.src} />
+      <meta property="og:image:alt" content={t('imageAlt')} />
       <meta property="og:image:width" content={img.width.toString()} />
       <meta property="og:image:height" content={img.height.toString()} />
 
