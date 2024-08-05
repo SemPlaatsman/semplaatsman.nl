@@ -3,7 +3,7 @@
   "form": {
     "title": "Contact Formulier",
     "fields": {
-      "name": {
+      "fullname": {
         "title": "Volledige Naam",
         "placeholder": "Jan Jansen"
       },
