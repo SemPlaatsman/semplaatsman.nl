@@ -19,6 +19,7 @@
     "submit": "Verstuur Bericht",
     "submitting": "Versturen...",
     "submitSuccess": "Bericht Verstuurd!",
-    "submitError": "Bericht kon niet worden verstuurd!"
+    "submitError": "Bericht kon niet worden verstuurd!",
+    "rateLimitError": "U heeft het limiet bereikt. Probeer het later opnieuw."
   }
 }
