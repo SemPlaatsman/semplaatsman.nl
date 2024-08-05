@@ -21,7 +21,7 @@ const LanguageSwitcher: React.FC = () => {
   );
 
   return (
-    <Dropdown trigger={trigger} className={styles.languageDropdown}>
+    <Dropdown trigger={trigger}>
       <ul className={styles.languageList}>
         {Object.values(languages).map((lang) => (
           <li key={lang.code}>

@@ -7,6 +7,14 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import ThemeProvider from './providers/ThemeProvider';
 import App from './App.tsx';
 
+// Import axe-core
+import axe from '@axe-core/react';
+
+// Only run axe in non-production environments
+if (import.meta.env.DEV) {
+  axe(React, ReactDOM, 1000);
+}
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <Router>

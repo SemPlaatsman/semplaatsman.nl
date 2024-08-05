@@ -3,7 +3,7 @@
   "form": {
     "title": "Contact Formulier",
     "fields": {
-      "name": {
+      "fullname": {
         "title": "Volledige Naam",
         "placeholder": "Jan Jansen"
       },
@@ -16,6 +16,10 @@
         "placeholder": "Hallo, ik wil graag met u in contact komen."
       }
     },
-    "submit": "Verstuur Bericht"
+    "submit": "Verstuur Bericht",
+    "submitting": "Versturen...",
+    "submitSuccess": "Bericht Verstuurd!",
+    "submitError": "Bericht kon niet worden verstuurd!",
+    "rateLimitError": "U heeft het limiet bereikt. Probeer het later opnieuw."
   }
 }

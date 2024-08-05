@@ -9,7 +9,10 @@ interface DropdownProps {
 
 const Dropdown: React.FC<DropdownProps> = ({ className, trigger, children }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [position, setPosition] = useState<'bottom' | 'top'>('bottom');
+  const [position, setPosition] = useState<{
+    vertical: 'bottom' | 'top';
+    horizontal: 'left' | 'right';
+  }>({ vertical: 'bottom', horizontal: 'left' });
   const dropdownRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
 
@@ -33,15 +36,21 @@ const Dropdown: React.FC<DropdownProps> = ({ className, trigger, children }) => 
   const updatePosition = () => {
     if (dropdownRef.current && contentRef.current) {
       const rect = dropdownRef.current.getBoundingClientRect();
-      const contentHeight = contentRef.current.offsetHeight;
+      const contentRect = contentRef.current.getBoundingClientRect();
+
+      // Vertical positioning
       const spaceBelow = window.innerHeight - rect.bottom;
       const spaceAbove = rect.top;
+      const vertical =
+        spaceBelow < contentRect.height && spaceAbove > spaceBelow ? 'top' : 'bottom';
 
-      if (spaceBelow < contentHeight && spaceAbove > spaceBelow) {
-        setPosition('top');
-      } else {
-        setPosition('bottom');
-      }
+      // Horizontal positioning
+      const spaceRight = window.innerWidth - rect.left;
+      const spaceLeft = rect.right;
+      const horizontal =
+        spaceRight < contentRect.width && spaceLeft > spaceRight ? 'right' : 'left';
+
+      setPosition({ vertical, horizontal });
     }
   };
 
@@ -50,12 +59,12 @@ const Dropdown: React.FC<DropdownProps> = ({ className, trigger, children }) => 
   };
 
   return (
-    <div className={styles.dropdown} ref={dropdownRef}>
+    <div className={`${styles.dropdown} ${className || ''}`} ref={dropdownRef}>
       <div onClick={toggleDropdown}>{trigger}</div>
       {isOpen && (
         <div
           ref={contentRef}
-          className={`${styles.dropdownContent} ${styles[position]} ${className || ''}`}
+          className={`${styles.dropdownContent} ${styles[position.vertical]} ${styles[position.horizontal]}`}
         >
           {children}
         </div>
