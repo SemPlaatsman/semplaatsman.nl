@@ -1,3 +1,130 @@
 @use "../../../styles/variables";
 @use "../../../styles/functions";
 @use "../../../styles/mixins";
+
+.contactForm {
+  margin-bottom: 10px;
+}
+
+.formTitle {
+  margin-bottom: 20px;
+}
+
+.inputWrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  margin-bottom: 25px;
+
+  @include mixins.mobile {
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  @include mixins.tablet {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.formInput {
+  color: functions.theme("text-primary");
+  font-size: variables.$font-size-sm;
+  font-weight: variables.$font-weight-regular;
+  padding: 13px 20px;
+  border: 1px solid functions.theme("border-color");
+  border-radius: 14px;
+  outline: none;
+
+  &::placeholder {
+    font-weight: variables.$font-weight-medium;
+  }
+
+  &:focus {
+    border-color: functions.theme("accent-primary");
+
+    &:invalid {
+      border-color: functions.theme("accent-tertiary");
+    }
+  }
+
+  @include mixins.mobile {
+    padding: 15px 20px;
+  }
+}
+
+textarea.formInput {
+  &::-webkit-resizer {
+    display: none;
+  }
+
+  @include mixins.mobile {
+    margin-bottom: 30px;
+  }
+}
+
+.formBtn {
+  position: relative;
+  width: 100%;
+  background: functions.theme("border-gradient-primary");
+  color: functions.theme("accent-primary");
+  fill: functions.theme("accent-primary");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 20px;
+  border-radius: 14px;
+  font-size: variables.$font-size-sm;
+  text-transform: capitalize;
+  box-shadow: functions.theme("shadow-md");
+  z-index: 1;
+  transition: variables.$transition-fast;
+
+  span > svg {
+    font-size: 16px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    background: functions.theme("bg-gradient-secondary");
+    border-radius: inherit;
+    z-index: -1;
+    transition: variables.$transition-fast;
+  }
+
+  &:hover {
+    background: functions.theme("bg-gradient-accent-primary");
+
+    &::before {
+      background: functions.theme("bg-gradient-accent-secondary");
+    }
+  }
+
+  &:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+
+    &:hover {
+      background: functions.theme("border-gradient-primary");
+
+      &::before {
+        background: functions.theme("bg-gradient-secondary");
+      }
+    }
+  }
+
+  @include mixins.mobile {
+    padding: 16px 20px;
+
+    span > svg {
+      font-size: 16px;
+    }
+  }
+
+  @include mixins.tablet {
+    width: max-content;
+    margin-left: auto;
+  }
+}
