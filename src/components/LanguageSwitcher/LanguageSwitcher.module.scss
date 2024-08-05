@@ -47,10 +47,6 @@
   }
 }
 
-.languageDropdown {
-  background-color: functions.theme("bg-secondary");
-}
-
 .languageList {
   list-style-type: none;
   padding: 0;
@@ -70,6 +66,7 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
     color: inherit;
+    font-weight: variables.$font-weight-light;
 
     &:hover {
       background-color: functions.theme("bg-tertiary");
