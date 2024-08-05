@@ -53,6 +53,12 @@
 }
 
 textarea.formInput {
+  min-height: 100px;
+  height: 120px;
+  max-height: 200px;
+  resize: vertical;
+  margin-bottom: 25px;
+
   &::-webkit-resizer {
     display: none;
   }
@@ -67,7 +73,6 @@ textarea.formInput {
   width: 100%;
   background: functions.theme("border-gradient-primary");
   color: functions.theme("accent-primary");
-  fill: functions.theme("accent-primary");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -119,7 +124,8 @@ textarea.formInput {
     padding: 16px 20px;
 
     span > svg {
-      font-size: 16px;
+      font-size: 18px;
+      fill: functions.theme("accent-primary");
     }
   }
 
