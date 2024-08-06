@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import emailjs from '@emailjs/browser';
 import toast from 'react-hot-toast';
@@ -11,6 +11,11 @@ const emailRateLimiter = RateLimiter.getInstance('emailSender', 5, 3600000);
 export const useSendEmail = () => {
   const { t } = useTranslation('contact');
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  useEffect(() => {
+    // Initialize EmailJS
+    emailjs.init(import.meta.env.VITE_EMAILJS_USER_ID);
+  }, []);
 
   const sendEmail = async (form: HTMLFormElement) => {
     const userIdentifier = form.email.value; // Using email as identifier
@@ -32,11 +37,11 @@ export const useSendEmail = () => {
         }
       }
 
+      // Send email
       const result = await emailjs.sendForm(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        sanitizedForm as unknown as HTMLFormElement,
-        import.meta.env.VITE_EMAILJS_USER_ID
+        sanitizedForm as unknown as HTMLFormElement
       );
 
       if (result.text === 'OK') {
