@@ -26,7 +26,8 @@ export const useSendEmail = () => {
     }
 
     setIsSubmitting(true);
-    const sendingToast = toast.loading(t('form.sending'));
+    // Set loading toast to 30 seconds
+    const sendingToast = toast.loading(t('form.sending'), { duration: 30000 });
 
     try {
       // Sanitize form data
@@ -45,14 +46,16 @@ export const useSendEmail = () => {
       );
 
       if (result.text === 'OK') {
-        toast.success(t('form.submitSuccess'), { id: sendingToast });
+        // Replace loading toast with success toast and reset duration to 3 seconds
+        toast.success(t('form.submitSuccess'), { id: sendingToast, duration: 3000 });
         form.reset();
       } else {
         throw new Error('Unexpected response');
       }
     } catch (error) {
       console.error('EmailJS error:', error);
-      toast.error(t('form.submitError'), { id: sendingToast });
+      // Replace loading toast with success toast and reset duration to 3 seconds
+      toast.error(t('form.submitError'), { id: sendingToast, duration: 3000 });
       // If there's an error, we don't count it towards the rate limit
       emailRateLimiter.clear(userIdentifier);
     } finally {
