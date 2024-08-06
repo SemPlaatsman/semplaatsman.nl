@@ -1,7 +1,8 @@
 import React from 'react';
-// import styles from './Layout.module.scss';
 import Sidebar from '../Sidebar';
 import MainContent from '../MainContent';
+import ToastManager from '../ToastManager';
+import SEO from '../SEO';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -10,6 +11,8 @@ interface LayoutProps {
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
+      <SEO />
+      <ToastManager />
       <Sidebar />
       <MainContent>{children}</MainContent>
     </>
