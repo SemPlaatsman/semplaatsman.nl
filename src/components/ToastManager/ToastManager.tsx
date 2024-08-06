@@ -7,7 +7,7 @@ export const ToastManager: React.FC = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setPosition(window.innerWidth >= 1024 ? 'bottom-right' : 'top-right');
+      setPosition(window.innerWidth >= 1024 ? 'bottom-right' : 'top-center');
     };
 
     handleResize(); // Set initial position
@@ -21,13 +21,7 @@ export const ToastManager: React.FC = () => {
       position={position}
       toastOptions={{
         className: styles.toast,
-        duration: 5000,
-        success: {
-          className: `${styles.toast} ${styles.successToast}`,
-        },
-        error: {
-          className: `${styles.toast} ${styles.errorToast}`,
-        },
+        duration: 10000,
       }}
     />
   );
