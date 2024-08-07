@@ -6,7 +6,7 @@ export const ThemeProvider: React.FC<React.PropsWithChildren<{}>> = ({ children 
   const [theme, setTheme] = useState<Theme>(() => {
     const savedTheme = localStorage.getItem('theme') as Theme | null;
     return (
-      savedTheme || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+      savedTheme || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
     );
   });
 
