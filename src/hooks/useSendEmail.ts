@@ -25,19 +25,19 @@ export const useSendEmail = () => {
     const sendingToast = toast.loading(t('form.sending'), { duration: 30000 });
 
     try {
-      // Sanitize form data
-      const sanitizedForm = new FormData(form);
-      for (const [key, value] of sanitizedForm.entries()) {
-        if (typeof value === 'string') {
-          sanitizedForm.set(key, DOMPurify.sanitize(value));
-        }
-      }
+      // Sanitize and convert form data to a plain object
+      const sanitizedData = Object.fromEntries(
+        Array.from(new FormData(form).entries()).map(([key, value]) => [
+          key,
+          typeof value === 'string' ? DOMPurify.sanitize(value) : value,
+        ])
+      );
 
       // Send email
-      const result = await emailjs.sendForm(
+      const result = await emailjs.send(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        sanitizedForm as unknown as HTMLFormElement,
+        sanitizedData,
         {
           publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
         }
