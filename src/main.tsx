@@ -5,6 +5,7 @@ import './styles/index.scss';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router } from 'react-router-dom';
 import ThemeProvider from './providers/ThemeProvider';
+import './initEmailJS';
 import App from './App.tsx';
 
 // Import axe-core
