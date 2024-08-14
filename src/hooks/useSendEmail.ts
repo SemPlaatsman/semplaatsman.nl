@@ -37,10 +37,10 @@ export const useSendEmail = () => {
       const result = await emailjs.sendForm(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        sanitizedForm as unknown as HTMLFormElement
-        // {
-        //   publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
-        // }
+        sanitizedForm as unknown as HTMLFormElement,
+        {
+          publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+        }
       );
 
       if (result.text === 'OK') {
