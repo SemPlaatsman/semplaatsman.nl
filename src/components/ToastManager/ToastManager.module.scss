@@ -1,0 +1,8 @@
+@use "../../styles/variables";
+@use "../../styles/functions";
+@use "../../styles/mixins";
+
+.toast {
+  color: functions.theme("text-secondary") !important;
+  background-color: functions.theme("bg-tertiary") !important;
+}

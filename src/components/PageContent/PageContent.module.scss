@@ -23,6 +23,7 @@
 .pageTitle {
   position: relative;
   padding-bottom: 7px;
+  margin-bottom: 30px;
 
   &::after {
     content: "";
@@ -43,5 +44,9 @@
       width: 40px;
       height: 5px;
     }
+  }
+
+  @include mixins.tablet {
+    padding-bottom: 20px;
   }
 }
