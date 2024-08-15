@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Language, ChevronDown } from 'react-ionicons';
 import Dropdown from '../Dropdown';
 import styles from './LanguageSwitcher.module.scss';
-import { languages } from '../../i18n';
+import { languages } from '../../i18n/languages';
 
 const LanguageSwitcher: React.FC = () => {
   const { i18n } = useTranslation();
