@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { ChevronDown } from 'react-ionicons';
+import { IoChevronDown } from 'react-icons/io5';
 import styles from './SidebarInfo.module.scss';
 
 interface SidebarInfoProps {
@@ -34,7 +34,7 @@ const SidebarInfo: React.FC<SidebarInfoProps> = ({ onExpandToggle }) => {
         <span className={styles.infoMoreText}>
           {isExpanded ? t('sidebar.hideContacts') : t('sidebar.showContacts')}
         </span>
-        <ChevronDown cssClasses={`${styles.infoMoreIcon}`} />
+        <IoChevronDown className={`${styles.infoMoreIcon}`} />
       </button>
     </div>
   );

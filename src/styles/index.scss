@@ -46,7 +46,6 @@ li {
 }
 
 img,
-ion-icon,
 a,
 button,
 time,
@@ -168,4 +167,10 @@ button:disabled {
   @include mixins.tablet {
     width: 100px;
   }
+}
+
+// All react-icons icons
+svg[stroke="currentColor"][fill="currentColor"] {
+  height: 22px;
+  width: 22px;
 }

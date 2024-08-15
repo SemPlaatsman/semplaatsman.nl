@@ -18,13 +18,13 @@
 .socialItem .socialLink {
   font-size: 18px;
 
-  > span > svg {
+  > svg {
     fill: functions.theme("text-tertiary");
     color: functions.theme("text-tertiary");
   }
 }
 
-.socialItem .socialLink:hover > span > svg {
+.socialItem .socialLink:hover > svg {
   fill: functions.theme("text-secondary");
   color: functions.theme("text-secondary");
 }

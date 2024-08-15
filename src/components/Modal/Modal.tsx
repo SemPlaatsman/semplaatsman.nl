@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Modal.module.scss';
-import { CloseOutline } from 'react-ionicons';
+import { IoCloseOutline } from 'react-icons/io5';
 
 interface ModalProps {
   className?: string;
@@ -15,7 +15,7 @@ const Modal: React.FC<ModalProps> = ({ className, isOpen, onClose, children }) =
       <div className={`${styles.overlay} ${isOpen ? styles.active : ''}`} onClick={onClose}></div>
       <section className={`${styles.modal} ${className || ''}`}>
         <button className={styles.modalCloseBtn} onClick={onClose}>
-          <CloseOutline />
+          <IoCloseOutline />
         </button>
         {children}
       </section>

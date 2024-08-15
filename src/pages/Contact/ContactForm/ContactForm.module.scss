@@ -85,7 +85,7 @@ textarea.formInput {
   z-index: 1;
   transition: variables.$transition-fast;
 
-  span > svg {
+  svg {
     font-size: 16px;
   }
 
@@ -123,7 +123,7 @@ textarea.formInput {
   @include mixins.mobile {
     padding: 16px 20px;
 
-    span > svg {
+    svg {
       font-size: 18px;
       fill: functions.theme("accent-primary");
     }

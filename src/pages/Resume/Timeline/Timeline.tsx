@@ -2,18 +2,21 @@ import React from 'react';
 import IconBox from '../../../components/IconBox';
 import styles from './Timeline.module.scss';
 import TimelineItem from './TimelineItem';
+import { IconType } from 'react-icons';
 
 interface TimelineProps {
   items: TimelineItem[];
-  icon: React.ReactNode;
+  icon: IconType;
   title: string;
 }
 
-const Timeline: React.FC<TimelineProps> = ({ items, icon, title }) => {
+const Timeline: React.FC<TimelineProps> = ({ items, icon: Icon, title }) => {
   return (
     <section className={styles.timeline}>
       <div className={styles.titleWrapper}>
-        <IconBox>{icon}</IconBox>
+        <IconBox>
+          <Icon />
+        </IconBox>
         <h3 className="h3">{title}</h3>
       </div>
       <ol className={styles.timelineList}>

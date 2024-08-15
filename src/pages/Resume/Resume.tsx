@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import styles from './Resume.module.scss';
 import Timeline from './Timeline';
 import TimelineItem from './Timeline/TimelineItem';
-import { BookOutline } from 'react-ionicons';
+import { IoBookOutline } from 'react-icons/io5';
 import Skills from './Skills';
 import SkillItem from './Skills/SkillItem';
 
@@ -18,8 +18,8 @@ const Resume: React.FC = () => {
 
   return (
     <PageContent title={t('title')} className={styles.resume} titleClassName={styles.resumeTitle}>
-      <Timeline items={educationItems} icon={<BookOutline />} title={t('education.title')} />
-      <Timeline items={experienceItems} icon={<BookOutline />} title={t('experience.title')} />
+      <Timeline items={educationItems} icon={IoBookOutline} title={t('education.title')} />
+      <Timeline items={experienceItems} icon={IoBookOutline} title={t('experience.title')} />
       <Skills items={skillsItems} title={t('skills.title')} />
     </PageContent>
   );

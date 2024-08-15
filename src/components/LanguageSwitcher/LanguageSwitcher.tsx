@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Language, ChevronDown } from 'react-ionicons';
+import { IoLanguage, IoChevronDown } from 'react-icons/io5';
 import Dropdown from '../Dropdown';
 import styles from './LanguageSwitcher.module.scss';
 import { languages } from '../../i18n/languages';
@@ -14,9 +14,9 @@ const LanguageSwitcher: React.FC = () => {
 
   const trigger = (
     <button className={styles.languageButton}>
-      <Language cssClasses={styles.languageIcon} />
+      <IoLanguage className={styles.languageIcon} />
       <span className={styles.languageCode}>{i18n.language.toUpperCase()}</span>
-      <ChevronDown cssClasses={styles.languageIcon} />
+      <IoChevronDown className={styles.languageIcon} />
     </button>
   );
 
