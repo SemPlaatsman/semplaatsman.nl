@@ -63,6 +63,7 @@ $themes: (
     shadow-lg: 0 25px 50px hsla(0, 0%, 0%, 0.15),
     // --shadow-5
     shadow-xl: 0 24px 80px hsla(0, 0%, 0%, 0.25),
+    grayscale: grayscale(1) invert(1),
   ),
   light: (
     bg-primary: hsl(0, 0%, 100%),
@@ -94,6 +95,7 @@ $themes: (
     shadow-md: 0 16px 40px hsla(0, 0%, 0%, 0.25),
     shadow-lg: 0 25px 50px hsla(0, 0%, 0%, 0.15),
     shadow-xl: 0 24px 80px hsla(0, 0%, 0%, 0.25),
+    grayscale: grayscale(1),
   ),
 );
 
