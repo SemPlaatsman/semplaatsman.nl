@@ -20,7 +20,7 @@ const routes: RouteConfig[] = [
   },
   {
     path: '/projects',
-    element: lazy(() => import('../skeletons/PageSkeleton')),
+    element: lazy(() => import('../pages/Projects')),
     pageKey: 'projects',
   },
   {
