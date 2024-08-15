@@ -12,7 +12,7 @@ const NavBar: React.FC = () => {
   return (
     <nav className={styles.navBar}>
       <ul className={styles.navBarList}>
-        {routes.map(({ path, labelKey }, index) => (
+        {routes.map(({ path, pageKey }, index) => (
           <li key={index} className={styles.navBarItem}>
             <NavLink
               to={path}
@@ -20,7 +20,7 @@ const NavBar: React.FC = () => {
                 isActive ? `${styles.navBarLink} ${styles.active}` : styles.navBarLink
               }
             >
-              <span>{t(labelKey)}</span>
+              <span>{t(`navbar.${pageKey}`)}</span>
             </NavLink>
           </li>
         ))}

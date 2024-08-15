@@ -17,7 +17,7 @@ const Resume: React.FC = () => {
   const skillsItems = t('skills.items', { returnObjects: true }) as SkillItem[];
 
   return (
-    <PageContent title={t('title')} className={styles.resume} titleClassName={styles.resumeTitle}>
+    <PageContent className={styles.resume} titleClassName={styles.resumeTitle}>
       <Timeline items={educationItems} icon={IoBookOutline} title={t('education.title')} />
       <Timeline items={experienceItems} icon={IoBookOutline} title={t('experience.title')} />
       <Skills items={skillsItems} title={t('skills.title')} />
