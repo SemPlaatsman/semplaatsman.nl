@@ -51,24 +51,36 @@
     padding: 15px 20px;
   }
 
-  &:-webkit-autofill,
-  &:-webkit-autofill:hover,
-  &:-webkit-autofill:focus,
-  &:-webkit-autofill:active {
-    -webkit-box-shadow: 0 0 0 30px functions.theme("bg-tertiary") inset !important;
-    -webkit-text-fill-color: functions.theme("text-primary") !important;
-    border-color: functions.theme("accent-primary");
-    transition: border-color 0.3s ease-in-out;
+  &:not(:placeholder-shown):not(:focus):not(:invalid) {
+    // Might use a different color for the border
+    border-color: color-mix(
+      in srgb,
+      functions.theme("accent-secondary") 50%,
+      functions.theme("border-color")
+    ) !important;
+    border-color: functions.theme("accent-secondary");
   }
 
-  &:-moz-autofill,
-  &:-moz-autofill:hover,
-  &:-moz-autofill:focus,
-  &:-moz-autofill:active {
-    box-shadow: 0 0 0 30px functions.theme("bg-tertiary") inset !important;
-    -moz-text-fill-color: functions.theme("text-primary") !important;
-    border-color: functions.theme("accent-primary");
-    transition: border-color 0.3s ease-in-out;
+  &:-webkit-autofill {
+    &,
+    &:hover,
+    &:focus,
+    &:active {
+      -webkit-box-shadow: 0 0 0 30px functions.theme("bg-tertiary") inset !important;
+      -webkit-text-fill-color: functions.theme("text-primary") !important;
+      transition: border-color 0.3s ease-in-out;
+    }
+  }
+
+  &:-moz-autofill {
+    &,
+    &:hover,
+    &:focus,
+    &:active {
+      box-shadow: 0 0 0 30px functions.theme("bg-tertiary") inset !important;
+      -moz-text-fill-color: functions.theme("text-primary") !important;
+      transition: border-color 0.3s ease-in-out;
+    }
   }
 }
 
