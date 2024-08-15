@@ -50,6 +50,26 @@
   @include mixins.mobile {
     padding: 15px 20px;
   }
+
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus,
+  &:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px functions.theme("bg-tertiary") inset !important;
+    -webkit-text-fill-color: functions.theme("text-primary") !important;
+    border-color: functions.theme("accent-primary");
+    transition: border-color 0.3s ease-in-out;
+  }
+
+  &:-moz-autofill,
+  &:-moz-autofill:hover,
+  &:-moz-autofill:focus,
+  &:-moz-autofill:active {
+    box-shadow: 0 0 0 30px functions.theme("bg-tertiary") inset !important;
+    -moz-text-fill-color: functions.theme("text-primary") !important;
+    border-color: functions.theme("accent-primary");
+    transition: border-color 0.3s ease-in-out;
+  }
 }
 
 textarea.formInput {
