@@ -31,5 +31,4 @@ export default {
 
 ## Credit
 
-Inspired by [react-vcard](https://github.com/1chooo/react-vcard),  
-which in turn was inspired by [vcard-personal-portfolio](https://github.com/codewithsadee/vcard-personal-portfolio)
+Inspired by [vcard-personal-portfolio](https://github.com/codewithsadee/vcard-personal-portfolio)
