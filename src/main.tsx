@@ -15,6 +15,17 @@ if (import.meta.env.DEV) {
   axe(React, ReactDOM, 1000);
 }
 
+// Small little easter egg
+console.log(
+  '%cHello there!',
+  'color: #ffdb70; font-weight: bold; font-family: monospace !important; font-size: 2rem;'
+);
+console.log(
+  `%cLike my portfolio? Check out the source code on GitHub:
+  https://github.com/SemPlaatsman/semplaatsman.nl`,
+  'color: #ffdb70; font-weight: bold; font-family: monospace !important; font-size: 1rem;'
+);
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <Router>

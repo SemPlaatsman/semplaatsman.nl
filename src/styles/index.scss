@@ -46,7 +46,6 @@ li {
 }
 
 img,
-ion-icon,
 a,
 button,
 time,
@@ -88,6 +87,9 @@ body {
   background-color: functions.theme("bg-primary");
 
   @include mixins.desktop-large {
+    // Compensate for scrollbar width
+    margin-right: calc(100% - 100vw);
+
     &::-webkit-scrollbar {
       width: 20px;
     }
@@ -168,4 +170,16 @@ button:disabled {
   @include mixins.tablet {
     width: 100px;
   }
+}
+
+// All react-icons icons
+svg[stroke="currentColor"][fill="currentColor"] {
+  height: 22px;
+  width: 22px;
+}
+
+// Proper alignment to themed support for react-loading-skeleton without CSS-in-JS
+.react-loading-skeleton {
+  --base-color: #{functions.theme("bg-tertiary")};
+  --highlight-color: #{functions.theme("bg-primary")};
 }

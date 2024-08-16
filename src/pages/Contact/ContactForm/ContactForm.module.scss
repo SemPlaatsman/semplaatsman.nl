@@ -50,6 +50,38 @@
   @include mixins.mobile {
     padding: 15px 20px;
   }
+
+  &:not(:placeholder-shown):not(:focus):not(:invalid) {
+    // Might use a different color for the border
+    border-color: color-mix(
+      in srgb,
+      functions.theme("accent-secondary") 50%,
+      functions.theme("border-color")
+    ) !important;
+    border-color: functions.theme("accent-secondary");
+  }
+
+  &:-webkit-autofill {
+    &,
+    &:hover,
+    &:focus,
+    &:active {
+      -webkit-box-shadow: 0 0 0 30px functions.theme("bg-tertiary") inset !important;
+      -webkit-text-fill-color: functions.theme("text-primary") !important;
+      transition: border-color 0.3s ease-in-out;
+    }
+  }
+
+  &:-moz-autofill {
+    &,
+    &:hover,
+    &:focus,
+    &:active {
+      box-shadow: 0 0 0 30px functions.theme("bg-tertiary") inset !important;
+      -moz-text-fill-color: functions.theme("text-primary") !important;
+      transition: border-color 0.3s ease-in-out;
+    }
+  }
 }
 
 textarea.formInput {
@@ -85,7 +117,7 @@ textarea.formInput {
   z-index: 1;
   transition: variables.$transition-fast;
 
-  span > svg {
+  svg {
     font-size: 16px;
   }
 
@@ -123,7 +155,7 @@ textarea.formInput {
   @include mixins.mobile {
     padding: 16px 20px;
 
-    span > svg {
+    svg {
       font-size: 18px;
       fill: functions.theme("accent-primary");
     }

@@ -1,14 +1,14 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { LogoGithub, LogoLinkedin, MailOutline, LocationOutline } from 'react-ionicons';
+import { IoLogoGithub, IoLogoLinkedin, IoMailOutline, IoLocationOutline } from 'react-icons/io5';
 import styles from './ContactsList.module.scss';
 import IconBox from '../../IconBox';
 
 const iconMap = {
-  github: LogoGithub,
-  linkedin: LogoLinkedin,
-  email: MailOutline,
-  address: LocationOutline,
+  github: IoLogoGithub,
+  linkedin: IoLogoLinkedin,
+  email: IoMailOutline,
+  address: IoLocationOutline,
 };
 
 const ContactsList: React.FC = () => {

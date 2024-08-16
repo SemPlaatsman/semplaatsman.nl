@@ -1,0 +1,24 @@
+@use "../../styles/variables";
+@use "../../styles/functions";
+@use "../../styles/mixins";
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.pageSkeletonContent {
+  animation: fadeIn 1s ease-in;
+  animation-fill-mode: both;
+  animation-delay: 200ms;
+}
+
+.title {
+  font-size: 2rem;
+  width: 25%;
+  min-width: 12rem;
+}

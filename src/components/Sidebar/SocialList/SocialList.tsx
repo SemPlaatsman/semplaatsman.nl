@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from './SocialList.module.scss';
 import { useTranslation } from 'react-i18next';
-import { LogoNpm, LogoStackoverflow } from 'react-ionicons';
+import { IoLogoNpm, IoLogoStackoverflow } from 'react-icons/io5';
 
 const iconMap = {
-  npm: LogoNpm,
-  stackOverflow: LogoStackoverflow,
+  npm: IoLogoNpm,
+  stackOverflow: IoLogoStackoverflow,
 };
 
 const SocialList: React.FC = () => {

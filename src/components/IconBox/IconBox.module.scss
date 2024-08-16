@@ -32,8 +32,7 @@
   z-index: -1;
 }
 
-.iconBox > span > svg {
+.iconBox > svg {
   fill: functions.theme("accent-primary");
   color: functions.theme("accent-primary");
-  stroke-width: 35px;
 }

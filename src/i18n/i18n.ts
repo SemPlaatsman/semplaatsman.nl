@@ -1,21 +1,15 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import HttpBackend from 'i18next-http-backend';
-
-export const languages = {
-  en: { code: 'en', label: 'English' },
-  nl: { code: 'nl', label: 'Nederlands' },
-};
-
-const supportedLngs = Object.keys(languages);
+import { supportedLngs, LanguageCode } from './languages';
 
 // Gets the initial language from local storage or the browser language, and uses 'en' if neither is available
-const getInitialLanguage = (): string => {
-  const savedLanguage = localStorage.getItem('language');
+const getInitialLanguage = (): LanguageCode => {
+  const savedLanguage = localStorage.getItem('language') as LanguageCode | null;
   if (savedLanguage && supportedLngs.includes(savedLanguage)) {
     return savedLanguage;
   }
-  const browserLng = navigator.language.split('-')[0];
+  const browserLng = navigator.language.split('-')[0] as LanguageCode;
   return supportedLngs.includes(browserLng) ? browserLng : 'en';
 };
 
