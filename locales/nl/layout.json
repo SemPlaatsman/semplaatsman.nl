@@ -1,0 +1,45 @@
+{
+  "sidebar": {
+    "avatarAlt": "John Doe",
+    "name": "John Doe",
+    "title": "Full Stack Ontwikkelaar",
+    "hideContacts": "Verberg contacten",
+    "showContacts": "Toon contacten",
+    "contacts": {
+      "github": {
+        "title": "GitHub",
+        "handle": "@SemPlaatsman",
+        "link": "https://github.com/SemPlaatsman"
+      },
+      "linkedin": {
+        "title": "LinkedIn",
+        "handle": "@sem-plaatsman",
+        "link": "https://www.linkedin.com/in/sem-plaatsman/"
+      },
+      "email": {
+        "title": "Email",
+        "handle": "hello@semplaatsman.nl",
+        "link": "mailto:hello@semplaatsman.nl"
+      },
+      "address": {
+        "title": "Addres",
+        "handle": "Haarlem, Noord-Holland",
+        "link": "https://maps.app.goo.gl/AEWwr2iiCeWyovD28"
+      }
+    },
+    "socials": {
+      "npm": {
+        "link": "https://www.npmjs.com/~sempl"
+      },
+      "stackOverflow": {
+        "link": "https://stackoverflow.com/users/18598382/sem"
+      }
+    }
+  },
+  "navbar": {
+    "about": "Over Mij",
+    "resume": "CV",
+    "projects": "Projecten",
+    "contact": "Contact"
+  }
+}
