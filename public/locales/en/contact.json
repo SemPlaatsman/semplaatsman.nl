@@ -3,7 +3,7 @@
   "form": {
     "title": "Contact Form",
     "fields": {
-      "fullname": {
+      "name": {
         "title": "Full Name",
         "placeholder": "John Doe"
       },

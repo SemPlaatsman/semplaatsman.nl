@@ -26,7 +26,7 @@ const ContactForm: React.FC = () => {
       <h3 className={`h3 ${styles.formTitle}`}>{t('title')}</h3>
       <form onSubmit={handleSubmit} className={styles.form}>
         <div className={styles.inputWrapper}>
-          <input type="text" {...getFieldProps('fullname')} maxLength={100} autoComplete="name" />
+          <input type="text" {...getFieldProps('name')} maxLength={100} autoComplete="name" />
           <input type="email" {...getFieldProps('email')} maxLength={100} autoComplete="email" />
         </div>
         <textarea {...getFieldProps('message')} maxLength={1000}></textarea>
