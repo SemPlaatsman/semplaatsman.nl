@@ -32,7 +32,7 @@ const ContactForm: React.FC = () => {
         <textarea {...getFieldProps('message')} maxLength={1000}></textarea>
         <button className={styles.formBtn} type="submit" disabled={isSubmitting}>
           <IoPaperPlane />
-          <span>{isSubmitting ? t('form.sending') : t('form.submit')}</span>
+          <span>{isSubmitting ? t('form.submitting') : t('form.submit')}</span>
         </button>
       </form>
     </section>

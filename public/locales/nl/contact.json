@@ -20,6 +20,7 @@
     "submitting": "Versturen...",
     "submitSuccess": "Bericht Verstuurd!",
     "submitError": "Bericht kon niet worden verstuurd!",
+    "autoReplyError": "Auto-Reply kon niet worden verstuurd!",
     "rateLimitError": "U heeft het limiet bereikt. Probeer het later opnieuw."
   }
 }
