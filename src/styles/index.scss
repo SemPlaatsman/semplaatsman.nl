@@ -85,11 +85,9 @@ textarea {
 
 body {
   background-color: functions.theme("bg-primary");
+  overflow-y: scroll;
 
   @include mixins.desktop-large {
-    // Compensate for scrollbar width
-    margin-right: calc(100% - 100vw);
-
     &::-webkit-scrollbar {
       width: 20px;
     }
