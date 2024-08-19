@@ -26,10 +26,14 @@ const NavBar: React.FC = () => {
         ))}
         <li className={styles.navBarDivider}></li>
         <li className={styles.navBarItem}>
-          <LanguageSwitcher />
+          <span>
+            <LanguageSwitcher />
+          </span>
         </li>
         <li className={styles.navBarItem}>
-          <ThemeSwitcher />
+          <span>
+            <ThemeSwitcher />
+          </span>
         </li>
       </ul>
     </nav>

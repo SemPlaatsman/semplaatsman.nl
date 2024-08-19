@@ -38,6 +38,10 @@
   align-items: center;
   padding: 0 10px;
 
+  @include mixins.mobile-small {
+    gap: 10px;
+  }
+
   @include mixins.mobile {
     gap: 20px;
   }

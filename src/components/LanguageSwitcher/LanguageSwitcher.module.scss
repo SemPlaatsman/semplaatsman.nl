@@ -17,17 +17,8 @@
   }
 }
 
-// High usage of !important selectors due to react-ionicons having a higher specificity, which cannot be changed
 .languageIcon {
-  min-width: 15px !important;
-  min-height: 15px !important;
-  width: 1.5em !important;
-  height: 1.5em !important;
-  transition:
-    width 0.3s ease,
-    height 0.3s ease;
-  fill: currentColor !important;
-  color: currentColor !important;
+  font-size: 1.5em;
 }
 
 .languageCode {
@@ -35,13 +26,13 @@
   font-weight: bold;
   display: none;
 
-  + span:has(> .languageIcon) {
+  & + .languageIcon {
     display: none;
   }
 
   @include mixins.mobile {
     display: block;
-    + span:has(> .languageIcon) {
+    & + .languageIcon {
       display: block;
     }
   }
