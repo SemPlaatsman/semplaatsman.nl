@@ -35,4 +35,8 @@
 .iconBox > svg {
   fill: functions.theme("accent-primary");
   color: functions.theme("accent-primary");
+
+  @include mixins.mobile {
+    font-size: 22px;
+  }
 }

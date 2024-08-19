@@ -119,6 +119,7 @@ textarea.formInput {
 
   svg {
     font-size: 16px;
+    fill: functions.theme("accent-primary");
   }
 
   &::before {
@@ -157,7 +158,6 @@ textarea.formInput {
 
     svg {
       font-size: 18px;
-      fill: functions.theme("accent-primary");
     }
   }
 
