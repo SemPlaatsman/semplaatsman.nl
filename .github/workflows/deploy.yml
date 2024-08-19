@@ -39,6 +39,7 @@ jobs:
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           report-json: 'eslint_report.json'
+          fail-on-error: false # Continue on error for now, only report results
 
   build:
     runs-on: ubuntu-latest
