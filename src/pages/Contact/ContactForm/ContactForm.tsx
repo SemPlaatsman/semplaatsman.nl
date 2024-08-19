@@ -25,9 +25,9 @@ const ContactForm: React.FC = () => {
     }
   };
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    await sendEmail(e.currentTarget);
+    void sendEmail(e.currentTarget);
   };
 
   useEffect(() => {
