@@ -1,6 +1,7 @@
 import React from 'react';
-import styles from './MapBox.module.scss';
 import { useTranslation } from 'react-i18next';
+
+import styles from './MapBox.module.scss';
 
 const MapBox: React.FC = () => {
   const { t } = useTranslation('contact');

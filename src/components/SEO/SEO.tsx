@@ -1,9 +1,11 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet';
-import i18n from '../../i18n';
-import faviconPNG from '/favicon.png';
 import { useLocation } from 'react-router-dom';
+
+import i18n from '../../i18n';
+
+import faviconPNG from '/favicon.png';
 
 const img = {
   src: faviconPNG,
@@ -53,10 +55,10 @@ const SEO: React.FC = () => {
           url: currUrl,
           jobTitle: t('jobTitle'),
           sameAs: [t('linkedinUrl'), t('githubUrl'), t('portfolioUrl')],
-          knowsAbout: t('knowsAbout', { returnObjects: true }) as string[],
+          knowsAbout: t('knowsAbout', { returnObjects: true }),
           email: t('email'),
           gender: t('gender'),
-          knowsLanguage: t('knowsLanguage', { returnObjects: true }) as string[],
+          knowsLanguage: t('knowsLanguage', { returnObjects: true }),
           nationality: t('nationality'),
           address: {
             '@type': 'PostalAddress',

@@ -1,9 +1,11 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+
+import Avatar from '../../../assets/avatar-1.png';
+
 import styles from './Testimonials.module.scss';
 import TestimonialItem from './TestimonialItem';
 import Testimonial from './Testimonial';
-import Avatar from '../../../assets/avatar-1.png';
 
 const imgSrcMap = {
   danielLewis: Avatar,
@@ -14,10 +16,9 @@ const imgSrcMap = {
 
 const Testimonials: React.FC = () => {
   const { t } = useTranslation('about');
-  const testimonials = t('testimonials.testimonials', { returnObjects: true }) as Record<
-    string,
-    Testimonial
-  >;
+  const testimonials: Record<string, Testimonial> = t('testimonials.testimonials', {
+    returnObjects: true,
+  });
 
   return (
     <section className={styles.testimonials}>

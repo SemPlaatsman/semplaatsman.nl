@@ -1,7 +1,9 @@
 import React from 'react';
-import PageContent from '../../components/PageContent';
-import styles from './PageSkeleton.module.scss';
 import Skeleton from 'react-loading-skeleton';
+
+import PageContent from '../../components/PageContent';
+
+import styles from './PageSkeleton.module.scss';
 
 const PageSkeleton: React.FC = () => {
   return (

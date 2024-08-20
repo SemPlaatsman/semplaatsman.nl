@@ -1,10 +1,13 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import styles from './Interests.module.scss';
+
 import IconDesign from '../../../assets/icon-design.svg';
 import IconDev from '../../../assets/icon-dev.svg';
 import IconApp from '../../../assets/icon-app.svg';
 import IconPhoto from '../../../assets/icon-photo.svg';
+
+import Interest from './Interest';
+import styles from './Interests.module.scss';
 
 const imgSrcMap = {
   webDesign: IconDesign,
@@ -15,7 +18,7 @@ const imgSrcMap = {
 
 const Interests: React.FC = () => {
   const { t } = useTranslation('about');
-  const interests = t('whatImDoing.interests', { returnObjects: true });
+  const interests: Record<string, Interest> = t('whatImDoing.interests', { returnObjects: true });
 
   return (
     <section className={styles.interests}>

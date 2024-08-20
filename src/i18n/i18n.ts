@@ -1,6 +1,7 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import HttpBackend from 'i18next-http-backend';
+
 import { supportedLngs, LanguageCode } from './languages';
 
 // Gets the initial language from local storage or the browser language, and uses 'en' if neither is available
@@ -28,6 +29,9 @@ i18n
     interpolation: {
       escapeValue: false, // React already safes from XSS
     },
+  })
+  .catch((err) => {
+    console.error('Failed to initialize i18n:', err);
   });
 
 i18n.on('languageChanged', (lng) => {

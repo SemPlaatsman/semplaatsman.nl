@@ -1,15 +1,17 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { IoLanguage, IoChevronDown } from 'react-icons/io5';
+
 import Dropdown from '../Dropdown';
-import styles from './LanguageSwitcher.module.scss';
 import { languages } from '../../i18n/languages';
+
+import styles from './LanguageSwitcher.module.scss';
 
 const LanguageSwitcher: React.FC = () => {
   const { i18n } = useTranslation();
 
   const changeLanguage = (lng: string) => {
-    i18n.changeLanguage(lng);
+    void i18n.changeLanguage(lng);
   };
 
   const trigger = (

@@ -1,15 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import styles from './ContactForm.module.scss';
 import { IoPaperPlane } from 'react-icons/io5';
+
 import { useSendEmail } from '../../../hooks/useSendEmail';
+
+import styles from './ContactForm.module.scss';
+import ContactFormData from './ContactFormData';
 
 const ContactForm: React.FC = () => {
   const { t } = useTranslation('contact');
   const { sendEmail, isSubmitting } = useSendEmail();
   const [isFormValid, setIsFormValid] = useState(false);
 
-  const getFieldProps = (fieldName: string) => ({
+  const getFieldProps = (fieldName: keyof ContactFormData) => ({
     name: fieldName,
     className: styles.formInput,
     placeholder: t(`form.fields.${fieldName}.placeholder`),

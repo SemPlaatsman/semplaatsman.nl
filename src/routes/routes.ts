@@ -30,9 +30,9 @@ const routes: RouteConfig[] = [
   },
 ];
 
-export const getCurrentRouteConfig = (pathname?: string): RouteConfig | undefined => {
+export const useCurrentRouteConfig = (pathname?: string): RouteConfig | undefined => {
   const location = useLocation();
-  const currentPathname = pathname || location.pathname;
+  const currentPathname = pathname ?? location.pathname;
   return routes.find((route) => route.path === currentPathname);
 };
 

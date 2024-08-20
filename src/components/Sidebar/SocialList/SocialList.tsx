@@ -1,7 +1,9 @@
 import React from 'react';
-import styles from './SocialList.module.scss';
 import { useTranslation } from 'react-i18next';
 import { IoLogoNpm, IoLogoStackoverflow } from 'react-icons/io5';
+
+import styles from './SocialList.module.scss';
+import Social from './Social';
 
 const iconMap = {
   npm: IoLogoNpm,
@@ -10,7 +12,7 @@ const iconMap = {
 
 const SocialList: React.FC = () => {
   const { t } = useTranslation('layout');
-  const socials = t('sidebar.socials', { returnObjects: true });
+  const socials: Record<string, Social> = t('sidebar.socials', { returnObjects: true });
 
   return (
     <ul className={styles.socialList}>

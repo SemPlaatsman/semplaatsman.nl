@@ -1,8 +1,10 @@
 import React from 'react';
+import { IconType } from 'react-icons';
+
 import IconBox from '../../../components/IconBox';
+
 import styles from './Timeline.module.scss';
 import TimelineItem from './TimelineItem';
-import { IconType } from 'react-icons';
 
 interface TimelineProps {
   items: TimelineItem[];
