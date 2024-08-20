@@ -14,7 +14,7 @@ const getInitialLanguage = (): LanguageCode => {
   return supportedLngs.includes(browserLng) ? browserLng : 'en';
 };
 
-await i18n
+i18n
   .use(HttpBackend)
   .use(initReactI18next)
   .init({
@@ -29,6 +29,9 @@ await i18n
     interpolation: {
       escapeValue: false, // React already safes from XSS
     },
+  })
+  .catch((err) => {
+    console.error('Failed to initialize i18n:', err);
   });
 
 i18n.on('languageChanged', (lng) => {
