@@ -1,7 +1,9 @@
 import React from 'react';
-import styles from './PageContent.module.scss';
 import { useTranslation } from 'react-i18next';
+
 import { getCurrentRouteConfig } from '../../routes/routes';
+
+import styles from './PageContent.module.scss';
 
 interface PageContentProps {
   title?: string;

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Toaster, ToastPosition } from 'react-hot-toast';
+
 import styles from './ToastManager.module.scss';
 
 export const ToastManager: React.FC = () => {

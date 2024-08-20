@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+
+import Separator from '../Separator';
+
 import styles from './Sidebar.module.scss';
 import SidebarInfo from './SidebarInfo';
-import Separator from '../Separator';
 import ContactsList from './ContactsList';
 import SocialList from './SocialList';
 

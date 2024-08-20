@@ -1,8 +1,10 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { IoLogoGithub, IoLogoLinkedin, IoMailOutline, IoLocationOutline } from 'react-icons/io5';
-import styles from './ContactsList.module.scss';
+
 import IconBox from '../../IconBox';
+
+import styles from './ContactsList.module.scss';
 
 const iconMap = {
   github: IoLogoGithub,

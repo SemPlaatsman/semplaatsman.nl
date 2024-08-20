@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-import styles from './TestimonialItem.module.scss';
+
 import Modal from '../../../../components/Modal';
 import QuoteIcon from '../../../../assets/icon-quote.svg';
 import Testimonial from '../Testimonial';
+
+import styles from './TestimonialItem.module.scss';
 
 interface TestimonialItemProps {
   data: Testimonial;

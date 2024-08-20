@@ -1,5 +1,6 @@
 import React, { Suspense } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
+
 import Layout from './components/Layout';
 import PageSkeleton from './skeletons/PageSkeleton';
 import routes from './routes';

@@ -1,6 +1,7 @@
 import React from 'react';
-import styles from './Modal.module.scss';
 import { IoCloseOutline } from 'react-icons/io5';
+
+import styles from './Modal.module.scss';
 
 interface ModalProps {
   className?: string;

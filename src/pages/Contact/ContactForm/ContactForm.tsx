@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import styles from './ContactForm.module.scss';
 import { IoPaperPlane } from 'react-icons/io5';
+
 import { useSendEmail } from '../../../hooks/useSendEmail';
+
+import styles from './ContactForm.module.scss';
 
 const ContactForm: React.FC = () => {
   const { t } = useTranslation('contact');

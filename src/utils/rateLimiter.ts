@@ -1,5 +1,5 @@
 export default class RateLimiter {
-  private static instances: Map<string, RateLimiter> = new Map();
+  private static instances = new Map<string, RateLimiter>();
   private requests: Map<string, number[]>;
   private readonly limit: number;
   private readonly interval: number;

@@ -1,7 +1,8 @@
 import React from 'react';
-import styles from './SocialList.module.scss';
 import { useTranslation } from 'react-i18next';
 import { IoLogoNpm, IoLogoStackoverflow } from 'react-icons/io5';
+
+import styles from './SocialList.module.scss';
 
 const iconMap = {
   npm: IoLogoNpm,

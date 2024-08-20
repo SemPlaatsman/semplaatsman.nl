@@ -4,11 +4,10 @@ import 'react-loading-skeleton/dist/skeleton.css';
 import './styles/index.scss';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router } from 'react-router-dom';
+import axe from '@axe-core/react';
+
 import ThemeProvider from './providers/ThemeProvider';
 import App from './App.tsx';
-
-// Import axe-core
-import axe from '@axe-core/react';
 
 // Only run axe in non-production environments
 if (import.meta.env.DEV) {

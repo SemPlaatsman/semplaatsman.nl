@@ -2,8 +2,9 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import emailjs from '@emailjs/browser';
 import toast from 'react-hot-toast';
-import RateLimiter from '../utils/rateLimiter';
 import DOMPurify from 'dompurify';
+
+import RateLimiter from '../utils/rateLimiter';
 
 // 5 requests per hour (3600000 ms)
 const emailRateLimiter = RateLimiter.getInstance('emailSender', 5, 3600000);

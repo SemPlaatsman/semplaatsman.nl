@@ -1,10 +1,12 @@
 import React from 'react';
-import styles from './NavBar.module.scss';
+import { NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+
 import LanguageSwitcher from '../LanguageSwitcher';
 import ThemeSwitcher from '../ThemeSwitcher';
 import routes from '../../routes';
-import { NavLink } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+
+import styles from './NavBar.module.scss';
 
 const NavBar: React.FC = () => {
   const { t } = useTranslation('layout');

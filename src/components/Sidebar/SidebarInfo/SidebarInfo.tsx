@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { IoChevronDown } from 'react-icons/io5';
+
 import styles from './SidebarInfo.module.scss';
 
 interface SidebarInfoProps {
