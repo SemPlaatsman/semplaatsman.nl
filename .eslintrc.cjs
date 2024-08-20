@@ -9,9 +9,6 @@ module.exports = {
     'plugin:jsx-a11y/recommended',
     'plugin:react/jsx-runtime',
     'plugin:react/recommended',
-    'plugin:import/typescript',
-    'plugin:import/warnings',
-    'plugin:import/errors',
     'prettier',
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
@@ -19,7 +16,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
-    project: ['./tsconfig.app.json', './tsconfig.node.json'],
+    project: ['./tsconfig.json', './tsconfig.app.json', './tsconfig.node.json'],
     tsconfigRootDir: __dirname,
   },
   plugins: ['react-refresh', 'jsx-a11y', '@typescript-eslint', 'import'],
@@ -39,6 +36,9 @@ module.exports = {
   settings: {
     react: { version: 'detect' },
     'import/resolver': {
+      node: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
       typescript: {}, // this uses tsconfig.json
     },
   },

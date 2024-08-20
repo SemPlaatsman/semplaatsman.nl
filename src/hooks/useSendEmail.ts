@@ -14,7 +14,8 @@ export const useSendEmail = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const sendEmail = async (form: HTMLFormElement) => {
-    const userIdentifier = form.email.value; // Using email as identifier
+    const formData = new FormData(form);
+    const userIdentifier = formData.get('email') as string; // Using email as identifier
 
     if (emailRateLimiter.isRateLimited(userIdentifier)) {
       toast.error(t('form.rateLimitError'));
@@ -26,21 +27,19 @@ export const useSendEmail = () => {
     const submittingToast = toast.loading(t('form.submitting'), { duration: 30000 });
 
     try {
-      // Sanitize and convert form data to a plain object
-      const sanitizedData = Object.fromEntries(
-        Array.from(new FormData(form).entries()).map(([key, value]) => [
-          key,
-          typeof value === 'string' ? DOMPurify.sanitize(value) : value,
-        ])
-      );
+      // Sanitize and convert form data to a record
+      const sanitizedData: Record<string, string> = {};
+      formData.forEach((value, key) => {
+        sanitizedData[key] = DOMPurify.sanitize(value as string);
+      });
 
       // Send email
       const result = await emailjs.send(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        import.meta.env.VITE_EMAILJS_SERVICE_ID as string,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID as string,
         sanitizedData,
         {
-          publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+          publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY as string,
         }
       );
 

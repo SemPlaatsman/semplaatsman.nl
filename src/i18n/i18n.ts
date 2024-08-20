@@ -14,7 +14,7 @@ const getInitialLanguage = (): LanguageCode => {
   return supportedLngs.includes(browserLng) ? browserLng : 'en';
 };
 
-i18n
+await i18n
   .use(HttpBackend)
   .use(initReactI18next)
   .init({

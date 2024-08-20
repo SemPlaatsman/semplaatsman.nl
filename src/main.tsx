@@ -11,7 +11,7 @@ import App from './App.tsx';
 
 // Only run axe in non-production environments
 if (import.meta.env.DEV) {
-  axe(React, ReactDOM, 1000);
+  void axe(React, ReactDOM, 1000);
 }
 
 // Small little easter egg

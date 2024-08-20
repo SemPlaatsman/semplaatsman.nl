@@ -5,6 +5,7 @@ import { IoLogoGithub, IoLogoLinkedin, IoMailOutline, IoLocationOutline } from '
 import IconBox from '../../IconBox';
 
 import styles from './ContactsList.module.scss';
+import Contact from './Contact';
 
 const iconMap = {
   github: IoLogoGithub,
@@ -15,7 +16,7 @@ const iconMap = {
 
 const ContactsList: React.FC = () => {
   const { t } = useTranslation('layout');
-  const contacts = t('sidebar.contacts', { returnObjects: true });
+  const contacts: Record<string, Contact> = t('sidebar.contacts', { returnObjects: true });
 
   return (
     <ul className={styles.contactsList}>

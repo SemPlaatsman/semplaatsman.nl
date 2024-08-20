@@ -9,11 +9,12 @@ import Testimonials from './Testimonials';
 
 const About: React.FC = () => {
   const { t } = useTranslation('about');
+  const description: string[] = t('description', { returnObjects: true });
 
   return (
     <PageContent className={styles.about} titleClassName={styles.aboutTitle}>
       <section className={styles.aboutText}>
-        {(t('description', { returnObjects: true })).map((paragraph, index) => (
+        {description.map((paragraph, index) => (
           <p key={index}>{paragraph}</p>
         ))}
       </section>

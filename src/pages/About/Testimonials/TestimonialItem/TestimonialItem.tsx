@@ -19,7 +19,13 @@ const TestimonialItem: React.FC<TestimonialItemProps> = ({ data, imgSrc }) => {
 
   return (
     <li className={styles.testimonialsItem}>
-      <div className={styles.testimonialsContentCard} onClick={openModal}>
+      <div
+        className={styles.testimonialsContentCard}
+        onClick={openModal}
+        onKeyDown={(e) => e.key === 'Enter' && openModal()}
+        tabIndex={0}
+        role="button"
+      >
         <figure className={styles.testimonialsAvatarBox}>
           <img src={imgSrc} alt={data.avatarAlt} width="60" />
         </figure>

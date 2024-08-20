@@ -60,8 +60,15 @@ const Dropdown: React.FC<DropdownProps> = ({ className, trigger, children }) => 
   };
 
   return (
-    <div className={`${styles.dropdown} ${className || ''}`} ref={dropdownRef}>
-      <div onClick={toggleDropdown}>{trigger}</div>
+    <div className={`${styles.dropdown} ${className ?? ''}`} ref={dropdownRef}>
+      <div
+        onClick={toggleDropdown}
+        onKeyDown={(e) => e.key === 'Enter' && toggleDropdown()}
+        tabIndex={0}
+        role="button"
+      >
+        {trigger}
+      </div>
       {isOpen && (
         <div
           ref={contentRef}

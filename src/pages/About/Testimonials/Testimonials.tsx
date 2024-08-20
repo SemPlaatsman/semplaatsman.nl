@@ -16,7 +16,9 @@ const imgSrcMap = {
 
 const Testimonials: React.FC = () => {
   const { t } = useTranslation('about');
-  const testimonials = t('testimonials.testimonials', { returnObjects: true });
+  const testimonials: Record<string, Testimonial> = t('testimonials.testimonials', {
+    returnObjects: true,
+  });
 
   return (
     <section className={styles.testimonials}>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { getCurrentRouteConfig } from '../../routes/routes';
+import { useCurrentRouteConfig } from '../../routes/routes';
 
 import styles from './PageContent.module.scss';
 
@@ -18,13 +18,13 @@ const PageContent: React.FC<PageContentProps> = ({
   titleClassName,
   children,
 }) => {
-  const routeConfig = getCurrentRouteConfig();
+  const routeConfig = useCurrentRouteConfig();
   const { t } = useTranslation(routeConfig?.pageKey);
 
   return (
-    <article className={`container page-content ${styles.pageContent} ${className || ''}`}>
+    <article className={`container page-content ${styles.pageContent} ${className ?? ''}`}>
       <header>
-        <h2 className={`h2 ${styles.pageTitle} ${titleClassName || ''}`}>{title ?? t('title')}</h2>
+        <h2 className={`h2 ${styles.pageTitle} ${titleClassName ?? ''}`}>{title ?? t('title')}</h2>
       </header>
       {children}
     </article>
