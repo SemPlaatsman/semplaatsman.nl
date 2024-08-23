@@ -4,21 +4,21 @@ import HttpBackend from 'i18next-http-backend';
 
 import { supportedLngs, LanguageCode } from './languages';
 
-// Gets the initial language from local storage or the browser language, and uses 'en' if neither is available
+// Gets the initial language from local storage or the browser language, and uses 'en-US' if neither is available
 const getInitialLanguage = (): LanguageCode => {
   const savedLanguage = localStorage.getItem('language') as LanguageCode | null;
   if (savedLanguage && supportedLngs.includes(savedLanguage)) {
     return savedLanguage;
   }
   const browserLng = navigator.language.split('-')[0] as LanguageCode;
-  return supportedLngs.includes(browserLng) ? browserLng : 'en';
+  return supportedLngs.includes(browserLng) ? browserLng : 'en-US';
 };
 
 i18n
   .use(HttpBackend)
   .use(initReactI18next)
   .init({
-    fallbackLng: 'en',
+    fallbackLng: 'en-US',
     supportedLngs,
     lng: getInitialLanguage(),
     ns: ['common', 'layout', 'seo', 'about', 'resume', 'projects', 'contact'],

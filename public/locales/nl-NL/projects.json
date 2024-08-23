@@ -1,0 +1,39 @@
+{
+  "title": "Projecten",
+  "filters": {
+    "projectType": {
+      "prompt": "Selecteer Type",
+      "options": {
+        "all": "Alle",
+        "backend": "Backend",
+        "frontend": "Frontend",
+        "fullStack": "Full Stack"
+      }
+    },
+    "technology": {
+      "prompt": "Selecteer Technologieën",
+      "options": {
+        "all": "Alle"
+      },
+      "categories": {
+        "language": "Programmeertalen",
+        "framework": "Frameworks",
+        "library/package": "Libraries & Packages",
+        "tool/platform": "Tools & Platforms",
+        "database": "Databases"
+      }
+    }
+  },
+  "items": {
+    "e-commerce": {
+      "bannerAlt": "E-commerce project banner",
+      "title": "E-commerce",
+      "text": "E-commerce project beschrijving"
+    },
+    "portfolio": {
+      "bannerAlt": "Portfolio project banner",
+      "title": "Portfolio",
+      "text": "Portfolio project beschrijving"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@use "../../../styles/variables";
+@use "../../../styles/functions";
+@use "../../../styles/mixins";
+
+.filterList {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+  white-space: nowrap;
+  margin-bottom: 25px;
+
+  & > *:not(:last-child) {
+    flex-grow: 1;
+    min-width: 0;
+  }
+
+  & > *:last-child {
+    flex-shrink: 0;
+    width: 40px;
+  }
+
+  @include mixins.tablet {
+    margin-bottom: 30px;
+  }
+}
