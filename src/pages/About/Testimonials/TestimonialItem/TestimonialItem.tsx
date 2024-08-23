@@ -34,7 +34,7 @@ const TestimonialItem: React.FC<TestimonialItemProps> = ({ data, imgSrc }) => {
           <p>{data.text}</p>
         </div>
       </div>
-      <Modal isOpen={isModalOpen} onClose={closeModal} className={styles.testimonialsModal}>
+      <Modal isOpen={isModalOpen} onClose={closeModal}>
         <div className={styles.testimonialsModalImgWrapper}>
           <figure className={styles.testimonialsModalAvatarBox}>
             <img src={imgSrc} alt={data.avatarAlt} width="80" />
