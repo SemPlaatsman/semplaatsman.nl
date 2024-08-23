@@ -1,3 +1,20 @@
 @use "../../../../styles/variables";
 @use "../../../../styles/functions";
 @use "../../../../styles/mixins";
+
+.filterModalTrigger {
+  font-size: 1.25em;
+  display: flex;
+  padding: 0 8px;
+  justify-content: center;
+  color: functions.theme("text-secondary");
+
+  @include mixins.desktop {
+    padding: 0 19px;
+  }
+
+  > :hover {
+    cursor: pointer;
+    color: functions.theme("text-tertiary");
+  }
+}

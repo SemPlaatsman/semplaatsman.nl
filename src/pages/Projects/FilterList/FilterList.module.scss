@@ -10,14 +10,13 @@
   white-space: nowrap;
   margin-bottom: 25px;
 
-  & > *:not(:last-child) {
+  & > .baseFilters {
     flex-grow: 1;
     min-width: 0;
   }
 
-  & > *:last-child {
+  & > .additionalFiltersTrigger {
     flex-shrink: 0;
-    width: 40px;
   }
 
   @include mixins.tablet {

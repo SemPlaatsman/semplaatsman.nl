@@ -7,11 +7,13 @@ import { ProjectType, ProjectTypeFilter } from '../../../../types/project';
 import styles from './ProjectTypeSelector.module.scss';
 
 interface ProjectTypeSelectorProps {
+  className?: string;
   selectedType?: ProjectTypeFilter;
   onTypeSelect: (type: ProjectTypeFilter) => void;
 }
 
 const ProjectTypeSelector: React.FC<ProjectTypeSelectorProps> = ({
+  className = '',
   selectedType = 'all',
   onTypeSelect,
 }) => {
@@ -30,7 +32,7 @@ const ProjectTypeSelector: React.FC<ProjectTypeSelectorProps> = ({
 
   return (
     <>
-      <ul className={styles.projectTypeSelector}>
+      <ul className={`${styles.projectTypeSelector} ${className}`}>
         {projectTypes.map((type) => (
           <li key={type} className={styles.projectTypeItem}>
             <button
@@ -42,7 +44,7 @@ const ProjectTypeSelector: React.FC<ProjectTypeSelectorProps> = ({
           </li>
         ))}
       </ul>
-      <div className={styles.projectTypeSelectBox}>
+      <div className={`${styles.projectTypeSelectBox} ${className}`}>
         <button
           className={`${styles.projectTypeSelect} ${isSelectBoxOpen ? styles.active : ''}`}
           onClick={handleSelectBoxToggle}

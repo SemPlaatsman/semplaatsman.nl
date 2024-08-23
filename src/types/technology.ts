@@ -26,7 +26,7 @@ export const technologies = {
   python: new Technology('Python', 'language', FaPython),
   java: new Technology('Java', 'language', FaJava),
   csharp: new Technology('C#', 'language', SiCsharp),
-  dotnet: new Technology('ASP.NET', 'framework', DiDotnet),
+  aspDotNet: new Technology('ASP.NET', 'framework', DiDotnet),
   mongodb: new Technology('MongoDB', 'database', SiMongodb),
   docker: new Technology('Docker', 'tool/platform', FaDocker),
   // Add more technologies as needed
