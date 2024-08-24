@@ -1,8 +1,8 @@
-import React, { useEffect, useState, useMemo } from 'react';
+import React, { useState, useMemo } from 'react';
 
 import PageContent from '../../components/PageContent';
 import { demoProjects as projects, ProjectTypeFilter, ProjectType } from '../../types/project';
-import { TechnologyFilter } from '../../types/technology';
+import { TechnologyKey, technologies } from '../../types/technology';
 
 import FilterList from './FilterList';
 import ProjectList from './ProjectList/ProjectList';
@@ -10,22 +10,19 @@ import styles from './Projects.module.scss';
 
 const Projects: React.FC = () => {
   const [selectedType, setSelectedType] = useState<ProjectTypeFilter>('all');
-  const [selectedTech, setSelectedTech] = useState<TechnologyFilter>('all');
+  const [selectedTech, setSelectedTech] = useState<TechnologyKey[]>(
+    () => Object.keys(technologies) as TechnologyKey[]
+  );
 
   const filteredProjects = useMemo(() => {
     return projects.filter((project) => {
-      const typeMatch =
-        selectedType === 'all' ||
-        project.projectType === ProjectType[selectedType as unknown as keyof typeof ProjectType];
-      const techMatch =
-        selectedTech === 'all' || project.technologies.some((tech) => tech.name === selectedTech);
+      const typeMatch = selectedType === 'all' || project.projectType === ProjectType[selectedType];
+      const techMatch = selectedTech.some((techKey) =>
+        project.technologies.some((projectTech) => projectTech.name === technologies[techKey].name)
+      );
       return typeMatch && techMatch;
     });
   }, [selectedType, selectedTech]);
-
-  useEffect(() => {
-    console.log(filteredProjects);
-  }, [filteredProjects]);
 
   return (
     <PageContent>

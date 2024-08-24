@@ -18,3 +18,8 @@
     color: functions.theme("text-tertiary");
   }
 }
+
+// For testing to be able to see the text
+.filterModal * {
+  color: functions.theme("text-secondary");
+}

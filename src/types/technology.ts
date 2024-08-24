@@ -33,5 +33,3 @@ export const technologies = {
 };
 
 export type TechnologyKey = keyof typeof technologies;
-
-export type TechnologyFilter = 'all' | TechnologyKey;
