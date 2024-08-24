@@ -37,7 +37,7 @@ const ProjectTypeSelector: React.FC<ProjectTypeSelectorProps> = ({
           <li key={type} className={styles.projectTypeItem}>
             <button
               onClick={() => handleProjectTypeSelect(type as ProjectTypeFilter)}
-              className={selectedType === type ? styles.active : ''}
+              className={selectedType === (type as ProjectTypeFilter) ? styles.active : ''}
             >
               {t(`filters.projectType.options.${type}`)}
             </button>
@@ -59,7 +59,7 @@ const ProjectTypeSelector: React.FC<ProjectTypeSelectorProps> = ({
             <li key={type} className={styles.selectItem}>
               <button
                 onClick={() => onTypeSelect(type as ProjectTypeFilter)}
-                className={selectedType === type ? styles.active : ''}
+                className={selectedType === (type as ProjectTypeFilter) ? styles.active : ''}
               >
                 {t(`filters.projectType.options.${type}`)}
               </button>
