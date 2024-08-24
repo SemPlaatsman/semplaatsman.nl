@@ -1,7 +1,7 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 
 import PageContent from '../../components/PageContent';
-import { demoProjects as projects, ProjectTypeFilter, ProjectType } from '../../types/project';
+import { demoProjects as projects, ProjectTypeFilter } from '../../types/project';
 import { TechnologyKey, technologies } from '../../types/technology';
 
 import FilterList from './FilterList';
@@ -16,12 +16,16 @@ const Projects: React.FC = () => {
 
   const filteredProjects = useMemo(() => {
     return projects.filter((project) => {
-      const typeMatch = selectedType === 'all' || project.projectType === ProjectType[selectedType];
+      const typeMatch = selectedType === 'all' || project.projectType === selectedType;
       const techMatch = selectedTech.some((techKey) =>
         project.technologies.some((projectTech) => projectTech.name === technologies[techKey].name)
       );
       return typeMatch && techMatch;
     });
+  }, [selectedType, selectedTech]);
+
+  useEffect(() => {
+    console.log(selectedType, selectedTech);
   }, [selectedType, selectedTech]);
 
   return (

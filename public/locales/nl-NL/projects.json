@@ -1,5 +1,6 @@
 {
   "title": "Projecten",
+  "additionalFiltersTitle": "Extra Filters",
   "filters": {
     "projectType": {
       "prompt": "Selecteer Type",
@@ -11,6 +12,7 @@
       }
     },
     "technology": {
+      "name": "Technologieën",
       "prompt": "Selecteer Technologieën",
       "options": {
         "all": "Alle"

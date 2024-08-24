@@ -8,7 +8,7 @@ export enum ProjectType {
   FullStack = 'fullStack',
 }
 
-export type ProjectTypeFilter = 'all' | keyof typeof ProjectType;
+export type ProjectTypeFilter = 'all' | ProjectType;
 
 export interface ProjectConfig {
   slug: string;

@@ -63,6 +63,7 @@
   opacity: 0;
   transition: variables.$transition-fast;
   z-index: 2;
+  max-width: 100%;
 
   @include mixins.mobile {
     display: flex;

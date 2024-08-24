@@ -90,6 +90,10 @@
 
     &.active {
       color: functions.theme("accent-primary");
+
+      &:hover {
+        color: functions.theme("accent-secondary");
+      }
     }
 
     &:hover {
