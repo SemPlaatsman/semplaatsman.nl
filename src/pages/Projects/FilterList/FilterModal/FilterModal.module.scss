@@ -81,17 +81,13 @@
 }
 
 .allChip {
-  &[data-selection-state="all"],
-  &[data-selection-state="some"] {
+  &[data-selection-state="all"] {
+    border-color: functions.theme("accent-primary");
     color: functions.theme("text-primary");
   }
 
-  &[data-selection-state="all"] {
-    border-color: functions.theme("accent-primary");
-  }
-
   &[data-selection-state="some"] {
-    border-color: color-mix(in srgb, functions.theme("accent-primary") 33%, transparent);
+    border-color: color-mix(in srgb, functions.theme("accent-primary") 50%, transparent);
   }
 }
 

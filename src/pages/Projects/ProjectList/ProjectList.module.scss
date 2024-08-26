@@ -1,3 +1,17 @@
 @use "../../../styles/variables";
 @use "../../../styles/functions";
 @use "../../../styles/mixins";
+
+.projectList {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+
+  @include mixins.mobile {
+    gap: 30px;
+  }
+
+  @include mixins.tablet {
+    grid-template-columns: 1fr 1fr;
+  }
+}

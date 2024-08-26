@@ -30,7 +30,7 @@ export const demoProjects: ProjectConfig[] = [
     projectType: ProjectType.FullStack,
     codeUrl: 'https://github.com/example/e-commerce',
     liveUrl: 'https://example.com/e-commerce',
-    imagePath: '/favicon.png',
+    imagePath: '/../src/assets/blog-2.jpg',
   },
   {
     slug: 'portfolio',
@@ -40,6 +40,6 @@ export const demoProjects: ProjectConfig[] = [
     projectType: ProjectType.Frontend,
     codeUrl: 'https://github.com/example/portfolio',
     liveUrl: 'https://example.com/portfolio',
-    imagePath: '/favicon.png',
+    imagePath: '/../src/assets/blog-6.jpg',
   },
 ];

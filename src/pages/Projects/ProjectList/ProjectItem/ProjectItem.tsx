@@ -16,11 +16,10 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
 
   return (
     <li key={project.slug} className={styles.projectItem}>
-      <Link to={`/projects/${project.slug}`}>
+      <Link to={`./${project.slug}`}>
         <figure className={styles.projectBannerBox}>
           <img src={project.imagePath} alt={t(`items.${project.slug}.bannerAlt`)} loading="lazy" />
         </figure>
-
         <div className={styles.projectContent}>
           <div className={styles.projectMeta}>
             <p className={styles.projectCategory}>
