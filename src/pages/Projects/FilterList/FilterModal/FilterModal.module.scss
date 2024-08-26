@@ -87,7 +87,11 @@
   }
 
   &[data-selection-state="some"] {
-    border-color: color-mix(in srgb, functions.theme("accent-primary") 50%, transparent);
+    border-color: color-mix(
+      in srgb,
+      functions.theme("accent-primary") 50%,
+      functions.theme("border-color")
+    );
   }
 }
 

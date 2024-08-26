@@ -55,7 +55,7 @@
     // Might use a different color for the border
     border-color: color-mix(
       in srgb,
-      functions.theme("accent-secondary") 50%,
+      functions.theme("accent-primary") 50%,
       functions.theme("border-color")
     ) !important;
     border-color: functions.theme("accent-secondary");
