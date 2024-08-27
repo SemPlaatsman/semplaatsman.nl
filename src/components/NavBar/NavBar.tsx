@@ -14,18 +14,20 @@ const NavBar: React.FC = () => {
   return (
     <nav className={styles.navBar}>
       <ul className={styles.navBarList}>
-        {routes.map(({ path, pageKey }, index) => (
-          <li key={index} className={styles.navBarItem}>
-            <NavLink
-              to={path}
-              className={({ isActive }) =>
-                isActive ? `${styles.navBarLink} ${styles.active}` : styles.navBarLink
-              }
-            >
-              <span>{t(`navbar.${pageKey}`)}</span>
-            </NavLink>
-          </li>
-        ))}
+        {routes
+          .filter((config) => config.path.split('/').length - 1 === 1) // Only allow top-level domains
+          .map(({ path, pageKey }, index) => (
+            <li key={index} className={styles.navBarItem}>
+              <NavLink
+                to={path}
+                className={({ isActive }) =>
+                  isActive ? `${styles.navBarLink} ${styles.active}` : styles.navBarLink
+                }
+              >
+                <span>{t(`navbar.${pageKey}`)}</span>
+              </NavLink>
+            </li>
+          ))}
         <li className={styles.navBarDivider}></li>
         <li className={styles.navBarItem}>
           <span>

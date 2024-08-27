@@ -27,15 +27,10 @@
     }
   },
   "items": {
-    "e-commerce": {
-      "bannerAlt": "E-commerce project banner",
-      "title": "E-commerce",
-      "text": "E-commerce project beschrijving"
-    },
-    "portfolio": {
-      "bannerAlt": "Portfolio project banner",
-      "title": "Portfolio",
-      "text": "Portfolio project beschrijving"
+    "demo-project": {
+      "bannerAlt": "Demo Project banner",
+      "title": "Demo Project",
+      "text": "Dit is de beschrijving van Demo Project."
     }
   }
 }
