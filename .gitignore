@@ -30,6 +30,3 @@ dist-ssr
 
 # Development files
 todo.md
-
-# MDX files
-/public/mdx/projects
