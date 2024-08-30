@@ -46,6 +46,10 @@
       pointer-events: all;
     }
   }
+
+  @include mixins.mobile {
+    font-size: variables.$font-size-md;
+  }
 }
 
 .selectList {
@@ -79,6 +83,10 @@
 
   &:hover {
     background: functions.theme("bg-tertiary");
+  }
+
+  @include mixins.mobile {
+    font-size: variables.$font-size-md;
   }
 }
 

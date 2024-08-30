@@ -28,6 +28,10 @@
     color: functions.theme("text-secondary");
     font-size: variables.$font-size-xs;
     font-weight: variables.$font-weight-light;
+
+    @include mixins.mobile {
+      font-size: variables.$font-size-md;
+    }
   }
 }
 

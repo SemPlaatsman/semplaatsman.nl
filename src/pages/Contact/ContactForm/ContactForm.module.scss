@@ -49,6 +49,7 @@
 
   @include mixins.mobile {
     padding: 15px 20px;
+    font-size: variables.$font-size-md;
   }
 
   &:not(:placeholder-shown):not(:focus):not(:invalid) {
@@ -118,7 +119,7 @@ textarea.formInput {
   transition: variables.$transition-fast;
 
   svg {
-    font-size: 16px;
+    font-size: variables.$font-size-rg;
     fill: functions.theme("accent-primary");
   }
 
@@ -154,11 +155,12 @@ textarea.formInput {
   }
 
   @include mixins.mobile {
-    font-size: 16px;
+    font-size: variables.$font-size-rg;
+
     padding: 16px 20px;
 
     svg {
-      font-size: 18px;
+      font-size: variables.$font-size-xl;
     }
   }
 

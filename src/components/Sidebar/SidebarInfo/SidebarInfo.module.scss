@@ -46,6 +46,7 @@
     color: functions.theme("text-primary");
 
     @include mixins.mobile {
+      font-size: variables.$font-size-3xl;
       margin-bottom: 15px;
     }
 
@@ -65,6 +66,7 @@
     background-color: functions.theme("bg-tertiary");
 
     @include mixins.mobile {
+      font-size: variables.$font-size-xxs;
       padding: 5px 18px;
     }
 
@@ -112,7 +114,7 @@
 
     @include mixins.mobile {
       display: block;
-      font-size: variables.$font-size-3xs;
+      font-size: variables.$font-size-xs;
     }
   }
 
@@ -120,10 +122,11 @@
     top: -30px;
     right: -30px;
     padding: 10px 15px;
+    font-size: variables.$font-size-md;
 
-    .infoMoreIcon,
-    span:has(.infoMoreIcon) {
+    .infoMoreIcon {
       display: none;
+      font-size: variables.$font-size-xs;
     }
   }
 

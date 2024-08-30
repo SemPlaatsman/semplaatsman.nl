@@ -82,6 +82,10 @@
     color: functions.theme("text-tertiary");
     font-size: variables.$font-size-sm;
     font-weight: variables.$font-weight-light;
+
+    @include mixins.mobile {
+      font-size: variables.$font-size-md;
+    }
   }
 }
 
@@ -97,4 +101,8 @@
   font-size: variables.$font-size-sm;
   font-weight: variables.$font-weight-light;
   line-height: 1.6;
+
+  @include mixins.mobile {
+    font-size: variables.$font-size-md;
+  }
 }

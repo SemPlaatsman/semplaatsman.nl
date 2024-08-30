@@ -40,6 +40,10 @@
       color: functions.theme("accent-primary");
     }
 
+    @include mixins.mobile {
+      font-size: variables.$font-size-md;
+    }
+
     @include mixins.desktop-large {
       white-space: nowrap;
       overflow: hidden;
@@ -60,4 +64,8 @@
   font-size: variables.$font-size-3xs;
   text-transform: uppercase;
   margin-bottom: 2px;
+
+  @include mixins.mobile {
+    font-size: variables.$font-size-xxs;
+  }
 }
