@@ -1,9 +1,9 @@
 import { IconType } from 'react-icons';
 import { FaReact, FaNodeJs, FaPython, FaJava, FaDocker } from 'react-icons/fa';
 import { FaGolang, FaRust } from 'react-icons/fa6';
-import { SiTypescript, SiJavascript, SiCsharp, SiMongodb } from 'react-icons/si';
+import { SiTypescript, SiJavascript, SiCsharp, SiMongodb, SiI18Next, SiVite } from 'react-icons/si';
 import { DiDotnet } from 'react-icons/di';
-import { TbSql, TbBrandKotlin } from 'react-icons/tb';
+import { TbSql, TbBrandKotlin, TbBrandSass } from 'react-icons/tb';
 
 export enum TechnologyCategory {
   Language = 'language',
@@ -36,7 +36,9 @@ export const technologies = {
   go: new Technology('Go', TechnologyCategory.Language, FaGolang),
   rust: new Technology('Rust', TechnologyCategory.Language, FaRust),
   kotlin: new Technology('Kotlin', TechnologyCategory.Language, TbBrandKotlin),
-  // Add more technologies as needed
+  i18next: new Technology('i18next', TechnologyCategory.LibraryOrPackage, SiI18Next),
+  vite: new Technology('Vite', TechnologyCategory.ToolOrPlatform, SiVite),
+  scss: new Technology('SCSS', TechnologyCategory.Language, TbBrandSass),
 };
 
 export type TechnologyKey = keyof typeof technologies;

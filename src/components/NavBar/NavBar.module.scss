@@ -90,11 +90,21 @@
   padding: 20px 7px;
 }
 
-.navBarLink.active {
-  color: functions.theme("text-primary");
-  text-decoration: underline solid functions.theme("accent-primary") 2px;
-  text-decoration-skip-ink: none;
-  text-underline-offset: 8px;
+.navBarLink {
+  &.activeRoute,
+  &.activeSubRoute {
+    color: functions.theme("text-primary");
+    text-decoration-skip-ink: none;
+    text-underline-offset: 8px;
+  }
+  &.activeRoute {
+    text-decoration: underline solid functions.theme("accent-primary") 2px;
+  }
+
+  &.activeSubRoute {
+    text-decoration: underline solid
+      color-mix(in srgb, functions.theme("accent-primary") 50%, transparent) 2px;
+  }
 }
 
 .navBarDivider {

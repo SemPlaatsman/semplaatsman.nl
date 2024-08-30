@@ -18,7 +18,11 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
     <li key={project.slug} className={styles.projectItem}>
       <Link to={`./${project.slug}`}>
         <figure className={styles.projectBannerBox}>
-          <img src={project.imagePath} alt={t(`items.${project.slug}.bannerAlt`)} loading="lazy" />
+          <img
+            src={project.imagePath}
+            alt={t(`items.${project.localeKey}.bannerAlt`)}
+            loading="lazy"
+          />
         </figure>
         <div className={styles.projectContent}>
           <div className={styles.projectMeta}>
@@ -30,8 +34,10 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
               {Intl.DateTimeFormat(i18n.language).format(new Date(project.createdDate))}
             </time>
           </div>
-          <h3 className={`h3 ${styles.projectItemTitle}`}>{t(`items.${project.slug}.title`)}</h3>
-          <p className={styles.projectText}>{t(`items.${project.slug}.text`)}</p>
+          <h3 className={`h3 ${styles.projectItemTitle}`}>
+            {t(`items.${project.localeKey}.title`)}
+          </h3>
+          <p className={styles.projectText}>{t(`items.${project.localeKey}.text`)}</p>
         </div>
       </Link>
     </li>

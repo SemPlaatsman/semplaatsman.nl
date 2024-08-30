@@ -1,19 +1,21 @@
 import React, { useState, useMemo } from 'react';
 
 import PageContent from '../../components/PageContent';
-import { demoProjects as projects, ProjectTypeFilter } from '../../types/project';
+import { ProjectTypeFilter } from '../../types/project';
 import { TechnologyKey, technologies } from '../../types/technology';
+import { getAllProjects } from '../../utils/projectUtils';
 
 import FilterList from './FilterList';
 import ProjectList from './ProjectList/ProjectList';
 import styles from './Projects.module.scss';
 
 const Projects: React.FC = () => {
-  // const [projects, setProjects] = useState<ProjectConfig[]>([]);
   const [selectedType, setSelectedType] = useState<ProjectTypeFilter>('all');
   const [selectedTech, setSelectedTech] = useState<TechnologyKey[]>(
     () => Object.keys(technologies) as TechnologyKey[]
   );
+
+  const projects = getAllProjects();
 
   const filteredProjects = useMemo(() => {
     const filteredProjects = projects.filter((project) => {
@@ -24,7 +26,7 @@ const Projects: React.FC = () => {
       return typeMatch && techMatch;
     });
     return filteredProjects;
-  }, [selectedType, selectedTech]);
+  }, [projects, selectedType, selectedTech]);
 
   return (
     <PageContent>

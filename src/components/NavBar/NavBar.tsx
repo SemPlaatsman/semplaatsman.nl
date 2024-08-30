@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 import LanguageSwitcher from '../LanguageSwitcher';
@@ -10,6 +10,7 @@ import styles from './NavBar.module.scss';
 
 const NavBar: React.FC = () => {
   const { t } = useTranslation('layout');
+  const location = useLocation();
 
   return (
     <nav className={styles.navBar}>
@@ -20,9 +21,18 @@ const NavBar: React.FC = () => {
             <li key={index} className={styles.navBarItem}>
               <NavLink
                 to={path}
-                className={({ isActive }) =>
-                  isActive ? `${styles.navBarLink} ${styles.active}` : styles.navBarLink
-                }
+                className={({ isActive }) => {
+                  return [
+                    styles.navBarLink,
+                    location.pathname === path
+                      ? styles.activeRoute
+                      : isActive
+                        ? styles.activeSubRoute
+                        : '',
+                  ]
+                    .filter(Boolean)
+                    .join(' ');
+                }}
               >
                 <span>{t(`navbar.${pageKey}`)}</span>
               </NavLink>

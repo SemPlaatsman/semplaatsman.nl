@@ -27,10 +27,10 @@
     }
   },
   "items": {
-    "demo-project": {
-      "bannerAlt": "Demo Project banner",
-      "title": "Demo Project",
-      "text": "Dit is de beschrijving van Demo Project."
+    "semplaatsman.nl-portfolio": {
+      "bannerAlt": "Afbeelding van semplaatsman.nl",
+      "title": "semplaatsman.nl (Portfolio)",
+      "text": "Mijn persoonlijke portfolio website, gebouwd met React en TypeScript."
     }
   }
 }
