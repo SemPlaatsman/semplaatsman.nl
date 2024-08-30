@@ -11,7 +11,7 @@ const iconMap = {
   github: IoLogoGithub,
   linkedin: IoLogoLinkedin,
   email: IoMailOutline,
-  address: IoLocationOutline,
+  location: IoLocationOutline,
 };
 
 const ContactsList: React.FC = () => {
@@ -24,7 +24,7 @@ const ContactsList: React.FC = () => {
         const IconComponent = iconMap[key as keyof typeof iconMap];
         return (
           <li key={key} className={styles.contactItem}>
-            <a href={contact.link} target="_blank" rel="noreferrer">
+            <a href={contact.link} target="_blank" rel="noreferrer" aria-label={contact.ariaLabel}>
               <IconBox>
                 <IconComponent />
               </IconBox>
@@ -36,6 +36,7 @@ const ContactsList: React.FC = () => {
                 target="_blank"
                 className={styles.contactLink}
                 rel="noreferrer"
+                aria-label={contact.ariaLabel}
               >
                 {contact.handle}
               </a>

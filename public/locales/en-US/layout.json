@@ -9,30 +9,36 @@
       "github": {
         "title": "GitHub",
         "handle": "@SemPlaatsman",
-        "link": "https://github.com/SemPlaatsman"
+        "link": "https://github.com/SemPlaatsman",
+        "ariaLabel": "Sem Plaatsman's GitHub profile"
       },
       "linkedin": {
         "title": "LinkedIn",
         "handle": "@sem-plaatsman",
-        "link": "https://www.linkedin.com/in/sem-plaatsman/"
+        "link": "https://www.linkedin.com/in/sem-plaatsman/",
+        "ariaLabel": "Sem Plaatsman's LinkedIn profile"
       },
       "email": {
         "title": "Email",
         "handle": "hello@semplaatsman.nl",
-        "link": "mailto:hello@semplaatsman.nl"
+        "link": "mailto:hello@semplaatsman.nl",
+        "ariaLabel": "Send an email to Sem Plaatsman"
       },
-      "address": {
-        "title": "Address",
+      "location": {
+        "title": "Location",
         "handle": "Haarlem, The Netherlands",
-        "link": "https://maps.app.goo.gl/AEWwr2iiCeWyovD28"
+        "link": "https://maps.app.goo.gl/AEWwr2iiCeWyovD28",
+        "ariaLabel": "Sem Plaatsman's location on Google Maps"
       }
     },
     "socials": {
       "npm": {
-        "link": "https://www.npmjs.com/~sempl"
+        "link": "https://www.npmjs.com/~sempl",
+        "ariaLabel": "Sem Plaatsman's npm profile"
       },
       "stackOverflow": {
-        "link": "https://stackoverflow.com/users/18598382/sem"
+        "link": "https://stackoverflow.com/users/18598382/sem",
+        "ariaLabel": "Sem Plaatsman's Stack Overflow profile"
       }
     }
   },
@@ -40,6 +46,12 @@
     "about": "About",
     "resume": "Resume",
     "projects": "Projects",
-    "contact": "Contact"
+    "contact": "Contact",
+    "languageSwitcher": {
+      "ariaLabel": "Change language"
+    },
+    "themeSwitcher": {
+      "ariaLabel": "Change theme"
+    }
   }
 }

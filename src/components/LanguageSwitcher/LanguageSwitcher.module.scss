@@ -56,14 +56,16 @@
     padding: 0.5rem 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    color: inherit;
+    color: functions.theme("text-secondary");
     font-weight: variables.$font-weight-light;
 
     &:hover {
+      color: functions.theme("text-primary");
       background-color: functions.theme("bg-tertiary");
     }
 
     &.active {
+      color: functions.theme("text-primary");
       font-weight: variables.$font-weight-bold;
     }
   }

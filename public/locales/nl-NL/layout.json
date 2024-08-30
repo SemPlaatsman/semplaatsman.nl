@@ -9,30 +9,36 @@
       "github": {
         "title": "GitHub",
         "handle": "@SemPlaatsman",
-        "link": "https://github.com/SemPlaatsman"
+        "link": "https://github.com/SemPlaatsman",
+        "ariaLabel": "Profiel van Sem Plaatsman op GitHub"
       },
       "linkedin": {
         "title": "LinkedIn",
         "handle": "@sem-plaatsman",
-        "link": "https://www.linkedin.com/in/sem-plaatsman/"
+        "link": "https://www.linkedin.com/in/sem-plaatsman/",
+        "ariaLabel": "Profiel van Sem Plaatsman op LinkedIn"
       },
       "email": {
         "title": "Email",
         "handle": "hello@semplaatsman.nl",
-        "link": "mailto:hello@semplaatsman.nl"
+        "link": "mailto:hello@semplaatsman.nl",
+        "ariaLabel": "Stuur een email naar Sem Plaatsman"
       },
-      "address": {
-        "title": "Addres",
+      "location": {
+        "title": "Locatie",
         "handle": "Haarlem, Noord-Holland",
-        "link": "https://maps.app.goo.gl/AEWwr2iiCeWyovD28"
+        "link": "https://maps.app.goo.gl/AEWwr2iiCeWyovD28",
+        "ariaLabel": "Locatie van Sem Plaatsman op Google Maps"
       }
     },
     "socials": {
       "npm": {
-        "link": "https://www.npmjs.com/~sempl"
+        "link": "https://www.npmjs.com/~sempl",
+        "ariaLabel": "Profiel van Sem Plaatsman op npm"
       },
       "stackOverflow": {
-        "link": "https://stackoverflow.com/users/18598382/sem"
+        "link": "https://stackoverflow.com/users/18598382/sem",
+        "ariaLabel": "Profiel van Sem Plaatsman op Stack Overflow"
       }
     }
   },
@@ -41,5 +47,11 @@
     "resume": "CV",
     "projects": "Projecten",
     "contact": "Contact"
+  },
+  "languageSwitcher": {
+    "ariaLabel": "Verander taal"
+  },
+  "themeSwitcher": {
+    "ariaLabel": "Verander thema"
   }
 }

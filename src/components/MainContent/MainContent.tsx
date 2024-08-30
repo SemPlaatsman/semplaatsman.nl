@@ -10,10 +10,10 @@ interface MainContentProps {
 
 const MainContent: React.FC<MainContentProps> = ({ children }) => {
   return (
-    <div className={styles.mainContent}>
+    <main className={styles.mainContent} role="main">
       <NavBar />
       {children}
-    </div>
+    </main>
   );
 };
 
