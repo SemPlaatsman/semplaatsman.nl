@@ -61,13 +61,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Update README for main branch
-        if: github.ref == 'refs/heads/main'
-        run: |
-          if [ -f README.main.md ]; then
-            mv README.main.md README.md
-          fi
-
       - name: Build
         run: npm run build
         env:
