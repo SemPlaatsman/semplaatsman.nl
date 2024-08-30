@@ -85,7 +85,7 @@
   box-shadow: functions.theme("shadow-sm");
   transition: opacity variables.$transition-fast;
   color: functions.theme("accent-primary");
-  background-image: functions.theme("gradient-secondary");
+  background-image: functions.theme("border-gradient-primary");
   z-index: 1;
 
   &::before {

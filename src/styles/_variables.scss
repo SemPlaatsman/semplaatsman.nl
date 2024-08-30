@@ -90,9 +90,9 @@ $themes: (
     border-gradient-primary:
       linear-gradient(to bottom right, hsl(0, 0%, 75%) 0%, hsla(0, 0%, 75%, 0) 50%),
     text-gradient-primary: linear-gradient(to right, hsl(45, 100%, 50%), hsl(35, 100%, 45%)),
-    shadow: -4px 8px 24px hsla(0, 0%, 0%, 0.25),
-    shadow-sm: 0 16px 30px hsla(0, 0%, 0%, 0.25),
-    shadow-md: 0 16px 40px hsla(0, 0%, 0%, 0.25),
+    shadow: -4px 8px 24px hsla(0, 0%, 0%, 0.2),
+    shadow-sm: 0 16px 30px hsla(0, 0%, 0%, 0.2),
+    shadow-md: 0 16px 40px hsla(0, 0%, 0%, 0.2),
     shadow-lg: 0 25px 50px hsla(0, 0%, 0%, 0.15),
     shadow-xl: 0 24px 80px hsla(0, 0%, 0%, 0.25),
     grayscale: grayscale(1),

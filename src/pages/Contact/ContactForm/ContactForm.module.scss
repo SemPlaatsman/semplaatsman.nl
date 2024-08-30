@@ -154,6 +154,7 @@ textarea.formInput {
   }
 
   @include mixins.mobile {
+    font-size: 16px;
     padding: 16px 20px;
 
     svg {
