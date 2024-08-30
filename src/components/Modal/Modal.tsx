@@ -10,7 +10,7 @@ interface ModalProps {
   children: React.ReactNode;
 }
 
-const Modal: React.FC<ModalProps> = ({ className, isOpen, onClose, children }) => {
+const Modal: React.FC<ModalProps> = ({ className = '', isOpen, onClose, children }) => {
   return (
     <div className={`${styles.modalContainer} ${isOpen ? styles.active : ''}`}>
       <div
@@ -20,7 +20,7 @@ const Modal: React.FC<ModalProps> = ({ className, isOpen, onClose, children }) =
         tabIndex={0}
         role="button"
       ></div>
-      <section className={`${styles.modal} ${className ?? ''}`}>
+      <section className={`${styles.modal} ${className}`}>
         <button className={styles.modalCloseBtn} onClick={onClose}>
           <IoCloseOutline />
         </button>

@@ -24,12 +24,19 @@ const ContactsList: React.FC = () => {
         const IconComponent = iconMap[key as keyof typeof iconMap];
         return (
           <li key={key} className={styles.contactItem}>
-            <IconBox>
-              <IconComponent />
-            </IconBox>
+            <a href={contact.link} target="_blank" rel="noreferrer">
+              <IconBox>
+                <IconComponent />
+              </IconBox>
+            </a>
             <div className={styles.contactInfo}>
               <p className={styles.contactTitle}>{contact.title}</p>
-              <a href={contact.link} className={styles.contactLink}>
+              <a
+                href={contact.link}
+                target="_blank"
+                className={styles.contactLink}
+                rel="noreferrer"
+              >
                 {contact.handle}
               </a>
             </div>

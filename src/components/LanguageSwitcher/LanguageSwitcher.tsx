@@ -17,7 +17,9 @@ const LanguageSwitcher: React.FC = () => {
   const trigger = (
     <button className={styles.languageButton}>
       <IoLanguage className={styles.languageIcon} />
-      <span className={styles.languageCode}>{i18n.language.toUpperCase()}</span>
+      <span className={styles.languageCode}>
+        {new Intl.Locale(i18n.language).language.toUpperCase()}
+      </span>
       <IoChevronDown className={styles.languageIcon} />
     </button>
   );

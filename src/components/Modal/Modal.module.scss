@@ -51,6 +51,35 @@
   }
 }
 
+.modal {
+  background: functions.theme("bg-secondary");
+  position: relative;
+  padding: 15px;
+  margin: 15px 12px;
+  border: 1px solid functions.theme("border-color");
+  border-radius: 14px;
+  box-shadow: functions.theme("shadow-xl");
+  transform: scale(1.2);
+  opacity: 0;
+  transition: variables.$transition-fast;
+  z-index: 2;
+  max-width: 100%;
+
+  @include mixins.mobile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 25px;
+    padding: 30px;
+    border-radius: 20px;
+  }
+
+  @include mixins.tablet {
+    gap: 35px;
+    max-width: 680px;
+  }
+}
+
 .modalContainer.active .modal {
   transform: scale(1);
   opacity: 1;

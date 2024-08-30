@@ -1,0 +1,111 @@
+@use "../../../../styles/variables";
+@use "../../../../styles/functions";
+@use "../../../../styles/mixins";
+
+.filterModalTrigger {
+  font-size: 1.25em;
+  display: flex;
+  padding: 0 8px;
+  justify-content: center;
+  color: functions.theme("text-secondary");
+
+  @include mixins.desktop {
+    padding: 0 19px;
+  }
+
+  > :hover {
+    cursor: pointer;
+    color: functions.theme("text-tertiary");
+  }
+}
+
+.modalTitle {
+  margin-bottom: 16px;
+}
+
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.modalTechnologiesHeader,
+.categoryHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.categoryHeader {
+  margin-bottom: 10px;
+}
+
+.modalTechnologiesTitle {
+  margin: 0;
+}
+
+.categoriesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.categoryTitle {
+  font-weight: variables.$font-weight-light;
+}
+
+.chipsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-right: 48px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: variables.$font-size-sm;
+  font-weight: variables.$font-weight-medium;
+  cursor: pointer;
+  transition: variables.$transition-fast;
+  background: functions.theme("bg-secondary");
+  color: functions.theme("text-secondary");
+  border: 1px solid functions.theme("border-color");
+
+  &:hover {
+    background: functions.theme("bg-primary");
+    color: functions.theme("text-primary");
+  }
+}
+
+.allChip {
+  &[data-selection-state="all"] {
+    border-color: functions.theme("accent-primary");
+    color: functions.theme("text-primary");
+  }
+
+  &[data-selection-state="some"] {
+    border-color: color-mix(
+      in srgb,
+      functions.theme("accent-primary") 50%,
+      functions.theme("border-color")
+    );
+  }
+}
+
+.techChip {
+  &[data-selected="true"] {
+    border-color: functions.theme("accent-primary");
+    color: functions.theme("text-primary");
+  }
+}
+
+.techIcon {
+  margin-right: 6px;
+}
+
+.techName {
+  white-space: nowrap;
+}

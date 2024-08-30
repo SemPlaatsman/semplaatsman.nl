@@ -20,7 +20,7 @@ const SocialList: React.FC = () => {
         const IconComponent = iconMap[key as keyof typeof iconMap];
         return (
           <li key={key} className={styles.socialItem}>
-            <a href={social.link} className={styles.socialLink}>
+            <a href={social.link} target="_blank" className={styles.socialLink} rel="noreferrer">
               <IconComponent />
             </a>
           </li>

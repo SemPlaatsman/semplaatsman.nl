@@ -1,0 +1,25 @@
+@use "../../../styles/variables";
+@use "../../../styles/functions";
+@use "../../../styles/mixins";
+
+.filterList {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+  white-space: nowrap;
+  margin-bottom: 25px;
+
+  & > .baseFilters {
+    flex-grow: 1;
+    min-width: 0;
+  }
+
+  & > .additionalFiltersTrigger {
+    flex-shrink: 0;
+  }
+
+  @include mixins.tablet {
+    margin-bottom: 30px;
+  }
+}

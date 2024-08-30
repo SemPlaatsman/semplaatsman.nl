@@ -1,0 +1,100 @@
+@use "../../../../styles/variables";
+@use "../../../../styles/functions";
+@use "../../../../styles/mixins";
+
+.projectItem > a {
+  position: relative;
+  background: functions.theme("border-gradient-primary");
+  height: 100%;
+  box-shadow: functions.theme("shadow-lg");
+  border-radius: 16px;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    border-radius: inherit;
+    background: functions.theme("bg-secondary");
+    z-index: -1;
+  }
+
+  &:hover {
+    .projectBannerBox img {
+      transform: scale(1.1);
+    }
+
+    .projectItemTitle {
+      color: functions.theme("accent-primary");
+    }
+  }
+}
+
+.projectBannerBox {
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: variables.$transition-fast;
+  }
+
+  @include mixins.mobile-small {
+    height: auto;
+  }
+
+  @include mixins.mobile {
+    border-radius: 16px;
+  }
+
+  @include mixins.desktop {
+    height: 230px;
+  }
+}
+
+.projectContent {
+  padding: 15px;
+
+  @include mixins.mobile {
+    padding: 25px;
+  }
+}
+
+.projectMeta {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 10px;
+
+  .dot {
+    background: functions.theme("text-tertiary");
+    width: 4px;
+    height: 4px;
+    border-radius: 4px;
+  }
+
+  :is(.projectCategory, time) {
+    color: functions.theme("text-tertiary");
+    font-size: variables.$font-size-sm;
+    font-weight: variables.$font-weight-light;
+  }
+}
+
+.projectItemTitle {
+  margin-bottom: 10px;
+  line-height: 1.3;
+  transition: variables.$transition-fast;
+  text-transform: none; // Remove global uppercasing for headings
+}
+
+.projectText {
+  color: functions.theme("text-secondary");
+  font-size: variables.$font-size-sm;
+  font-weight: variables.$font-weight-light;
+  line-height: 1.6;
+}
