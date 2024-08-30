@@ -56,7 +56,7 @@
   }
 
   .title {
-    font-size: variables.$font-size-xxs;
+    font-size: variables.$font-size-3xs;
     font-weight: variables.$font-weight-light;
     width: max-content;
     padding: 3px 12px;
@@ -112,7 +112,7 @@
 
     @include mixins.mobile {
       display: block;
-      font-size: variables.$font-size-xxs;
+      font-size: variables.$font-size-3xs;
     }
   }
 

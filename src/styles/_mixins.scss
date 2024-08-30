@@ -12,31 +12,31 @@
 }
 
 @mixin mobile-small {
-  @media (min-width: 450px) {
+  @media (min-width: map.get(variables.$screen-sizes, mobile-small)) {
     @content;
   }
 }
 
 @mixin mobile {
-  @media (min-width: 580px) {
+  @media (min-width: map.get(variables.$screen-sizes, mobile)) {
     @content;
   }
 }
 
 @mixin tablet {
-  @media (min-width: 768px) {
+  @media (min-width: map.get(variables.$screen-sizes, tablet)) {
     @content;
   }
 }
 
 @mixin desktop {
-  @media (min-width: 1024px) {
+  @media (min-width: map.get(variables.$screen-sizes, desktop)) {
     @content;
   }
 }
 
 @mixin desktop-large {
-  @media (min-width: 1250px) {
+  @media (min-width: map.get(variables.$screen-sizes, desktop-large)) {
     @content;
   }
 }

@@ -114,22 +114,45 @@ $themes: (
 $font-family-primary: "Poppins", sans-serif;
 $font-family-secondary: "Poppins", sans-serif;
 
-// --fs-8
-$font-size-xxs: 11px;
-// --fs-7
+// // --fs-8
+// $font-size-xxs: 11px;
+// // --fs-7
+// $font-size-xs: 13px;
+// // --fs-6
+// $font-size-sm: 14px;
+// // --fs-5
+// $font-size-md: 15px;
+// // --fs-4
+// $font-size-rg: 16px;
+// // --fs-3
+// $font-size-lg: 17px;
+// // --fs-2
+// $font-size-xl: 18px;
+// // --fs-1
+// $font-size-xxl: 24px;
+
+// --fs-8 (root)
+$font-size-3xs: 11px;
+// --fs-8 (mobile)
+$font-size-xxs: 12px;
+// --fs-7 (root)
 $font-size-xs: 13px;
-// --fs-6
+// --fs-6 (root)
 $font-size-sm: 14px;
-// --fs-5
+// --fs-5 (root)  --fs-6 (mobile)  --fs-7 (mobile)
 $font-size-md: 15px;
-// --fs-4
+// --fs-4 (root)
 $font-size-rg: 16px;
-// --fs-3
+// --fs-3 (root)
 $font-size-lg: 17px;
-// --fs-2
+// --fs-2 (root)  --fs-4 (mobile)
 $font-size-xl: 18px;
-// --fs-1
+// --fs-1 (root)  --fs-2 (mobile)
 $font-size-xxl: 24px;
+// --fs-3 (mobile)
+$font-size-3xl: 26px;
+// --fs-1 (mobile)
+$font-size-4xl: 32px;
 
 // --fw-300
 $font-weight-light: 300;
@@ -146,3 +169,12 @@ $font-weight-bold: 700;
 $transition-fast: 0.25s ease;
 // --transition-2
 $transition-slow: 0.5s ease-in-out;
+
+// Screen sizes
+$screen-sizes: (
+  mobile-small: 450px,
+  mobile: 580px,
+  tablet: 768px,
+  desktop: 1024px,
+  desktop-large: 1250px,
+);
