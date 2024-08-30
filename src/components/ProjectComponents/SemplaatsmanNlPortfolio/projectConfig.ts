@@ -2,6 +2,7 @@ import { lazy } from 'react';
 
 import { ProjectConfig, ProjectType } from '../../../types/project';
 import { technologies } from '../../../types/technology';
+import portfolioImage from '../../../assets/semplaatsman.nl-portfolio.png';
 
 const projectConfig: ProjectConfig = {
   slug: 'semplaatsman.nl',
@@ -17,7 +18,7 @@ const projectConfig: ProjectConfig = {
   projectType: ProjectType.Frontend,
   codeUrl: 'https://github.com/SemPlaatsman/semplaatsman.nl',
   liveUrl: 'https://semplaatsman.nl',
-  imagePath: '/../src/assets/semplaatsman.nl-portfolio.png',
+  imagePath: portfolioImage,
   component: lazy(() => import('./SemplaatsmanNlPortfolio')),
 };
 
