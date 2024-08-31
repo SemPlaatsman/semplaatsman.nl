@@ -11,15 +11,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
-  // Global application of transitions between themes.
-  transition: variables.$transition-fast;
 }
 
 #root {
   margin: 15px 12px;
   margin-bottom: 75px;
   min-width: 259px;
+
+  > *,
+  > * > * {
+    // Global application of transitions between themes, 2 levels deep.
+    transition: variables.$transition-fast;
+  }
 
   @include mixins.mobile {
     margin-top: 60px;

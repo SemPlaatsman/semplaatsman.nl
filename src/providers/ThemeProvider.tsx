@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import toast from 'react-hot-toast';
 
 import { ThemeContext } from '../contexts/ThemeContext';
 import { Theme } from '../types/theme';
@@ -12,8 +13,28 @@ export const ThemeProvider: React.FC<React.PropsWithChildren> = ({ children }) =
   });
 
   useEffect(() => {
+    const themeWasSaved = localStorage.getItem('theme') !== null;
     localStorage.setItem('theme', theme);
     document.documentElement.className = theme + '-theme';
+
+    if (!themeWasSaved && theme !== 'dark') {
+      toast(
+        (t) => (
+          <span>
+            Hey psst, try dark mode! This website is optimized for it.
+            <button
+              onClick={() => {
+                setTheme('dark');
+                toast.dismiss(t.id);
+              }}
+            >
+              Switch to dark mode
+            </button>
+          </span>
+        ),
+        { id: 'theme-suggestion-toast', duration: 5000 }
+      );
+    }
   }, [theme]);
 
   const toggleTheme = () => {
