@@ -19,8 +19,11 @@
   min-width: 259px;
 
   > *,
-  > * > * {
-    // Global application of transitions between themes, 2 levels deep.
+  > * > *,
+  > * > * > *,
+  > * > * > * > *,
+  > * > * > * > * > * {
+    // Global application of transitions between themes, 5 levels deep.
     transition: variables.$transition-fast;
   }
 
