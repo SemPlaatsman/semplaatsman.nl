@@ -1,19 +1,19 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-import IconDesign from '../../../assets/icon-design.svg';
-import IconDev from '../../../assets/icon-dev.svg';
-import IconApp from '../../../assets/icon-app.svg';
-import IconPhoto from '../../../assets/icon-photo.svg';
+import IconBackendDevelopment from '../../../assets/interests/backend-development.svg';
+import IconWebDevelopment from '../../../assets/interests/web-development.svg';
+import IconArtificialIntelligence from '../../../assets/interests/artificial-intelligence.svg';
+import IconCooking from '../../../assets/interests/cooking.svg';
 
 import Interest from './Interest';
 import styles from './Interests.module.scss';
 
 const imgSrcMap = {
-  webDesign: IconDesign,
-  webDevelopment: IconDev,
-  mobileApps: IconApp,
-  photography: IconPhoto,
+  backendDevelopment: IconBackendDevelopment,
+  webDevelopment: IconWebDevelopment,
+  artificialIntelligence: IconArtificialIntelligence,
+  cooking: IconCooking,
 };
 
 const Interests: React.FC = () => {

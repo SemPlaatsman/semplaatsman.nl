@@ -4,19 +4,14 @@
     "title": "Education",
     "items": [
       {
-        "title": "University School Of The Arts",
-        "period": "2007 — 2008",
+        "title": "Inholland University of Applied Sciences",
+        "period": "2021 — Present",
         "description": "Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et quas molestias exceptur."
       },
       {
-        "title": "New York Academy Of Art",
-        "period": "2006 — 2007",
+        "title": "OSG De Hogeberg (HAVO)",
+        "period": "2015 — 2021",
         "description": "Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est omnis."
-      },
-      {
-        "title": "High School Of Art And Design",
-        "period": "2002 — 2004",
-        "description": "Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur magni dolores eos."
       }
     ]
   },
@@ -24,18 +19,18 @@
     "title": "Experience",
     "items": [
       {
-        "title": "Creative Director",
-        "period": "2015 — Present",
+        "title": "S.P. Abonneeservice",
+        "period": "2024 — Present",
         "description": "Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas molestias exceptur."
       },
       {
-        "title": "Art Director",
-        "period": "2013 — 2015",
+        "title": "S.P. Abonneeservice (Internship)",
+        "period": "2023 — 2024",
         "description": "Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas molestias exceptur."
       },
       {
-        "title": "Web Designer",
-        "period": "2010 — 2013",
+        "title": "Zegel Retailing B.V.",
+        "period": "2019 — 2023",
         "description": "Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas molestias exceptur."
       }
     ]

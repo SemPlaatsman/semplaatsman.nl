@@ -1,17 +1,14 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-import Avatar from '../../../assets/avatar-1.png';
+import AvatarMarcDierikx from '../../../assets/avatars/marc-dierikx.png';
 
 import styles from './Testimonials.module.scss';
 import TestimonialItem from './TestimonialItem';
 import Testimonial from './Testimonial';
 
 const imgSrcMap = {
-  danielLewis: Avatar,
-  jessicaMiller: Avatar,
-  emilyEvans: Avatar,
-  henryWilliam: Avatar,
+  marcDierikx: AvatarMarcDierikx,
 };
 
 const Testimonials: React.FC = () => {

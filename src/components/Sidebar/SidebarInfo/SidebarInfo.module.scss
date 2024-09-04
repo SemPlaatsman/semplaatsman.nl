@@ -62,7 +62,7 @@
     width: max-content;
     padding: 3px 12px;
     border-radius: 8px;
-    color: functions.theme("text-secondary");
+    color: functions.theme("text-primary");
     background-color: functions.theme("bg-tertiary");
 
     @include mixins.mobile {

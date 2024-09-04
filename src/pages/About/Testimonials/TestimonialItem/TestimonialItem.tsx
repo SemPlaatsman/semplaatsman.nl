@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Modal from '../../../../components/Modal';
 import QuoteIcon from '../../../../assets/icon-quote.svg';
 import Testimonial from '../Testimonial';
+import i18n from '../../../../i18n';
 
 import styles from './TestimonialItem.module.scss';
 
@@ -44,7 +45,9 @@ const TestimonialItem: React.FC<TestimonialItemProps> = ({ data, imgSrc }) => {
         <div className={styles.testimonialsModalContent}>
           <div className={styles.testimonialsModalTextContent}>
             <h3 className={`h3 ${styles.testimonialsModalTitle}`}>{data.name}</h3>
-            <time dateTime={data.dateISO}>{data.date}</time>
+            <time dateTime={data.dateISO}>
+              {Intl.DateTimeFormat(i18n.language).format(new Date(data.dateISO))}
+            </time>
             <div>
               <p>{data.text}</p>
             </div>
