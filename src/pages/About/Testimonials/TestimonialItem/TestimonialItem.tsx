@@ -8,11 +8,11 @@ import i18n from '../../../../i18n';
 import styles from './TestimonialItem.module.scss';
 
 interface TestimonialItemProps {
-  data: Testimonial;
+  testimonial: Testimonial;
   imgSrc: string;
 }
 
-const TestimonialItem: React.FC<TestimonialItemProps> = ({ data, imgSrc }) => {
+const TestimonialItem: React.FC<TestimonialItemProps> = ({ testimonial, imgSrc }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => setIsModalOpen(true);
@@ -28,28 +28,29 @@ const TestimonialItem: React.FC<TestimonialItemProps> = ({ data, imgSrc }) => {
         role="button"
       >
         <figure className={styles.testimonialsAvatarBox}>
-          <img src={imgSrc} alt={data.avatarAlt} width="60" />
+          <img src={imgSrc} alt={testimonial.avatarAlt} width="60" />
         </figure>
-        <h4 className={`h4 ${styles.testimonialsItemTitle}`}>{data.name}</h4>
+        <h4 className={`h4 ${styles.testimonialsItemTitle}`}>{testimonial.name}</h4>
         <div className={styles.testimonialsText}>
-          <p>{data.text}</p>
+          <p>{testimonial.text}</p>
         </div>
       </div>
       <Modal isOpen={isModalOpen} onClose={closeModal}>
         <div className={styles.testimonialsModalImgWrapper}>
           <figure className={styles.testimonialsModalAvatarBox}>
-            <img src={imgSrc} alt={data.avatarAlt} width="80" />
+            <img src={imgSrc} alt={testimonial.avatarAlt} width="80" />
           </figure>
           <img src={QuoteIcon} alt="quote icon" />
         </div>
         <div className={styles.testimonialsModalContent}>
           <div className={styles.testimonialsModalTextContent}>
-            <h3 className={`h3 ${styles.testimonialsModalTitle}`}>{data.name}</h3>
-            <time dateTime={data.dateISO}>
-              {Intl.DateTimeFormat(i18n.language).format(new Date(data.dateISO))}
+            <h3 className={`h3 ${styles.testimonialsModalTitle}`}>{testimonial.name}</h3>
+            <p className={styles.testimonialsModalPosition}>{testimonial.position}</p>
+            <time dateTime={testimonial.dateISO}>
+              {Intl.DateTimeFormat(i18n.language).format(new Date(testimonial.dateISO))}
             </time>
             <div>
-              <p>{data.text}</p>
+              <p>{testimonial.text}</p>
             </div>
           </div>
         </div>

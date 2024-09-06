@@ -1,9 +1,8 @@
 {
   "title": "Over mij",
   "description": [
-    "OPMERKING: Dit is een voorbeeldpagina die is gemaakt om de mogelijkheden van de applicatie te demonstreren. De informatie op deze pagina is niet echt.",
-    "Ik ben Creative Director en UI/UX Designer uit Sydney, Australië, werkzaam in webontwikkeling en printmedia. Ik geniet ervan om complexe problemen om te zetten in eenvoudige, mooie en intuïtieve ontwerpen.",
-    "Mijn taak is om uw website zo te bouwen dat deze functioneel en gebruiksvriendelijk is, maar tegelijkertijd aantrekkelijk. Bovendien voeg ik een persoonlijke touch toe aan uw product en zorg ik ervoor dat het opvalt en gemakkelijk te gebruiken is. Mijn doel is om uw boodschap en identiteit op de meest creatieve manier over te brengen. Ik heb webdesigns gemaakt voor vele bekende merkbedrijven."
+    "Hoi, ik ben <strong>Sem Plaatsman</strong>, een vierdejaars Bachelor-student Informatica aan de Hogeschool Inholland in Haarlem. Ik heb een passie voor het <strong>oplossen van problemen</strong> en duik graag diep in complexe vraagstukken. Ik ben altijd bereid om <strong>nieuwe dingen te leren</strong> en mijn vaardigheden te verbeteren.",
+    "Ik heb ervaring met verschillende programmeertalen en technologieën, zoals Java, C#, TypeScript, Python en (No)SQL. Ook ben ik bekend met frameworks en libraries zoals React, Spring Boot, ASP.NET en TensorFlow. Momenteel ben ik bezig met het uitbreiden van mijn kennis van <strong>CI/CD en Cloud Computing</strong>."
   ],
   "whatImDoing": {
     "title": "Wat ik doe",
@@ -39,6 +38,13 @@
         "dateISO": "2024-09-03",
         "text": "TBA",
         "avatarAlt": "Marc Dierikx avatar"
+      },
+      "tayamElJebari": {
+        "name": "Tayam El Jebari",
+        "position": "Medestudent | DevOps Engineer bij Albert Heijn",
+        "dateISO": "2023-09-04",
+        "text": "Ik heb de samenwerking met Sem als prettig ervaren. Sem heeft een goed vermogen om initiatief te nemen bij diverse taken en heeft een serieuze aanpak met zijn verantwoordelijkheden. Zijn communicatievaardigheden zijn uitstekend, wat de samenwerking binnen het team altijd soepel laat verlopen. Zijn dedicatie en ijverigheid leidt altijd tot een heldere structuur in zijn code. Sem is ook een opgewekte en leuke collega om mee samen te werken. Zijn positieve instelling draagt bij aan een prettige werksfeer.",
+        "avatarAlt": "Tayam El Jebari avatar"
       }
     }
   }

@@ -1,8 +1,8 @@
 {
   "title": "About me",
   "description": [
-    "Hey, I'm Sem Plaatsman, a fourth-year Bachelor's student of Computer Science at Inholland University of Applied Sciences in Haarlem, The Netherlands. I have a passion for problem solving and like to dive deep into complex issues. I'm always eager to learn new things and improve my skills.",
-    "I have experience with various programming languages and technologies, such as Java, C#, TypeScript, Python, and (No)SQL. I'm also familiar with frameworks and libraries like React, Spring Boot, ASP.NET, and TensorFlow. I'm currently working on expanding my knowledge of CI/CD and Cloud Computing."
+    "Hey, I'm <strong>Sem Plaatsman</strong>, a fourth-year Bachelor's student of Computer Science at Inholland University of Applied Sciences in Haarlem, The Netherlands. I have a passion for <strong>problem solving</strong> and like to dive deep into complex issues. I'm always eager to <strong>learn new things</strong> and improve my skills.",
+    "I have experience with various programming languages and technologies, such as Java, C#, TypeScript, Python, and (No)SQL. I'm also familiar with frameworks and libraries like React, Spring Boot, ASP.NET, and TensorFlow. I'm currently working on expanding my knowledge of <strong>CI/CD and Cloud Computing</strong>."
   ],
   "whatImDoing": {
     "title": "What I'm Doing",
@@ -38,6 +38,13 @@
         "dateISO": "2024-09-03",
         "text": "TBA",
         "avatarAlt": "Marc Dierikx avatar"
+      },
+      "tayamElJebari": {
+        "name": "Tayam El Jebari",
+        "position": "Fellow student | DevOps Engineer bij Albert Heijn",
+        "dateISO": "2023-09-04",
+        "text": "I have enjoyed working with Sem. Sem has a good ability to take initiative in various tasks and has a serious approach with his responsibilities. His communication skills are excellent, which always makes cooperation within the team run smoothly. His dedication and diligence always leads to a clear structure in his code. Sem is also an upbeat and fun colleague to work with. His positive attitude contributes to a pleasant working atmosphere.",
+        "avatarAlt": "Tayam El Jebari avatar"
       }
     }
   }

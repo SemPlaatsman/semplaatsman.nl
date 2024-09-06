@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
+import { Trans, useTranslation } from 'react-i18next';
 
 import PageContent from '../../components/PageContent';
 
@@ -15,7 +15,9 @@ const About: React.FC = () => {
     <PageContent className={styles.about} titleClassName={styles.aboutTitle}>
       <section className={styles.aboutText}>
         {description.map((paragraph, index) => (
-          <p key={index}>{paragraph}</p>
+          <p key={index}>
+            <Trans>{paragraph}</Trans>
+          </p>
         ))}
       </section>
       <Interests />
