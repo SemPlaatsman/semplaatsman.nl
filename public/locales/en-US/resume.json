@@ -1,5 +1,9 @@
 {
   "title": "Resume",
+  "pdfLink": {
+    "text": "Open as PDF",
+    "ariaLabel": "Open Resume PDF in new tab"
+  },
   "education": {
     "title": "Education",
     "items": [

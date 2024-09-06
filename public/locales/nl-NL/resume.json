@@ -1,5 +1,9 @@
 {
   "title": "CV",
+  "pdfLink": {
+    "text": "Open als PDF",
+    "ariaLabel": "Open CV PDF in nieuw tabblad"
+  },
   "education": {
     "title": "Opleiding",
     "items": [

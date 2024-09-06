@@ -1,8 +1,10 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { IoBookOutline } from 'react-icons/io5';
+import { GrDocumentPdf } from 'react-icons/gr';
 
 import PageContent from '../../components/PageContent';
+import i18n from '../../i18n';
 
 import styles from './Resume.module.scss';
 import Timeline from './Timeline';
@@ -18,8 +20,19 @@ const Resume: React.FC = () => {
 
   const skillsItems: SkillItem[] = t('skills.items', { returnObjects: true });
 
+  const pdfUrl = `/resume/Resume_Sem_Plaatsman_${i18n.language}.pdf`;
+
   return (
-    <PageContent className={styles.resume} titleClassName={styles.resumeTitle}>
+    <PageContent className={styles.resume}>
+      <a
+        href={pdfUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={styles.pdfLink}
+        aria-label={t('pdfLink.ariaLabel')}
+      >
+        <GrDocumentPdf /> {t('pdfLink.text')}
+      </a>
       <Timeline items={educationItems} icon={IoBookOutline} title={t('education.title')} />
       <Timeline items={experienceItems} icon={IoBookOutline} title={t('experience.title')} />
       <Skills items={skillsItems} title={t('skills.title')} />
