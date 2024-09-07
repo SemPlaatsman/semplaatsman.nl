@@ -33,7 +33,7 @@
 .projectBannerBox {
   width: 100%;
   height: 200px;
-  border-radius: 12px;
+  border-radius: 12px 12px 0 0;
   overflow: hidden;
 
   img {
@@ -48,7 +48,7 @@
   }
 
   @include mixins.mobile {
-    border-radius: 16px;
+    border-radius: 16px 16px 0 0;
   }
 
   @include mixins.desktop {
@@ -56,8 +56,76 @@
   }
 }
 
+.technologiesContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.technologyIcon {
+  position: relative;
+  background-color: functions.theme("bg-secondary");
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: variables.$transition-fast;
+  color: functions.theme("text-primary");
+
+  width: 2em;
+  height: 2em;
+  margin: 0 0.25em;
+  font-size: variables.$font-size-md;
+
+  @include mixins.mobile-small {
+    font-size: variables.$font-size-lg;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    color: functions.theme("accent-primary");
+  }
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: functions.theme("bg-tertiary");
+  color: functions.theme("text-primary");
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: variables.$font-size-sm;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: functions.theme("bg-tertiary") transparent transparent transparent;
+  }
+}
+
+.technologyIcon:hover .tooltip {
+  opacity: 1;
+}
+
 .projectContent {
   padding: 15px;
+  padding-top: 25px;
 
   @include mixins.mobile {
     padding: 25px;
