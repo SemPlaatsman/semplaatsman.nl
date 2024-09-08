@@ -24,7 +24,12 @@ const ContactsList: React.FC = () => {
         const IconComponent = iconMap[key as keyof typeof iconMap];
         return (
           <li key={key} className={styles.contactItem}>
-            <a href={contact.link} target="_blank" rel="noreferrer" aria-label={contact.ariaLabel}>
+            <a
+              href={contact.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={contact.ariaLabel}
+            >
               <IconBox>
                 <IconComponent />
               </IconBox>
@@ -35,7 +40,7 @@ const ContactsList: React.FC = () => {
                 href={contact.link}
                 target="_blank"
                 className={styles.contactLink}
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 aria-label={contact.ariaLabel}
               >
                 {contact.handle}
