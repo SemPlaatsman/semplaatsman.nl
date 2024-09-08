@@ -13,7 +13,7 @@ const NavBar: React.FC = () => {
   const location = useLocation();
 
   return (
-    <nav className={styles.navBar}>
+    <nav className={styles.navBar} role="navigation">
       <ul className={styles.navBarList}>
         {routes
           .filter((config) => config.path.split('/').length - 1 === 1) // Only allow top-level domains

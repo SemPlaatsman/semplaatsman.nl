@@ -8,7 +8,7 @@ interface DropdownProps {
   children: React.ReactNode;
 }
 
-const Dropdown: React.FC<DropdownProps> = ({ className, trigger, children }) => {
+const Dropdown: React.FC<DropdownProps> = ({ className = '', trigger, children }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [position, setPosition] = useState<{
     vertical: 'bottom' | 'top';
@@ -60,7 +60,7 @@ const Dropdown: React.FC<DropdownProps> = ({ className, trigger, children }) => 
   };
 
   return (
-    <div className={`${styles.dropdown} ${className ?? ''}`} ref={dropdownRef}>
+    <div className={`${styles.dropdown} ${className}`} ref={dropdownRef}>
       <div
         onClick={toggleDropdown}
         onKeyDown={(e) => e.key === 'Enter' && toggleDropdown()}

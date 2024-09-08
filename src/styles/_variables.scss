@@ -66,36 +66,37 @@ $themes: (
     grayscale: grayscale(1) invert(1),
   ),
   light: (
-    bg-primary: hsl(0, 0%, 100%),
-    bg-secondary: hsl(0, 0%, 95%),
-    bg-tertiary: hsl(0, 0%, 90%),
-    text-primary: hsl(0, 0%, 0%),
-    text-secondary: hsl(0, 0%, 16%),
-    text-tertiary: hsla(0, 0%, 20%, 0.7),
-    accent-primary: hsl(45, 100%, 50%),
-    accent-secondary: hsl(45, 54%, 40%),
-    accent-tertiary: hsl(0, 43%, 40%),
-    border-color: hsl(0, 0%, 80%),
-    bg-gradient-primary: linear-gradient(to bottom right, hsl(0, 0%, 95%) 3%, hsl(0, 0%, 90%) 97%),
+    bg-primary: hsl(48, 100%, 97%),
+    bg-secondary: hsl(48, 55%, 93%),
+    bg-tertiary: hsl(48, 45%, 90%),
+    text-primary: hsl(35, 25%, 15%),
+    text-secondary: hsl(35, 20%, 25%),
+    text-tertiary: hsla(35, 15%, 35%, 0.7),
+    accent-primary: hsl(45, 100%, 40%),
+    accent-secondary: hsl(30, 70%, 45%),
+    accent-tertiary: hsl(15, 70%, 55%),
+    border-color: hsl(48, 25%, 80%),
+    bg-gradient-primary:
+      linear-gradient(to bottom right, hsl(48, 100%, 97%) 3%, hsl(48, 55%, 93%) 97%),
     bg-gradient-secondary: (
-      linear-gradient(to bottom right, hsla(0, 0%, 90%, 0.251) 0%, hsla(0, 0%, 95%, 0) 100%),
-      hsl(240, 10%, 98%),
+      linear-gradient(to bottom right, hsla(48, 45%, 90%, 0.251) 0%, hsla(48, 100%, 97%, 0) 100%),
+      hsl(48, 100%, 97%),
     ),
     bg-gradient-accent-primary:
-      linear-gradient(to bottom right, hsl(45, 100%, 60%) 0%, hsla(36, 100%, 50%, 0) 50%),
+      linear-gradient(to bottom right, hsl(45, 90%, 50%) 0%, hsla(45, 90%, 50%, 0) 50%),
     bg-gradient-accent-secondary: (
-      linear-gradient(135deg, hsl(45, 100%, 60%, 0.251) 0%, hsla(35, 100%, 49%, 0) 59.86%),
-      hsl(240, 2%, 13%),
+      linear-gradient(135deg, hsla(45, 90%, 50%, 0.251) 0%, hsla(45, 90%, 50%, 0) 59.86%),
+      hsl(48, 100%, 97%),
     ),
     border-gradient-primary:
-      linear-gradient(to bottom right, hsl(0, 0%, 75%) 0%, hsla(0, 0%, 75%, 0) 50%),
-    text-gradient-primary: linear-gradient(to right, hsl(45, 100%, 50%), hsl(35, 100%, 45%)),
-    shadow: -4px 8px 24px hsla(0, 0%, 0%, 0.25),
-    shadow-sm: 0 16px 30px hsla(0, 0%, 0%, 0.25),
-    shadow-md: 0 16px 40px hsla(0, 0%, 0%, 0.25),
-    shadow-lg: 0 25px 50px hsla(0, 0%, 0%, 0.15),
-    shadow-xl: 0 24px 80px hsla(0, 0%, 0%, 0.25),
-    grayscale: grayscale(1),
+      linear-gradient(to bottom right, hsl(48, 25%, 75%) 0%, hsla(48, 25%, 75%, 0) 50%),
+    text-gradient-primary: linear-gradient(to right, hsl(45, 90%, 50%), hsl(30, 80%, 55%)),
+    shadow: -4px 8px 24px hsla(35, 25%, 15%, 0.1),
+    shadow-sm: 0 16px 30px hsla(35, 25%, 15%, 0.08),
+    shadow-md: 0 16px 40px hsla(35, 25%, 15%, 0.1),
+    shadow-lg: 0 25px 50px hsla(35, 25%, 15%, 0.12),
+    shadow-xl: 0 24px 80px hsla(35, 25%, 15%, 0.15),
+    grayscale: grayscale(0.5),
   ),
 );
 
@@ -114,22 +115,28 @@ $themes: (
 $font-family-primary: "Poppins", sans-serif;
 $font-family-secondary: "Poppins", sans-serif;
 
-// --fs-8
-$font-size-xxs: 11px;
-// --fs-7
+// --fs-8 (root)
+$font-size-3xs: 11px;
+// --fs-8 (mobile)
+$font-size-xxs: 12px;
+// --fs-7 (root)
 $font-size-xs: 13px;
-// --fs-6
+// --fs-6 (root)
 $font-size-sm: 14px;
-// --fs-5
+// --fs-5 (root)  --fs-6 (mobile)  --fs-7 (mobile)
 $font-size-md: 15px;
-// --fs-4
+// --fs-4 (root)
 $font-size-rg: 16px;
-// --fs-3
+// --fs-3 (root)
 $font-size-lg: 17px;
-// --fs-2
+// --fs-2 (root)  --fs-4 (mobile)
 $font-size-xl: 18px;
-// --fs-1
+// --fs-1 (root)  --fs-2 (mobile)
 $font-size-xxl: 24px;
+// --fs-3 (mobile)
+$font-size-3xl: 26px;
+// --fs-1 (mobile)
+$font-size-4xl: 32px;
 
 // --fw-300
 $font-weight-light: 300;
@@ -146,3 +153,12 @@ $font-weight-bold: 700;
 $transition-fast: 0.25s ease;
 // --transition-2
 $transition-slow: 0.5s ease-in-out;
+
+// Screen sizes
+$screen-sizes: (
+  mobile-small: 450px,
+  mobile: 580px,
+  tablet: 768px,
+  desktop: 1024px,
+  desktop-large: 1250px,
+);

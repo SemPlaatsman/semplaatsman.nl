@@ -21,6 +21,7 @@
   }
 
   @include mixins.mobile {
+    font-size: variables.$font-size-md;
     margin-bottom: 40px;
   }
 }

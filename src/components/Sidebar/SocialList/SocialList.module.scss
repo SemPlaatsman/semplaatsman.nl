@@ -16,11 +16,15 @@
 }
 
 .socialItem .socialLink {
-  font-size: 18px;
+  font-size: variables.$font-size-xl;
 
   > svg {
     fill: functions.theme("text-tertiary");
     color: functions.theme("text-tertiary");
+  }
+
+  @include mixins.mobile {
+    font-size: 20px;
   }
 }
 

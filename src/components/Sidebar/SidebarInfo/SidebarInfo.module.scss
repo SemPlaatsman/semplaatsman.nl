@@ -46,6 +46,7 @@
     color: functions.theme("text-primary");
 
     @include mixins.mobile {
+      font-size: variables.$font-size-3xl;
       margin-bottom: 15px;
     }
 
@@ -56,15 +57,16 @@
   }
 
   .title {
-    font-size: variables.$font-size-xxs;
+    font-size: variables.$font-size-3xs;
     font-weight: variables.$font-weight-light;
     width: max-content;
     padding: 3px 12px;
     border-radius: 8px;
-    color: functions.theme("text-secondary");
+    color: functions.theme("text-primary");
     background-color: functions.theme("bg-tertiary");
 
     @include mixins.mobile {
+      font-size: variables.$font-size-xxs;
       padding: 5px 18px;
     }
 
@@ -85,7 +87,7 @@
   box-shadow: functions.theme("shadow-sm");
   transition: opacity variables.$transition-fast;
   color: functions.theme("accent-primary");
-  background-image: functions.theme("gradient-secondary");
+  background-image: functions.theme("border-gradient-primary");
   z-index: 1;
 
   &::before {
@@ -112,7 +114,7 @@
 
     @include mixins.mobile {
       display: block;
-      font-size: variables.$font-size-xxs;
+      font-size: variables.$font-size-xs;
     }
   }
 
@@ -120,10 +122,11 @@
     top: -30px;
     right: -30px;
     padding: 10px 15px;
+    font-size: variables.$font-size-md;
 
-    .infoMoreIcon,
-    span:has(.infoMoreIcon) {
+    .infoMoreIcon {
       display: none;
+      font-size: variables.$font-size-xs;
     }
   }
 

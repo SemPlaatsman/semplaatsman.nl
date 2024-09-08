@@ -1,6 +1,6 @@
 # semplaatsman.nl
 
-This branch features the omst recent deployed and stable code of my portfolio website hosted on
+This branch features the most recent deployed and stable code of my portfolio website hosted on
 [semplaatsman.nl](https://www.semplaatsman.nl).
 
 ## Acknowledgements

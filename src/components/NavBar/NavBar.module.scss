@@ -62,8 +62,14 @@
   }
 
   span {
-    font-size: variables.$font-size-xxs;
+    font-size: variables.$font-size-3xs;
     font-weight: inherit;
+  }
+
+  @include mixins.mobile-small {
+    span {
+      font-size: variables.$font-size-xs;
+    }
   }
 
   @include mixins.mobile {

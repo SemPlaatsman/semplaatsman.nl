@@ -1,69 +1,50 @@
 {
   "title": "About me",
   "description": [
-    "NOTE: This is a sample page created for the purpose of demonstrating the capabilities of the application. The information on this page is not real.",
-    "I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media. I enjoy turning complex problems into simple, beautiful and intuitive designs. ",
-    "My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way. I created web design for many famous brand companies."
+    "Hey, I'm <strong>Sem Plaatsman</strong>, a fourth-year Bachelor's student of Computer Science at Inholland University of Applied Sciences in Haarlem, The Netherlands. I have a passion for <strong>problem solving</strong> and like to dive deep into complex issues. I'm always eager to <strong>learn new things</strong> and improve my skills.",
+    "I have experience with various programming languages and technologies, such as Java, C#, TypeScript, Python, and (No)SQL. I'm also familiar with frameworks and libraries like React, Spring Boot, ASP.NET, and TensorFlow. I'm currently working on expanding my knowledge of <strong>CI/CD and Cloud Computing</strong>."
   ],
   "whatImDoing": {
     "title": "What I'm Doing",
     "interests": {
-      "webDesign": {
-        "title": "Web Design",
-        "description": "The most modern and high-quality design made at a professional level.",
-        "iconAlt": "Web Design icon"
+      "backendDevelopment": {
+        "title": "Backend Development",
+        "description": "Building backend systems and API's for various applications",
+        "iconAlt": "Backend Development icon"
       },
       "webDevelopment": {
         "title": "Web Development",
-        "description": "High-quality development of sites at the professional level.",
+        "description": "Developing functional websites built with modern technologies.",
         "iconAlt": "Web Development icon"
       },
-      "mobileApps": {
-        "title": "Mobile Apps",
-        "description": "Professional development of applications for iOS and Android.",
-        "iconAlt": "Mobile Apps icon"
+      "artificialIntelligence": {
+        "title": "Artificial Intelligence",
+        "description": "Creating both machine and deep learning AI models.",
+        "iconAlt": "Artificial Intelligence icon"
       },
-      "photography": {
-        "title": "Photography",
-        "description": "I make high-quality photos of any category at a professional level.",
-        "iconAlt": "Photography icon"
+      "cooking": {
+        "title": "Cooking",
+        "description": "Besides programming, I love to cook and try new recipes.",
+        "iconAlt": "Cooking icon"
       }
     }
   },
   "testimonials": {
     "title": "Testimonials",
     "testimonials": {
-      "danielLewis": {
-        "name": "Daniel Lewis",
-        "position": "CEO of Company",
-        "date": "14 June, 2021",
-        "dateISO": "2021-06-14",
-        "text": "Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.",
-        "avatarAlt": "Daniel Lewis avatar"
+      "marcDierikx": {
+        "name": "Marc Dierikx",
+        "position": "Chief Technology Officer at S.P. Abonneeservice BV",
+        "dateISO": "2024-09-13",
+        "text": "Testimonial coming soon...",
+        "avatarAlt": "Marc Dierikx avatar"
       },
-      "jessicaMiller": {
-        "name": "Jessica Miller",
-        "position": "CEO of Company",
-        "date": "14 June, 2021",
-        "dateISO": "2021-06-14",
-        "text": "Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.",
-        "avatarAlt": "Jessica Miller avatar"
-      },
-      "emilyEvans": {
-        "name": "Emily Evans",
-        "position": "CEO of Company",
-        "date": "14 June, 2021",
-        "dateISO": "2021-06-14",
-        "text": "Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.",
-        "avatarAlt": "Emily Evans avatar"
-      },
-      "henryWilliam": {
-        "name": "Henry William",
-        "position": "CEO of Company",
-        "date": "14 June, 2021",
-        "dateISO": "2021-06-14",
-        "text": "Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.",
-        "avatarAlt": "Henry William avatar"
+      "tayamElJebari": {
+        "name": "Tayam El Jebari",
+        "position": "Fellow student | DevOps Engineer bij Albert Heijn",
+        "dateISO": "2023-09-04",
+        "text": "I have enjoyed working with Sem. Sem has a good ability to take initiative in various tasks and has a serious approach with his responsibilities. His communication skills are excellent, which always makes cooperation within the team run smoothly. His dedication and diligence always leads to a clear structure in his code. Sem is also an upbeat and fun colleague to work with. His positive attitude contributes to a pleasant working atmosphere.",
+        "avatarAlt": "Tayam El Jebari avatar"
       }
     }
   }

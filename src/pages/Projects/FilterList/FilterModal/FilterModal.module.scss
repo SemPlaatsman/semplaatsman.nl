@@ -66,7 +66,7 @@
   align-items: center;
   padding: 6px 12px;
   border-radius: 16px;
-  font-size: variables.$font-size-sm;
+  font-size: variables.$font-size-xs;
   font-weight: variables.$font-weight-medium;
   cursor: pointer;
   transition: variables.$transition-fast;
@@ -77,6 +77,10 @@
   &:hover {
     background: functions.theme("bg-primary");
     color: functions.theme("text-primary");
+  }
+
+  @include mixins.mobile {
+    font-size: variables.$font-size-sm;
   }
 }
 

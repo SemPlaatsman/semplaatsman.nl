@@ -52,6 +52,13 @@
 
   img {
     margin: auto;
+    max-width: 40px;
+    max-height: 40px;
+
+    @include mixins.tablet {
+      max-width: 50px;
+      max-height: 50px;
+    }
   }
 
   @include mixins.mobile {
@@ -75,6 +82,10 @@
 .interestsItemText {
   color: functions.theme("text-secondary");
   font-size: variables.$font-size-sm;
-  font-weight: variables.$font-size-lg;
+  font-weight: variables.$font-weight-light;
   line-height: 1.6;
+
+  @include mixins.mobile {
+    font-size: variables.$font-size-md;
+  }
 }

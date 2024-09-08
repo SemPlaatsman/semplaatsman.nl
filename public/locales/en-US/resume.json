@@ -1,22 +1,28 @@
 {
   "title": "Resume",
+  "pdfLink": {
+    "text": "Open as PDF",
+    "ariaLabel": "Open Resume PDF in new tab"
+  },
   "education": {
     "title": "Education",
     "items": [
       {
-        "title": "University School Of The Arts",
-        "period": "2007 — 2008",
-        "description": "Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et quas molestias exceptur."
+        "title": "Inholland University of Applied Sciences",
+        "period": "2021 — Present",
+        "description": [
+          "In year 2, I helped year 1 students with programming in C# (credit point).",
+          "Successfully completed various multidisciplinary projects with a variety of technologies.",
+          "Obtained propaedeutic diploma in the first year."
+        ]
       },
       {
-        "title": "New York Academy Of Art",
-        "period": "2006 — 2007",
-        "description": "Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est omnis."
-      },
-      {
-        "title": "High School Of Art And Design",
-        "period": "2002 — 2004",
-        "description": "Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur magni dolores eos."
+        "title": "OSG De Hogeberg (HAVO)",
+        "period": "2015 — 2021",
+        "description": [
+          "Completed a year-long final research project on AI.",
+          "Became interested in programming during a Python project in the 4th year."
+        ]
       }
     ]
   },
@@ -24,19 +30,28 @@
     "title": "Experience",
     "items": [
       {
-        "title": "Creative Director",
-        "period": "2015 — Present",
-        "description": "Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas molestias exceptur."
+        "title": "S.P. Abonneeservice",
+        "period": "2024 — Present",
+        "description": [
+          "Developed an SSO system with performance, security, and unit testing.",
+          "Worked on an AI model that attempts to predict when a subscriber will cancel. This AI model is integrated with the existing retention modules."
+        ]
       },
       {
-        "title": "Art Director",
-        "period": "2013 — 2015",
-        "description": "Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas molestias exceptur."
+        "title": "S.P. Abonneeservice (Internship)",
+        "period": "2023 — 2024",
+        "description": [
+          "Developed a JWT-authenticated PWA for S.P.'s customers for statistical information.",
+          "Collaborated within a multidisciplinary context. Analyzed requirements and performed technical translations for non-technical stakeholders.",
+          "Gained experience with React, ASP.NET, JWT, TypeScript, SCSS, MySQL, and other technologies."
+        ]
       },
       {
-        "title": "Web Designer",
-        "period": "2010 — 2013",
-        "description": "Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas molestias exceptur."
+        "title": "Zegel Retailing B.V.",
+        "period": "2019 — 2023",
+        "description": [
+          "All-round retail employee focusing on customer-oriented service and operational support."
+        ]
       }
     ]
   },

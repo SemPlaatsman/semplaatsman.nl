@@ -21,8 +21,7 @@ const SEO: React.FC = () => {
   const { t } = useTranslation('seo');
 
   return (
-    <Helmet>
-      <html lang={i18n.language} />
+    <Helmet htmlAttributes={{ lang: new Intl.Locale(i18n.language).language }}>
       <title>{t('title')}</title>
       <meta name="author" content={t('author')} />
       <meta name="description" content={t('siteDescription')} />

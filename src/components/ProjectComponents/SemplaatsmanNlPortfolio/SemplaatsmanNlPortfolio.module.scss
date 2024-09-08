@@ -1,0 +1,13 @@
+@use "../../../styles/variables";
+@use "../../../styles/functions";
+@use "../../../styles/mixins";
+
+.link {
+  display: inline-block;
+  color: functions.theme("accent-primary");
+
+  &:hover,
+  &:focus {
+    color: functions.theme("accent-secondary");
+  }
+}
