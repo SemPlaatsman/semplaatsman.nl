@@ -7,6 +7,8 @@ import i18n from '../../i18n';
 
 import faviconPNG from '/favicon.png';
 
+import { useCurrentRouteConfig } from '../../routes/routes';
+
 const img = {
   src: faviconPNG,
   width: 739,
@@ -19,6 +21,47 @@ const SEO: React.FC = () => {
   const location = useLocation();
   const currUrl = `${baseUrl}${location.pathname}`;
   const { t } = useTranslation('seo');
+  const currentRoute = useCurrentRouteConfig();
+
+  // Create breadcrumb items based on the current path and route configuration
+  const breadcrumbItems = [];
+  if (location.pathname !== '/') {
+    // Add "About" as the first item for all pages except the root
+    breadcrumbItems.push({
+      '@type': 'ListItem',
+      position: 1,
+      name: t(`pages.about`), // Assuming you have translations for page names
+      item: baseUrl,
+    });
+  }
+
+  if (currentRoute) {
+    if (currentRoute.path.includes(':slug')) {
+      // For project detail pages
+      breadcrumbItems.push(
+        {
+          '@type': 'ListItem',
+          position: breadcrumbItems.length + 1,
+          name: t(`pages.projects`),
+          item: `${baseUrl}/projects`,
+        },
+        {
+          '@type': 'ListItem',
+          position: breadcrumbItems.length + 2,
+          name: t(`currentProject`), // You'll need to provide the current project name
+          item: currUrl,
+        }
+      );
+    } else {
+      // For other pages
+      breadcrumbItems.push({
+        '@type': 'ListItem',
+        position: breadcrumbItems.length + 1,
+        name: t(`pages.${currentRoute.pageKey}`),
+        item: currUrl,
+      });
+    }
+  }
 
   return (
     <Helmet htmlAttributes={{ lang: new Intl.Locale(i18n.language).language }}>
@@ -45,25 +88,42 @@ const SEO: React.FC = () => {
       <script type="application/ld+json">
         {JSON.stringify({
           '@context': 'https://schema.org',
-          '@type': 'Person',
-          name: t('author'),
-          givenName: t('givenName'),
-          familyName: t('familyName'),
-          additionalName: t('additionalName'),
-          description: t('personDescription'),
-          url: currUrl,
-          jobTitle: t('jobTitle'),
-          sameAs: [t('linkedinUrl'), t('githubUrl'), t('portfolioUrl')],
-          knowsAbout: t('knowsAbout', { returnObjects: true }),
-          email: t('email'),
-          gender: t('gender'),
-          knowsLanguage: t('knowsLanguage', { returnObjects: true }),
-          nationality: t('nationality'),
-          address: {
-            '@type': 'PostalAddress',
-            addressLocality: t('addressLocality'),
-            addressCountry: t('addressCountry'),
-          },
+          '@graph': [
+            {
+              '@type': 'WebSite',
+              '@id': `${baseUrl}/#website`,
+              url: baseUrl,
+              name: t('title'),
+              description: t('siteDescription'),
+              inLanguage: i18n.language,
+            },
+            {
+              '@type': 'BreadcrumbList',
+              '@id': `${currUrl}/#breadcrumb`,
+              itemListElement: breadcrumbItems,
+            },
+            {
+              '@type': 'Person',
+              name: t('author'),
+              givenName: t('givenName'),
+              familyName: t('familyName'),
+              additionalName: t('additionalName'),
+              description: t('personDescription'),
+              url: currUrl,
+              jobTitle: t('jobTitle'),
+              sameAs: [t('linkedinUrl'), t('githubUrl'), t('portfolioUrl')],
+              knowsAbout: t('knowsAbout', { returnObjects: true }),
+              email: t('email'),
+              gender: t('gender'),
+              knowsLanguage: t('knowsLanguage', { returnObjects: true }),
+              nationality: t('nationality'),
+              address: {
+                '@type': 'PostalAddress',
+                addressLocality: t('addressLocality'),
+                addressCountry: t('addressCountry'),
+              },
+            },
+          ],
         })}
       </script>
     </Helmet>
