@@ -48,3 +48,7 @@ html {
     font-size: variables.$font-size-md;
   }
 }
+
+p {
+  color: functions.theme("text-primary");
+}
