@@ -1,0 +1,57 @@
+{
+  "sidebar": {
+    "avatarAlt": "Picture of Sem Plaatsman",
+    "name": "Sem Plaatsman",
+    "title": "BSc CS Student",
+    "hideContacts": "Hide contacts",
+    "showContacts": "Show contacts",
+    "contacts": {
+      "github": {
+        "title": "GitHub",
+        "handle": "@SemPlaatsman",
+        "link": "https://github.com/SemPlaatsman",
+        "ariaLabel": "Sem Plaatsman's GitHub profile"
+      },
+      "linkedin": {
+        "title": "LinkedIn",
+        "handle": "@sem-plaatsman",
+        "link": "https://www.linkedin.com/in/sem-plaatsman/",
+        "ariaLabel": "Sem Plaatsman's LinkedIn profile"
+      },
+      "email": {
+        "title": "Email",
+        "handle": "hello@semplaatsman.nl",
+        "link": "mailto:hello@semplaatsman.nl",
+        "ariaLabel": "Send an email to Sem Plaatsman"
+      },
+      "location": {
+        "title": "Location",
+        "handle": "Haarlem, The Netherlands",
+        "link": "https://maps.app.goo.gl/AEWwr2iiCeWyovD28",
+        "ariaLabel": "Sem Plaatsman's location on Google Maps"
+      }
+    },
+    "socials": {
+      "npm": {
+        "link": "https://www.npmjs.com/~sempl",
+        "ariaLabel": "Sem Plaatsman's npm profile"
+      },
+      "stackOverflow": {
+        "link": "https://stackoverflow.com/users/18598382/sem",
+        "ariaLabel": "Sem Plaatsman's Stack Overflow profile"
+      }
+    }
+  },
+  "navbar": {
+    "about": "About",
+    "resume": "Resume",
+    "projects": "Projects",
+    "contact": "Contact",
+    "languageSwitcher": {
+      "ariaLabel": "Change language"
+    },
+    "themeSwitcher": {
+      "ariaLabel": "Change theme"
+    }
+  }
+}
