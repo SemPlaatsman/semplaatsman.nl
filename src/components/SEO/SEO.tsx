@@ -30,7 +30,7 @@ const SEO: React.FC = () => {
     breadcrumbItems.push({
       '@type': 'ListItem',
       position: 1,
-      name: 'about' // Could be adjusted later to add a translation
+      name: 'about', // Could be adjusted later to add a translation
       item: baseUrl,
     });
   }
