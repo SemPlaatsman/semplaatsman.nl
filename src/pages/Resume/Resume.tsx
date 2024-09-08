@@ -35,7 +35,7 @@ const Resume: React.FC = () => {
       </a>
       <Timeline items={educationItems} icon={IoBookOutline} title={t('education.title')} />
       <Timeline items={experienceItems} icon={IoBookOutline} title={t('experience.title')} />
-      <Skills items={skillsItems} title={t('skills.title')} />
+      {/* <Skills items={skillsItems} title={t('skills.title')} /> */}
     </PageContent>
   );
 };

@@ -82,6 +82,12 @@
   }
 }
 
+.timelineDescription {
+  display: flex;
+  flex-direction: column;
+  gap: 0.33em;
+}
+
 .timelineText {
   color: functions.theme("text-secondary");
   font-weight: variables.$font-weight-light;

@@ -26,7 +26,13 @@ const Timeline: React.FC<TimelineProps> = ({ items, icon: Icon, title }) => {
           <li key={index} className={styles.timelineItem}>
             <h4 className={`h4 ${styles.timelineItemTitle}`}>{item.title}</h4>
             <span>{item.period}</span>
-            <p className={styles.timelineText}>{item.description}</p>
+            <ul className={styles.timelineDescription}>
+              {item.description.map((text, index) => (
+                <li key={index}>
+                  <p className={styles.timelineText}>{text}</p>
+                </li>
+              ))}
+            </ul>
           </li>
         ))}
       </ol>
