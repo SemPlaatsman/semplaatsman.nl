@@ -9,8 +9,8 @@ import i18n from '../../i18n';
 import styles from './Resume.module.scss';
 import Timeline from './Timeline';
 import TimelineItem from './Timeline/TimelineItem';
-import Skills from './Skills';
-import SkillItem from './Skills/SkillItem';
+// import Skills from './Skills';
+// import SkillItem from './Skills/SkillItem';
 
 const Resume: React.FC = () => {
   const { t } = useTranslation('resume');
@@ -18,7 +18,7 @@ const Resume: React.FC = () => {
   const educationItems: TimelineItem[] = t('education.items', { returnObjects: true });
   const experienceItems: TimelineItem[] = t('experience.items', { returnObjects: true });
 
-  const skillsItems: SkillItem[] = t('skills.items', { returnObjects: true });
+  // const skillsItems: SkillItem[] = t('skills.items', { returnObjects: true });
 
   const pdfUrl = `/resume/Resume_Sem_Plaatsman_${i18n.language}.pdf`;
 
