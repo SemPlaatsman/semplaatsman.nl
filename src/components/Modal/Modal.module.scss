@@ -10,12 +10,12 @@
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  overflow-y: auto;
-  overscroll-behavior: contain;
+  align-items: flex-start;
   z-index: 20;
   pointer-events: none;
   visibility: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
 
   &::-webkit-scrollbar {
     display: none;
@@ -49,6 +49,13 @@
     visibility: visible;
     pointer-events: all;
   }
+}
+
+.modalWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
 }
 
 .modal {
