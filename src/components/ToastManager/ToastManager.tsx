@@ -8,7 +8,7 @@ export const ToastManager: React.FC = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setPosition(window.innerWidth >= 1024 ? 'bottom-right' : 'top-center');
+      setPosition(window.innerWidth >= 1024 ? 'bottom-right' : 'top-center'); // 1024px is the breakpoint for the desktop view
     };
 
     handleResize(); // Set initial position
