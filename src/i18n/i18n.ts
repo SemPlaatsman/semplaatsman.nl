@@ -21,7 +21,7 @@ i18n
     fallbackLng: 'en-US',
     supportedLngs,
     lng: getInitialLanguage(),
-    ns: ['common', 'layout', 'seo', 'about', 'resume', 'projects', 'contact'],
+    ns: ['common', 'layout', 'seo', 'about', 'resume', 'projects', 'contact', 'email'],
     defaultNS: 'common',
     backend: {
       loadPath: `${import.meta.env.BASE_URL}locales/{{lng}}/{{ns}}.json`,
