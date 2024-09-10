@@ -1,0 +1,79 @@
+{
+  "title": "CV",
+  "pdfLink": {
+    "text": "Open als PDF",
+    "ariaLabel": "Open CV PDF in nieuw tabblad"
+  },
+  "education": {
+    "title": "Opleiding",
+    "items": [
+      {
+        "title": "",
+        "period": "2021 — Heden",
+        "description": [
+          "In jaar 2 heb ik studenten van jaar 1 geholpen met programmeren in C# (studiepunt).",
+          "Verschillende multidisciplinaire projecten succesvol voltooid.",
+          "Propedeuse in het eerste jaar gehaald."
+        ]
+      },
+      {
+        "title": "OSG De Hogeberg (HAVO)",
+        "period": "2015 — 2021",
+        "description": [
+          "Profielwerkstuk over AI.",
+          "Geïnteresseerd geraakt in programmeren tijdens een Python project in 4 HAVO."
+        ]
+      }
+    ]
+  },
+  "experience": {
+    "title": "Ervaring",
+    "items": [
+      {
+        "title": "S.P. Abonneeservice",
+        "period": "2024 — Heden",
+        "description": [
+          "SSO-systeem ontwikkeld met performance, security, en unit testing.",
+          "Gewerkt aan een AI model dat probeert te voorspellen wanneer een abonnee gaat opzeggen. Dit AI model wordt geïntegreerd met de bestaande retentiemodules"
+        ]
+      },
+      {
+        "title": "S.P. Abonneeservice (Stage)",
+        "period": "2023 — 2024",
+        "description": [
+          "JWT-geauthentiseerde PWA ontwikkeld voor de klanten van S.P. voor statistische informatie.",
+          "Samengewerkt binnen een multidisciplinair team. Requirements geanalyseerd en technisch vertaald voor stakeholders.",
+          "Ervaring opgedaan met onder andere React, ASP.NET, JWT, TypeScript, SCSS, en MySQL."
+        ]
+      },
+      {
+        "title": "Zegel Retailing B.V.",
+        "period": "2019 — 2023",
+        "description": [
+          "Allround retailmedewerker met focus op klantgerichte dienstverlening en operationele ondersteuning."
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "title": "Vaardigheden",
+    "items": [
+      {
+        "skill": "Web Design",
+        "percentage": 80
+      },
+      {
+        "skill": "Graphic Design",
+        "percentage": 70
+      },
+      {
+        "skill": "Branding",
+        "percentage": 90
+      },
+      {
+        "skill": "WordPress",
+        "percentage": 50
+      }
+    ]
+  }
+}
