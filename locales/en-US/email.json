@@ -1,0 +1,18 @@
+{
+  "submission": {
+    "subject": "semplaatsman.nl: New message from {{name}}",
+    "received": "You've received a new message from {{name}} on your contact page:",
+    "reachabilityMessage": "You can reach them through {{email}}."
+  },
+  "autoReply": {
+    "subject": "Thank you for contacting {{config_name}}",
+    "greetings": "Hey {{name}},",
+    "appreciationMessage": "Thank you for reaching out through my portfolio website. I appreciate your interest and the time you've taken to contact me.",
+    "received": "I have received your message regarding:",
+    "responsePromise": "I will get back to you as soon as possible.",
+    "designation": "4th year Information Technology BSc Student"
+  },
+  "common": {
+    "regards": "Kind regards,"
+  }
+}
