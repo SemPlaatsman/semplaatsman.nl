@@ -5,9 +5,14 @@ import toast from 'react-hot-toast';
 import DOMPurify from 'dompurify';
 
 import RateLimiter from '../utils/rateLimiter';
+import config from '../config';
 
 // 5 requests per hour (3600000 ms)
-const emailRateLimiter = RateLimiter.getInstance('emailSender', 5, 3600000);
+const emailRateLimiter = RateLimiter.getInstance(
+  'emailSender',
+  config.email.rateLimit.maxRequests,
+  config.email.rateLimit.timeWindow
+);
 
 export const useSendEmail = () => {
   const { t } = useTranslation(['contact', 'email']);
@@ -24,7 +29,7 @@ export const useSendEmail = () => {
 
     setIsSubmitting(true);
     // Set loading toast to 30 seconds
-    const submittingToast = toast.loading(t('contact:form.submitting'), { duration: 30000 });
+    const submittingToast = toast.loading(t('contact:form.submitting'));
 
     try {
       // Sanitize and convert form data to a record
@@ -43,15 +48,15 @@ export const useSendEmail = () => {
         submission_reachabilityMessage: t('email:submission.reachabilityMessage', {
           email: sanitizedData.email,
         }),
-        autoReply_subject: t('email:autoReply.subject', { config_name: 'Sem Plaatsman' }),
+        autoReply_subject: t('email:autoReply.subject', { config_name: config.owner.fullName }),
         autoReply_greetings: t('email:autoReply.greetings', { name: sanitizedData.name }),
         autoReply_appreciationMessage: t('email:autoReply.appreciationMessage'),
         autoReply_received: t('email:autoReply.received'),
         autoReply_responsePromise: t('email:autoReply.responsePromise'),
         autoReply_designation: t('email:autoReply.designation'),
         common_regards: t('email:common.regards'),
-        config_senderName: 'Sem Plaatsman',
-        config_domain: 'semplaatsman.nl',
+        config_senderName: config.owner.fullName,
+        config_domain: config.app.domain,
       };
 
       // Send email
@@ -66,7 +71,7 @@ export const useSendEmail = () => {
 
       if (result.text === 'OK') {
         // Replace loading toast with success toast and reset duration to 3 seconds
-        toast.success(t('contact:form.submitSuccess'), { id: submittingToast, duration: 3000 });
+        toast.success(t('contact:form.submitSuccess'), { id: submittingToast });
         form.reset();
       } else {
         throw new Error('Unexpected response');
@@ -74,7 +79,7 @@ export const useSendEmail = () => {
     } catch (error) {
       console.error('Submission email error:', error);
       // Replace loading toast with success toast and reset duration to 3 seconds
-      toast.error(t('contact:form.submitError'), { id: submittingToast, duration: 3000 });
+      toast.error(t('contact:form.submitError'), { id: submittingToast });
       // If there's an error, we don't count it towards the rate limit
       emailRateLimiter.clear(userIdentifier);
     } finally {

@@ -8,6 +8,7 @@ import i18n from '../../i18n';
 import faviconPNG from '/favicon.png';
 
 import { useCurrentRouteConfig } from '../../routes/routes';
+import config from '../../config';
 
 const img = {
   src: faviconPNG,
@@ -17,7 +18,7 @@ const img = {
 
 const SEO: React.FC = () => {
   // Possibly add a different canonical URL too
-  const baseUrl = 'https://semplaatsman.nl';
+  const baseUrl = config.app.baseUrl;
   const location = useLocation();
   const currUrl = `${baseUrl}${location.pathname}`;
   const { t } = useTranslation('seo');

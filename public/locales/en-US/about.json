@@ -1,7 +1,7 @@
 {
   "title": "About me",
   "description": [
-    "Hey, I'm <strong>Sem Plaatsman</strong>, a fourth-year Bachelor's student of Computer Science at Inholland University of Applied Sciences in Haarlem, The Netherlands. I have a passion for <strong>problem solving</strong> and like to dive deep into complex issues. I'm always eager to <strong>learn new things</strong> and improve my skills.",
+    "Hey, I'm <strong>{{config.owner.fullName}}</strong>, a fourth-year Bachelor's student of Computer Science at Inholland University of Applied Sciences in Haarlem, The Netherlands. I have a passion for <strong>problem solving</strong> and like to dive deep into complex issues. I'm always eager to <strong>learn new things</strong> and improve my skills.",
     "I have experience with various programming languages and technologies, such as Java, C#, TypeScript, Python, and (No)SQL. I'm also familiar with frameworks and libraries like React, Spring Boot, ASP.NET, and TensorFlow. I'm currently working on expanding my knowledge of <strong>CI/CD and Cloud Computing</strong>."
   ],
   "whatImDoing": {

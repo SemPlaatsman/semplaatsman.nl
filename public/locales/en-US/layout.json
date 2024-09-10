@@ -1,7 +1,7 @@
 {
   "sidebar": {
-    "avatarAlt": "Picture of Sem Plaatsman",
-    "name": "Sem Plaatsman",
+    "avatarAlt": "Picture of {{config.owner.fullName}}",
+    "name": "{{config.owner.fullName}}",
     "title": "BSc CS Student",
     "hideContacts": "Hide contacts",
     "showContacts": "Show contacts",
@@ -9,36 +9,36 @@
       "github": {
         "title": "GitHub",
         "handle": "@SemPlaatsman",
-        "link": "https://github.com/SemPlaatsman",
-        "ariaLabel": "Sem Plaatsman's GitHub profile"
+        "link": "{{config.externalLinks.github}}",
+        "ariaLabel": "GitHub profile of {{config.owner.fullName}}"
       },
       "linkedin": {
         "title": "LinkedIn",
         "handle": "@sem-plaatsman",
-        "link": "https://www.linkedin.com/in/sem-plaatsman/",
-        "ariaLabel": "Sem Plaatsman's LinkedIn profile"
+        "link": "{{config.externalLinks.linkedin}}",
+        "ariaLabel": "LinkedIn profile of {{config.owner.fullName}}"
       },
       "email": {
         "title": "Email",
-        "handle": "hello@semplaatsman.nl",
-        "link": "mailto:hello@semplaatsman.nl",
-        "ariaLabel": "Send an email to Sem Plaatsman"
+        "handle": "{{config.email.address}}",
+        "link": "{{config.externalLinks.email}}",
+        "ariaLabel": "Send an email to {{config.owner.fullName}}"
       },
       "location": {
         "title": "Location",
         "handle": "Haarlem, The Netherlands",
-        "link": "https://maps.app.goo.gl/AEWwr2iiCeWyovD28",
-        "ariaLabel": "Sem Plaatsman's location on Google Maps"
+        "link": "{{config.externalLinks.location}}",
+        "ariaLabel": "Location of {{config.owner.fullName}} on Google Maps"
       }
     },
     "socials": {
       "npm": {
-        "link": "https://www.npmjs.com/~sempl",
-        "ariaLabel": "Sem Plaatsman's npm profile"
+        "link": "{{config.externalLinks.npm}}",
+        "ariaLabel": "NPM profile of {{config.owner.fullName}}"
       },
       "stackOverflow": {
-        "link": "https://stackoverflow.com/users/18598382/sem",
-        "ariaLabel": "Sem Plaatsman's Stack Overflow profile"
+        "link": "{{config.externalLinks.stackOverflow}}",
+        "ariaLabel": "Stack Overflow profile of {{config.owner.fullName}}"
       }
     }
   },

@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Toaster, ToastPosition } from 'react-hot-toast';
 
+import config from '../../config';
+
 import styles from './ToastManager.module.scss';
 
 export const ToastManager: React.FC = () => {
@@ -22,7 +24,13 @@ export const ToastManager: React.FC = () => {
       position={position}
       toastOptions={{
         className: styles.toast,
-        duration: 10000,
+        duration: config.ui.toasts.defaultDuration,
+        error: {
+          duration: config.ui.toasts.errorDuration,
+        },
+        loading: {
+          duration: config.ui.toasts.loadingDuration,
+        },
       }}
     />
   );

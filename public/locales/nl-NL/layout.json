@@ -1,7 +1,7 @@
 {
   "sidebar": {
-    "avatarAlt": "Afbeelding van Sem Plaatsman",
-    "name": "Sem Plaatsman",
+    "avatarAlt": "Afbeelding van {{config.owner.fullName}}",
+    "name": "{{config.owner.fullName}}",
     "title": "BSc INF Student",
     "hideContacts": "Verberg contacten",
     "showContacts": "Toon contacten",
@@ -9,36 +9,36 @@
       "github": {
         "title": "GitHub",
         "handle": "@SemPlaatsman",
-        "link": "https://github.com/SemPlaatsman",
-        "ariaLabel": "Profiel van Sem Plaatsman op GitHub"
+        "link": "{{config.externalLinks.github}}",
+        "ariaLabel": "Profiel van {{config.owner.fullName}} op GitHub"
       },
       "linkedin": {
         "title": "LinkedIn",
         "handle": "@sem-plaatsman",
-        "link": "https://www.linkedin.com/in/sem-plaatsman/",
-        "ariaLabel": "Profiel van Sem Plaatsman op LinkedIn"
+        "link": "{{config.externalLinks.linkedin}}",
+        "ariaLabel": "Profiel van {{config.owner.fullName}} op LinkedIn"
       },
       "email": {
         "title": "Email",
-        "handle": "hello@semplaatsman.nl",
-        "link": "mailto:hello@semplaatsman.nl",
-        "ariaLabel": "Stuur een email naar Sem Plaatsman"
+        "handle": "{{config.email.address}}",
+        "link": "{{config.externalLinks.email}}",
+        "ariaLabel": "Stuur een email naar {{config.owner.fullName}}"
       },
       "location": {
         "title": "Locatie",
         "handle": "Haarlem, Noord-Holland",
-        "link": "https://maps.app.goo.gl/AEWwr2iiCeWyovD28",
-        "ariaLabel": "Locatie van Sem Plaatsman op Google Maps"
+        "link": "{{config.externalLinks.location}}",
+        "ariaLabel": "Locatie van {{config.owner.fullName}} op Google Maps"
       }
     },
     "socials": {
       "npm": {
-        "link": "https://www.npmjs.com/~sempl",
-        "ariaLabel": "Profiel van Sem Plaatsman op npm"
+        "link": "{{config.externalLinks.npm}}",
+        "ariaLabel": "Profiel van {{config.owner.fullName}} op NPM"
       },
       "stackOverflow": {
-        "link": "https://stackoverflow.com/users/18598382/sem",
-        "ariaLabel": "Profiel van Sem Plaatsman op Stack Overflow"
+        "link": "{{config.externalLinks.stackOverflow}}",
+        "ariaLabel": "Profiel van {{config.owner.fullName}} op Stack Overflow"
       }
     }
   },
