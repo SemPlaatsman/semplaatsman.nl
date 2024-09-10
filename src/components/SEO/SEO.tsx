@@ -4,17 +4,9 @@ import { Helmet } from 'react-helmet';
 import { useLocation } from 'react-router-dom';
 
 import i18n from '../../i18n';
-
-import faviconPNG from '/og-image.png';
-
+import { faviconImgMap } from '../../config/assetMaps/seoMaps';
 import { useCurrentRouteConfig } from '../../routes/routes';
 import config from '../../config';
-
-const img = {
-  src: faviconPNG,
-  width: 739,
-  height: 1200,
-};
 
 const SEO: React.FC = () => {
   // Possibly add a different canonical URL too
@@ -80,10 +72,10 @@ const SEO: React.FC = () => {
       <meta property="og:url" content={currUrl} />
       <meta property="og:title" content={t('title')} />
       <meta property="og:description" content={t('siteDescription')} />
-      <meta property="og:image" content={img.src} />
+      <meta property="og:image" content={faviconImgMap.src} />
       <meta property="og:image:alt" content={t('imageAlt')} />
-      <meta property="og:image:width" content={img.width.toString()} />
-      <meta property="og:image:height" content={img.height.toString()} />
+      <meta property="og:image:width" content={faviconImgMap.width.toString()} />
+      <meta property="og:image:height" content={faviconImgMap.height.toString()} />
 
       {/* Structured data for a person (adjust as needed) */}
       <script type="application/ld+json">
