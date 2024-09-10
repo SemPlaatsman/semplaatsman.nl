@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { IoChevronDown } from 'react-icons/io5';
 
+import ProfileAvatar from '../../../assets/avatars/profile.webp';
+
 import styles from './SidebarInfo.module.scss';
 
 interface SidebarInfoProps {
@@ -21,11 +23,7 @@ const SidebarInfo: React.FC<SidebarInfoProps> = ({ onExpandToggle }) => {
   return (
     <div className={styles.sidebarInfo}>
       <figure className={styles.avatarBox}>
-        <img
-          src="https://media.licdn.com/dms/image/D4E03AQHI676LBbaIsw/profile-displayphoto-shrink_800_800/0/1686847959710?e=1727308800&v=beta&t=5Rcz1z05BWc-nwZXnd55pzV3MyDWJyGYv8aeQFwKzE8"
-          alt={t('sidebar.avatarAlt')}
-          width="80"
-        />
+        <img src={ProfileAvatar} alt={t('sidebar.avatarAlt')} width="80" />
       </figure>
       <div className={styles.infoContent}>
         <h1 className={`h1 ${styles.name}`}>{t('sidebar.name')}</h1>

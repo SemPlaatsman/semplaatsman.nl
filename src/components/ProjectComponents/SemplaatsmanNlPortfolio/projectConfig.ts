@@ -2,7 +2,7 @@ import { lazy } from 'react';
 
 import { ProjectConfig, ProjectType } from '../../../types/project';
 import { technologies } from '../../../types/technology';
-import portfolioImage from '../../../assets/projects/semplaatsman.nl-portfolio.png';
+import portfolioImage from '../../../assets/projects/semplaatsman.nl-portfolio.webp';
 
 const projectConfig: ProjectConfig = {
   slug: 'semplaatsman.nl',

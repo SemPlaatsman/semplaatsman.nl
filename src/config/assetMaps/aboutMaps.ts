@@ -4,8 +4,8 @@ import IconBackendDevelopment from '../../assets/interests/backend-development.s
 import IconWebDevelopment from '../../assets/interests/web-development.svg';
 import IconAI from '../../assets/interests/artificial-intelligence.svg';
 import IconCooking from '../../assets/interests/cooking.svg';
-import AvatarMarcDierikx from '../../assets/avatars/marc-dierikx.png';
-import AvatarTayamElJebari from '../../assets/avatars/tayam-el-jebari.jpeg';
+import AvatarMarcDierikx from '../../assets/avatars/marc-dierikx.webp';
+import AvatarTayamElJebari from '../../assets/avatars/tayam-el-jebari.webp';
 
 export const interestsImageMap = {
   backendDevelopment: IconBackendDevelopment,
