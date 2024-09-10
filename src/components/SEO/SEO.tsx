@@ -5,7 +5,7 @@ import { useLocation } from 'react-router-dom';
 
 import i18n from '../../i18n';
 
-import faviconPNG from '/favicon.png';
+import faviconPNG from '/og-image.png';
 
 import { useCurrentRouteConfig } from '../../routes/routes';
 import config from '../../config';
