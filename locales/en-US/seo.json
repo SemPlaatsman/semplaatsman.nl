@@ -1,0 +1,42 @@
+{
+  "title": "{{config.owner.fullName}} / Portfolio",
+  "author": "{{config.owner.fullName}}",
+  "siteDescription": "Portfolio of {{config.owner.fullName}}, a student and backend developer located in Haarlem, The Netherlands.",
+  "keywords": [
+    "{{config.owner.fullName}}",
+    "Portfolio",
+    "Developer",
+    "Haarlem",
+    "Netherlands",
+    "Backend"
+  ],
+  "imageAlt": "{{config.owner.fullName}} Portfolio favicon image",
+  "givenName": "{{config.owner.firstName}}",
+  "familyName": "{{config.owner.lastName}}",
+  "additionalName": "{{config.owner.additionalName}}",
+  "personDescription": "I'm a student and backend developer located in Haarlem, The Netherlands.",
+  "jobTitle": "Student and Backend Developer",
+  "linkedinUrl": "{{config.externalLinks.linkedin}}",
+  "githubUrl": "{{config.externalLinks.github}}",
+  "portfolioUrl": "{{config.app.baseUrl}}",
+  "knowsAbout": [
+    "C#",
+    "Java",
+    "TypeScript",
+    "React",
+    "OOP",
+    "AI",
+    "Deep Learning",
+    "Machine Learning",
+    "Cloud Computing",
+    "GitHub",
+    "Docker",
+    "Python"
+  ],
+  "email": "{{config.email.address}}",
+  "gender": "Male",
+  "knowsLanguage": ["English", "Dutch"],
+  "nationality": "Dutch",
+  "addressLocality": "Haarlem",
+  "addressCountry": "NL"
+}
