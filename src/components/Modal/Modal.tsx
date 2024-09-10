@@ -20,12 +20,14 @@ const Modal: React.FC<ModalProps> = ({ className = '', isOpen, onClose, children
         tabIndex={0}
         role="button"
       ></div>
-      <section className={`${styles.modal} ${className}`}>
-        <button className={styles.modalCloseBtn} onClick={onClose}>
-          <IoCloseOutline />
-        </button>
-        {children}
-      </section>
+      <div className={styles.modalWrapper}>
+        <section className={`${styles.modal} ${className}`}>
+          <button className={styles.modalCloseBtn} onClick={onClose}>
+            <IoCloseOutline />
+          </button>
+          {children}
+        </section>
+      </div>
     </div>
   );
 };

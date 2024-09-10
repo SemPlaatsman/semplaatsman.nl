@@ -3,6 +3,7 @@ import toast from 'react-hot-toast';
 
 import { ThemeContext } from '../contexts/ThemeContext';
 import { Theme } from '../types/theme';
+import config from '../config';
 
 export const ThemeProvider: React.FC<React.PropsWithChildren> = ({ children }) => {
   const [theme, setTheme] = useState<Theme>(() => {
@@ -32,7 +33,7 @@ export const ThemeProvider: React.FC<React.PropsWithChildren> = ({ children }) =
             </button>
           </span>
         ),
-        { id: 'theme-suggestion-toast', duration: 5000 }
+        { id: 'theme-suggestion-toast', duration: config.ui.toasts.defaultDuration }
       );
     }
   }, [theme]);

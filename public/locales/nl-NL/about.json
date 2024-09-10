@@ -1,7 +1,7 @@
 {
   "title": "Over mij",
   "description": [
-    "Hoi, ik ben <strong>Sem Plaatsman</strong>, een vierdejaars Bachelor-student Informatica aan de Hogeschool Inholland in Haarlem. Ik heb een passie voor het <strong>oplossen van problemen</strong> en duik graag diep in complexe vraagstukken. Ik ben altijd bereid om <strong>nieuwe dingen te leren</strong> en mijn vaardigheden te verbeteren.",
+    "Hoi, ik ben <strong>{{config.owner.fullName}}</strong>, een vierdejaars Bachelor-student Informatica aan de Hogeschool Inholland in Haarlem. Ik heb een passie voor het <strong>oplossen van problemen</strong> en duik graag diep in complexe vraagstukken. Ik ben altijd bereid om <strong>nieuwe dingen te leren</strong> en mijn vaardigheden te verbeteren.",
     "Ik heb ervaring met verschillende programmeertalen en technologieën, zoals Java, C#, TypeScript, Python en (No)SQL. Ook ben ik bekend met frameworks en libraries zoals React, Spring Boot, ASP.NET en TensorFlow. Momenteel ben ik bezig met het uitbreiden van mijn kennis van <strong>CI/CD en Cloud Computing</strong>."
   ],
   "whatImDoing": {

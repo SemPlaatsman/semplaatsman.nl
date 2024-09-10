@@ -2,6 +2,8 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import HttpBackend from 'i18next-http-backend';
 
+import config from '../config';
+
 import { supportedLngs, LanguageCode } from './languages';
 
 // Gets the initial language from local storage or the browser language, and uses 'en-US' if neither is available
@@ -14,6 +16,16 @@ const getInitialLanguage = (): LanguageCode => {
   return supportedLngs.includes(browserLng) ? browserLng : 'en-US';
 };
 
+// Create a subset of the config object with only the parts that need to be exposed to i18n
+const exposedConfig = {
+  app: config.app,
+  owner: config.owner,
+  email: {
+    address: config.email.address,
+  },
+  externalLinks: config.externalLinks,
+};
+
 i18n
   .use(HttpBackend)
   .use(initReactI18next)
@@ -21,13 +33,16 @@ i18n
     fallbackLng: 'en-US',
     supportedLngs,
     lng: getInitialLanguage(),
-    ns: ['common', 'layout', 'seo', 'about', 'resume', 'projects', 'contact'],
+    ns: ['common', 'layout', 'seo', 'about', 'resume', 'projects', 'contact', 'email'],
     defaultNS: 'common',
     backend: {
       loadPath: `${import.meta.env.BASE_URL}locales/{{lng}}/{{ns}}.json`,
     },
     interpolation: {
       escapeValue: false, // React already safes from XSS
+      defaultVariables: {
+        config: exposedConfig,
+      },
     },
   })
   .catch((err) => {

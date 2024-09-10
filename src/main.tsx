@@ -8,6 +8,7 @@ import axe from '@axe-core/react';
 
 import ThemeProvider from './providers/ThemeProvider';
 import App from './App.tsx';
+import config from './config';
 
 // Only run axe in non-production environments
 if (import.meta.env.DEV) {
@@ -21,7 +22,7 @@ console.log(
 );
 console.log(
   `%cLike my portfolio? Check out the source code on GitHub:
-  https://github.com/SemPlaatsman/semplaatsman.nl`,
+  ${config.app.githubUrl}`,
   'color: #ffdb70; font-weight: bold; font-family: monospace !important; font-size: 1rem;'
 );
 

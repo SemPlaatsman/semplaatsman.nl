@@ -8,6 +8,7 @@ import i18n from '../../i18n';
 import faviconPNG from '/favicon.png';
 
 import { useCurrentRouteConfig } from '../../routes/routes';
+import config from '../../config';
 
 const img = {
   src: faviconPNG,
@@ -17,7 +18,7 @@ const img = {
 
 const SEO: React.FC = () => {
   // Possibly add a different canonical URL too
-  const baseUrl = 'https://semplaatsman.nl';
+  const baseUrl = config.app.baseUrl;
   const location = useLocation();
   const currUrl = `${baseUrl}${location.pathname}`;
   const { t } = useTranslation('seo');
@@ -30,7 +31,7 @@ const SEO: React.FC = () => {
     breadcrumbItems.push({
       '@type': 'ListItem',
       position: 1,
-      name: t(`pages.about`), // Assuming you have translations for page names
+      name: 'about', // Could be adjusted later to add a translation
       item: baseUrl,
     });
   }
@@ -42,13 +43,13 @@ const SEO: React.FC = () => {
         {
           '@type': 'ListItem',
           position: breadcrumbItems.length + 1,
-          name: t(`pages.projects`),
+          name: currentRoute.pageKey, // Could be adjusted later to add a translation
           item: `${baseUrl}/projects`,
         },
         {
           '@type': 'ListItem',
           position: breadcrumbItems.length + 2,
-          name: t(`currentProject`), // You'll need to provide the current project name
+          name: currentRoute.pageKey, // Could be adjusted later to add a translation
           item: currUrl,
         }
       );
@@ -57,7 +58,7 @@ const SEO: React.FC = () => {
       breadcrumbItems.push({
         '@type': 'ListItem',
         position: breadcrumbItems.length + 1,
-        name: t(`pages.${currentRoute.pageKey}`),
+        name: currentRoute.pageKey, // Could be adjusted later to add a translation
         item: currUrl,
       });
     }

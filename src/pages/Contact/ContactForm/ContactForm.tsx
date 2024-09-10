@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { IoPaperPlane } from 'react-icons/io5';
 
 import { useSendEmail } from '../../../hooks/useSendEmail';
+import config from '../../../config';
 
 import styles from './ContactForm.module.scss';
 import ContactFormData from './ContactFormData';
@@ -19,6 +20,7 @@ const ContactForm: React.FC = () => {
     'aria-label': t(`form.fields.${fieldName}.title`),
     required: true,
     onChange: handleInputChange,
+    maxLength: config.contactForm.maxLengths[fieldName],
   });
 
   const handleInputChange = () => {
@@ -43,10 +45,10 @@ const ContactForm: React.FC = () => {
       <h3 className={`h3 ${styles.formTitle}`}>{t('title')}</h3>
       <form onSubmit={handleSubmit} className={styles.form}>
         <div className={styles.inputWrapper}>
-          <input type="text" {...getFieldProps('name')} maxLength={100} autoComplete="name" />
-          <input type="email" {...getFieldProps('email')} maxLength={100} autoComplete="email" />
+          <input type="text" {...getFieldProps('name')} autoComplete="name" />
+          <input type="email" {...getFieldProps('email')} autoComplete="email" />
         </div>
-        <textarea {...getFieldProps('message')} maxLength={1000}></textarea>
+        <textarea {...getFieldProps('message')}></textarea>
         <button className={styles.formBtn} type="submit" disabled={isSubmitting || !isFormValid}>
           <IoPaperPlane />
           <span>{isSubmitting ? t('form.submitting') : t('form.submit')}</span>
