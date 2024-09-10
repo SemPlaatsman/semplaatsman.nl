@@ -1,0 +1,57 @@
+{
+  "sidebar": {
+    "avatarAlt": "Afbeelding van {{config.owner.fullName}}",
+    "name": "{{config.owner.fullName}}",
+    "title": "BSc INF Student",
+    "hideContacts": "Verberg contacten",
+    "showContacts": "Toon contacten",
+    "contacts": {
+      "github": {
+        "title": "GitHub",
+        "handle": "@SemPlaatsman",
+        "link": "{{config.externalLinks.github}}",
+        "ariaLabel": "Profiel van {{config.owner.fullName}} op GitHub"
+      },
+      "linkedin": {
+        "title": "LinkedIn",
+        "handle": "@sem-plaatsman",
+        "link": "{{config.externalLinks.linkedin}}",
+        "ariaLabel": "Profiel van {{config.owner.fullName}} op LinkedIn"
+      },
+      "email": {
+        "title": "Email",
+        "handle": "{{config.email.address}}",
+        "link": "{{config.externalLinks.email}}",
+        "ariaLabel": "Stuur een email naar {{config.owner.fullName}}"
+      },
+      "location": {
+        "title": "Locatie",
+        "handle": "Haarlem, Noord-Holland",
+        "link": "{{config.externalLinks.location}}",
+        "ariaLabel": "Locatie van {{config.owner.fullName}} op Google Maps"
+      }
+    },
+    "socials": {
+      "npm": {
+        "link": "{{config.externalLinks.npm}}",
+        "ariaLabel": "Profiel van {{config.owner.fullName}} op NPM"
+      },
+      "stackOverflow": {
+        "link": "{{config.externalLinks.stackOverflow}}",
+        "ariaLabel": "Profiel van {{config.owner.fullName}} op Stack Overflow"
+      }
+    }
+  },
+  "navbar": {
+    "about": "Over Mij",
+    "resume": "CV",
+    "projects": "Projecten",
+    "contact": "Contact"
+  },
+  "languageSwitcher": {
+    "ariaLabel": "Verander taal"
+  },
+  "themeSwitcher": {
+    "ariaLabel": "Verander thema"
+  }
+}
