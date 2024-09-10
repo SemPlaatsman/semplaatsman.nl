@@ -1,4 +1,5 @@
 // Note: some variables from {{lng}}/seo.json can be moved to this config object, but is out of scope for now.
+// Asset mappings are seperately stored in the assetMaps folder to reduce initial load time.
 const config = {
   app: {
     baseUrl: 'https://semplaatsman.nl',

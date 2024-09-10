@@ -1,17 +1,11 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-import AvatarMarcDierikx from '../../../assets/avatars/marc-dierikx.png';
-import AvatarTayamElJebari from '../../../assets/avatars/tayam-el-jebari.jpeg';
+import { testimonialImageMap } from '../../../config/assetMaps/aboutMaps';
 
 import styles from './Testimonials.module.scss';
 import TestimonialItem from './TestimonialItem';
 import Testimonial from './Testimonial';
-
-const imgSrcMap = {
-  marcDierikx: AvatarMarcDierikx,
-  tayamElJebari: AvatarTayamElJebari,
-};
 
 const Testimonials: React.FC = () => {
   const { t } = useTranslation('about');
@@ -27,7 +21,7 @@ const Testimonials: React.FC = () => {
           <TestimonialItem
             key={key}
             testimonial={testimonial}
-            imgSrc={imgSrcMap[key as keyof typeof imgSrcMap]}
+            imgSrc={testimonialImageMap[key as keyof typeof testimonialImageMap]}
           />
         ))}
       </ul>
