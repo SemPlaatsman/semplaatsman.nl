@@ -1,18 +1,11 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { IoLogoGithub, IoLogoLinkedin, IoMailOutline, IoLocationOutline } from 'react-icons/io5';
 
 import IconBox from '../../IconBox';
+import { contactsListIconMap } from '../../../config/assetMaps/sidebarMaps';
 
 import styles from './ContactsList.module.scss';
 import Contact from './Contact';
-
-const iconMap = {
-  github: IoLogoGithub,
-  linkedin: IoLogoLinkedin,
-  email: IoMailOutline,
-  location: IoLocationOutline,
-};
 
 const ContactsList: React.FC = () => {
   const { t } = useTranslation('layout');
@@ -21,7 +14,7 @@ const ContactsList: React.FC = () => {
   return (
     <ul className={styles.contactsList}>
       {Object.entries(contacts).map(([key, contact]) => {
-        const IconComponent = iconMap[key as keyof typeof iconMap];
+        const IconComponent = contactsListIconMap[key as keyof typeof contactsListIconMap];
         return (
           <li key={key} className={styles.contactItem}>
             <a

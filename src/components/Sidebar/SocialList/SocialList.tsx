@@ -1,14 +1,10 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { IoLogoNpm, IoLogoStackoverflow } from 'react-icons/io5';
+
+import { socialListIconMap } from '../../../config/assetMaps/sidebarMaps';
 
 import styles from './SocialList.module.scss';
 import Social from './Social';
-
-const iconMap = {
-  npm: IoLogoNpm,
-  stackOverflow: IoLogoStackoverflow,
-};
 
 const SocialList: React.FC = () => {
   const { t } = useTranslation('layout');
@@ -17,7 +13,7 @@ const SocialList: React.FC = () => {
   return (
     <ul className={styles.socialList}>
       {Object.entries(socials).map(([key, social]) => {
-        const IconComponent = iconMap[key as keyof typeof iconMap];
+        const IconComponent = socialListIconMap[key as keyof typeof socialListIconMap];
         return (
           <li key={key} className={styles.socialItem}>
             <a
