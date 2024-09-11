@@ -1,5 +1,14 @@
-// Note: some variables from {{lng}}/seo.json can be moved to this config object, but is out of scope for now.
+// NOTES:
 // Asset mappings are seperately stored in the assetMaps folder to reduce initial load time.
+// Available languages are stored in the i18n folder.
+// Be aware that when you're hosting through GitHub Pages, the env variables should be stored as Repository secrets.
+// Some files cannot use the config file, and thus should be changed manually. Some examples are:
+// - /.github/workflows/main.yml
+// - /public/CNAME
+// - /public/robots.txt
+// - /public/site.webmanifest
+// - /public/sitemap.xml
+// - /index.html
 const config = {
   app: {
     baseUrl: 'https://semplaatsman.nl',
