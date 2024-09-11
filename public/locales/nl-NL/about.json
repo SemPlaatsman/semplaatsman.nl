@@ -35,15 +35,24 @@
       "marcDierikx": {
         "name": "Marc Dierikx",
         "position": "Technisch Directeur bij S.P. Abonneeservice BV",
-        "dateISO": "2024-09-13",
-        "text": "Aanbeveling volgt...",
+        "dateISO": "2024-09-11",
+        "description": [
+          "Sem is bij ons komen werken als stagiair op een project waar hij als full stack developer aan de slag kon.",
+          "Hij bleek een hele aardige en ontzettend gedreven en gemotiveerde student te zijn die eerder afgeremd moest worden dan gestimuleerd.",
+          "Hij is goed in staat om functionele ideeën om te zetten in technische ontwerpen, mock-ups en proof-of-concept opstellingen.",
+          "Het verplaatsen in de eindgebruikers van de software gaat hem ook heel goed af. Zodoende onstaat niet alleen een technisch goed functionerend systeem, maar ook een systeem met een prettige user interface.",
+          "Daarnaast zijn er gedurende een project altijd wel onvoorziene situaties die wat lastiger op te lossen zijn. Sem is iemand die in zo'n situatie ook zeker niet bij de pakken neer gaat zitten, maar juist op zoek gaat naar alternatieven.",
+          "Al met al een hele goeie toevoeging voor onze IT afdeling."
+        ],
         "avatarAlt": "Marc Dierikx avatar"
       },
       "tayamElJebari": {
         "name": "Tayam El Jebari",
         "position": "Medestudent | DevOps Engineer bij Albert Heijn",
         "dateISO": "2023-09-04",
-        "text": "Ik heb de samenwerking met Sem als prettig ervaren. Sem heeft een goed vermogen om initiatief te nemen bij diverse taken en heeft een serieuze aanpak met zijn verantwoordelijkheden. Zijn communicatievaardigheden zijn uitstekend, wat de samenwerking binnen het team altijd soepel laat verlopen. Zijn dedicatie en ijverigheid leidt altijd tot een heldere structuur in zijn code. Sem is ook een opgewekte en leuke collega om mee samen te werken. Zijn positieve instelling draagt bij aan een prettige werksfeer.",
+        "description": [
+          "Ik heb de samenwerking met Sem als prettig ervaren. Sem heeft een goed vermogen om initiatief te nemen bij diverse taken en heeft een serieuze aanpak met zijn verantwoordelijkheden. Zijn communicatievaardigheden zijn uitstekend, wat de samenwerking binnen het team altijd soepel laat verlopen. Zijn dedicatie en ijverigheid leidt altijd tot een heldere structuur in zijn code. Sem is ook een opgewekte en leuke collega om mee samen te werken. Zijn positieve instelling draagt bij aan een prettige werksfeer."
+        ],
         "avatarAlt": "Tayam El Jebari avatar"
       }
     }
