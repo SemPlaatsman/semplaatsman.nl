@@ -35,15 +35,25 @@
       "marcDierikx": {
         "name": "Marc Dierikx",
         "position": "Chief Technology Officer at S.P. Abonneeservice BV",
-        "dateISO": "2024-09-13",
-        "text": "Testimonial coming soon...",
+        "dateISO": "2024-09-11",
+        "description": [
+          "Sem joined us as an intern on a project where he could work as a full stack developer.",
+          "He turned out to be a very nice and incredibly driven and motivated student who needed to be slowed down rather than stimulated.",
+          "He is good at turning functional ideas into technical designs, mock-ups and proof-of-concept setups.",
+          "He is also very good at putting himself in the shoes of the end users of the software. This not only creates a technically well-functioning system, but also a system with a pleasant user interface.",
+          "In addition, during a project there are always unforeseen situations that are more difficult to solve. Sem is someone who in such a situation certainly does not give up, but instead looks for alternatives.",
+          "All in all a very good addition to our IT department."
+        ],
         "avatarAlt": "Marc Dierikx avatar"
       },
       "tayamElJebari": {
         "name": "Tayam El Jebari",
         "position": "Fellow student | DevOps Engineer bij Albert Heijn",
         "dateISO": "2023-09-04",
-        "text": "I have enjoyed working with Sem. Sem has a good ability to take initiative in various tasks and has a serious approach with his responsibilities. His communication skills are excellent, which always makes cooperation within the team run smoothly. His dedication and diligence always leads to a clear structure in his code. Sem is also an upbeat and fun colleague to work with. His positive attitude contributes to a pleasant working atmosphere.",
+        "description": [
+          "I have enjoyed working with Sem. Sem has a good ability to take initiative in various tasks and has a serious approach with his responsibilities.",
+          "His communication skills are excellent, which always makes cooperation within the team run smoothly. His dedication and diligence always leads to a clear structure in his code. Sem is also an upbeat and fun colleague to work with. His positive attitude contributes to a pleasant working atmosphere."
+        ],
         "avatarAlt": "Tayam El Jebari avatar"
       }
     }

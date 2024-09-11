@@ -11,6 +11,25 @@ const config = {
     lastName: 'Plaatsman',
     fullName: 'Sem Plaatsman',
     additionalName: 'SemPl',
+    gender: 'Male', // According to https://schema.org/GenderType
+    knowsLanguage: ['English', 'Dutch'], // According to https://schema.org/Language
+    nationality: 'Dutch', // According to https://schema.org/Country
+    addressLocality: 'Haarlem', // According to the 'addressLocality' field of https://schema.org/PostalAddress
+    addressCountry: 'NL', // According to the 'addressCountry' field of https://schema.org/PostalAddress
+    knowsAbout: [
+      'C#',
+      'Java',
+      'TypeScript',
+      'React',
+      'OOP',
+      'AI',
+      'Deep Learning',
+      'Machine Learning',
+      'Cloud Computing',
+      'GitHub',
+      'Docker',
+      'Python',
+    ], // According to the 'knowsAbout' field of https://schema.org/Person
   },
   email: {
     address: 'hello@semplaatsman.nl',

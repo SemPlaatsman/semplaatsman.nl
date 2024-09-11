@@ -32,7 +32,9 @@ const TestimonialItem: React.FC<TestimonialItemProps> = ({ testimonial, imgSrc }
         </figure>
         <h4 className={`h4 ${styles.testimonialsItemTitle}`}>{testimonial.name}</h4>
         <div className={styles.testimonialsText}>
-          <p>{testimonial.text}</p>
+          {testimonial.description.map((text, index) => (
+            <p key={index}>{text}</p>
+          ))}
         </div>
       </div>
       <Modal isOpen={isModalOpen} onClose={closeModal}>
@@ -50,7 +52,9 @@ const TestimonialItem: React.FC<TestimonialItemProps> = ({ testimonial, imgSrc }
               {Intl.DateTimeFormat(i18n.language).format(new Date(testimonial.dateISO))}
             </time>
             <div>
-              <p>{testimonial.text}</p>
+              {testimonial.description.map((text, index) => (
+                <p key={index}>{text}</p>
+              ))}
             </div>
           </div>
         </div>
