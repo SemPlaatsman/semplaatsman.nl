@@ -59,7 +59,7 @@ const SEO: React.FC = () => {
   return (
     <Helmet htmlAttributes={{ lang: new Intl.Locale(i18n.language).language }}>
       <title>{t('title')}</title>
-      <meta name="author" content={t('author')} />
+      <meta name="author" content={config.owner.fullName} />
       <meta name="description" content={t('siteDescription')} />
       <meta
         name="keywords"
@@ -97,23 +97,27 @@ const SEO: React.FC = () => {
             },
             {
               '@type': 'Person',
-              name: t('author'),
-              givenName: t('givenName'),
-              familyName: t('familyName'),
-              additionalName: t('additionalName'),
+              name: config.owner.fullName,
+              givenName: config.owner.firstName,
+              familyName: config.owner.lastName,
+              additionalName: config.owner.additionalName,
               description: t('personDescription'),
               url: currUrl,
               jobTitle: t('jobTitle'),
-              sameAs: [t('linkedinUrl'), t('githubUrl'), t('portfolioUrl')],
-              knowsAbout: t('knowsAbout', { returnObjects: true }),
-              email: t('email'),
-              gender: t('gender'),
-              knowsLanguage: t('knowsLanguage', { returnObjects: true }),
-              nationality: t('nationality'),
+              sameAs: [
+                config.externalLinks.linkedin,
+                config.externalLinks.github,
+                config.app.baseUrl,
+              ],
+              knowsAbout: config.owner.knowsAbout,
+              email: config.email.address,
+              gender: config.owner.gender,
+              knowsLanguage: config.owner.knowsLanguage,
+              nationality: config.owner.nationality,
               address: {
                 '@type': 'PostalAddress',
-                addressLocality: t('addressLocality'),
-                addressCountry: t('addressCountry'),
+                addressLocality: config.owner.addressLocality,
+                addressCountry: config.owner.addressCountry,
               },
             },
           ],
