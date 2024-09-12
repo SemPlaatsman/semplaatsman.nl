@@ -61,8 +61,8 @@ const config = {
       return `mailto:${config.email.address}`;
     },
     location: 'https://maps.app.goo.gl/AEWwr2iiCeWyovD28',
-    npm: 'https://www.npmjs.com/~semplaatsman',
-    stackOverflow: 'https://stackoverflow.com/users/12345678/sem-plaatsman',
+    npm: 'https://www.npmjs.com/~sempl',
+    stackOverflow: 'https://stackoverflow.com/users/18598382/sem',
   },
   ui: {
     toasts: {
