@@ -1,5 +1,14 @@
-// Note: some variables from {{lng}}/seo.json can be moved to this config object, but is out of scope for now.
+// NOTES:
 // Asset mappings are seperately stored in the assetMaps folder to reduce initial load time.
+// Available languages are stored in the i18n folder.
+// Be aware that when you're hosting through GitHub Pages, the env variables should be stored as Repository secrets.
+// Some files cannot use the config file, and thus should be changed manually. Some examples are:
+// - /.github/workflows/main.yml
+// - /public/CNAME
+// - /public/robots.txt
+// - /public/site.webmanifest
+// - /public/sitemap.xml
+// - /index.html
 const config = {
   app: {
     baseUrl: 'https://semplaatsman.nl',
@@ -35,7 +44,8 @@ const config = {
     address: 'hello@semplaatsman.nl',
     rateLimit: {
       maxRequests: 5,
-      timeWindow: 3600000,
+      timeWindow: 86400000, // 24 hours
+      throttle: 300000, // 5 minutes
     },
   },
   contactForm: {
@@ -52,8 +62,8 @@ const config = {
       return `mailto:${config.email.address}`;
     },
     location: 'https://maps.app.goo.gl/AEWwr2iiCeWyovD28',
-    npm: 'https://www.npmjs.com/~semplaatsman',
-    stackOverflow: 'https://stackoverflow.com/users/12345678/sem-plaatsman',
+    npm: 'https://www.npmjs.com/~sempl',
+    stackOverflow: 'https://stackoverflow.com/users/18598382/sem',
   },
   ui: {
     toasts: {

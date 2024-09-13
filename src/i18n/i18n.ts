@@ -46,7 +46,7 @@ i18n
     },
   })
   .catch((err) => {
-    console.error('Failed to initialize i18n:', err);
+    import.meta.env.DEV && console.error('Failed to initialize i18n:', err);
   });
 
 i18n.on('languageChanged', (lng) => {
@@ -54,7 +54,7 @@ i18n.on('languageChanged', (lng) => {
 });
 
 i18n.on('failedLoading', (lng, ns, msg) => {
-  console.error(`Failed to load translations: ${lng} ${ns} ${msg}`);
+  import.meta.env.DEV && console.error(`Failed to load translations: ${lng} ${ns} ${msg}`);
 });
 
 export default i18n;
