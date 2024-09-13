@@ -73,7 +73,7 @@ Here's what makes this project stand out:
 - Support for light and dark mode
 - Built-in multilingual support with react-i18next
 - Excellent Google Lighthouse performance
-- Email integration (obfuscates your personal email address)
+- Multilingual email integration (also obfuscates your personal email address)
 - Free hosting through GitHub Pages
 
 ## Demo
@@ -182,8 +182,7 @@ This section guides you through customizing the project for your own use:
 
 4. Customizing content:
 
-   - [`public/locales`](./public/locales): Update the i18n JSON locale files to match your wanted
-     content.
+   - [`public/locales`](./public/locales): Update the locale files to match your wanted content.
      > 💡 if you change the structure of the locale files, make sure this is reflected inside the
      > associated component(s). Most of the time this is done automatically
 
@@ -192,7 +191,8 @@ This section guides you through customizing the project for your own use:
    - Sign up for an [EmailJS](https://www.emailjs.com/) account
    - Sign up for a [Mailgun](https://www.mailgun.com/) account
    - Create a new EmailJS service connected to your Mailgun account
-   - In your EmailJS dashboard, create a new email template
+   - In your EmailJS dashboard, create a new email template. See [Email Templates](#email-templates)
+     for my templates.
    - Copy your EmailJS User ID and Email Template ID
    - Setup
      [Cloudflare Email Routing](https://www.cloudflare.com/nl-nl/developer-platform/email-routing/)
@@ -258,7 +258,7 @@ This project follows a
 [colocated](https://medium.com/trabe/colocating-react-component-files-the-tools-you-need-c377a61382d3)
 component-based architecture. The most noteable files are listed below:
 
-```python
+```text
 .github/
 └── workflows
     └── main.yml    # GitHub Actions workflow (CI/CD Pipeline)
@@ -298,7 +298,7 @@ Components (including page components) are
 [colocated](https://medium.com/trabe/colocating-react-component-files-the-tools-you-need-c377a61382d3)
 and thus structured in the following way:
 
-```python
+```text
 Component/
 ├── index.ts                  # Provides default export gateway; see below
 ├── Component.module.scss     # SCSS module with component-specific styling
@@ -339,6 +339,73 @@ This process can be divided into **8 steps**:
    address (`hello@semplaatsman.nl`) from your personal inbox through Mailgun (See
    [this StackOverflow post](https://stackoverflow.com/a/21649085/18598382)).
 8. Mailgun sends your email back to the Sender.
+
+#### EmailJS Templates
+
+To implement this email system, I've set up two email templates in EmailJS:
+
+1. **Contact Submission Template**: This template is used when a user submits the contact form on
+   the website. It sends a notification to the custom email address, which is redirected to your
+   personal inbox.
+
+   ![Contact Submission Template](./docs/assets/emailjs-contact-submission-template.png)
+
+   Key features:
+
+   - Subject line uses the `{{submission_subject}}` variable, allowing for dynamic subjects based on
+     the user's input.
+   - The template includes placeholders for the sender's name, email, and message.
+   - It uses variables like `{{submission_received}}` and `{{submission_reachabilityMessage}}`,
+     which can be populated with language-specific content to support multiple languages.
+   - Dynamically set configuration variables, denoted with the `config_` prefix, which are gathered
+     from the [config.ts](./src/config/config.ts) file are used.
+
+2. **Auto-Reply Template**: This template is used to send an automatic response to the user who
+   submitted the contact form.
+
+   ![Auto-Reply Template](./docs/assets/emailjs-auto-reply-template.png)
+
+   Key features:
+
+   - The recipient's email is dynamically set using the `{{email}}` variable.
+   - It uses variables like `{{autoReply_greetings}}`, `{{autoReply_appreciationMessage}}`, and
+     `{{autoReply_responsePromise}}` to support multiple languages.
+   - Dynamically set configuration variables, denoted with the `config_` prefix, which are gathered
+     from the [config.ts](./src/config/config.ts) file are used.
+   - The sender's original message is included for reference.
+
+Both templates make extensive use of variables (denoted by `{{ }}`) which allows for dynamic content
+insertion and multi-language support. The actual content for these variables is defined in the
+`email.json` locale files, where language-specific text can be populated based on the user's
+language preference.
+
+#### Multi-language Support
+
+The email templates are designed to support multiple languages through the use of variables. The
+[`useSendEmail`](./src/hooks/useSendEmail.ts) hook is responsible for populating these variables
+with the appropriate language-specific content. This approach allows for seamless language switching
+without needing to create separate templates for each supported language. This does come at the
+disadvantage that styling becomes more cumbersome. This issue could be solved by using a triple
+brace (`{{{my_html}}}`) instead of a double one in the templates, but this comes with security
+issues so this approach was not taken. See:
+[Can I send HTML from my code?](https://www.emailjs.com/docs/faq/can-i-send-html-from-my-code/).
+
+#### Integration with Email Architecture
+
+These templates fit into the email architecture as follows:
+
+1. The Contact Submission Template is used in step 3 of the email flow, where EmailJS sends a
+   submission email to your custom email address.
+2. The Auto-Reply Template is used in step 5, where EmailJS sends an Auto-Reply email to the Mailgun
+   service.
+
+The use of EmailJS for both the submission notification and the auto-reply allows for a streamlined
+process, with Cloudflare and Mailgun handling the routing and final delivery of emails.
+
+For more details on the implementation of multi-language support and email sending logic, refer to
+the [`useSendEmail`](./src/hooks/useSendEmail.ts) hook, `email.json` locale files, and
+[`ContactForm`](./src/pages/Contact/ContactForm/ContactForm.tsx) component in the project's source
+code.
 
 ### Hosting Architecture
 
