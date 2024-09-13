@@ -252,7 +252,8 @@ if your site doesn't work immediately after making changes.
 
 ## Architecture
 
-### Folder Architecture
+<details>
+<summary style="font-size: 1.3em; font-weight: 500; margin: 0.5em 0;">Folder Architecture</summary>
 
 This project follows a
 [colocated](https://medium.com/trabe/colocating-react-component-files-the-tools-you-need-c377a61382d3)
@@ -316,7 +317,10 @@ import Component from ./Component/Component
 import Component from ./Component
 ```
 
-### Email Architecture
+</details>
+
+<details>
+<summary style="font-size: 1.3em; font-weight: 500; margin: 0.5em 0;">Email Architecture</summary>
 
 The chosen email architecture provides a way of fully obfuscating your personal email address
 through an email address on your personal domain (in my case `hello@semplaatsman.nl`). This email
@@ -340,7 +344,8 @@ This process can be divided into **8 steps**:
    [this StackOverflow post](https://stackoverflow.com/a/21649085/18598382)).
 8. Mailgun sends your email back to the Sender.
 
-#### EmailJS Templates
+<details>
+<summary style="font-size: 1.1em; font-weight: 500;">EmailJS Templates</summary>
 
 To implement this email system, I've set up two email templates in EmailJS:
 
@@ -379,7 +384,10 @@ insertion and multi-language support. The actual content for these variables is 
 `email.json` locale files, where language-specific text can be populated based on the user's
 language preference.
 
-#### Multi-language Support
+</details>
+
+<details>
+<summary style="font-size: 1.1em; font-weight: 500;">Multi-language Support</summary>
 
 The email templates are designed to support multiple languages through the use of variables. The
 [`useSendEmail`](./src/hooks/useSendEmail.ts) hook is responsible for populating these variables
@@ -390,7 +398,10 @@ brace (`{{{my_html}}}`) instead of a double one in the templates, but this comes
 issues so this approach was not taken. See:
 [Can I send HTML from my code?](https://www.emailjs.com/docs/faq/can-i-send-html-from-my-code/).
 
-#### Integration with Email Architecture
+</details>
+
+<details>
+<summary style="font-size: 1.1em; font-weight: 500;">Integration with Email Architecture</summary>
 
 These templates fit into the email architecture as follows:
 
@@ -407,7 +418,12 @@ the [`useSendEmail`](./src/hooks/useSendEmail.ts) hook, `email.json` locale file
 [`ContactForm`](./src/pages/Contact/ContactForm/ContactForm.tsx) component in the project's source
 code.
 
-### Hosting Architecture
+</details>
+
+</details>
+
+<details>
+<summary style="font-size: 1.3em; font-weight: 500; margin: 0.5em 0;">Hosting Architecture</summary>
 
 This project uses a combination of GitHub Pages, Cloudflare, and Namecheap to host and serve the
 website. The hosting process can be divided into several key components:
@@ -436,6 +452,8 @@ This architecture provides several benefits:
 
 For detailed setup instructions, refer to the
 [Configuration and Customization](#configuration-and-customization) section of this README.
+
+</details>
 
 ## CI/CD
 
