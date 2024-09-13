@@ -44,7 +44,8 @@ const config = {
     address: 'hello@semplaatsman.nl',
     rateLimit: {
       maxRequests: 5,
-      timeWindow: 3600000,
+      timeWindow: 86400000, // 24 hours
+      throttle: 300000, // 5 minutes
     },
   },
   contactForm: {

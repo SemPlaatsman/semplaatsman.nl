@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import emailjs from '@emailjs/browser';
+import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 import toast from 'react-hot-toast';
 import DOMPurify from 'dompurify';
 
@@ -66,20 +66,30 @@ export const useSendEmail = () => {
         emailContent,
         {
           publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY as string,
+          limitRate: {
+            id: userIdentifier,
+            throttle: config.email.rateLimit.throttle,
+          },
         }
       );
 
       if (result.text === 'OK') {
-        // Replace loading toast with success toast and reset duration to 3 seconds
+        // Replace loading toast with success toast and reset duration to standard
         toast.success(t('contact:form.submitSuccess'), { id: submittingToast });
         form.reset();
       } else {
         throw new Error('Unexpected response');
       }
     } catch (error) {
-      console.error('Submission email error:', error);
-      // Replace loading toast with success toast and reset duration to 3 seconds
-      toast.error(t('contact:form.submitError'), { id: submittingToast });
+      import.meta.env.DEV && console.error('Submission email error:', error);
+      // Replace loading toast with error toast and reset duration to duration
+      if (error instanceof EmailJSResponseStatus && error.status === 429) {
+        // Handle throttle error
+        toast.error(t('contact:form.throttleError'), { id: submittingToast });
+      } else {
+        // Handle other errors
+        toast.error(t('contact:form.submitError'), { id: submittingToast });
+      }
       // If there's an error, we don't count it towards the rate limit
       emailRateLimiter.clear(userIdentifier);
     } finally {
