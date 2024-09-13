@@ -42,6 +42,7 @@ would love to hear your opinions and thoughts on this repository!
   configuration setup contains basic user and application information, but misses functionalities
   such as features (e.g. enable light and/or dark theme, enable Auto-Reply, etc...).
 - Research the steps needed to host without a custom domain, but through a GitHub Pages domain.
+- Language-specific config values. Currently the configuration variables are only for non-langauge-specific values, this could possibly be put in the `common.json` or a new `config.json` file and be loaded in by i18n (maybe as global variables).
 
 ### Medium Contributions
 
