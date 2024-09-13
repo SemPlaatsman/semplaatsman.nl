@@ -258,7 +258,7 @@ This project follows a
 [colocated](https://medium.com/trabe/colocating-react-component-files-the-tools-you-need-c377a61382d3)
 component-based architecture. The most noteable files are listed below:
 
-```python
+```text
 .github/
 └── workflows
     └── main.yml    # GitHub Actions workflow (CI/CD Pipeline)
@@ -298,7 +298,7 @@ Components (including page components) are
 [colocated](https://medium.com/trabe/colocating-react-component-files-the-tools-you-need-c377a61382d3)
 and thus structured in the following way:
 
-```python
+```text
 Component/
 ├── index.ts                  # Provides default export gateway; see below
 ├── Component.module.scss     # SCSS module with component-specific styling
