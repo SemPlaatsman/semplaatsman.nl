@@ -72,11 +72,6 @@ would love to hear your opinions and thoughts on this repository!
   - Graph component.
   - Chart component.
   - feel free to add any othr ideas...
-- **Color scheme improvements**: Currently, the yellow-orange and black color scheme works great for
-  dark mode, but brings accessibility issues when switching to light mode, mainly due to contrast
-  issues. Switching from yellow-orange to, for example, blue or purple could provide better contrast
-  between light and dark mode. The light cream color that is currently being used for light mode
-  could still be used, since it provides a more visually friendly alternative to plain white.
 
 ### Big Contributions
 
