@@ -26,7 +26,7 @@ Please report unacceptable behavior to [dev@semplaatsman.nl](mailto:dev@semplaat
 
 We've categorized contributions into different levels to help you find a task that matches your
 available time and expertise. Some contributions need to be researched to determine if they would
-provide a benefit. In general, advice and tips are always very welcome! I am still learning and
+provide a benefit. In general, advice and tips are always very welcome! We are still learning and
 would love to hear your opinions and thoughts on this repository!
 
 ### Small Contributions
@@ -47,6 +47,7 @@ would love to hear your opinions and thoughts on this repository!
 - **Language-specific config values**: Currently the configuration variables are only for
   non-langauge-specific values, this could possibly be put in the `common.json` or a new
   `config.json` file and be loaded in by i18n (maybe as global variables).
+- **Config interface**: Add an interface for the config in [config.ts](./src/config/config.ts).
 
 ### Medium Contributions
 
