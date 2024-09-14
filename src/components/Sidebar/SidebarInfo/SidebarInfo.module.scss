@@ -100,8 +100,7 @@
     z-index: -1;
   }
 
-  &:hover,
-  &:focus {
+  &:hover {
     background-image: functions.theme("bg-gradient-accent-primary");
 
     &::before {
