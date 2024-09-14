@@ -66,6 +66,9 @@ const config = {
     stackOverflow: 'https://stackoverflow.com/users/18598382/sem',
   },
   ui: {
+    scroll: {
+      behaviour: 'instant' as ScrollBehavior, // 'auto' | 'instant' | 'smooth'
+    },
     toasts: {
       defaultDuration: 5000,
       errorDuration: 10000,
