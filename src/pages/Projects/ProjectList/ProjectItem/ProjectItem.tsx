@@ -15,9 +15,29 @@ interface ProjectItemProps {
 const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
   const { t } = useTranslation('projects');
   const [hoveredTech, setHoveredTech] = useState<TechnologyKey | null>(null);
+  const [isTouchDevice, setIsTouchDevice] = useState(false);
   const bannerRef = useRef<HTMLElement>(null);
   const techContainerRef = useRef<HTMLDivElement>(null);
   const imageRef = useRef<HTMLImageElement>(null);
+
+  const handleTechClick = (e: React.MouseEvent, tech: TechnologyKey) => {
+    if (isTouchDevice) {
+      e.preventDefault();
+      setHoveredTech(tech);
+    }
+  };
+
+  useEffect(() => {
+    const handleTouchStart = () => {
+      setIsTouchDevice(true);
+    };
+
+    window.addEventListener('touchstart', handleTouchStart, { once: true });
+
+    return () => {
+      window.removeEventListener('touchstart', handleTouchStart);
+    };
+  }, []);
 
   const positionTechIcons = () => {
     if (bannerRef.current && techContainerRef.current) {
@@ -74,8 +94,16 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
             <div
               key={tech.name}
               className={styles.technologyIcon}
+              role="button"
+              tabIndex={0}
               onMouseEnter={() => setHoveredTech(tech.name as TechnologyKey)}
               onMouseLeave={() => setHoveredTech(null)}
+              onClick={(e) => handleTechClick(e, tech.name as TechnologyKey)}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  handleTechClick(e as unknown as React.MouseEvent, tech.name as TechnologyKey);
+                }
+              }}
             >
               <tech.icon />
               {hoveredTech === tech.name && <div className={styles.tooltip}>{tech.name}</div>}
