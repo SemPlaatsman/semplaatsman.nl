@@ -48,6 +48,12 @@ would love to hear your opinions and thoughts on this repository!
   non-langauge-specific values, this could possibly be put in the `common.json` or a new
   `config.json` file and be loaded in by i18n (maybe as global variables).
 - **Config interface**: Add an interface for the config in [config.ts](./src/config/config.ts).
+- **Improved Skills component**: The [`Skills.tsx`](./src/pages/Resume/Skills/Skills.tsx) component
+  currently features percentages as a way to indicate proficiency. However, this is a bad way to
+  showcase your skills (See
+  [this StackExchange answer](https://workplace.stackexchange.com/a/71279)) and this component
+  should thus be changed and improved. This component could then also be used to showcase both hard
+  and soft skills.
 
 ### Medium Contributions
 
