@@ -1,12 +1,13 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
+import config from '../../../config';
+
 import styles from './MapBox.module.scss';
 
 const MapBox: React.FC = () => {
   const { t } = useTranslation('contact');
-  const srcUrl =
-    'https://www.openstreetmap.org/export/embed.html?bbox=4.520702362060548%2C52.333241186520006%2C4.747295379638673%2C52.43550196931334&amp;layer=mapnik';
+  const srcUrl = config.owner.locationUrl;
 
   return (
     <section className={styles.mapBox}>

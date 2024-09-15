@@ -20,6 +20,8 @@ const config = {
     lastName: 'Plaatsman',
     fullName: 'Sem Plaatsman',
     additionalName: 'SemPl',
+    locationUrl:
+      'https://www.openstreetmap.org/export/embed.html?bbox=4.520702362060548%2C52.333241186520006%2C4.747295379638673%2C52.43550196931334&amp;layer=mapnik', // URL from https://www.openstreetmap.org, you can select a location, and export it as a link
     gender: 'Male', // According to https://schema.org/GenderType
     knowsLanguage: ['English', 'Dutch'], // According to https://schema.org/Language
     nationality: 'Dutch', // According to https://schema.org/Country
