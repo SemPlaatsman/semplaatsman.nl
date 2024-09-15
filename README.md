@@ -20,23 +20,23 @@ multiple themes, and free hosting.
 > their repository! For a full list of acknowledgments, please see the
 > [Acknowledgements](#acknowledgements) section.
 
-## Table of Contents
+## 📃 Table of Contents
 
-- [Demo](#demo)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Prerequisites](#prerequisites)
-- [Quick Start Guide](#quick-start-guide)
-- [Customization](#customization)
-- [Deployment](#deployment)
-- [Documentation](#documentation)
-- [Contributing](#contributing)
-- [Code of Conduct](#code-of-conduct)
-- [License](#license)
-- [Contact](#contact)
-- [Acknowledgements](#acknowledgements)
+- [🎥 Demo](#🎥-demo)
+- [🌟 Features](#🌟-features)
+- [🛠️ Tech Stack](#🛠️-tech-stack)
+- [📋 Prerequisites](#📋-prerequisites)
+- [🚀 Quick Start Guide](#🚀-quick-start-guide)
+- [🎨 Customization](#🎨-customization)
+- [🚢 Deployment](#🚢-deployment)
+- [📖 Documentation](#📖-documentation)
+- [🤝 Contributing](#🤝-contributing)
+- [📜 Code of Conduct](#📜-code-of-conduct)
+- [⚖️ License](#⚖️-license)
+- [📫 Contact](#📫-contact)
+- [🙏 Acknowledgements](#🙏-acknowledgements)
 
-## Demo
+## 🎥 Demo
 
 <details>
 <summary style="font-size: 1.17em; font-weight: bold; margin: 0.5em 0;">About</summary>
@@ -68,33 +68,33 @@ multiple themes, and free hosting.
 
 Visit the live site: [semplaatsman.nl](https://semplaatsman.nl/)
 
-## Features
+## 🌟 Features
 
-- Fully responsive for all devices
-- Component-based architecture for reusable and maintainable code
-- Support for multiple themes
-- Built-in multilingual support
-- Excellent
+- 📱 Fully responsive for all devices
+- 🧩 Component-based architecture for reusable and maintainable code
+- 🎨 Support for multiple themes
+- 🌍 Built-in multilingual support
+- ⚡ Excellent
   [Google Lighthouse](https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=nl&pli=1)
   performance
-- Multilingual email integration (also obfuscates your personal email address)
-- Free hosting through [GitHub Pages](https://pages.github.com/)
+- 📧 Multilingual email integration (also obfuscates your personal email address)
+- 🌐 Free hosting through [GitHub Pages](https://pages.github.com/)
 
-## Tech Stack
+## 🛠️ Tech Stack
 
-- [React](https://react.dev/)
-- [Vite](https://vitejs.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [SCSS](https://sass-lang.com/)
-- [reacti18next](https://react.i18next.com/)
-- [React Router](https://reactrouter.com/en/main)
-- [React Helmet](https://www.npmjs.com/package/react-helmet)
-- [React Icons](https://react-icons.github.io/react-icons/)
-- [ESLint](https://eslint.org/)
-- [axe-core](https://www.npmjs.com/package/axe-core)
-- [Prettier](https://prettier.io/)
+- ⚛️ [React](https://react.dev/)
+- 🏗️ [Vite](https://vitejs.dev/)
+- 📘 [TypeScript](https://www.typescriptlang.org/)
+- 🎨 [SCSS](https://sass-lang.com/)
+- 🌍 [reacti18next](https://react.i18next.com/)
+- 🧭 [React Router](https://reactrouter.com/en/main)
+- ⛑️ [React Helmet](https://www.npmjs.com/package/react-helmet)
+- 🔣 [React Icons](https://react-icons.github.io/react-icons/)
+- 🔍 [ESLint](https://eslint.org/)
+- 🪓 [axe-core](https://www.npmjs.com/package/axe-core)
+- 💅 [Prettier](https://prettier.io/)
 
-## Prerequisites
+## 📋 Prerequisites
 
 Before you begin, ensure you have met the following requirements:
 
@@ -103,7 +103,7 @@ Before you begin, ensure you have met the following requirements:
 - You have a Windows/Linux/Mac machine with [Git](https://git-scm.com/downloads) installed
 - You have read [CONTRIBUTING.md](./CONTRIBUTING.md) (optional, if you're looking to contribute)
 
-## Quick Start Guide
+## 🚀 Quick Start Guide
 
 To get started with this project:
 
@@ -125,7 +125,7 @@ To get started with this project:
    npm run dev
    ```
 
-## Customization
+## 🎨 Customization
 
 To customize to project for your own use:
 
@@ -141,7 +141,7 @@ To customize to project for your own use:
    [Configuration and Customization](https://github.com/SemPlaatsman/semplaatsman.nl/wiki/Configuration-and-Customization)
    in the wiki for details)
 
-## Deployment
+## 🚢 Deployment
 
 This project uses [GitHub Pages](https://pages.github.com/) for hosting, with
 [Cloudflare](https://www.cloudflare.com/) for CDN and DNS management. The deployment process is
@@ -152,12 +152,12 @@ For detailed setup instructions, refer to the
 [Hosting and Deployment](https://github.com/SemPlaatsman/semplaatsman.nl/wiki/Hosting-and-Deployment)
 section in the wiki.
 
-## Documentation
+## 📖 Documentation
 
 For more detailed information about the project structure, architecture, and advanced customization
 options, please refer to our [GitHub Wiki](https://github.com/SemPlaatsman/semplaatsman.nl/wiki).
 
-## Contributing
+## 🤝 Contributing
 
 We welcome contributions to this project! Please see our [Contributing Guidelines](CONTRIBUTING.md)
 for more information on how to get started.
@@ -168,23 +168,23 @@ is hosted on [semplaatsman.nl](https://www.semplaatsman.nl).
 The `development` branch is used for ongoing development work. All contributions should be merged
 into `development` before being merged into `main`.
 
-## Code of Conduct
+## 📜 Code of Conduct
 
 Please read our [Code of Conduct](CODE_OF_CONDUCT.md) before contributing or engaging in our
 community.
 
-## License
+## ⚖️ License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Contact
+## 📫 Contact
 
 Sem Plaatsman - [LinkedIn](https://www.linkedin.com/in/sem-plaatsman/) -
 [dev@semplaatsman.nl](mailto:dev@semplaatsman.nl)
 
 Project Link: [SemPlaatsman/semplaatsman.nl](https://github.com/SemPlaatsman/semplaatsman.nl)
 
-## Acknowledgements
+## 🙏 Acknowledgements
 
 Mockups were generated through the
 [Multi Device Website Mockup Generator](https://techsini.com/multi-mockup/index.php) from
