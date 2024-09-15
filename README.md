@@ -1,5 +1,12 @@
 # semplaatsman.nl
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Fsemplaatsman.nl)](https://semplaatsman.nl)
+![GitHub Stars](https://img.shields.io/github/stars/SemPlaatsman/semplaatsman.nl?style=social)
+![GitHub Forks](https://img.shields.io/github/forks/SemPlaatsman/semplaatsman.nl?style=social)
+![GitHub last commit](https://img.shields.io/github/last-commit/SemPlaatsman/semplaatsman.nl)
+![GitHub contributors](https://img.shields.io/github/contributors/SemPlaatsman/semplaatsman.nl)
+
 Welcome to the repository for semplaatsman.nl! This project showcases a modern, fully responsive
 personal portfolio website built with React. It has built-in support for emails, multilinguality,
 multiple themes, and free hosting.
@@ -7,7 +14,7 @@ multiple themes, and free hosting.
 ![semplaatsman.nl Mockup](./docs/assets/about-mockup.webp)
 
 <p align="center">
-   <img src="./docs/assets/lighthouse-results.png" alt="semplaatsman.nl Lighthouse results" />
+   <img src="./docs/assets/lighthouse-results.png" alt="semplaatsman.nl Lighthouse results" style="width: 75%" />
 </p>
 
 > 💡 The documentation for this project is still being worked on, so if you see any mistakes or
