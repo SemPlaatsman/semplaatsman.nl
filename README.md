@@ -74,9 +74,11 @@ Visit the live site: [semplaatsman.nl](https://semplaatsman.nl/)
 - Component-based architecture for reusable and maintainable code
 - Support for multiple themes
 - Built-in multilingual support
-- Excellent Google Lighthouse performance
+- Excellent
+  [Google Lighthouse](https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=nl&pli=1)
+  performance
 - Multilingual email integration (also obfuscates your personal email address)
-- Free hosting through GitHub Pages
+- Free hosting through [GitHub Pages](https://pages.github.com/)
 
 ## Tech Stack
 
@@ -164,7 +166,7 @@ The `main` branch features the most recent deployed and stable code of this port
 is hosted on [semplaatsman.nl](https://www.semplaatsman.nl).
 
 The `development` branch is used for ongoing development work. All contributions should be merged
-into development before being merged into main.
+into `development` before being merged into `main`.
 
 ## Code of Conduct
 
