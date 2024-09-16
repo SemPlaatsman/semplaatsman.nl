@@ -58,6 +58,7 @@ would love to hear your opinions and thoughts on this repository!
 ### Medium Contributions
 
 - **Error boundary**: Implement an error boundary with fallback error page.
+- **Certifications component**: A component showcasing certifications on the Resume page.
 - **Dockerization**: [Dockerize](https://www.docker.com/) the application.
 - **404 page**: Research the benefit of, and implement a 404 page instead of rerouting to the root
   domain.
