@@ -43,15 +43,22 @@ would love to hear your opinions and thoughts on this repository!
   misses functionalities such as features (e.g. enable light and/or dark theme, enable Auto-Reply,
   etc...).
 - **Centralized GitHub Pages hosting**: Research the steps needed to host without a custom domain,
-  but through a GitHub Pages domain.
+  but through a GitHub Pages domain, and write the documentation.
 - **Language-specific config values**: Currently the configuration variables are only for
   non-langauge-specific values, this could possibly be put in the `common.json` or a new
   `config.json` file and be loaded in by i18n (maybe as global variables).
 - **Config interface**: Add an interface for the config in [config.ts](./src/config/config.ts).
+- **Improved Skills component**: The [`Skills.tsx`](./src/pages/Resume/Skills/Skills.tsx) component
+  currently features percentages as a way to indicate proficiency. However, this is a bad way to
+  showcase your skills (See
+  [this StackExchange answer](https://workplace.stackexchange.com/a/71279)) and this component
+  should thus be changed and improved. This component could then also be used to showcase both hard
+  and soft skills.
 
 ### Medium Contributions
 
 - **Error boundary**: Implement an error boundary with fallback error page.
+- **Certifications component**: A component showcasing certifications on the Resume page.
 - **Dockerization**: [Dockerize](https://www.docker.com/) the application.
 - **404 page**: Research the benefit of, and implement a 404 page instead of rerouting to the root
   domain.
