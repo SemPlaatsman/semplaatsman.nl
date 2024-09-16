@@ -1,0 +1,36 @@
+{
+  "title": "Projects",
+  "additionalFiltersTitle": "Additional Filters",
+  "filters": {
+    "projectType": {
+      "prompt": "Select Type",
+      "options": {
+        "all": "All",
+        "backend": "Backend",
+        "frontend": "Frontend",
+        "fullStack": "Full Stack"
+      }
+    },
+    "technology": {
+      "name": "Technologies",
+      "prompt": "Select Technologies",
+      "options": {
+        "all": "All"
+      },
+      "categories": {
+        "language": "Programming Languages",
+        "framework": "Frameworks",
+        "library/package": "Libraries & Packages",
+        "tool/platform": "Tools & Platforms",
+        "database": "Databases"
+      }
+    }
+  },
+  "items": {
+    "semplaatsman.nl-portfolio": {
+      "bannerAlt": "Image of semplaatsman.nl",
+      "title": "semplaatsman.nl (Portfolio)",
+      "text": "My personal portfolio website, built with React and TypeScript."
+    }
+  }
+}
