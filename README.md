@@ -84,8 +84,8 @@ Visit the live site: [semplaatsman.nl](https://semplaatsman.nl/)
 - ⚡ Excellent
   [Google Lighthouse](https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=nl&pli=1)
   performance
-- 📧 Multilingual email integration (also obfuscates your personal email address)
-- 🌐 Free hosting through [GitHub Pages](https://pages.github.com/)
+- 📧 Multilingual email integration with address obfuscation
+- 🌐 Free hosting via [GitHub Pages](https://pages.github.com/)
 
 ## 🛠️ Tech Stack
 
