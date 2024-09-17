@@ -14,11 +14,11 @@ html {
 .h4,
 .h5 {
   color: functions.theme("text-primary");
-  text-transform: capitalize;
 }
 
 .h2 {
   font-size: variables.$font-size-xxl;
+  text-transform: capitalize;
 
   @include mixins.mobile {
     font-size: variables.$font-size-4xl;
