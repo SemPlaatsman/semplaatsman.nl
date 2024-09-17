@@ -22,6 +22,7 @@
     "submitError": "Bericht kon niet worden verstuurd!",
     "autoReplyError": "Auto-Reply kon niet worden verstuurd!",
     "rateLimitError": "U heeft het limiet bereikt. Probeer het later opnieuw.",
-    "throttleError": "U stuurt te veel verzoeken. Probeer het later opnieuw."
+    "throttleError": "U stuurt te veel verzoeken. Probeer het later opnieuw.",
+    "recaptchaError": "Voltooi alstublieft de reCAPTCHA verificatie."
   }
 }

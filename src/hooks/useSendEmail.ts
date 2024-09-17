@@ -18,7 +18,7 @@ export const useSendEmail = () => {
   const { t } = useTranslation(['contact', 'email']);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const sendEmail = async (form: HTMLFormElement) => {
+  const sendEmail = async (form: HTMLFormElement, recaptchaToken: string) => {
     const formData = new FormData(form);
     const userIdentifier = formData.get('email') as string; // Using email as identifier
 
@@ -32,11 +32,23 @@ export const useSendEmail = () => {
     const submittingToast = toast.loading(t('contact:form.submitting'));
 
     try {
+      // Check honeypot field
+      const honeypotValue: HTMLInputElement = form.querySelector('input[name="phone"]')!;
+      if (honeypotValue?.value) {
+        throw new Error('Spam detected');
+      }
+
       // Sanitize and convert form data to a record
       const sanitizedData: Record<string, string> = {};
       formData.forEach((value, key) => {
-        sanitizedData[key] = DOMPurify.sanitize(value as string);
+        // Exclude honeypot field
+        if (key !== 'phone') {
+          sanitizedData[key] = DOMPurify.sanitize(value as string);
+        }
       });
+
+      // Add reCAPTCHA token
+      sanitizedData['g-recaptcha-response'] = recaptchaToken;
 
       // Construct email content
       const emailContent = {
