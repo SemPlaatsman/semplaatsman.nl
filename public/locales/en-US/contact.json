@@ -22,6 +22,7 @@
     "submitError": "Message could not be sent!",
     "autoReplyError": "Auto-Reply could not be sent!",
     "rateLimitError": "You have reached the rate limit. Please try again later.",
-    "throttleError": "You are sending too many requests. Please try again later."
+    "throttleError": "You are sending too many requests. Please try again later.",
+    "recaptchaError": "Please complete the reCAPTCHA challenge."
   }
 }
