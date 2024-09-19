@@ -1,8 +1,14 @@
 {
   "title": "Projecten",
   "additionalFiltersTitle": "Extra Filters",
+  "variables": {
+    "createdDate": {
+      "name": "Aanmaakdatum"
+    }
+  },
   "filters": {
     "projectType": {
+      "name": "Project Type",
       "prompt": "Selecteer Type",
       "options": {
         "all": "Alle",
@@ -29,8 +35,18 @@
   "items": {
     "semplaatsman.nl-portfolio": {
       "bannerAlt": "Afbeelding van semplaatsman.nl",
-      "title": "semplaatsman.nl (Portfolio)",
+      "title": "semplaatsman.nl",
       "text": "Mijn persoonlijke portfolio website, gebouwd met React en TypeScript."
+    }
+  },
+  "projectDetails": {
+    "links": {
+      "live": {
+        "ariaLabel": "Bezoek live versie van {{projectName}}"
+      },
+      "code": {
+        "ariaLabel": "Bekijk broncode van {{projectName}}"
+      }
     }
   }
 }

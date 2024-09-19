@@ -15,7 +15,7 @@ const projectConfig: ProjectConfig = {
     technologies.vite,
     technologies.i18next,
   ],
-  projectType: ProjectType.Frontend,
+  projectType: ProjectType.FullStack,
   codeUrl: 'https://github.com/SemPlaatsman/semplaatsman.nl',
   liveUrl: 'https://semplaatsman.nl',
   imagePath: portfolioImage,

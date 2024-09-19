@@ -1,3 +1,18 @@
 @use "../../styles/variables";
 @use "../../styles/functions";
 @use "../../styles/mixins";
+
+.projectTitle {
+  margin-bottom: 0;
+}
+
+.projectContent {
+  font-size: variables.$font-size-sm;
+  font-weight: variables.$font-weight-light;
+  line-height: 1.6;
+
+  @include mixins.mobile {
+    font-size: variables.$font-size-md;
+    margin-bottom: 40px;
+  }
+}
