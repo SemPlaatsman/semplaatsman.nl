@@ -7,7 +7,7 @@ import projectImage from '../../../assets/projects/tno-logo.webp';
 const projectConfig: ProjectConfig = {
   slug: 'who-has-been-calling',
   localeKey: 'who-has-been-calling',
-  createdDate: '2024-06-14',
+  createdDate: '2024-02-05',
   technologies: [
     technologies.react,
     technologies.typescript,
