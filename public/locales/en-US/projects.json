@@ -37,6 +37,11 @@
       "bannerAlt": "Image of semplaatsman.nl",
       "title": "semplaatsman.nl",
       "text": "My personal portfolio website, built with React and TypeScript."
+    },
+    "who-has-been-calling": {
+      "bannerAlt": "Image of TNO's logo",
+      "title": "Who Has Been Calling",
+      "text": "AI-driven full-stack system for automated audio conversation analysis."
     }
   },
   "projectDetails": {

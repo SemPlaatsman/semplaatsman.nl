@@ -18,13 +18,21 @@ const Projects: React.FC = () => {
   const projects = getAllProjects();
 
   const filteredProjects = useMemo(() => {
-    const filteredProjects = projects.filter((project) => {
-      const typeMatch = selectedType === 'all' || project.projectType === selectedType;
-      const techMatch = selectedTech.some((techKey) =>
-        project.technologies.some((projectTech) => projectTech === technologies[techKey])
-      );
-      return typeMatch && techMatch;
-    });
+    const filteredProjects = projects
+      .filter((project) => {
+        const typeMatch = selectedType === 'all' || project.projectType === selectedType;
+        const techMatch = selectedTech.some((techKey) =>
+          project.technologies.some((projectTech) => projectTech === technologies[techKey])
+        );
+        return typeMatch && techMatch;
+      })
+      .sort((a, b) => {
+        const dateA = new Date(a.createdDate);
+        const dateB = new Date(b.createdDate);
+        // Sort descendingly
+        // Use dateA.getTime() - dateB.getTime(); for ascending order
+        return dateB.getTime() - dateA.getTime();
+      });
     return filteredProjects;
   }, [projects, selectedType, selectedTech]);
 

@@ -1,7 +1,17 @@
 import { IconType } from 'react-icons';
 import { FaReact, FaNodeJs, FaPython, FaJava, FaDocker } from 'react-icons/fa';
 import { FaGolang, FaRust } from 'react-icons/fa6';
-import { SiTypescript, SiJavascript, SiCsharp, SiMongodb, SiI18Next, SiVite } from 'react-icons/si';
+import {
+  SiTypescript,
+  SiJavascript,
+  SiCsharp,
+  SiMongodb,
+  SiI18Next,
+  SiVite,
+  SiFlask,
+  SiPostgresql,
+  SiTensorflow,
+} from 'react-icons/si';
 import { DiDotnet } from 'react-icons/di';
 import { TbSql, TbBrandKotlin, TbBrandSass } from 'react-icons/tb';
 
@@ -39,6 +49,9 @@ export const technologies = {
   i18next: new Technology('i18next', TechnologyCategory.LibraryOrPackage, SiI18Next),
   vite: new Technology('Vite', TechnologyCategory.ToolOrPlatform, SiVite),
   scss: new Technology('SCSS', TechnologyCategory.Language, TbBrandSass),
+  flask: new Technology('Flask', TechnologyCategory.Framework, SiFlask),
+  postgresql: new Technology('PostgreSQL', TechnologyCategory.Database, SiPostgresql),
+  tensorflow: new Technology('TensorFlow', TechnologyCategory.LibraryOrPackage, SiTensorflow),
 };
 
 export type TechnologyKey = keyof typeof technologies;
