@@ -9,10 +9,13 @@ html {
   // color: functions.theme("text-primary");
 }
 
+.h1,
 .h2,
 .h3,
 .h4,
-.h5 {
+.h5,
+.h6,
+p {
   color: functions.theme("text-primary");
 }
 
@@ -48,8 +51,4 @@ html {
   @include mixins.mobile {
     font-size: variables.$font-size-md;
   }
-}
-
-p {
-  color: functions.theme("text-primary");
 }
