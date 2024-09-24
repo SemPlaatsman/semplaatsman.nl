@@ -128,6 +128,7 @@ const SEO: React.FC = () => {
 };
 
 // Ignore ESLint rule for exports, is most likely a false positive
-// Source: https://stackoverflow.com/questions/77365777/how-to-avoid-eslint-warning-in-react-fast-refresh-only-works-when-a-file-only-e
-/* eslint-disable react-refresh/only-export-components */
+// See: https://github.com/ArnaudBarre/eslint-plugin-react-refresh/tree/main?tab=readme-ov-file#limitations
+// And: https://stackoverflow.com/questions/77365777/how-to-avoid-eslint-warning-in-react-fast-refresh-only-works-when-a-file-only-e
+// eslint-disable-next-line react-refresh/only-export-components
 export default SEO;

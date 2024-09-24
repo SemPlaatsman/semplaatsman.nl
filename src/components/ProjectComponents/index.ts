@@ -5,11 +5,19 @@ import { ProjectConfig } from '../../types/project';
 // Import project configs here
 import semplaatsmanNlProjectConfig from './SemplaatsmanNlPortfolio/projectConfig';
 import whoHasBeenCallingProjectConfig from './WhoHasBeenCalling/projectConfig';
+import SPWAProjectConfig from './SPWA/projectConfig';
+import theFelisFoundationConfig from './TheFelisFoundation/projectConfig';
+import haarlemFestivalConfig from './HaarlemFestival/projectConfig';
+import codeGenerationConfig from './CodeGeneration/projectConfig';
 
 // Add project configs to the array here
 const projectConfigs: ProjectConfig[] = [
   semplaatsmanNlProjectConfig,
   whoHasBeenCallingProjectConfig,
+  SPWAProjectConfig,
+  theFelisFoundationConfig,
+  haarlemFestivalConfig,
+  codeGenerationConfig,
 ];
 
 export default projectConfigs;

@@ -33,9 +33,6 @@ would love to hear your opinions and thoughts on this repository!
 
 - **Sitemap generation**: Sitemap generation, with react-router and i18n integration. Currently,
   only a basic static sitemap is used.
-- **Email reCaptcha**: reCaptcha for email. See
-  [Adding CAPTCHA verification](https://www.emailjs.com/docs/user-guide/adding-captcha-verification/)
-  from [EmailJS](https://www.emailjs.com/).
 - **Lazy loading/FOUC**: Optimize lazy loading and FOUC (Flash Of Unstyled Content). This is
   currently primarily noticeable by the Suspense in [App.tsx](./src/App.tsx).
 - **Config supplementation**: Supplement the [config](./src/config) directory with configuration

@@ -36,12 +36,32 @@
     "semplaatsman.nl-portfolio": {
       "bannerAlt": "Afbeelding van semplaatsman.nl",
       "title": "semplaatsman.nl",
-      "text": "Mijn persoonlijke portfolio website, gebouwd met React en TypeScript."
+      "text": "Mijn persoonlijke portfolio met uitgebreide hosting- en personalisatiedocumentatie."
     },
     "who-has-been-calling": {
       "bannerAlt": "Afbeelding van TNO's logo",
       "title": "Who Has Been Calling",
       "text": "AI-gedreven full-stack systeem voor geautomatiseerde audioconversieanalyse."
+    },
+    "spwa": {
+      "bannerAlt": "Afbeelding van twee SPWA mockups",
+      "title": "SPWA",
+      "text": "Full-stack geauthenticeerde PWA voor abonnementsstatistieken, gebouwd voor mijn stage."
+    },
+    "the-felis-foundation": {
+      "bannerAlt": "Afbeelding van het logo van The Felis Foundation",
+      "title": "The Felis Foundation",
+      "text": "Kattenopvangbeheersysteem met Vue, Bootstrap en PHP backend."
+    },
+    "haarlem-festival": {
+      "bannerAlt": "Afbeelding van een van de evenementpagina's van Haarlem Festival",
+      "title": "Haarlem Festival",
+      "text": "Gecontaineriseerde Haarlemse stadswebsite met diverse culturele evenementen."
+    },
+    "code-generation": {
+      "bannerAlt": "Afbeelding van de dashboard in het Code Generation project's UI",
+      "title": "Code Generation",
+      "text": "Banksimulator met volledig unit-tested API voor account- en transactiebeheer."
     }
   },
   "projectDetails": {
