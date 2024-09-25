@@ -62,6 +62,11 @@
       "bannerAlt": "Image of the dashboard in the Code Generation project's UI",
       "title": "Code Generation",
       "text": "Banking simulator with fully unit tested API for account and transaction management."
+    },
+    "the-garden-group": {
+      "bannerAlt": "Image of the logo's of C# and MongoDB",
+      "title": "The Garden Group",
+      "text": "Windows Forms CRUD application for a gardening company using MongoDB."
     }
   },
   "projectDetails": {

@@ -31,6 +31,7 @@ import {
   SiHibernate,
   SiPhpmyadmin,
   SiNginx,
+  SiWindows,
 } from 'react-icons/si';
 import { DiDotnet } from 'react-icons/di';
 import { TbSql, TbBrandSass } from 'react-icons/tb';
@@ -83,7 +84,8 @@ export const technologies = {
   testing: new Technology('Testing', TechnologyCategory.LibraryOrPackage, FaCheck),
   swagger: new Technology('Swagger', TechnologyCategory.ToolOrPlatform, SiSwagger),
   hibernate: new Technology('Hibernate', TechnologyCategory.LibraryOrPackage, SiHibernate),
-  nginx: new Technology('Nginx', TechnologyCategory.ToolOrPlatform, SiNginx),
+  nginx: new Technology('nginx', TechnologyCategory.ToolOrPlatform, SiNginx),
+  winforms: new Technology('Windows Forms', TechnologyCategory.Framework, SiWindows),
 };
 
 export type TechnologyKey = keyof typeof technologies;

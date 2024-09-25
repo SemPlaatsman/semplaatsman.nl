@@ -9,6 +9,7 @@ import SPWAProjectConfig from './SPWA/projectConfig';
 import theFelisFoundationConfig from './TheFelisFoundation/projectConfig';
 import haarlemFestivalConfig from './HaarlemFestival/projectConfig';
 import codeGenerationConfig from './CodeGeneration/projectConfig';
+import theGardenGroupConfig from './TheGardenGroup/projectConfig';
 
 // Add project configs to the array here
 const projectConfigs: ProjectConfig[] = [
@@ -18,6 +19,7 @@ const projectConfigs: ProjectConfig[] = [
   theFelisFoundationConfig,
   haarlemFestivalConfig,
   codeGenerationConfig,
+  theGardenGroupConfig,
 ];
 
 export default projectConfigs;
