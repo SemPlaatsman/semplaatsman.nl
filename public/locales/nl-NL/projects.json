@@ -67,6 +67,11 @@
       "bannerAlt": "Afbeelding van de logo's van C# en MongoDB",
       "title": "The Garden Group",
       "text": "Windows Forms CRUD-applicatie voor een tuincentrum met MongoDB."
+    },
+    "sp.sso": {
+      "bannerAlt": "AI Afbeelding van een SSO systeemdiagram",
+      "title": "SP.SSO",
+      "text": "Unit-tested en gebenchmarkte Single Sign-On service met WordPress-integratie."
     }
   },
   "projectDetails": {

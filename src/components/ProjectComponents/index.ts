@@ -10,6 +10,7 @@ import theFelisFoundationConfig from './TheFelisFoundation/projectConfig';
 import haarlemFestivalConfig from './HaarlemFestival/projectConfig';
 import codeGenerationConfig from './CodeGeneration/projectConfig';
 import theGardenGroupConfig from './TheGardenGroup/projectConfig';
+import SPSSOProjectConfig from './SPSSO/projectConfig';
 
 // Add project configs to the array here
 const projectConfigs: ProjectConfig[] = [
@@ -20,6 +21,7 @@ const projectConfigs: ProjectConfig[] = [
   haarlemFestivalConfig,
   codeGenerationConfig,
   theGardenGroupConfig,
+  SPSSOProjectConfig,
 ];
 
 export default projectConfigs;

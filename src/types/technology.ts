@@ -9,6 +9,7 @@ import {
   FaVuejs,
   FaBootstrap,
   FaCheck,
+  FaWordpress,
 } from 'react-icons/fa';
 import { FaGolang } from 'react-icons/fa6';
 import {
@@ -86,6 +87,7 @@ export const technologies = {
   hibernate: new Technology('Hibernate', TechnologyCategory.LibraryOrPackage, SiHibernate),
   nginx: new Technology('nginx', TechnologyCategory.ToolOrPlatform, SiNginx),
   winforms: new Technology('Windows Forms', TechnologyCategory.Framework, SiWindows),
+  wordpress: new Technology('WordPress', TechnologyCategory.ToolOrPlatform, FaWordpress),
 };
 
 export type TechnologyKey = keyof typeof technologies;
