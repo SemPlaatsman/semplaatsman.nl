@@ -51,6 +51,14 @@ would love to hear your opinions and thoughts on this repository!
   [this StackExchange answer](https://workplace.stackexchange.com/a/71279)) and this component
   should thus be changed and improved. This component could then also be used to showcase both hard
   and soft skills.
+- **Better technologies for project config**: The technologies array inside a project config is
+  currently used to showcase the most important technologies of a project. But this config could be
+  extended so other technologies (`hiddenTechnologies`) could also be added that are not shown in
+  the project card, but are filtered on and shown in the project info modal on a project detail page
+  (this approach can also be reversed to have a `technologies`, and `shownTechnologies` instead of
+  `hiddenTechnologies` array). A usecase for this would be when you list Spring Boot as a
+  technology, in which case you will always also be using Java, but you might not want to list that
+  to reduce the amount of icons on the project card.
 
 ### Medium Contributions
 
