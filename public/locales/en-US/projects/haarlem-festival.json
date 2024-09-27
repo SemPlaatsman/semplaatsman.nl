@@ -1,0 +1,48 @@
+{
+  "overview": {
+    "title": "Project Overview",
+    "description": [
+      "As part of a group project at InHolland, I led the development of a comprehensive web application for the fictional \"Haarlem Festival\" event. This project, named \"The Festival,\" encompassed three distinct events: Yummy (a food festival), DANCE! (a dance festival), and A Stroll Through History (a cultural/historic event). The primary goal was to create a <strong>full-stack web application</strong> that would allow users to explore event details, make reservations, and purchase tickets.",
+      "As the project leader, I was responsible for overseeing the entire development process, ensuring cohesion between different components, and directly contributing to key features. My primary focus areas were the <strong>Yummy event</strong>, designing and maintaining the <strong>database structure</strong>, and the entire <strong>ticket registration and payment process</strong>, including the integration of the Mollie payment system."
+    ]
+  },
+  "designProcess": {
+    "title": "Design Process",
+    "description": "The project began with a comprehensive design phase, where our team worked on creating a user-friendly and visually appealing interface for the Haarlem Festival website. We aimed to develop a <strong>fresh and inclusive design</strong> that would attract a diverse audience to Haarlem and its events.",
+    "steps": [
+      "Creating a consistent visual identity across different event pages while maintaining each event's unique character.",
+      "Developing a mobile-friendly design, with special consideration for younger users (ages 8-12) for the mobile version.",
+      "Implementing intuitive navigation and clear information architecture to help users easily find event details and make reservations.",
+      "Designing user-friendly interfaces for the ticket booking and payment processes."
+    ]
+  },
+  "technicalImplementation": {
+    "title": "Technical Implementation",
+    "description": "The web application was primarily developed using <strong>PHP</strong>, with a <strong>MySQL</strong> database managed through <strong>phpMyAdmin</strong>. The frontend was created using <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>, with <strong>Bootstrap</strong> for responsive design. As project leader, I implemented a <strong>MVC architecture</strong> and ensured the team adhered to <strong>PSR standards</strong> and <strong>OOP principles</strong>.",
+    "features": [
+      "<strong>User Authentication</strong>: Implemented a secure login system with password hashing and recovery functionality.",
+      "<strong>Shopping Cart</strong>: Created a robust cart system allowing users to add and manage their event tickets and reservations.",
+      "<strong>Payment Integration</strong>: Implemented the <strong>Mollie payment gateway</strong> for secure online transactions, including webhook handling for payment confirmations.",
+      "<strong>Email Support</strong>: Utilized <strong>PHPMailer</strong> for sending confirmation emails and tickets to users.",
+      "<strong>QR Code Generation</strong>: Integrated QR code generation for tickets and a QR scanner for event check-ins.",
+      "<strong>Admin Panel</strong>: An administrative interface for event management and user control.",
+      "<strong>CAPTCHA Integration</strong>: Enhanced security on forms.",
+      "<strong>Responsive Design</strong>: Ensured the website was fully responsive across various devices."
+    ]
+  },
+  "developmentProcess": {
+    "title": "Development Process",
+    "description": "The development process began with setting up a <strong>Docker</strong> environment for consistent development and deployment across our team. <strong>Composer</strong> was introduced for dependency management, which included packages like mpdf, PHPMailer, and Mollie API.",
+    "steps": [
+      "Architecting the overall structure of the application, including database schema design and extending routing functionality.",
+      "Implementing the <strong>Mollie payment system</strong>.",
+      "Creating database tables for users, events, tickets, reservations, ensuring proper relationships and efficient data retrieval.",
+      "Conducting regular code reviews and helping team members overcome technical challenges.",
+      "Ensuring smooth integration of all project components."
+    ]
+  },
+  "results": {
+    "title": "Results and Learnings",
+    "description": "This project significantly enhanced my skills in <strong>full-stack web development</strong> and <strong>project management</strong>. It provided hands-on experience with integrating third-party APIs, handling secure payments, and developing a scalable web application. The challenges faced, especially in implementing complex features like the shopping cart and payment system, greatly improved my problem-solving abilities and deepened my understanding of web technologies. Leading this project also honed my skills in team coordination, task delegation, and effective communication in a development environment."
+  }
+}
