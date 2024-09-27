@@ -1,0 +1,55 @@
+{
+  "overview": {
+    "title": "Project Overview",
+    "description": [
+      "During my NoSQL class at InHolland, I contributed to \"The Garden Group\" project, a ticketing application designed to manage service tickets within an organization. This project featured a <strong>Windows Forms application</strong> with a <strong>CRUD system</strong> and a <strong>MongoDB database</strong>. The application streamlines the process of handling and resolving device-related issues reported by employees.",
+      "The Garden Group project addresses the challenge of <strong>efficiently managing and tracking service tickets</strong> in an organizational setting. Our solution is a ticketing system that allows for ticket creation, management, and resolution."
+    ]
+  },
+  "challenge": {
+    "title": "Challenge",
+    "description": "Organizations face the task of efficiently processing and managing service tickets for device-related issues. Manual ticket management can be time-consuming and prone to errors. The challenge was to:",
+    "items": [
+      "Develop an efficient system for <strong>creating and managing service tickets</strong>",
+      "Implement a <strong>user-friendly interface</strong> for both employees and IT support staff",
+      "Create a <strong>robust database solution</strong> using NoSQL technology for flexible data management"
+    ]
+  },
+  "solution": {
+    "title": "The Solution",
+    "description": "We developed a Windows Forms application with MongoDB integration that enables efficient ticket management. The approach included:",
+    "steps": [
+      "<strong>User Authentication</strong>: Implementation of a login and registration system with password recovery functionality.",
+      "<strong>Ticket Management</strong>: Development of features for creating, viewing, and updating tickets.",
+      "<strong>Dashboard</strong>: Creation of a dashboard to display ticket status statistics.",
+      "<strong>Filtering</strong>: Implementation of search, filter, and sort functionalities for ticket management.",
+      "<strong>Database Integration</strong>: Use of MongoDB for flexible and scalable data storage."
+    ]
+  },
+  "technicalDetails": {
+    "title": "Technical Details",
+    "description": "The project utilizes several key technologies and components:",
+    "items": [
+      "<strong>C#</strong>: Used for developing the Windows Forms application and backend logic.",
+      "<strong>MongoDB</strong>: NoSQL database for storing and managing ticket and user data.",
+      "<strong>BSON Serialization</strong>: Implemented for efficient data transfer between the application and database.",
+      "<strong>Custom DAOs and Services</strong>: Developed for structured data access and business logic implementation."
+    ],
+    "contributionsDescription": "My specific contributions included:",
+    "contributions": [
+      "Developing the <strong>BaseDAO</strong> for standardized CRUD operations across all data access objects.",
+      "Creating the <strong>EmployeeDAO</strong> and <strong>EmployeeService</strong> for employee data management.",
+      "Implementing <strong>BSON serializable models</strong> for database integration.",
+      "Developing utility classes for <strong>encryption</strong>, <strong>error logging</strong>, and <strong>exception handling</strong>.",
+      "Creating Windows Forms for <strong>employee management</strong>."
+    ]
+  },
+  "results": {
+    "title": "Results",
+    "description": "The Garden Group project resulted in a functional ticketing system that allows efficient <strong>creation and management of service tickets</strong>, provides a <strong>clear overview of ticket statuses</strong> through a dashboard, enables <strong>search and filtering</strong> capabilities for ticket management, implements <strong>secure user authentication</strong> and password management, and utilizes <strong>NoSQL database technology</strong> for flexible and scalable data storage."
+  },
+  "personalDevelopment": {
+    "title": "Personal Development",
+    "description": "This project significantly enhanced my skills in NoSQL database management and C# application development. I gained valuable experience in implementing CRUD operations with MongoDB, designing user interfaces with Windows Forms, and developing robust backend systems. Additionally, I improved my abilities in team collaboration and problem-solving, particularly in assisting team members with database connection issues and BSON serialization."
+  }
+}
