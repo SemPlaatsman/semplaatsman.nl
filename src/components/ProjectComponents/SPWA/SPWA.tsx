@@ -1,12 +1,68 @@
 import React from 'react';
+import { useTranslation, Trans } from 'react-i18next';
 
-// import projectConfig from './projectConfig';
-// import styles from './SPWA.module.scss';
+import projectConfig from './projectConfig';
+import styles from './SPWA.module.scss';
 
 const SPWA: React.FC = () => {
+  const { t } = useTranslation(`projects/${projectConfig.localeKey}`);
+
+  const overviewDescription: string[] = t('overview.description', { returnObjects: true });
+  const challengeItems: string[] = t('challenge.items', { returnObjects: true });
+  const solutionSteps: string[] = t('solution.steps', { returnObjects: true });
+
   return (
-    <div>
-      <p>This is just a temporary project page, full documentation will be written soon!</p>
+    <div className={styles.projectContainer}>
+      <h4 className={`h4`}>{t('overview.title')}</h4>
+      {overviewDescription.map((paragraph: string, index: number) => (
+        <p key={index}>
+          <Trans>{paragraph}</Trans>
+        </p>
+      ))}
+
+      <h4 className={`h4`}>{t('challenge.title')}</h4>
+      <p>
+        <Trans>{t('challenge.description')}</Trans>
+      </p>
+      <ol>
+        {challengeItems.map((item: string, index: number) => (
+          <li key={index}>
+            <Trans>{item}</Trans>
+          </li>
+        ))}
+      </ol>
+
+      <h4 className={`h4`}>{t('solution.title')}</h4>
+      <p>
+        <Trans>{t('solution.description')}</Trans>
+      </p>
+      <ol>
+        {solutionSteps.map((step: string, index: number) => (
+          <li key={index}>
+            <Trans>{step}</Trans>
+          </li>
+        ))}
+      </ol>
+
+      <h4 className={`h4`}>{t('technicalDetails.title')}</h4>
+      <p>
+        <Trans>{t('technicalDetails.description')}</Trans>
+      </p>
+
+      <h4 className={`h4`}>{t('results.title')}</h4>
+      <p>
+        <Trans>{t('results.description')}</Trans>
+      </p>
+
+      <h4 className={`h4`}>{t('personalDevelopment.title')}</h4>
+      <p>
+        <Trans>{t('personalDevelopment.description')}</Trans>
+      </p>
+
+      <h4 className={`h4`}>{t('futurePerspective.title')}</h4>
+      <p>
+        <Trans>{t('futurePerspective.description')}</Trans>
+      </p>
     </div>
   );
 };
