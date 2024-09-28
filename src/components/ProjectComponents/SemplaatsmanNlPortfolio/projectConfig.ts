@@ -2,7 +2,7 @@ import { lazy } from 'react';
 
 import { ProjectConfig, ProjectType } from '../../../types/project';
 import { technologies } from '../../../types/technology';
-import portfolioImage from '../../../assets/projects/semplaatsman.nl-portfolio.webp';
+import projectImage from '../../../assets/projects/semplaatsman.nl-portfolio.webp';
 
 const projectConfig: ProjectConfig = {
   slug: 'semplaatsman.nl',
@@ -15,10 +15,10 @@ const projectConfig: ProjectConfig = {
     technologies.vite,
     technologies.i18next,
   ],
-  projectType: ProjectType.Frontend,
+  projectType: ProjectType.FullStack,
   codeUrl: 'https://github.com/SemPlaatsman/semplaatsman.nl',
   liveUrl: 'https://semplaatsman.nl',
-  imagePath: portfolioImage,
+  imagePath: projectImage,
   component: lazy(() => import('./SemplaatsmanNlPortfolio')),
 };
 

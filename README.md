@@ -17,9 +17,6 @@ multiple themes, and free hosting.
    <img src="./docs/assets/lighthouse-results.png" alt="semplaatsman.nl Lighthouse results" style="width: 75%" />
 </p>
 
-> 💡 The documentation for this project is still being worked on, so if you see any mistakes or
-> missing pieces of information, be sure to let me know!
-
 > 💡 This project draws significant inspiration from
 > [codewithsadee/vcard-personal-portfolio](https://github.com/codewithsadee/vcard-personal-portfolio).
 > A heartfelt thank you to the original authors for their outstanding work, which served as a

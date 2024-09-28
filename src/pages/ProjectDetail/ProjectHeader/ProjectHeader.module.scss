@@ -1,0 +1,53 @@
+@use "../../../styles/variables";
+@use "../../../styles/functions";
+@use "../../../styles/mixins";
+
+.projectHeader {
+  margin: 20px 0;
+}
+
+.projectSubheader,
+.headerContent {
+  display: flex;
+  align-items: center;
+}
+
+.headerContent {
+  gap: 1.75em;
+  color: functions.theme("text-primary");
+
+  & > :first-child {
+    margin-right: auto;
+  }
+
+  .projectHeaderIcon {
+    color: functions.theme("text-primary");
+  }
+}
+
+.projectHeaderIcon {
+  font-size: 1.25em;
+
+  &:hover {
+    cursor: pointer;
+    color: functions.theme("text-secondary");
+  }
+}
+
+.projectSubheader {
+  color: functions.theme("text-tertiary");
+  gap: 1.75em;
+  font-size: variables.$font-size-sm;
+
+  @include mixins.mobile {
+    font-size: variables.$font-size-rg;
+  }
+
+  .projectHeaderIcon {
+    color: functions.theme("text-tertiary");
+
+    &:hover {
+      color: functions.theme("text-secondary");
+    }
+  }
+}

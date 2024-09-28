@@ -1,3 +1,66 @@
 @use "../../styles/variables";
 @use "../../styles/functions";
 @use "../../styles/mixins";
+
+.projectTitle {
+  margin-bottom: 0;
+}
+
+.projectContent {
+  font-size: variables.$font-size-sm;
+  font-weight: variables.$font-weight-light;
+  line-height: 1.6;
+
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 16px;
+  }
+
+  ol,
+  ul,
+  p {
+    margin: 8px 0;
+  }
+
+  ul,
+  ol {
+    list-style-type: none;
+    padding-left: 0;
+
+    li {
+      position: relative;
+      padding-left: 2rem;
+      margin-bottom: 0.5rem;
+      line-height: 1.6;
+
+      &::before {
+        position: absolute;
+        left: 0;
+        top: 0.25rem;
+        color: functions.theme("accent-secondary");
+        font-weight: bold;
+        font-size: 1em;
+        top: 0;
+      }
+    }
+  }
+
+  ul li::before {
+    content: "•";
+  }
+
+  ol {
+    counter-reset: list-counter;
+
+    li::before {
+      content: counter(list-counter) ".";
+      counter-increment: list-counter;
+    }
+  }
+
+  @include mixins.mobile {
+    font-size: variables.$font-size-md;
+  }
+}

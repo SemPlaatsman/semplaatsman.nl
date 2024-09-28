@@ -1,0 +1,53 @@
+{
+  "overview": {
+    "title": "Project Overview",
+    "description": [
+      "As an Employee Automation at S.P. Abonneeservice, I developed the SP.SSO project, a <strong>unit-tested and benchmarked Single Sign-On service with WordPress integration</strong>. This project aimed to provide a seamless authentication experience for both direct customers and employees of S.P. Abonneeservice across multiple services.",
+      "The SP.SSO system consisted of two main components: a modified WordPress authentication plugin and an SSO API. The API, developed in C# ASP.NET Framework, <strong>served as middleware</strong> between the existing authentication API and the various services, enhancing security and user session management."
+    ]
+  },
+  "technicalImplementation": {
+    "title": "Technical Implementation",
+    "description": "The SP.SSO project leveraged several modern technologies and best practices:",
+    "features": [
+      "<strong>Backend</strong>: C# ASP.NET Framework",
+      "<strong>Authentication</strong>: JWT and refresh tokens for secure, prolonged user sessions",
+      "<strong>Dependency Injection</strong>: Autofac for flexible and testable code structure",
+      "<strong>Data Validation</strong>: Newtonsoft for DTO validation and serialization",
+      "<strong>ORM</strong>: Entity Framework 6 for database operations",
+      "<strong>Testing</strong>: xUnit for unit testing and Effort in-memory database for isolated testing",
+      "<strong>API Protocol</strong>: JSON-RPC version 2.0 for the main API endpoint",
+      "<strong>Security</strong>: Double encryption of sensitive data using modern standards",
+      "<strong>Performance Testing</strong>: BenchmarkDotNet for API benchmarking"
+    ]
+  },
+  "keyFeatures": {
+    "title": "Key Features",
+    "description": "The SP.SSO project included several key features and development practices:",
+    "list": [
+      "Seamless Single Sign-On across multiple services",
+      "Enhanced security measures against <strong>various cyber attacks</strong>",
+      "Prolonged user sessions using JWT and refresh tokens",
+      "Fully unit tested API, including security and performance tests",
+      "<strong>Isolated testing environment</strong> using Owin and mocked services",
+      "Modified WordPress plugin for SSO integration",
+      "Implementation of <strong>Dependency Inversion Principle</strong> for flexible and testable code",
+      "<strong>Dynamic CORS policy</strong> for secure cross-domain functionality"
+    ]
+  },
+  "challenges": {
+    "title": "Challenges and Solutions",
+    "description": "The project presented several challenges that required innovative solutions:",
+    "list": [
+      "Implementing a secure SSO system across multiple domains while adhering to CORS restrictions",
+      "Balancing security requirements with user convenience in session management",
+      "Integrating the SSO system with an existing WordPress authentication plugin",
+      "Ensuring high performance while maintaining robust security measures",
+      "Developing a comprehensive testing strategy in an isolated environment"
+    ]
+  },
+  "results": {
+    "title": "Results and Impact",
+    "description": "The SP.SSO project significantly <strong>improved the authentication process</strong> for S.P. Abonneeservice's customers and employees. It enhanced security while providing a <strong>more convenient user experience</strong>. The project's success demonstrated my ability to develop complex, secure systems and integrate them with existing infrastructure. The extensive testing and benchmarking ensured a <strong>robust and efficient solution</strong>, while the use of modern development practices like dependency injection and isolated testing improved the <strong>maintainability and reliability</strong> of the system."
+  }
+}

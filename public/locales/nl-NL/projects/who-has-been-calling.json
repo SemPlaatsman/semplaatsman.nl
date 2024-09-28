@@ -1,0 +1,45 @@
+{
+  "overview": {
+    "title": "Projectoverzicht",
+    "description": [
+      "In samenwerking met <strong>TNO</strong> (Nederlandse Organisatie voor Toegepast Natuurwetenschappelijk Onderzoek) en <strong>Hogeschool Inholland</strong>, hebben we het project \"Who Has Been Calling?\" (WHBC) ontwikkeld. Voor dit project hebben we een <strong>technische haalbaarheids studie</strong> voltooid, waarbij zowel een onderzoeksverslag als conceptualisatie is ontwikkeld.",
+      "Het project adresseert de uitdaging van het <strong>efficiënt analyseren van grote hoeveelheden audiogegevens</strong>, een taak die handmatig tijdrovend en foutgevoelig is. Onze oplossing is een AI-gedreven systeem dat <strong>automatisch audiogesprekken analyseert, sprekers identificeert en specifieke audio-events detecteert</strong>, waardoor de efficiëntie en nauwkeurigheid van audioanalyse aanzienlijk wordt verbeterd."
+    ]
+  },
+  "challenge": {
+    "title": "Uitdaging",
+    "description": "Organisaties worden geconfronteerd met de taak om <strong>grote hoeveelheden audiogegevens</strong> efficiënt te verwerken en analyseren. Handmatige verwerking is tijdrovend en foutgevoelig, wat kan leiden tot het missen van belangrijke informatie en patronen."
+  },
+  "solution": {
+    "title": "Onze Oplossing",
+    "description": "We hebben een softwaretoepassing ontwikkeld die kunstmatige intelligentie gebruikt om audiogegevens te analyseren en te categoriseren. De aanpak omvatte:",
+    "steps": [
+      "<strong>Spraakverwerking</strong>: Implementatie van technieken zoals MFCC (Mel-Frequency Cepstral Coefficients) voor audio-analyse.",
+      "<strong>Diarisatie</strong>: Ontwikkeling van een model om gesprekken op te splitsen in verschillende sprekers.",
+      "<strong>Spreker Herkenning</strong>: Implementatie van AI-modellen om individuele sprekers te identificeren.",
+      "<strong>Audio Event Detectie</strong>: Creatie van een model om specifieke gebeurtenissen in audio te herkennen."
+    ]
+  },
+  "technicalDetails": {
+    "title": "Technische Details",
+    "items": [
+      "Toepassing van <strong>deep learning en machine learning</strong> technieken.",
+      "Ontwikkeling van een <strong>API met Python Flask</strong>.",
+      "Integratie met een <strong>PostgreSQL</strong> database voor gegevensbeheer.",
+      "Experimentatie met diverse AI-modellen, waaronder <strong>CNN, RNN, en hybride architecturen</strong>."
+    ]
+  },
+  "results": {
+    "title": "Resultaten",
+    "items": [
+      "Spreker herkenningsmodel: <strong>~88%</strong> nauwkeurigheid.",
+      "Diarisatiemodel: <strong>~90%</strong> nauwkeurigheid.",
+      "Audio event detectiemodel: <strong>~69%</strong> nauwkeurigheid."
+    ],
+    "conclusion": "Het systeem verbetert de <strong>efficiëntie van audioanalyse en vermindert de werklast</strong> van analisten bij het verwerken van grote hoeveelheden audiogegevens."
+  },
+  "future": {
+    "title": "Toekomstperspectief",
+    "description": "Dit project biedt mogelijkheden voor verdere ontwikkeling in AI-gedreven audioanalyse. Het toont de toepasbaarheid van AI in het oplossen van complexe data-analysevraagstukken en kan leiden tot nieuwe toepassingen in diverse sectoren."
+  }
+}

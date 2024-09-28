@@ -3,12 +3,14 @@ import { useParams, Navigate } from 'react-router-dom';
 
 import { getProjectBySlug } from '../../utils/projectUtils';
 import PageContent from '../../components/PageContent';
+import { ProjectConfig } from '../../types/project';
 
-// import styles from './ProjectDetail.module.scss';
+import styles from './ProjectDetail.module.scss';
+import ProjectHeader from './ProjectHeader';
 
 const ProjectDetail: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
-  const project = slug ? getProjectBySlug(slug) : undefined;
+  const project: ProjectConfig | undefined = slug ? getProjectBySlug(slug) : undefined;
 
   if (!project) {
     return <Navigate to="/projects" replace />;
@@ -17,8 +19,11 @@ const ProjectDetail: React.FC = () => {
   const ProjectComponent = project.component;
 
   return (
-    <PageContent>
-      <ProjectComponent />
+    <PageContent titleClassName={styles.projectTitle}>
+      <ProjectHeader project={project} />
+      <div className={styles.projectContent}>
+        <ProjectComponent />
+      </div>
     </PageContent>
   );
 };
