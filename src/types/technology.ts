@@ -37,6 +37,7 @@ import {
 import { DiDotnet } from 'react-icons/di';
 import { TbSql, TbBrandSass } from 'react-icons/tb';
 
+// As the technologies progress, a new technology named "TestingOrDevOps" or "TestingOrQA" can be added. This encompasses technologies and concepts that are not yet fully defined, such as testing, QA, and DevOps.
 export enum TechnologyCategory {
   Language = 'language',
   Framework = 'framework',
