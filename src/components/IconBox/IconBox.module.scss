@@ -15,8 +15,11 @@
   box-shadow: functions.theme("shadow");
   z-index: 1;
 
-  a &:hover {
-    background: functions.theme("bg-gradient-accent-primary");
+  a & {
+    &:hover,
+    &:focus {
+      background: functions.theme("bg-gradient-accent-primary");
+    }
   }
 
   @include mixins.mobile {
