@@ -1,0 +1,69 @@
+{
+  "title": "Over mij",
+  "description": [
+    "Hoi, ik ben <strong>{{config.owner.fullName}}</strong>, een vierdejaars Bachelor-student Informatica aan de Hogeschool Inholland in Haarlem. Ik heb een passie voor het <strong>oplossen van problemen</strong> en duik graag diep in complexe vraagstukken. Ik ben altijd bereid om <strong>nieuwe dingen te leren</strong> en mijn vaardigheden te verbeteren.",
+    "Ik heb ervaring met verschillende programmeertalen en technologieën, zoals Java, C#, TypeScript, Python en (No)SQL. Ook ben ik bekend met frameworks en libraries zoals React, Spring Boot, ASP.NET en TensorFlow. Momenteel ben ik bezig met het uitbreiden van mijn kennis van <strong>CI/CD en Cloud Computing</strong>."
+  ],
+  "whatImDoing": {
+    "title": "Wat ik doe",
+    "interests": {
+      "backendDevelopment": {
+        "title": "Backend Development",
+        "description": "Het bouwen van backend-systemen en API's voor verschillende toepassingen",
+        "iconAlt": "Backend Development icoon"
+      },
+      "webDevelopment": {
+        "title": "Web Development",
+        "description": "Ontwikkelen van functionele websites gebouwd met moderne technologieën.",
+        "iconAlt": "Web Development icoon"
+      },
+      "artificialIntelligence": {
+        "title": "Artificial Intelligence",
+        "description": "Het ontwikkelen van zowel machine als deep learning AI-modellen.",
+        "iconAlt": "Artificial Intelligence icoon"
+      },
+      "cooking": {
+        "title": "Koken",
+        "description": "Naast programmeren houd ik van koken en het uitproberen van nieuwe recepten.",
+        "iconAlt": "Koken icoon"
+      }
+    }
+  },
+  "testimonials": {
+    "title": "Referenties",
+    "testimonials": {
+      "marcDierikx": {
+        "name": "Marc Dierikx",
+        "position": "Technisch Directeur bij S.P. Abonneeservice BV",
+        "dateISO": "2024-09-11",
+        "description": [
+          "Sem is bij ons komen werken als stagiair op een project waar hij als full stack developer aan de slag kon.",
+          "Hij bleek een hele aardige en ontzettend gedreven en gemotiveerde student te zijn die eerder afgeremd moest worden dan gestimuleerd.",
+          "Hij is goed in staat om functionele ideeën om te zetten in technische ontwerpen, mock-ups en proof-of-concept opstellingen.",
+          "Het verplaatsen in de eindgebruikers van de software gaat hem ook heel goed af. Zodoende onstaat niet alleen een technisch goed functionerend systeem, maar ook een systeem met een prettige user interface.",
+          "Daarnaast zijn er gedurende een project altijd wel onvoorziene situaties die wat lastiger op te lossen zijn. Sem is iemand die in zo'n situatie ook zeker niet bij de pakken neer gaat zitten, maar juist op zoek gaat naar alternatieven.",
+          "Al met al een hele goeie toevoeging voor onze IT afdeling."
+        ],
+        "avatarAlt": "Marc Dierikx avatar"
+      },
+      "tayamElJebari": {
+        "name": "Tayam El Jebari",
+        "position": "Medestudent | DevOps Engineer bij Albert Heijn",
+        "dateISO": "2024-09-04",
+        "description": [
+          "Ik heb de samenwerking met Sem als prettig ervaren. Sem heeft een goed vermogen om initiatief te nemen bij diverse taken en heeft een serieuze aanpak met zijn verantwoordelijkheden. Zijn communicatievaardigheden zijn uitstekend, wat de samenwerking binnen het team altijd soepel laat verlopen. Zijn dedicatie en ijverigheid leidt altijd tot een heldere structuur in zijn code. Sem is ook een opgewekte en leuke collega om mee samen te werken. Zijn positieve instelling draagt bij aan een prettige werksfeer."
+        ],
+        "avatarAlt": "Tayam El Jebari avatar"
+      },
+      "luukBakkum": {
+        "name": "Luuk Bakkum",
+        "position": "Medestudent",
+        "dateISO": "2024-09-28",
+        "description": [
+          "Ik heb het genoegen gehad om meerdere keren met Sem samen te werken aan verschillende projecten, en zijn vaardigheden zijn indrukwekkend. Hij laat coderen eenvoudig lijken en weet complexe problemen snel te doorgronden. Wat Sem echt onderscheidt, is zijn leergierigheid; hij staat altijd open om nieuwe technologieën te leren en past deze snel toe in onze projecten. Daarnaast is hij een uitstekende teamspeler: hij communiceert duidelijk, ondersteunt zijn teamleden en draagt bij aan een positieve werksfeer. Sem is een waardevolle aanwinst voor elk team en ik kijk ernaar uit om in de toekomst weer met hem samen te werken!"
+        ],
+        "avatarAlt": "Luuk Bakkum avatar"
+      }
+    }
+  }
+}

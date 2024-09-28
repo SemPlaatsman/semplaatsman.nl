@@ -1,0 +1,28 @@
+{
+  "title": "Contact",
+  "form": {
+    "title": "Contact Form",
+    "fields": {
+      "name": {
+        "title": "Full Name",
+        "placeholder": "John Doe"
+      },
+      "email": {
+        "title": "Email Address",
+        "placeholder": "john@doe.com"
+      },
+      "message": {
+        "title": "Your Message",
+        "placeholder": "Hey, I would like to get in touch with you."
+      }
+    },
+    "submit": "Send Message",
+    "submitting": "Sending...",
+    "submitSuccess": "Message Sent!",
+    "submitError": "Message could not be sent!",
+    "autoReplyError": "Auto-Reply could not be sent!",
+    "rateLimitError": "You have reached the rate limit. Please try again later.",
+    "throttleError": "You are sending too many requests. Please try again later.",
+    "recaptchaError": "Please complete the reCAPTCHA challenge."
+  }
+}
