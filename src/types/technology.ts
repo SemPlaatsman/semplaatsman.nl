@@ -82,7 +82,7 @@ export const technologies = {
   bootstrap: new Technology('Bootstrap', TechnologyCategory.LibraryOrPackage, FaBootstrap),
   springBoot: new Technology('Spring Boot', TechnologyCategory.Framework, SiSpringboot),
   cucumber: new Technology('Cucumber', TechnologyCategory.LibraryOrPackage, SiCucumber),
-  testing: new Technology('Testing', TechnologyCategory.LibraryOrPackage, FaCheck),
+  testing: new Technology('Testing', TechnologyCategory.ToolOrPlatform, FaCheck),
   swagger: new Technology('Swagger', TechnologyCategory.ToolOrPlatform, SiSwagger),
   hibernate: new Technology('Hibernate', TechnologyCategory.LibraryOrPackage, SiHibernate),
   nginx: new Technology('nginx', TechnologyCategory.ToolOrPlatform, SiNginx),
