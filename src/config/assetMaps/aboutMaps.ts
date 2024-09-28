@@ -6,6 +6,7 @@ import IconAI from '../../assets/interests/artificial-intelligence.svg';
 import IconCooking from '../../assets/interests/cooking.svg';
 import AvatarMarcDierikx from '../../assets/avatars/marc-dierikx.webp';
 import AvatarTayamElJebari from '../../assets/avatars/tayam-el-jebari.webp';
+import AvatarLuukBakkum from '../../assets/avatars/luuk-bakkum.webp';
 
 export const interestsImageMap = {
   backendDevelopment: IconBackendDevelopment,
@@ -17,4 +18,5 @@ export const interestsImageMap = {
 export const testimonialImageMap = {
   marcDierikx: AvatarMarcDierikx,
   tayamElJebari: AvatarTayamElJebari,
+  luukBakkum: AvatarLuukBakkum,
 };
