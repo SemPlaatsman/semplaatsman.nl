@@ -59,6 +59,9 @@ would love to hear your opinions and thoughts on this repository!
   `hiddenTechnologies` array). A usecase for this would be when you list Spring Boot as a
   technology, in which case you will always also be using Java, but you might not want to list that
   to reduce the amount of icons on the project card.
+- **Style Linting**: Configure a style linter such as [Stylelint](https://stylelint.io/). Also make
+  sure the scripts in [package.json](./package.json) are adjusted accordingly to account for the new
+  style linting and included in the `lint` script.
 
 ### Medium Contributions
 
