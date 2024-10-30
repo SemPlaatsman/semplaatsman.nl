@@ -1,0 +1,45 @@
+{
+  "overview": {
+    "title": "Project Overview",
+    "description": [
+      "In collaboration with <strong>TNO</strong> (Netherlands Organization for Applied Scientific Research) and <strong>Inholland University of Applied Sciences</strong>, we have developed the \"Who Has Been Calling?\" (WHBC) project. For this project, we completed a <strong>technical feasibility study</strong>, which included both a research report and conceptualization.",
+      "The project addresses the challenge of <strong>efficiently analyzing large volumes of audio data</strong>, a task that is time-consuming and error-prone when done manually. Our solution is an AI-driven system that <strong>automatically analyzes audio conversations, identifies speakers, and detects specific audio events</strong>, significantly improving the efficiency and accuracy of audio analysis."
+    ]
+  },
+  "challenge": {
+    "title": "Challenge",
+    "description": "Organizations face the task of efficiently processing and analyzing <strong>large volumes of audio data</strong>. Manual processing is time-consuming and error-prone, which can lead to missing important information and patterns."
+  },
+  "solution": {
+    "title": "Our Solution",
+    "description": "We have developed a software application that uses artificial intelligence to analyze and categorize audio data. The approach included:",
+    "steps": [
+      "<strong>Speech Processing</strong>: Implementation of techniques such as MFCC (Mel-Frequency Cepstral Coefficients) for audio analysis.",
+      "<strong>Diarization</strong>: Development of a model to split conversations into different speakers.",
+      "<strong>Speaker Recognition</strong>: Implementation of AI models to identify individual speakers.",
+      "<strong>Audio Event Detection</strong>: Creation of a model to recognize specific events in audio."
+    ]
+  },
+  "technicalDetails": {
+    "title": "Technical Details",
+    "items": [
+      "Application of <strong>deep learning and machine learning</strong> techniques.",
+      "Development of an <strong>API using Python Flask</strong>.",
+      "Integration with a <strong>PostgreSQL</strong> database for data management.",
+      "Experimentation with various AI models, including <strong>CNN, RNN, and hybrid architectures</strong>."
+    ]
+  },
+  "results": {
+    "title": "Results",
+    "items": [
+      "Speaker recognition model: <strong>~88% accuracy</strong>.",
+      "Diarization model: <strong>~90% accuracy</strong>.",
+      "Audio event detection model: <strong>~69% accuracy</strong>."
+    ],
+    "conclusion": "The system <strong>improves the efficiency of audio analysis and reduces the workload</strong> of analysts when processing large volumes of audio data."
+  },
+  "future": {
+    "title": "Future Perspective",
+    "description": "This project offers opportunities for further development in <strong>AI-driven audio analysis</strong>. It demonstrates the applicability of AI in solving complex data analysis problems and can lead to new applications in various sectors."
+  }
+}

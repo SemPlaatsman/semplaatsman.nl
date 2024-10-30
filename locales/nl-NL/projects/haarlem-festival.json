@@ -1,0 +1,48 @@
+{
+  "overview": {
+    "title": "Projectoverzicht",
+    "description": [
+      "Als onderdeel van een groepsproject bij InHolland leidde ik de ontwikkeling van een uitgebreide webapplicatie voor het fictieve \"Haarlem Festival\" evenement. Dit project, genaamd \"The Festival,\" omvatte drie verschillende evenementen: Yummy (een foodfestival), DANCE! (een dancefestival), en Een Wandeling Door de Geschiedenis (een cultureel/historisch evenement). Het hoofddoel was het creëren van een <strong>full-stack webapplicatie</strong> waarmee gebruikers evenementdetails konden verkennen, reserveringen konden maken en tickets konden kopen.",
+      "Als projectleider was ik verantwoordelijk voor het overzien van het hele ontwikkelingsproces, het zorgen voor samenhang tussen verschillende componenten, en het direct bijdragen aan belangrijke functies. Mijn primaire aandachtsgebieden waren het <strong>Yummy evenement</strong>, het ontwerpen en onderhouden van de <strong>databasestructuur</strong>, en het volledige <strong>ticketregistratie- en betalingsproces</strong>, inclusief de integratie van het Mollie-betaalsysteem."
+    ]
+  },
+  "designProcess": {
+    "title": "Ontwerpproces",
+    "description": "Het project begon met een uitgebreide ontwerpfase, waarin ons team werkte aan het creëren van een gebruiksvriendelijke en visueel aantrekkelijke interface voor de Haarlem Festival website. We streefden ernaar een <strong>fris en inclusief ontwerp</strong> te ontwikkelen dat een divers publiek zou aantrekken tot Haarlem en zijn evenementen.",
+    "steps": [
+      "Het creëren van een consistente visuele identiteit voor verschillende evenementenpagina's, met behoud van het unieke karakter van elk evenement.",
+      "Het ontwikkelen van een mobiel-vriendelijk ontwerp, met speciale aandacht voor jongere gebruikers (8-12 jaar) voor de mobiele versie.",
+      "Het implementeren van intuïtieve navigatie en duidelijke informatiearchitectuur om gebruikers te helpen gemakkelijk evenementdetails te vinden en reserveringen te maken.",
+      "Het ontwerpen van gebruiksvriendelijke interfaces voor de ticketboekings- en betalingsprocessen."
+    ]
+  },
+  "technicalImplementation": {
+    "title": "Technische Implementatie",
+    "description": "De webapplicatie werd voornamelijk ontwikkeld met <strong>PHP</strong>, met een <strong>MySQL</strong>-database beheerd via <strong>phpMyAdmin</strong>. De frontend werd gemaakt met <strong>HTML</strong>, <strong>CSS</strong> en <strong>JavaScript</strong>, met <strong>Bootstrap</strong> voor responsief ontwerp. Als projectleider implementeerde ik een <strong>MVC-architectuur</strong> en zorgde ik ervoor dat het team zich hield aan <strong>PSR-standaarden</strong> en <strong>OOP-principes</strong>.",
+    "features": [
+      "<strong>Gebruikersauthenticatie</strong>: Implementatie van een veilig inlogsysteem met wachtwoord-hashing en herstelfunctionaliteit.",
+      "<strong>Winkelwagen</strong>: Creatie van een robuust wagensysteem waarmee gebruikers hun evenementtickets en reserveringen kunnen toevoegen en beheren.",
+      "<strong>Betalingsintegratie</strong>: Implementatie van de <strong>Mollie-betalingsgateway</strong> voor veilige online transacties, inclusief webhook-afhandeling voor betalingsbevestigingen.",
+      "<strong>E-mailondersteuning</strong>: Gebruik van <strong>PHPMailer</strong> voor het verzenden van bevestigingsmails en tickets naar gebruikers.",
+      "<strong>QR-code generatie</strong>: Integratie van QR-code generatie voor tickets en een QR-scanner voor event check-ins.",
+      "<strong>Beheerderspaneel</strong>: Een administratieve interface voor evenementenbeheer en gebruikerscontrole.",
+      "<strong>CAPTCHA-integratie</strong>: Verbeterde beveiliging op formulieren.",
+      "<strong>Responsief ontwerp</strong>: Zorgen dat de website volledig responsief was op verschillende apparaten."
+    ]
+  },
+  "developmentProcess": {
+    "title": "Ontwikkelingsproces",
+    "description": "Het ontwikkelingsproces begon met het opzetten van een <strong>Docker</strong>-omgeving voor consistente ontwikkeling en implementatie binnen ons team. <strong>Composer</strong> werd geïntroduceerd voor afhankelijkheidsbeheer, waaronder pakketten zoals mpdf, PHPMailer en Mollie API.",
+    "steps": [
+      "Het ontwerpen van de algehele structuur van de applicatie, inclusief het ontwerp van het databaseschema en het uitbreiden van de routeringsfunctionaliteit.",
+      "Implementatie van het <strong>Mollie-betaalsysteem</strong>.",
+      "Het aanmaken van databasetabellen voor gebruikers, evenementen, tickets, reserveringen, waarbij gezorgd werd voor de juiste relaties en efficiënte gegevensopvraging.",
+      "Het uitvoeren van regelmatige code-reviews en het helpen van teamleden bij het overwinnen van technische uitdagingen.",
+      "Het zorgen voor een soepele integratie van alle projectcomponenten."
+    ]
+  },
+  "results": {
+    "title": "Resultaten en Leerpunten",
+    "description": "Dit project heeft mijn vaardigheden in <strong>full-stack webontwikkeling</strong> en <strong>projectmanagement</strong> aanzienlijk verbeterd. Het bood praktijkervaring met het integreren van API's van derden, het afhandelen van veilige betalingen en het ontwikkelen van een schaalbare webapplicatie. De uitdagingen, vooral bij het implementeren van complexe functies zoals de winkelwagen en het betalingssysteem, hebben mijn probleemoplossende vaardigheden sterk verbeterd en mijn begrip van webtechnologieën verdiept. Het leiden van dit project heeft ook mijn vaardigheden in teamcoördinatie, taakdelegatie en effectieve communicatie in een ontwikkelomgeving aangescherpt."
+  }
+}

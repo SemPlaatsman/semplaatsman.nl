@@ -1,0 +1,87 @@
+{
+  "title": "Projecten",
+  "additionalFiltersTitle": "Extra Filters",
+  "variables": {
+    "createdDate": {
+      "name": "Aanmaakdatum"
+    }
+  },
+  "filters": {
+    "projectType": {
+      "name": "Project Type",
+      "prompt": "Selecteer Type",
+      "options": {
+        "all": "Alle",
+        "backend": "Backend",
+        "frontend": "Frontend",
+        "fullStack": "Full Stack"
+      }
+    },
+    "technology": {
+      "name": "Technologieën",
+      "prompt": "Selecteer Technologieën",
+      "options": {
+        "all": "Alle"
+      },
+      "categories": {
+        "language": "Programmeertalen",
+        "framework": "Frameworks",
+        "library/package": "Libraries & Packages",
+        "tool/platform": "Tools & Platforms",
+        "database": "Databases"
+      }
+    }
+  },
+  "items": {
+    "semplaatsman.nl-portfolio": {
+      "bannerAlt": "Afbeelding van semplaatsman.nl",
+      "title": "semplaatsman.nl",
+      "text": "Mijn persoonlijke portfolio met uitgebreide hosting- en personalisatiedocumentatie."
+    },
+    "who-has-been-calling": {
+      "bannerAlt": "Afbeelding van TNO's logo",
+      "title": "Who Has Been Calling",
+      "text": "AI-gedreven full-stack systeem voor geautomatiseerde audioconversieanalyse."
+    },
+    "spwa": {
+      "bannerAlt": "Afbeelding van twee SPWA mockups",
+      "title": "SPWA",
+      "text": "Full-stack geauthenticeerde PWA voor abonnementsstatistieken, gebouwd voor mijn stage."
+    },
+    "the-felis-foundation": {
+      "bannerAlt": "Afbeelding van het logo van The Felis Foundation",
+      "title": "The Felis Foundation",
+      "text": "Kattenopvangbeheersysteem met Vue, Bootstrap en PHP backend."
+    },
+    "haarlem-festival": {
+      "bannerAlt": "Afbeelding van een van de evenementpagina's van Haarlem Festival",
+      "title": "Haarlem Festival",
+      "text": "Gecontaineriseerde Haarlemse stadswebsite met diverse culturele evenementen."
+    },
+    "code-generation": {
+      "bannerAlt": "Afbeelding van de dashboard in het Code Generation project's UI",
+      "title": "Code Generation",
+      "text": "Banksimulator met volledig unit-tested API voor account- en transactiebeheer."
+    },
+    "the-garden-group": {
+      "bannerAlt": "Afbeelding van de logo's van C# en MongoDB",
+      "title": "The Garden Group",
+      "text": "Windows Forms CRUD-applicatie voor een tuincentrum met MongoDB."
+    },
+    "sp.sso": {
+      "bannerAlt": "AI Afbeelding van een SSO systeemdiagram",
+      "title": "SP.SSO",
+      "text": "Unit-tested en gebenchmarkte Single Sign-On service met WordPress-integratie."
+    }
+  },
+  "projectDetails": {
+    "links": {
+      "live": {
+        "ariaLabel": "Bezoek live versie van {{projectName}}"
+      },
+      "code": {
+        "ariaLabel": "Bekijk broncode van {{projectName}}"
+      }
+    }
+  }
+}

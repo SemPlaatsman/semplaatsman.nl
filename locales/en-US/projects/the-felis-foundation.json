@@ -1,0 +1,40 @@
+{
+  "overview": {
+    "title": "Project Overview",
+    "description": [
+      "As part of my Web Development 2 course, I developed 'The Felis Foundation', a web application for a fictional cat shelter. This project showcases a full-stack application with a <strong>Vue.js frontend and a PHP backend</strong>, incorporating various modern web development technologies and practices.",
+      "The Felis Foundation application allows users to view cats available for adoption, report lost or found cats, and make appointments to visit the shelter. It also includes an admin dashboard for shelter employees to manage cats and appointments."
+    ]
+  },
+  "technicalImplementation": {
+    "title": "Technical Implementation",
+    "description": "The project was built using a variety of modern technologies and frameworks, ensuring a robust and scalable architecture:",
+    "features": [
+      "<strong>Frontend</strong>: Vue.js (JavaScript), Bootstrap for styling, Axios for API communication",
+      "<strong>Backend</strong>: PHP, NGINX, PHPMyAdmin (MariaDB), Docker for containerization",
+      "<strong>Authentication</strong>: JWT (JSON Web Tokens) for secure user authentication",
+      "<strong>External API Integration</strong>: The Cat API for fetching cat images and information",
+      "<strong>Development Tools</strong>: Composer for PHP package management"
+    ]
+  },
+  "keyFeatures": {
+    "title": "Key Features",
+    "description": "The Felis Foundation application includes several key features:",
+    "list": [
+      "User authentication and registration with role-based access control",
+      "Dashboard for shelter employees to manage cats and appointments",
+      "Integration with The Cat API to display a variety of cat images and information",
+      "Functionality for users to report lost cats or found cats",
+      "Appointment scheduling system for users to visit the shelter",
+      "CRUD operations for managing cats, appointments, and user data"
+    ]
+  },
+  "architecture": {
+    "title": "Architecture and Data Models",
+    "description": "The application follows a clear <strong>separation of concerns</strong>, with distinct models for Appointments, Cats, and Users. The backend implements <strong>validator classes to ensure data integrity</strong>. The frontend uses Vue Router for navigation, with route guards to manage access control. The database schema includes tables for users, cats, and appointments, with appropriate relationships and constraints."
+  },
+  "results": {
+    "title": "Results and Learnings",
+    "description": "This project enhanced my <strong>full-stack development skills</strong>, particularly in creating <strong>RESTful APIs</strong> with PHP and building <strong>interactive frontends</strong> with Vue.js. I gained valuable experience in implementing authentication systems, working with external APIs, and managing state in a Vue application. The project also improved my understanding of database design and containerization. Working on both the frontend and backend of a single application gave me a holistic view of web development and improved my ability to create <strong>cohesive, secure, and efficient</strong> web applications."
+  }
+}
