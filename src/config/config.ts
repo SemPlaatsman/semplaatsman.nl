@@ -8,6 +8,9 @@
 // - /public/robots.txt
 // - /public/site.webmanifest
 // - /public/sitemap.xml
+
+import { Theme } from '../types/theme';
+
 // - /index.html
 const config = {
   app: {
@@ -68,6 +71,11 @@ const config = {
     stackOverflow: 'https://stackoverflow.com/users/18598382/sem',
   },
   ui: {
+    theme: {
+      default: 'dark' as Theme,
+      respectSystemPreference: false,
+      suggestDarkMode: true,
+    },
     scroll: {
       behaviour: 'instant' as ScrollBehavior, // 'auto' | 'instant' | 'smooth'
     },

@@ -8,9 +8,16 @@ import config from '../config';
 export const ThemeProvider: React.FC<React.PropsWithChildren> = ({ children }) => {
   const [theme, setTheme] = useState<Theme>(() => {
     const savedTheme = localStorage.getItem('theme') as Theme | null;
-    return (
-      savedTheme ?? (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
-    );
+
+    if (savedTheme) {
+      return savedTheme;
+    }
+
+    if (config.ui.theme.respectSystemPreference) {
+      return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+    }
+
+    return config.ui.theme.default;
   });
 
   useEffect(() => {
@@ -18,7 +25,10 @@ export const ThemeProvider: React.FC<React.PropsWithChildren> = ({ children }) =
     localStorage.setItem('theme', theme);
     document.documentElement.className = theme + '-theme';
 
-    if (!themeWasSaved && theme !== 'dark') {
+    const shouldSuggestDarkMode =
+      config.ui.theme.suggestDarkMode && theme !== 'dark' && !themeWasSaved;
+
+    if (shouldSuggestDarkMode) {
       toast(
         (t) => (
           <span>
@@ -33,7 +43,7 @@ export const ThemeProvider: React.FC<React.PropsWithChildren> = ({ children }) =
             </button>
           </span>
         ),
-        { id: 'theme-suggestion-toast', duration: config.ui.toasts.defaultDuration }
+        { id: 'theme-suggestion-toast', duration: config.ui.toasts.errorDuration }
       );
     }
   }, [theme]);
