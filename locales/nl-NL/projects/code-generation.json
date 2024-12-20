@@ -1,0 +1,41 @@
+{
+  "overview": {
+    "title": "Projectoverzicht",
+    "description": [
+      "Als onderdeel van een groepsproject heb ik bijgedragen aan de ontwikkeling van een uitgebreide <strong>banksimulator met een volledig unit-geteste API</strong> voor account- en transactiebeheer. Dit project, hoewel 'Code Generation' genoemd, richtte zich voornamelijk op het creëren van een robuust backend-systeem met een op Vue gebaseerde frontend.",
+      "Mijn primaire rol in het project was gericht op de <strong>API-ontwikkeling</strong>, waar ik verschillende belangrijke functies implementeerde en ervoor zorgde dat de algehele architectuur <strong>schaalbaar en efficiënt</strong> was."
+    ]
+  },
+  "technicalImplementation": {
+    "title": "Technische Implementatie",
+    "description": "Het project werd gebouwd met behulp van verschillende moderne technologieën en frameworks, wat zorgt voor een robuuste en schaalbare architectuur:",
+    "features": [
+      "<strong>Backend</strong>: Spring Boot, Hibernate, H2 (in-memory database), Swagger voor API-documentatie",
+      "<strong>Frontend</strong>: Vue.js, Vite, Bootstrap, Pinia voor state management",
+      "<strong>API-communicatie</strong>: Axios",
+      "<strong>Testen</strong>: Cucumber voor gedreven ontwikkeling, uitgebreide unit tests",
+      "<strong>Beveiliging</strong>: Op rollen gebaseerde toegangscontrole",
+      "<strong>Datamodellering</strong>: ERD (Entity-Relationship Diagram)"
+    ]
+  },
+  "apiEndpoints": {
+    "title": "API-eindpunten",
+    "description": "De API werd ontworpen met <strong>RESTful-principes</strong> en bevatte eindpunten voor het beheren van gebruikers, accounts en transacties. Enkele belangrijke eindpunten zijn:",
+    "list": [
+      "GET /users - Alle gebruikers ophalen",
+      "GET /accounts/{iban} - Een specifiek account ophalen",
+      "POST /transactions - Een nieuwe transactie invoegen",
+      "PUT /users/{userId} - Een specifieke gebruiker bijwerken",
+      "DELETE /accounts/{iban} - Een specifiek account soft deleten"
+    ]
+  },
+  "keyFeatures": {
+    "title": "Belangrijke Functies",
+    "description": "Twee functies waar ik bijzonder trots op ben qua implementatie zijn de <strong>automatische IBAN-generatie</strong> en het <strong>dynamische filtersysteem</strong>. Ten eerste zorgt het IBAN-generatiesysteem automatisch voor een unieke IBAN voor elk nieuw account, waardoor alle accounts gemakkelijk identificeerbaar zijn. Het IBAN-generatiesysteem voldoet ook aan de <strong>ISO 13616-1:2020</strong>-standaard, wat de wereldwijd erkende standaard voor IBAN's is.",
+    "dynamicFiltering": "Het dynamische filtersysteem maakt flexibel opvragen van DTO-variabelen rechtstreeks vanuit de URL mogelijk. Het ondersteunt bewerkingen zoals groter dan, kleiner dan en is gelijk aan, met automatische typeconversie. Dit werd geïmplementeerd met behulp van annotaties, waardoor eenvoudige controle mogelijk is over welke eigenschappen filterbaar zijn en door welke gebruikersrollen. Bijvoorbeeld, een verzoek zoals 'GET /accounts/{iban}/transactions?amount>:1000' zou alle transacties voor een specifiek account ophalen met een bedrag groter dan of gelijk aan 1000."
+  },
+  "results": {
+    "title": "Resultaten en Leerpunten",
+    "description": "Dit project heeft mijn vaardigheden in backend-ontwikkeling aanzienlijk verbeterd, vooral in het creëren van robuuste API's met Spring Boot. Ik heb waardevolle ervaring opgedaan in het implementeren van complexe functies zoals IBAN-generatie en dynamisch filteren, evenals in het schrijven van uitgebreide unit tests. Het project heeft ook mijn begrip van databaseontwerp en ORM-tools zoals Hibernate verbeterd. Door als onderdeel van een team te werken, heb ik sterkere samenwerkingsvaardigheden ontwikkeld en ervaring opgedaan in het integreren van backend-systemen met moderne frontend-frameworks."
+  }
+}

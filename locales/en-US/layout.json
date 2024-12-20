@@ -1,0 +1,57 @@
+{
+  "sidebar": {
+    "avatarAlt": "Picture of {{config.owner.fullName}}",
+    "name": "{{config.owner.fullName}}",
+    "title": "BSc CS Student",
+    "hideContacts": "Hide contacts",
+    "showContacts": "Show contacts",
+    "contacts": {
+      "github": {
+        "title": "GitHub",
+        "handle": "@SemPlaatsman",
+        "link": "{{config.externalLinks.github}}",
+        "ariaLabel": "GitHub profile of {{config.owner.fullName}}"
+      },
+      "linkedin": {
+        "title": "LinkedIn",
+        "handle": "@sem-plaatsman",
+        "link": "{{config.externalLinks.linkedin}}",
+        "ariaLabel": "LinkedIn profile of {{config.owner.fullName}}"
+      },
+      "email": {
+        "title": "Email",
+        "handle": "{{config.email.address}}",
+        "link": "{{config.externalLinks.email}}",
+        "ariaLabel": "Send an email to {{config.owner.fullName}}"
+      },
+      "location": {
+        "title": "Location",
+        "handle": "Haarlem, The Netherlands",
+        "link": "{{config.externalLinks.location}}",
+        "ariaLabel": "Location of {{config.owner.fullName}} on Google Maps"
+      }
+    },
+    "socials": {
+      "npm": {
+        "link": "{{config.externalLinks.npm}}",
+        "ariaLabel": "NPM profile of {{config.owner.fullName}}"
+      },
+      "stackOverflow": {
+        "link": "{{config.externalLinks.stackOverflow}}",
+        "ariaLabel": "Stack Overflow profile of {{config.owner.fullName}}"
+      }
+    }
+  },
+  "navbar": {
+    "about": "About",
+    "resume": "Resume",
+    "projects": "Projects",
+    "contact": "Contact",
+    "languageSwitcher": {
+      "ariaLabel": "Change language"
+    },
+    "themeSwitcher": {
+      "ariaLabel": "Change theme"
+    }
+  }
+}

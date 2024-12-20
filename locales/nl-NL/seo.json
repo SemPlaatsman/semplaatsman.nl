@@ -1,0 +1,15 @@
+{
+  "title": "{{config.owner.fullName}} / Portfolio",
+  "siteDescription": "Portfolio van {{config.owner.fullName}}, student en backend developer gevestigd in Haarlem.",
+  "keywords": [
+    "{{config.owner.fullName}}",
+    "Portfolio",
+    "Developer",
+    "Haarlem",
+    "Nederland",
+    "Backend"
+  ],
+  "imageAlt": "{{config.owner.fullName}} Portfolio favicon afbeelding",
+  "personDescription": "Ik ben een student en backend developer gevestigd in Haarlem.",
+  "jobTitle": "Student en Backend Developer"
+}
