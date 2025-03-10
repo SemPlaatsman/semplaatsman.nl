@@ -26,19 +26,19 @@ multiple themes, and free hosting.
 
 ## 📃 Table of Contents
 
-- [🎥 Demo](#🎥-demo)
-- [🌟 Features](#🌟-features)
-- [🛠️ Tech Stack](#🛠️-tech-stack)
-- [📋 Prerequisites](#📋-prerequisites)
-- [🚀 Quick Start Guide](#🚀-quick-start-guide)
-- [🎨 Customization](#🎨-customization)
-- [🚢 Deployment](#🚢-deployment)
-- [📖 Documentation](#📖-documentation)
-- [🤝 Contributing](#🤝-contributing)
-- [📜 Code of Conduct](#📜-code-of-conduct)
-- [⚖️ License](#⚖️-license)
-- [📫 Contact](#📫-contact)
-- [🙏 Acknowledgements](#🙏-acknowledgements)
+- [🎥 Demo](#-demo)
+- [🌟 Features](#-features)
+- [🛠️ Tech Stack](#🛠-tech-stack)
+- [📋 Prerequisites](#-prerequisites)
+- [🚀 Quick Start Guide](#-quick-start-guide)
+- [🎨 Customization](#-customization)
+- [🚢 Deployment](#-deployment)
+- [📖 Documentation](#-documentation)
+- [🤝 Contributing](#-contributing)
+- [📜 Code of Conduct](#-code-of-conduct)
+- [⚖️ License](#-license)
+- [📫 Contact](#-contact)
+- [🙏 Acknowledgements](#-acknowledgements)
 
 ## 🎥 Demo
 
