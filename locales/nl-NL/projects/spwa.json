@@ -1,0 +1,44 @@
+{
+  "overview": {
+    "title": "Projectoverzicht",
+    "description": [
+      "Tijdens mijn stage bij <strong>S.P. Abonneeservice</strong> heb ik een <strong>Progressive Web App (PWA)</strong> ontwikkeld, genaamd <strong>SPWA</strong>. Deze applicatie stelt de <strong>directe klanten (uitgevers)</strong> van S.P. Abonneeservice in staat om belangrijke statistische gegevens efficiënt vanaf hun telefoon te raadplegen. Het project omvatte de ontwikkeling van zowel de frontend als de backend, inclusief een vernieuwd authenticatiesysteem.",
+      "Het SPWA-project adresseert de uitdaging van het efficiënt verstrekken van <strong>statistische informatie aan uitgevers</strong>, een taak die voorheen de <strong>klantenservice zwaar belastte</strong>. Mijn oplossing is een gebruiksvriendelijke PWA die automatisch relevante gegevens presenteert, waardoor de efficiëntie en toegankelijkheid van informatie aanzienlijk wordt verbeterd."
+    ]
+  },
+  "challenge": {
+    "title": "Uitdaging",
+    "description": "S.P. Abonneeservice werd geconfronteerd met een hoge belasting van de klantenservice door frequente verzoeken om statistische gegevens van uitgevers. Daarnaast moesten gebruikers vaak opnieuw inloggen, wat de gebruikerservaring negatief beïnvloedde. De uitdaging was om:",
+    "items": [
+      "Een efficiënte methode te ontwikkelen voor het delen van <strong>statistische gegevens</strong>",
+      "De gebruikerservaring te verbeteren door <strong>langdurige authenticatie</strong> mogelijk te maken",
+      "Een <strong>responsieve applicatie</strong> te creëren die optimaal presteert op mobiele apparaten"
+    ]
+  },
+  "solution": {
+    "title": "De Oplossing",
+    "description": "Er is een full-stack PWA ontwikkeld die het mogelijk maakt om statistische gegevens te analyseren en te presenteren. De aanpak omvatte:",
+    "steps": [
+      "<strong>Frontend Ontwikkeling</strong>: Creatie van een intuïtieve en responsieve gebruikersinterface met React en TypeScript.",
+      "<strong>Backend Implementatie</strong>: Ontwikkeling van een robuuste API met C# ASP.NET Framework.",
+      "<strong>Authenticatie Systeem</strong>: Implementatie van JWT met refresh tokens voor veilige, langdurige sessies.",
+      "<strong>Data Visualisatie</strong>: Integratie van D3 voor geavanceerde en interactieve datavisualisaties."
+    ]
+  },
+  "technicalDetails": {
+    "title": "Technische Details",
+    "description": "Het project maakt gebruik van moderne webtechnologieën voor zowel de frontend als de backend. De frontend is gebouwd met <strong>React, TypeScript en SCSS</strong>, ondersteund door libraries zoals <strong>Redux</strong> voor state management en <strong>D3</strong> voor datavisualisatie. De backend is ontwikkeld met <strong>C# ASP.NET Framework</strong>, met een focus op veilige authenticatie en efficiënte data-handling."
+  },
+  "results": {
+    "title": "Resultaten",
+    "description": "Het SPWA-project heeft geleid tot een aanzienlijke <strong>vermindering van de belasting op de klantenservice</strong> van S.P. Abonneeservice. Uitgevers kunnen nu zelfstandig toegang krijgen tot hun statistische gegevens, wat resulteert in een <strong>verhoogde klanttevredenheid</strong>. Het vernieuwde inlogsysteem zorgt ervoor dat gebruikers tot twee weken ingelogd kunnen blijven, wat het <strong>gebruiksgemak aanzienlijk verbetert</strong>. Bovendien biedt het systeem <strong>verbeterde bescherming</strong> tegen verschillende cyberaanvallen."
+  },
+  "personalDevelopment": {
+    "title": "Persoonlijke Ontwikkeling",
+    "description": "Dit project heeft mijn vaardigheden als full-stack ontwikkelaar aanzienlijk verbeterd. Ik heb diepgaande ervaring opgedaan met moderne webtechnologieën, veilige authenticatiesystemen en het optimaliseren van applicaties voor mobiel gebruik. Daarnaast heb ik mijn vaardigheden in projectmanagement en klantgerichte ontwikkeling kunnen aanscherpen. Het zelfstandig aanpakken van uitdagingen en het <strong>effectief communiceren van technische concepten aan niet-technische stakeholders</strong> waren waardevolle leerervaringen."
+  },
+  "futurePerspective": {
+    "title": "Toekomstperspectief",
+    "description": "Het SPWA-project biedt mogelijkheden voor verdere ontwikkeling en uitbreiding. De modulaire opzet van de applicatie maakt het eenvoudig om nieuwe functionaliteiten toe te voegen naarmate de behoeften van S.P. Abonneeservice en hun klanten evolueren."
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "submission": {
+    "subject": "semplaatsman.nl: Nieuw bericht van {{name}}",
+    "received": "Je hebt een nieuw bericht ontvangen van {{name}} op je contactpagina:",
+    "reachabilityMessage": "Je kunt ze bereiken via {{email}}."
+  },
+  "autoReply": {
+    "subject": "Bedankt voor het contact opnemen met {{config_name}}",
+    "greetings": "Hey {{name}},",
+    "appreciationMessage": "Bedankt voor het contact opnemen via mijn portfolio website. Ik waardeer je interesse en de tijd die je hebt genomen om contact met mij op te nemen.",
+    "received": "Ik heb je bericht ontvangen met betrekking tot:",
+    "responsePromise": "Ik zal zo snel mogelijk bij je terugkomen.",
+    "designation": "4e jaars Informatica BSc Student"
+  },
+  "common": {
+    "regards": "Met vriendelijke groet,"
+  }
+}

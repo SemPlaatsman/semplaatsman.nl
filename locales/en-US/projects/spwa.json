@@ -1,0 +1,44 @@
+{
+  "overview": {
+    "title": "Project Overview",
+    "description": [
+      "During my internship at <strong>S.P. Abonneeservice</strong>, I developed a <strong>Progressive Web App (PWA)</strong> called <strong>SPWA</strong>. This application enables <strong>direct customers (publishers)</strong> of S.P. Abonneeservice to efficiently access important statistical data from their phones. The project involved developing both the frontend and backend, including a renewed authentication system.",
+      "The SPWA project addresses the challenge of efficiently providing <strong>statistical information to publishers</strong>, a task that previously heavily <strong>burdened customer service</strong>. My solution is a user-friendly PWA that automatically presents relevant data, significantly improving the efficiency and accessibility of information."
+    ]
+  },
+  "challenge": {
+    "title": "Challenge",
+    "description": "S.P. Abonneeservice faced a high load on customer service due to frequent requests for statistical data from publishers. Additionally, users often had to log in again, negatively impacting the user experience. The challenge was to:",
+    "items": [
+      "Develop an efficient method for sharing <strong>statistical data</strong>",
+      "Improve the user experience by enabling <strong>long-term authentication</strong>",
+      "Create a <strong>responsive application</strong> that performs optimally on mobile devices"
+    ]
+  },
+  "solution": {
+    "title": "The Solution",
+    "description": "A full-stack PWA was developed that enables the analysis and presentation of statistical data. The approach included:",
+    "steps": [
+      "<strong>Frontend Development</strong>: Creation of an intuitive and responsive user interface using React and TypeScript.",
+      "<strong>Backend Implementation</strong>: Development of a robust API with C# ASP.NET Framework.",
+      "<strong>Authentication System</strong>: Implementation of JWT with refresh tokens for secure, long-term sessions.",
+      "<strong>Data Visualization</strong>: Integration of D3 for advanced and interactive data visualizations."
+    ]
+  },
+  "technicalDetails": {
+    "title": "Technical Details",
+    "description": "The project utilizes modern web technologies for both the frontend and backend. The frontend is built with <strong>React, TypeScript, and SCSS</strong>, supported by libraries such as <strong>Redux</strong> for state management and <strong>D3</strong> for data visualization. The backend is developed with <strong>C# ASP.NET Framework</strong>, focusing on secure authentication and efficient data handling."
+  },
+  "results": {
+    "title": "Results",
+    "description": "The SPWA project has led to a significant <strong>reduction in the workload on customer service</strong> at S.P. Abonneeservice. Publishers can now independently access their statistical data, resulting in <strong>increased customer satisfaction</strong>. The renewed login system ensures users can stay logged in for up to two weeks, <strong>significantly improving ease of use</strong>. Moreover, the system offers <strong>improved protection</strong> against various cyber attacks."
+  },
+  "personalDevelopment": {
+    "title": "Personal Development",
+    "description": "This project has significantly improved my skills as a full-stack developer. I gained in-depth experience with modern web technologies, secure authentication systems, and optimizing applications for mobile use. Additionally, I was able to sharpen my skills in project management and customer-oriented development. Independently tackling challenges and <strong>effectively communicating technical concepts to non-technical stakeholders</strong> were valuable learning experiences."
+  },
+  "futurePerspective": {
+    "title": "Future Perspective",
+    "description": "The SPWA project offers opportunities for further development and expansion. The modular setup of the application makes it easy to add new functionalities as the needs of S.P. Abonneeservice and their customers evolve."
+  }
+}

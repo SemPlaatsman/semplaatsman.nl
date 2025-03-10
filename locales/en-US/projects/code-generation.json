@@ -1,0 +1,41 @@
+{
+  "overview": {
+    "title": "Project Overview",
+    "description": [
+      "As part of a group project, I contributed to the development of a comprehensive <strong>banking simulator with a fully unit tested API</strong> for account and transaction management. This project, while named 'Code Generation', primarily focused on creating a robust backend system with a Vue-based frontend.",
+      "My primary role in the project was focused on the <strong>API development</strong>, where I implemented several key features and ensured the overall architecture was <strong>scalable and efficient</strong>."
+    ]
+  },
+  "technicalImplementation": {
+    "title": "Technical Implementation",
+    "description": "The project was built using a variety of modern technologies and frameworks, ensuring a robust and scalable architecture:",
+    "features": [
+      "<strong>Backend</strong>: Spring Boot, Hibernate, H2 (in-memory database), Swagger for API documentation",
+      "<strong>Frontend</strong>: Vue.js, Vite, Bootstrap, Pinia for state management",
+      "<strong>API Communication</strong>: Axios",
+      "<strong>Testing</strong>: Cucumber for behavior-driven development, comprehensive unit testing",
+      "<strong>Security</strong>: Role-based access control",
+      "<strong>Data Modeling</strong>: ERD (Entity-Relationship Diagram)"
+    ]
+  },
+  "apiEndpoints": {
+    "title": "API Endpoints",
+    "description": "The API was designed with <strong>RESTful principles</strong> and included endpoints for managing users, accounts, and transactions. Some key endpoints include:",
+    "list": [
+      "GET /users - Retrieve all users",
+      "GET /accounts/{iban} - Get a specific account",
+      "POST /transactions - Insert a new transaction",
+      "PUT /users/{userId} - Update a specific user",
+      "DELETE /accounts/{iban} - Soft delete a specific account"
+    ]
+  },
+  "keyFeatures": {
+    "title": "Key Features",
+    "description": "Two features I'm particularly proud of implementing are the <strong>automatic IBAN generation</strong> and the <strong>dynamic filtering system</strong>. First off, the IBAN generation system automatically creates a unique IBAN for each new account, ensuring that all accounts are easily identifiable. The IBAN generation system also adheres to the <strong>ISO 13616-1:2020</strong> standard, which is the globally recognized standard for IBANs.",
+    "dynamicFiltering": "The dynamic filtering system allows for flexible querying of DTO variables directly from the URL. It supports operations like greater than, less than, and equals, with automatic type conversion. This was implemented using annotations, allowing easy control over which properties are filterable and by which user roles. For example, a request like 'GET /accounts/{iban}/transactions?amount>:1000' would get all transactions for a specific account that have an amount greater than or equal to 1000."
+  },
+  "results": {
+    "title": "Results and Learnings",
+    "description": "This project significantly enhanced my skills in backend development, particularly in creating robust APIs with Spring Boot. I gained valuable experience in implementing complex features like IBAN generation and dynamic filtering, as well as in writing comprehensive unit tests. The project also improved my understanding of database design and ORM tools like Hibernate. Working as part of a team, I developed stronger collaboration skills and gained experience in integrating backend systems with modern frontend frameworks."
+  }
+}

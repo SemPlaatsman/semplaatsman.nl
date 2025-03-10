@@ -1,0 +1,55 @@
+{
+  "overview": {
+    "title": "Projectoverzicht",
+    "description": [
+      "Tijdens mijn NoSQL-lessen bij InHolland heb ik bijgedragen aan het project \"The Garden Group\", een ticketingsysteem ontworpen om servicetickets binnen een organisatie te beheren. Dit project omvatte een <strong>Windows Forms-applicatie</strong> met een <strong>CRUD-systeem</strong> en een <strong>MongoDB-database</strong>. De applicatie stroomlijnt het proces van het afhandelen en oplossen van apparaatgerelateerde problemen gemeld door medewerkers.",
+      "Het Garden Group-project pakt de uitdaging aan van het <strong>efficiënt beheren en volgen van servicetickets</strong> in een organisatorische omgeving. Onze oplossing is een ticketingsysteem dat het creëren, beheren en oplossen van tickets mogelijk maakt."
+    ]
+  },
+  "challenge": {
+    "title": "Uitdaging",
+    "description": "Organisaties worden geconfronteerd met de taak om servicetickets voor apparaatgerelateerde problemen efficiënt te verwerken en te beheren. Handmatig ticketbeheer kan tijdrovend zijn en gevoelig voor fouten. De uitdaging was om:",
+    "items": [
+      "Een efficiënt systeem te ontwikkelen voor het <strong>creëren en beheren van servicetickets</strong>",
+      "Een <strong>gebruiksvriendelijke interface</strong> te implementeren voor zowel medewerkers als IT-ondersteuningspersoneel",
+      "Een <strong>robuuste databaseoplossing</strong> te creëren met behulp van NoSQL-technologie voor flexibel gegevensbeheer"
+    ]
+  },
+  "solution": {
+    "title": "De Oplossing",
+    "description": "We hebben een Windows Forms-applicatie ontwikkeld met MongoDB-integratie die efficiënt ticketbeheer mogelijk maakt. De aanpak omvatte:",
+    "steps": [
+      "<strong>Gebruikersauthenticatie</strong>: Implementatie van een inlog- en registratiesysteem met wachtwoordherstelfunctionaliteit.",
+      "<strong>Ticketbeheer</strong>: Ontwikkeling van functies voor het aanmaken, bekijken en bijwerken van tickets.",
+      "<strong>Dashboard</strong>: Creatie van een dashboard om statistieken over de ticketstatus weer te geven.",
+      "<strong>Filteren</strong>: Implementatie van zoek-, filter- en sorteerfunctionaliteiten voor ticketbeheer.",
+      "<strong>Database-integratie</strong>: Gebruik van MongoDB voor flexibele en schaalbare gegevensopslag."
+    ]
+  },
+  "technicalDetails": {
+    "title": "Technische Details",
+    "description": "Het project maakt gebruik van verschillende belangrijke technologieën en componenten:",
+    "items": [
+      "<strong>C#</strong>: Gebruikt voor het ontwikkelen van de Windows Forms-applicatie en backend-logica.",
+      "<strong>MongoDB</strong>: NoSQL-database voor het opslaan en beheren van ticket- en gebruikersgegevens.",
+      "<strong>BSON-serialisatie</strong>: Geïmplementeerd voor efficiënte gegevensoverdracht tussen de applicatie en database.",
+      "<strong>Aangepaste DAO's en Services</strong>: Ontwikkeld voor gestructureerde gegevenstoegang en implementatie van bedrijfslogica."
+    ],
+    "contributionsDescription": "Mijn specifieke bijdragen omvatten:",
+    "contributions": [
+      "Het ontwikkelen van de <strong>BaseDAO</strong> voor gestandaardiseerde CRUD-operaties voor alle data access objects.",
+      "Het creëren van de <strong>EmployeeDAO</strong> en <strong>EmployeeService</strong> voor personeelsgegevensbeheer.",
+      "Het implementeren van <strong>BSON-serialiseerbare modellen</strong> voor database-integratie.",
+      "Het ontwikkelen van hulpklassen voor <strong>encryptie</strong>, <strong>foutregistratie</strong> en <strong>foutafhandeling</strong>.",
+      "Het creëren van Windows Forms voor <strong>personeelsbeheer</strong>."
+    ]
+  },
+  "results": {
+    "title": "Resultaten",
+    "description": "Het Garden Group-project resulteerde in een functioneel ticketingsysteem dat efficiënte <strong>creatie en beheer van servicetickets</strong> mogelijk maakt, een <strong>duidelijk overzicht van ticketstatussen</strong> biedt via een dashboard, <strong>zoek- en filtermogelijkheden</strong> voor ticketbeheer mogelijk maakt, <strong>veilige gebruikersauthenticatie</strong> en wachtwoordbeheer implementeert, en <strong>NoSQL-databasetechnologie</strong> gebruikt voor flexibele en schaalbare gegevensopslag."
+  },
+  "personalDevelopment": {
+    "title": "Persoonlijke Ontwikkeling",
+    "description": "Dit project heeft mijn vaardigheden in NoSQL-databasebeheer en C#-applicatieontwikkeling aanzienlijk verbeterd. Ik heb waardevolle ervaring opgedaan in het implementeren van CRUD-operaties met MongoDB, het ontwerpen van gebruikersinterfaces met Windows Forms, en het ontwikkelen van robuuste backend-systemen. Daarnaast heb ik mijn vaardigheden in teamsamenwerkingen en probleemoplossing verbeterd, met name bij het assisteren van teamleden met databaseverbindingsproblemen en BSON-serialisatie."
+  }
+}
