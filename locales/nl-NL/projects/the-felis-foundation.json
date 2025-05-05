@@ -1,0 +1,40 @@
+{
+  "overview": {
+    "title": "Projectoverzicht",
+    "description": [
+      "Als onderdeel van mijn Web Development 2-cursus heb ik 'The Felis Foundation' ontwikkeld, een webapplicatie voor een fictief kattenasiel. Dit project toont een full-stack applicatie met een <strong>Vue.js frontend en een PHP backend</strong>, waarin verschillende moderne webontwikkelingstechnologieën en -praktijken zijn verwerkt.",
+      "De Felis Foundation-applicatie stelt gebruikers in staat om katten te bekijken die beschikbaar zijn voor adoptie, vermiste of gevonden katten te melden en afspraken te maken om het asiel te bezoeken. Het bevat ook een beheerderspaneel voor asielmedewerkers om katten en afspraken te beheren."
+    ]
+  },
+  "technicalImplementation": {
+    "title": "Technische Implementatie",
+    "description": "Het project is gebouwd met behulp van verschillende moderne technologieën en frameworks, wat zorgt voor een robuuste en schaalbare architectuur:",
+    "features": [
+      "<strong>Frontend</strong>: Vue.js (JavaScript), Bootstrap voor styling, Axios voor API-communicatie",
+      "<strong>Backend</strong>: PHP, NGINX, PHPMyAdmin (MariaDB), Docker voor containerisatie",
+      "<strong>Authenticatie</strong>: JWT (JSON Web Tokens) voor veilige gebruikersauthenticatie",
+      "<strong>Externe API-integratie</strong>: The Cat API voor het ophalen van kattenafbeeldingen en -informatie",
+      "<strong>Ontwikkelingstools</strong>: Composer voor PHP-pakketbeheer"
+    ]
+  },
+  "keyFeatures": {
+    "title": "Belangrijkste Functies",
+    "description": "De Felis Foundation-applicatie bevat verschillende belangrijke functies:",
+    "list": [
+      "Gebruikersauthenticatie en -registratie met op rollen gebaseerde toegangscontrole",
+      "Dashboard voor asielmedewerkers om katten en afspraken te beheren",
+      "Integratie met The Cat API om een verscheidenheid aan kattenafbeeldingen en -informatie weer te geven",
+      "Functionaliteit voor gebruikers om vermiste katten of gevonden katten te melden",
+      "Afsprakensysteem voor gebruikers om het asiel te bezoeken",
+      "CRUD-operaties voor het beheren van katten, afspraken en gebruikersgegevens"
+    ]
+  },
+  "architecture": {
+    "title": "Architectuur en Datamodellen",
+    "description": "De applicatie volgt een duidelijke <strong>scheiding van verantwoordelijkheden</strong>, met afzonderlijke modellen voor Afspraken, Katten en Gebruikers. De backend implementeert <strong>validatorklassen om de data-integriteit te waarborgen</strong>. De frontend gebruikt Vue Router voor navigatie, met routebewakers om toegangscontrole te beheren. Het databaseschema bevat tabellen voor gebruikers, katten en afspraken, met passende relaties en beperkingen."
+  },
+  "results": {
+    "title": "Resultaten en Leerpunten",
+    "description": "Dit project heeft mijn <strong>full-stack ontwikkelingsvaardigheden</strong> verbeterd, met name in het creëren van <strong>RESTful API's</strong> met PHP en het bouwen van <strong>interactieve frontends</strong> met Vue.js. Ik heb waardevolle ervaring opgedaan in het implementeren van authenticatiesystemen, het werken met externe API's en het beheren van state in een Vue-applicatie. Het project heeft ook mijn begrip van databaseontwerp en containerisatie verbeterd. Het werken aan zowel de frontend als de backend van een enkele applicatie gaf me een holistisch beeld van webontwikkeling en verbeterde mijn vermogen om <strong>samenhangende, veilige en efficiënte</strong> webapplicaties te creëren."
+  }
+}

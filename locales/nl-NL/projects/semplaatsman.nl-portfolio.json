@@ -1,0 +1,43 @@
+{
+  "overview": {
+    "title": "Projectoverzicht",
+    "description": [
+      "<strong>semplaatsman.nl</strong> is een <strong>moderne, volledig responsieve persoonlijke portfolio website</strong> gebouwd met <strong>React</strong>. Dit project toont geavanceerde webontwikkelingstechnieken en dient als een ideale sjabloon voor ontwikkelaars die hun online aanwezigheid creëren.",
+      "De website heeft een <strong>componentgebaseerde architectuur</strong> die codeherbruikbaarheid en onderhoudbaarheid garandeert, met <strong>TypeScript</strong> die een extra laag van typeveiligheid toevoegt. Belangrijke functies zijn onder andere <strong>meerdere thema's</strong> (lichte en donkere modi), <strong>ingebouwde meertalige ondersteuning</strong>, en integratie met verschillende webdiensten voor optimale prestaties en functionaliteit."
+    ]
+  },
+  "technicalImplementation": {
+    "title": "Technische Implementatie",
+    "description": "Het project maakt gebruik van verschillende moderne webtechnologieën:",
+    "items": [
+      "<strong>React</strong>: Voor het bouwen van een dynamische en efficiënte gebruikersinterface",
+      "<strong>TypeScript</strong>: Verbetert de codekwaliteit met statische typering",
+      "<strong>Vite</strong>: Biedt een snelle en efficiënte ontwikkelingservaring",
+      "<strong>SCSS</strong>: Maakt geavanceerde stylingmogelijkheden mogelijk",
+      "<strong>react-i18next</strong>: Implementeert meertalige ondersteuning",
+      "<strong>React Router</strong>: Beheert navigatie en routing",
+      "<strong>React Helmet</strong>: Handelt dynamisch documenthoofdmanagement af",
+      "<strong>GitHub Pages</strong>: Biedt gratis en betrouwbare hosting",
+      "<strong>Cloudflare</strong>: Levert CDN- en DNS-beheer voor verbeterde prestaties",
+      "<strong>EmailJS</strong> en <strong>Mailgun</strong>: Maken veilige e-mailfunctionaliteit mogelijk met adresverduistering"
+    ]
+  },
+  "developmentJourney": {
+    "title": "Ontwikkelingsreis",
+    "description": "Het project evolueerde van een statische HTML/CSS/JS-sjabloon naar een dynamische React-applicatie. Deze transformatie omvatte het opsplitsen van de HTML-structuur in herbruikbare componenten, het converteren van CSS naar SCSS-modules, en het integreren van JavaScript-functionaliteit in React TypeScript-componenten.",
+    "steps": [
+      "Implementeren van ondersteuning voor meerdere thema's",
+      "Opzetten van internationalisatie",
+      "Creëren van een CI/CD-pijplijn met GitHub Actions",
+      "Integreren van e-mailfunctionaliteit"
+    ]
+  },
+  "openSourceContribution": {
+    "title": "Open-Source Bijdrage",
+    "description": "Als open-source project dient semplaatsman.nl als leermiddel voor andere ontwikkelaars. De goed gedocumenteerde codebase, richtlijnen voor bijdragen, en uitgebreide wiki-documentatie maken het gemakkelijk voor anderen om te gebruiken, aan te passen en van te leren."
+  },
+  "impact": {
+    "title": "Impact en Toekomstperspectief",
+    "description": "Dit project vertegenwoordigt een aanzienlijke groei in professionele softwareontwikkelingsvaardigheden, DevOps-praktijken en technische inzichten. Het demonstreert het potentieel voor het creëren van hoogwaardige, presterende webapplicaties met behulp van moderne technologieën en best practices, terwijl het ook bijdraagt aan de open-source gemeenschap."
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "title": "Projects",
+  "additionalFiltersTitle": "Additional Filters",
+  "variables": {
+    "createdDate": {
+      "name": "Creation Date"
+    }
+  },
+  "filters": {
+    "projectType": {
+      "name": "Project Type",
+      "prompt": "Select Type",
+      "options": {
+        "all": "All",
+        "backend": "Backend",
+        "frontend": "Frontend",
+        "fullStack": "Full Stack"
+      }
+    },
+    "technology": {
+      "name": "Technologies",
+      "prompt": "Select Technologies",
+      "options": {
+        "all": "All"
+      },
+      "categories": {
+        "language": "Programming Languages",
+        "framework": "Frameworks",
+        "library/package": "Libraries & Packages",
+        "tool/platform": "Tools & Platforms",
+        "database": "Databases"
+      }
+    }
+  },
+  "items": {
+    "semplaatsman.nl-portfolio": {
+      "bannerAlt": "Image of semplaatsman.nl",
+      "title": "semplaatsman.nl",
+      "text": "My personal portfolio with extensive hosting and customization documentation."
+    },
+    "who-has-been-calling": {
+      "bannerAlt": "Image of TNO's logo",
+      "title": "Who Has Been Calling",
+      "text": "AI-driven full-stack system for automated audio conversation analysis."
+    },
+    "spwa": {
+      "bannerAlt": "Image of two SPWA mockups",
+      "title": "SPWA",
+      "text": "Full-stack authenticated PWA for subscription statistics, built for my internship."
+    },
+    "the-felis-foundation": {
+      "bannerAlt": "Image of The Felis Foundation's logo",
+      "title": "The Felis Foundation",
+      "text": "Cat shelter management system using Vue, Bootstrap, and PHP backend."
+    },
+    "haarlem-festival": {
+      "bannerAlt": "Image of one of Haarlem Festival's event pages",
+      "title": "Haarlem Festival",
+      "text": "Containerized Haarlem city website featuring various cultural events."
+    },
+    "code-generation": {
+      "bannerAlt": "Image of the dashboard in the Code Generation project's UI",
+      "title": "Code Generation",
+      "text": "Banking simulator with fully unit tested API for account and transaction management."
+    },
+    "the-garden-group": {
+      "bannerAlt": "Image of the logo's of C# and MongoDB",
+      "title": "The Garden Group",
+      "text": "Windows Forms CRUD application for a gardening company using MongoDB."
+    },
+    "sp.sso": {
+      "bannerAlt": "AI image of an SSO system diagram",
+      "title": "SP.SSO",
+      "text": "Unit-tested and benchmarked Single Sign-On service with WordPress integration."
+    }
+  },
+  "projectDetails": {
+    "links": {
+      "live": {
+        "ariaLabel": "Visit live version of {{projectName}}"
+      },
+      "code": {
+        "ariaLabel": "View source code for {{projectName}}"
+      }
+    }
+  }
+}
